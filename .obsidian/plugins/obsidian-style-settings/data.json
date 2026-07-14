@@ -1,0 +1,10 @@
+{
+  "things-style@@mobile-black-background": false,
+  "things-style@@floating-button-off": false,
+  "things-style@@active-line": false,
+  "encore-settings@@encore-translucency": false,
+  "encore-settings@@encore-translucency-strength": 0,
+  "encore-settings@@blur-amount": "encore-blur-off",
+  "encore-settings@@encore-disable-grain": true,
+  "encore-settings@@theme-dark": "encore-theme-dark-blackout"
+}

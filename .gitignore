@@ -1,0 +1,5 @@
+.claude/
+.claudian/
+
+# Personal Obsidian session state
+.obsidian/workspace.json
