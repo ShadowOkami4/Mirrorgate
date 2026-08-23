@@ -32,7 +32,7 @@ What is certain is that their bloodline matters. Their marriages, deaths, scanda
 
 The royal side of the family is strict and deeply invested in public control. The crown's propaganda insists that [[The Mirrorgate]] does not exist, despite the many scars, disappearances, and contradictions that suggest otherwise.
 
-Current working records treat [[Lucien Blackwood]] and [[Maria Blackwood]] as the parents of [[Jacob Blackwood]] and [[Vanessa Blackwood]]. Jacob and Vanessa do not like what their parents are doing, but they are watched very carefully.
+Current working records identify [[Lucien Blackwood]] and [[Maria Blackwood]] as the parents of [[Jacob Blackwood]] and [[Vanessa Blackwood]]. Jacob and Vanessa disapprove of their parents' actions, but they are watched very carefully.
 
 ## Reputation
 

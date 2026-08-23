@@ -9,7 +9,7 @@ Other peoples sometimes mistake humanity's comparatively short lives for a weakn
 
 ## A People of Many Peoples
 
-There is no single human culture. Human societies are shaped by homeland, history, faith, necessity, and contact with their neighbors. Two human communities may differ from one another more greatly than either differs from the dwarves, elves, or orcs living beside them.
+There is no single human culture. Human societies are shaped by homeland, history, faith, necessity, and contact with their neighbors. Two human communities may differ from one another more sharply than either differs from the dwarves, elves, or orcs living beside them.
 
 Some human cultures trace their legitimacy through ancient dynasties and carefully preserved bloodlines. Others choose leaders by merit, wealth, military strength, divine favor, or the enthusiastic approval of a sufficiently loud crowd. Their settlements range from independent villages to sprawling empires, and their loyalties may rest with a family, guild, temple, sovereign, city, or ideal.
 

@@ -1,14 +1,14 @@
-# Forest of thieves
+# Forest of Thieves
 
 > *“Forests do not become infamous because of trees.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-The **Forest of thieves** is the woodland through which the adventurers travel in [[Prelude|The Pack in the Twilight]]. It is known for bandit activity, poor roads, and the growing presence of luminous plants that do not belong to the natural order of [[Zerkalo]].
+The **Forest of Thieves** is the woodland through which the adventurers travel in [[Prelude|The Pack in the Twilight]]. It is known for bandit activity, poor roads, and the growing presence of luminous plants that do not belong to the natural order of [[Zerkalo]].
 
 ## Current Adventure Role
 
-- approach route to [[To the enteral Lady]]
-- site of the early thief encounter
+- approach route to [[To the Eternal Lady]]
+- site of the opening bandit encounter
 - first visible sign of otherworldly contamination
 - place where large wolf tracks appear and vanish in shadow
 
@@ -25,4 +25,4 @@ The forest should feel watchful rather than openly monstrous at first. Branches 
 
 ---
 
-Related: [[Prelude]], [[To the enteral Lady]], [[Sandra Mistic]]
+Related: [[Prelude]], [[To the Eternal Lady]], [[Sandra Mistic]]

@@ -11,7 +11,7 @@ There are meetings arranged by kings, meetings demanded by war, and meetings bor
 
 This was none of those.
 
-Each adventurer received the same letter: a few carefully chosen words written in dark ink, bearing neither royal seal nor promise of reward. Its author, [[Sandra Mistic]], asked only that they come to her inn within the [[Forest of thieves]]. She offered no explanation for how she knew their names, where her messenger had found them, or why she believed they would answer.
+Each adventurer received the same letter: a few carefully chosen words written in dark ink, bearing neither royal seal nor promise of reward. Its author, [[Sandra Mistic]], asked only that they come to her inn within the [[Forest of Thieves]]. She offered no explanation for how she knew their names, where her messenger had found them, or why she believed they would answer.
 
 Nevertheless, they came.
 
@@ -43,7 +43,7 @@ On a failed check, a character still notices that the letter is unusually well p
 
 ## 00/B1 — The Forest and the Thieves
 
-The path winds deeper into the [[Forest of thieves]], where roots break through the earth like the bones of some buried giant. The air grows colder as the party travels, and familiar woodland sounds gradually fade. No birds call from the canopy. No insects stir beneath the leaves.
+The path winds deeper into the [[Forest of Thieves]], where roots break through the earth like the bones of some buried giant. The air grows colder as the party travels, and familiar woodland sounds gradually fade. No birds call from the canopy. No insects stir beneath the leaves.
 
 Instead, the adventurers encounter clusters of pale, luminous plants growing beside the trail.
 
@@ -106,7 +106,7 @@ A character who searches the surrounding forest after the encounter can attempt 
 
 Beyond the thieves, the southern path descends into a sheltered hollow. There, warm light shines between the trees.
 
-At its center stands [[To the enteral Lady]], an elegant inn impossibly untouched by the surrounding wilderness. Its windows glow amber against the night. Music and laughter drift from within, offering a welcome so perfect that it almost feels rehearsed.
+At its center stands [[To the Eternal Lady]], an elegant inn impossibly untouched by the surrounding wilderness. Its windows glow amber against the night. Music and laughter drift from within, offering a welcome so perfect that it almost feels rehearsed.
 
 Local thieves speak of the place as if it has always been here. Older travelers disagree. Some claim the same inn once stood in another forest entirely, and a few stranger tales insist it has appeared beneath skies that did not belong to Zerkalo.
 
@@ -173,7 +173,7 @@ Before or during Sandra's explanation, the characters may examine the chamber:
 
 A character can attempt a **DC 13 Wisdom (Insight) check** while Sandra explains herself. On a success, the character believes she is sincere about wishing the party no harm. On a result of 17 or higher, the character realizes that Sandra is withholding one fact: she knows more about the artifact's connection to the party than she is willing to reveal.
 
-She remains at the inn because she is the guardian of an artifact that came from beyond this world. Sandra herself is also not native to Zerkalo. She came from another world and accepted undeath so the artifact would never be left unguarded. Its nature makes it too dangerous to abandon, and the magic binding Sandra to its protection prevents her from leaving. For years, she has kept watch while the world beyond her doors continued without her.
+She remains at the inn because she is the guardian of an artifact that came from beyond this world. Sandra is not native to Zerkalo either. She came from another world and accepted undeath so the artifact would never be left unguarded. Its nature makes it too dangerous to abandon, and the magic binding Sandra to its protection prevents her from leaving. For years, she has kept watch while the world beyond her doors continued without her.
 
 Recently, a plea for aid reached her from an old friend. Sandra cannot answer it herself, so she sent enchanted letters in search of those whom fate—or the artifact—judged capable of acting in her place.
 

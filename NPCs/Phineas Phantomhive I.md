@@ -11,8 +11,8 @@ Almost everything else about him remains uncertain.
 
 - Phineas Phantomhive I came from a different world.
 - The name, condition, and fate of his family are unknown.
-- The circumstances that brought him away from his home world are unknown.
-- When Phineas I was the same apparent age as [[Professor Phineas Phantomhive II]] is now, the two looked remarkably similar.
+- The circumstances that took him away from his home world are unknown.
+- When Phineas I was at the same apparent age that [[Professor Phineas Phantomhive II]] is now, the two looked remarkably similar.
 - The most reliable surviving cultural detail from his world concerns its main religion: the worship of [[Aurora]].
 
 ## Resemblance to Phineas II

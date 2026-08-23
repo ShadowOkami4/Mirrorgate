@@ -1,5 +1,5 @@
 ---
-banner: z_Assets/Sandra_Mistic_Disgused.png
+banner: z_Assets/Sandra_Mistic_Disguised.png
 banner-height: 320
 banner-x: 51
 banner-y: 9
@@ -22,13 +22,13 @@ banner-fade: -30
 | **Species** | Tiefling from another world |
 | **True Nature** | Lich by oath, not ambition |
 | **Occupation** | Innkeeper and guardian |
-| **Residence** | [[To the enteral Lady]], wherever it currently stands |
+| **Residence** | [[To the Eternal Lady]], wherever it currently stands |
 | **Alignment** | Friendly, protective, secretive, and terrifying when provoked |
 | **Adventure Role** | Patron, keeper of forbidden knowledge, and possible ally |
 
 ## Overview
 
-Madam Sandra Mistic is the enigmatic proprietor of [[To the enteral Lady]], a secluded inn currently hidden within the [[Forest of thieves]]. To ordinary travelers, she appears to be an elegant tiefling innkeeper: warm, composed, observant, and unfailingly courteous. She greets guests with genuine hospitality, remembers their preferred drinks with unsettling accuracy, and works very hard to seem like nothing more dangerous than the owner of a lonely roadside tavern.
+Madam Sandra Mistic is the enigmatic proprietor of [[To the Eternal Lady]], a secluded inn currently hidden within the [[Forest of Thieves]]. To ordinary travelers, she appears to be an elegant tiefling innkeeper: warm, composed, observant, and unfailingly courteous. She greets guests with genuine hospitality, remembers their preferred drinks with unsettling accuracy, and works very hard to seem like nothing more dangerous than the owner of a lonely roadside tavern.
 
 Beneath that living disguise, however, Sandra is an ancient lich.
 
@@ -84,7 +84,7 @@ She respects careful questions, compassion, restraint, and people who treat her 
 
 ## The Tavern Rule
 
-Sandra's hospitality has limits. [[To the enteral Lady]] is her refuge, prison, and warded sanctuary. Violence inside it is not merely rude; it can damage the protections surrounding the artifact below.
+Sandra's hospitality has limits. [[To the Eternal Lady]] is her refuge, prison, and warded sanctuary. Violence inside it is not merely rude; it can damage the protections surrounding the artifact below.
 
 She does not murder patrons for spilled ale, raised voices, cheating at cards, or a desperate swing made in fear. She understands panic. She understands bad nights.
 
@@ -139,7 +139,7 @@ Example lines:
 - Learn why the luminous plants are spreading through the forest.
 - Discover what happened to her old friend.
 - Keep the artifact contained without revealing its full nature.
-- Maintain the illusion that [[To the enteral Lady]] is a normal, welcoming tavern for as long as possible.
+- Maintain the illusion that [[To the Eternal Lady]] is a normal, welcoming tavern for as long as possible.
 
 ### Long-Term Goals
 
@@ -184,7 +184,7 @@ Sandra's unnamed friend was investigating the unnatural plants near the northern
 
 ### The Inn
 
-[[To the enteral Lady]] is more than Sandra's business or home. It is a magical refuge, a prison, and part of the containment system surrounding the artifact. Damage to the inn may weaken the wards below it.
+[[To the Eternal Lady]] is more than Sandra's business or home. It is a magical refuge, a prison, and part of the containment system surrounding the artifact. Damage to the inn may weaken the wards below it.
 
 Sandra loves the inn in the way a prisoner may come to love the walls that also keep the monster out. She keeps it clean, warm, and welcoming because hospitality is one of the last mortal things she has refused to surrender.
 
@@ -215,6 +215,6 @@ If combat begins, Sandra prioritizes containment, separation, and disabling magi
 ## Related Notes
 
 - [[Prelude]]
-- [[To the enteral Lady]]
-- [[Forest of thieves]]
+- [[To the Eternal Lady]]
+- [[Forest of Thieves]]
 - [[The Mirrorgate]]

@@ -1,9 +1,9 @@
-# To the enteral Lady
+# To the Eternal Lady
 
 > *“Every lonely road eventually invents an inn. This one, regrettably, may have invented itself.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-**To the enteral Lady**, often called **the Eternal Lady Inn** in traveler rumors, is the secluded inn operated by [[Sandra Mistic]]. It currently stands in the [[Forest of thieves]], but calling it a local inn is misleading.
+**To the Eternal Lady**, often called **the Eternal Lady Inn** in travelers' tales, is the secluded inn operated by [[Sandra Mistic]]. It currently stands in the [[Forest of Thieves]], but calling it a local inn is misleading.
 
 The Eternal Lady is not truly stationary.
 
@@ -51,7 +51,7 @@ The inn should feel welcoming enough to lower suspicion, but precise enough to b
 - Patrons laugh and drink, but their conversations repeat.
 - The floor is clean despite the mud outside.
 - Sandra knows exactly when the party arrives.
-- Windows sometimes show tree-lines that do not match the forest outside the front door.
+- Windows sometimes show treelines that do not match the forest outside the front door.
 - Old travel scratches on the tables name roads, kingdoms, and worlds that no local has heard of.
 
 ## House Rule
@@ -72,4 +72,4 @@ If guests begin a destructive fight without cause and refuse to stop after clear
 
 ---
 
-Related: [[Prelude]], [[Sandra Mistic]], [[Forest of thieves]], [[The Mirrorgate]]
+Related: [[Prelude]], [[Sandra Mistic]], [[Forest of Thieves]], [[The Mirrorgate]]

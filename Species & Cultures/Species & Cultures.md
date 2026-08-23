@@ -15,7 +15,7 @@ Species and culture are not the same. Members of a single species may belong to 
 ## Peoples of Zerkalo
 
 - [[Humans]]
-- [[Elfs]]
+- [[Elves]]
 - [[Dwarves]]
 - [[Orcs]]
 

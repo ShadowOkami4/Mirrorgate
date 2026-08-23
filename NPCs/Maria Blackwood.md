@@ -16,7 +16,7 @@
 
 ## Court Role
 
-Maria is currently framed as part of the parental authority that Jacob and Vanessa quietly oppose. She may be a public face of the royal family, a political strategist, a queenly figure, or someone who understands that propaganda can be sharper than any blade.
+Maria is currently framed as one of the parents whose authority Jacob and Vanessa quietly oppose. She may be a public face of the royal family, a political strategist, a queenly figure, or someone who understands that propaganda can be sharper than any blade.
 
 ## Open Questions
 

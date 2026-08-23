@@ -1,5 +1,5 @@
 ---
-banner: z_Assets/Professor_Phineas _Phantomhive.png
+banner: z_Assets/Professor_Phineas_Phantomhive.png
 banner-x: 48
 banner-y: 8
 ---
@@ -33,7 +33,7 @@ The Phantomhive records currently name:
 
 The exact relation between these names requires further documentation.
 
-The first and second Phineas are known to have looked remarkably similar when Phineas I was the same apparent age that Phineas II is now. Whether this is simple inheritance, Mirrorgate recurrence, or something stranger remains unresolved.
+The first and second Phineas are known to have looked remarkably similar when Phineas I was at the same apparent age that Phineas II is now. Whether this is simple inheritance, Mirrorgate recurrence, or something stranger remains unresolved.
 
 ## Using the Professor
 

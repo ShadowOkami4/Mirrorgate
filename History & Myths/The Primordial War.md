@@ -19,7 +19,7 @@ Whether this is literal truth or poetic exaggeration remains debated.
 
 ## The God Who Ended It
 
-The war ended when one divinity, whose name is now either forgotten or deliberately hidden, brought the conflict to a close. The victory was not clean. The surviving legends insist that the god ended the war by destroying the warring Prime Gods—and themself with them.
+The war ended when one divinity, whose name is now either forgotten or deliberately hidden, brought the conflict to a close. The victory was not clean. The surviving legends insist that the god ended the war by destroying the warring Prime Gods—and themselves along with them.
 
 Their bodies vanished.
 

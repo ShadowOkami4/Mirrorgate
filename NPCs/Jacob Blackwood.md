@@ -10,7 +10,7 @@
 - Member of the [[Blackwood Bloodline]].
 - Connected to [[Lustro]].
 - Child of [[Lucien Blackwood]] and [[Maria Blackwood]] in current working records.
-- Does not like what his parents are doing.
+- Disapproves of his parents' actions.
 - Watched very carefully by the crown and royal household.
 - Exact title, age, and formal political position are not yet defined.
 

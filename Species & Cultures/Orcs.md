@@ -12,7 +12,7 @@ This entry is currently a placeholder for future cultural development.
 - clans, city communities, warbands, and settled families
 - honor traditions that differ sharply between regions
 - survival in borderlands, harsh terrain, or contested territories
-- relationships with humans, dwarves, elfs, and other peoples
+- relationships with humans, dwarves, elves, and other peoples
 
 ---
 

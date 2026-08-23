@@ -29,7 +29,7 @@ The Phantomhive name appears in several accounts that should not share a common 
 
 Professor Phineas, when asked directly, has described these theories as “deeply interesting, insufficiently proven, and personally inconvenient.”
 
-One of the strongest pieces of evidence is the resemblance between [[Phineas Phantomhive I]] and [[Professor Phineas Phantomhive II]]. When the first Phineas was the same apparent age as the second is now, the two reportedly looked remarkably alike. This may be family resemblance, planar recurrence, or a sign that the Phantomhive name is tied to a repeating pattern.
+One of the strongest pieces of evidence is the resemblance between [[Phineas Phantomhive I]] and [[Professor Phineas Phantomhive II]]. When Phineas I was at the same apparent age that Phineas II is now, the two reportedly looked remarkably alike. This may be family resemblance, planar recurrence, or a sign that the Phantomhive name is tied to a repeating pattern.
 
 The original Phineas came from an unknown world whose main religion centered on [[Aurora]], a genderless deity of life. This faith is not native to Zerkalo.
 

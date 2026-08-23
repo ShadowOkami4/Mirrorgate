@@ -28,7 +28,7 @@ This denial is not ignorance. The crown knows enough to be afraid.
 
 ## The Crown and the Blackwoods
 
-The Blackwoods stand close to the center of royal power. Current working records treat [[Lucien Blackwood]] and [[Maria Blackwood]] as the parental authority over [[Jacob Blackwood]] and [[Vanessa Blackwood]].
+The Blackwoods stand close to the center of royal power. Current working records identify [[Lucien Blackwood]] and [[Maria Blackwood]] as the parents of [[Jacob Blackwood]] and [[Vanessa Blackwood]].
 
 Lucien and Maria appear aligned with the crown's strict rule and its campaign of denial surrounding the Mirrorgate. Jacob and Vanessa do not approve of what their parents are doing, but both are watched carefully. Their doubts make them dangerous to the crown—and useful to anyone seeking cracks inside the royal family.
 

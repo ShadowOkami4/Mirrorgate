@@ -16,7 +16,7 @@
 
 ## Court Role
 
-Lucien is currently framed as part of the parental authority that Jacob and Vanessa quietly oppose. Whether he is ruler, prince, minister, consort, or another high-ranking royal figure remains to be defined, but his actions are important enough to place his children under careful watch.
+Lucien is currently framed as one of the parents whose authority Jacob and Vanessa quietly oppose. Whether he is a ruler, prince, minister, consort, or another high-ranking royal figure remains to be defined, but his actions are important enough to place his children under careful watch.
 
 ## Open Questions
 
