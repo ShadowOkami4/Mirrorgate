@@ -39,15 +39,35 @@ The complete collection is planned to contain **18 journeys**. These numbers des
 
 ### Shattered Hope — Main Campaign Framework
 
-**Progress: 1%**
+```text
+ 1%  ▏░░░░░░░░░░░░░░░░░░░  FOUNDATION
+```
 
 **Shattered Hope** is the main campaign of The Mirrored Realms. It is intended to connect the setting's kingdoms, factions, divine wounds, broken chronology, and the Mirrorgate into one long-form campaign. Its current foundation is documented in [The Shattered Hope Era](History%20%26%20Myths/The%20Shattered%20Hope%20Era.md).
 
+**Current work:** Building the campaign spine and defining the major story arcs.
+
+- [x] Establish the era, tone, and central campaign question
+- [ ] **Define the campaign spine and major arcs — in progress**
+- [ ] Assign factions, antagonists, and major locations to each arc
+- [ ] Design the adventure sequence, encounters, and rewards
+- [ ] Playtest, revise, and prepare the campaign framework for release
+
 ### The Pack in the Twilight — Short Adventure
 
-**Progress: 5%**
+```text
+ 5%  █░░░░░░░░░░░░░░░░░░░  ACTIVE DRAFT
+```
 
 **The Pack in the Twilight** is the first short adventure in active development. Its current material introduces the player characters, the Forest of Thieves, Sandra Mistic, and the first signs of a larger planar disturbance. Begin with the [Prelude](Stories/The%20Pack%20in%20the%20Twilight/Prelude.md).
+
+**Current work:** Expanding the existing prelude into a complete short-adventure outline.
+
+- [x] Draft the opening premise, forest journey, and meeting with Sandra
+- [ ] **Complete the adventure outline and chapter structure — in progress**
+- [ ] Add encounters, maps, creature statistics, and consequences
+- [ ] Add rewards, scaling, and Game Master guidance
+- [ ] Playtest, revise, and prepare the adventure for release
 
 Progress percentages are editorial estimates rather than release dates. They represent the amount of the intended finished work currently drafted, revised, and ready for playtesting.
 
