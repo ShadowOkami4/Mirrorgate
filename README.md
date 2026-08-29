@@ -1,56 +1,94 @@
-# The Mirrored Realms
+<div align="center">
+  <h1>The Mirrored Realms</h1>
+  <p><strong>An evolving campaign setting of living reflections, broken time, folded space, and divine scars.</strong></p>
+  <p>
+    <code>5.5e compatible</code> ·
+    <code>openly licensed</code> ·
+    <code>Obsidian vault</code> ·
+    <code>active development</code>
+  </p>
+  <p>
+    <a href="https://shadowokami.com/MirrorGate">Project website</a> ·
+    <a href="Entrance/Welcome.md">Enter the archive</a> ·
+    <a href="#release-roadmap">Release roadmap</a> ·
+    <a href="#contributing">Contributing</a> ·
+    <a href="LICENSE">License</a>
+  </p>
+</div>
 
-> An evolving, openly licensed campaign setting shaped by reflection, broken time, folded space, and possibility.
-
-[Project website](https://shadowokami.com/MirrorGate) · [Enter the Library of Kagami](Entrance/Welcome.md) · [License](LICENSE) · [Attribution and notices](NOTICE.md)
-
-## Overview
-
-**The Mirrored Realms** is both the name of this project and its 5.5e-compatible campaign setting. It brings together original lore, homebrew rules, magic items, factions, locations, and narrative hooks intended to support long-running campaigns, short adventures, and one-shots.
-
-The setting places special emphasis on time, space, mirrors, and the lingering scars of an ancient divine war. Roads may lead to the wrong century, ruins may remember battles that history forgot, and reflections may open toward places no map can safely contain.
-
-The setting is currently in an early stage of development. Its history is still being written, its regions are still taking shape, and its mechanics remain subject to revision. Some material may therefore be incomplete, experimental, or not yet fully balanced.
-
-Game Masters are encouraged to use this work as a foundation: adapt what serves your table, expand upon its ideas, and make the realm your own.
-
-## Project Status
+---
 
 > [!IMPORTANT]
-> **Active development:** The Mirrored Realms is currently a developing setting rather than a complete, ready-to-run campaign.
+> **The Mirrored Realms is in early development.** The setting is growing, but it is not yet a complete ready-to-run campaign. Lore, mechanics, names, and planned releases may change during writing and playtesting.
 
-Current work includes:
+## Welcome to the Mirrored Realms
 
-- Establishing the setting's core lore and history
-- Developing factions, locations, and notable characters
-- Designing homebrew rules, creatures, and magic items
-- Creating playable adventures and campaign frameworks
-- Organizing the setting into an interconnected Obsidian vault
+**The Mirrored Realms** is the name of both this project and its 5.5e-compatible campaign setting. Its central world, **Zerkalo**, still bears the wounds of an ancient divine war. Roads can arrive in the wrong century, ruins remember histories that never happened, and mirrors sometimes open toward places no map can contain.
 
-## Adventure Roadmap
+The project combines setting lore, characters, factions, creatures, homebrew mechanics, and playable adventures in an interconnected archive. It is designed to support individual one-shots, short multishot adventures, and long-form campaigns without requiring every table to follow the same version of history.
 
-The complete collection is planned to contain **18 journeys**. Titles are announced only after a concept enters development, so unannounced slots remain intentionally unnamed.
+| At a glance | |
+| --- | --- |
+| **World** | Zerkalo |
+| **Central mystery** | The Mirrorgate and the Scars of the Primordial War |
+| **Main campaign** | Shattered Hope |
+| **Rules foundation** | 5.5e-compatible material using SRD 5.2.1 |
+| **Project format** | Interconnected Obsidian vault |
+| **License** | CC BY 4.0 for original project material |
+
+## Explore the Archive
+
+The vault is meant to be explored through connected records rather than read strictly from beginning to end.
+
+| Subject | Starting record |
+| --- | --- |
+| Entrance | [Library of Kagami](Entrance/Welcome.md) |
+| World | [Zerkalo](Zerkalo.md) |
+| Cosmology | [The Mirrorgate](Cosmology/The%20Mirrorgate.md) |
+| History | [History & Myths](History%20%26%20Myths/History%20%26%20Myths.md) |
+| Geography | [Geography & Politics](Geography%20%26%20Politics/Geography%20%26%20Politics.md) |
+| Peoples | [Species & Cultures](Species%20%26%20Cultures/Species%20%26%20Cultures.md) |
+| Powers | [Religion & Deities](Religion%20%26%20Deities/Religion%20%26%20Deities.md) · [Factions & Organizations](Factions%20%26%20Organizations/Factions%20%26%20Organizations.md) |
+| Characters | [Lineages](Lineages/Royal%20Bloodlines%20of%20Zerkalo.md) · [NPCs](NPCs/NPCs.md) |
+| Encounters | [Creatures](Creatures/Shard%20Monsters/Shard%20Monsters.md) · [Adventures & Fiction](Adventures%20%26%20Fiction/Adventures%20%26%20Fiction.md) |
+
+### Open the Project in Obsidian
+
+1. Clone or download the repository.
+
+   ```shell
+   git clone https://github.com/ShadowOkami4/Mirrorgate.git
+   ```
+
+2. Open the repository folder as a vault in [Obsidian](https://obsidian.md/).
+3. Open [Entrance/Welcome.md](Entrance/Welcome.md) and follow whichever record catches your attention.
+
+> [!NOTE]
+> Internal links such as `[[The Mirrorgate]]` are written for Obsidian. The navigation links in this README also work directly on GitHub.
+
+## Release Roadmap
+
+The planned collection contains **18 journeys**: ten one-shots, five short adventures or multishots, and three campaign frameworks. A title being announced does not mean active development has begun.
 
 | Collection | Planned | Announced | In development |
 | --- | ---: | ---: | ---: |
-| One-shots | 10 | 0 | 0 |
-| Short adventures / multishots | 5 | 1 | 1 |
+| One-shots | 10 | 2 | 0 |
+| Short adventures / multishots | 5 | 3 | 1 |
 | Campaigns / campaign frameworks | 3 | 1 | 1 |
+| **Total** | **18** | **6** | **2** |
 
 ### Current Production
 
-| Project | Format | Progress | Production state | Current work |
-| --- | --- | ---: | --- | --- |
-| [Shattered Hope](History%20%26%20Myths/The%20Shattered%20Hope%20Era.md) | Main campaign | **1%** | `FOUNDATION` | Define the campaign spine and major arcs |
-| [The Pack in the Twilight](Stories/The%20Pack%20in%20the%20Twilight/Prelude.md) | Short adventure / multishot | **5%** | `ACTIVE DRAFT` | Expand the prelude into a complete adventure outline |
-
-> [!NOTE]
-> Progress values are editorial estimates, not release dates. They measure how much of the intended finished work has been drafted, revised, and prepared for playtesting.
+| [Shattered Hope](History%20%26%20Myths/The%20Shattered%20Hope%20Era.md) | [The Pack in the Twilight](Stories/The%20Pack%20in%20the%20Twilight/Prelude.md) |
+| --- | --- |
+| **Main campaign · 1%** | **Short adventure / multishot · 5%** |
+| `FOUNDATION` | `ACTIVE DRAFT` |
+| Defining the campaign spine and its major arcs | Expanding the prelude into a complete adventure outline |
 
 <details>
-<summary><strong>Shattered Hope milestones</strong> — main campaign at 1%</summary>
+<summary><strong>View current development milestones</strong></summary>
 
-**Shattered Hope** is the central campaign of The Mirrored Realms. It will connect the setting's kingdoms, factions, divine wounds, broken chronology, and the Mirrorgate into one long-form story.
+#### Shattered Hope
 
 - [x] Establish the era, tone, and central campaign question
 - [ ] **Define the campaign spine and major arcs — current work**
@@ -58,12 +96,7 @@ The complete collection is planned to contain **18 journeys**. Titles are announ
 - [ ] Design the adventure sequence, encounters, and rewards
 - [ ] Playtest, revise, and prepare the campaign framework for release
 
-</details>
-
-<details>
-<summary><strong>The Pack in the Twilight milestones</strong> — multishot at 5%</summary>
-
-**The Pack in the Twilight** is the first short adventure in active development. Its current material introduces the characters, the Forest of Thieves, Sandra Mistic, and the first signs of a larger planar disturbance.
+#### The Pack in the Twilight
 
 - [x] Draft the opening premise, forest journey, and meeting with Sandra
 - [ ] **Complete the adventure outline and chapter structure — current work**
@@ -73,88 +106,103 @@ The complete collection is planned to contain **18 journeys**. Titles are announ
 
 </details>
 
-### Planned Release Catalogue
-
-#### One-shots — 10 planned
-
-| ID | Title | State |
-| --- | --- | --- |
-| OS-01 | *Unannounced* | `PLANNED` |
-| OS-02 | *Unannounced* | `PLANNED` |
-| OS-03 | *Unannounced* | `PLANNED` |
-| OS-04 | *Unannounced* | `PLANNED` |
-| OS-05 | *Unannounced* | `PLANNED` |
-| OS-06 | *Unannounced* | `PLANNED` |
-| OS-07 | *Unannounced* | `PLANNED` |
-| OS-08 | *Unannounced* | `PLANNED` |
-| OS-09 | *Unannounced* | `PLANNED` |
-| OS-10 | *Unannounced* | `PLANNED` |
-
-#### Short adventures / multishots — 5 planned
-
-| ID | Title | State |
-| --- | --- | --- |
-| SA-01 | [The Pack in the Twilight](Stories/The%20Pack%20in%20the%20Twilight/Prelude.md) | `ACTIVE DRAFT` · **5%** |
-| SA-02 | *Unannounced* | `PLANNED` |
-| SA-03 | *Unannounced* | `PLANNED` |
-| SA-04 | *Unannounced* | `PLANNED` |
-| SA-05 | *Unannounced* | `PLANNED` |
-
-#### Campaigns / campaign frameworks — 3 planned
-
-| ID | Title | State |
-| --- | --- | --- |
-| CF-01 | [Shattered Hope](History%20%26%20Myths/The%20Shattered%20Hope%20Era.md) — main campaign | `FOUNDATION` · **1%** |
-| CF-02 | *Unannounced* | `PLANNED` |
-| CF-03 | *Unannounced* | `PLANNED` |
-
-## Exploring the Setting
-
-This project is authored and maintained in [Obsidian](https://obsidian.md/). It is intended to be explored as a connected body of worldbuilding rather than as a linear document.
-
-### Getting Started
-
-1. Clone or download this repository:
-
-   ```shell
-   git clone https://github.com/ShadowOkami4/Mirrorgate.git
-   ```
-
-2. Open the repository folder as a vault in Obsidian.
-3. Open [Entrance/Welcome.md](Entrance/Welcome.md) to enter the **Library of Kagami** and begin exploring The Mirrored Realms.
-
 > [!NOTE]
-> Wiki-links such as `[[The Mirrorgate]]` are designed for Obsidian. Normal Markdown links in this README also work directly on GitHub.
+> Progress percentages are editorial estimates, not release dates. They describe how much of the intended finished work has been drafted, revised, and prepared for playtesting.
 
-## Development Philosophy
+### Status Key
 
-The Mirrored Realms is being built iteratively. Early concepts may change as the world's themes, mechanics, and narrative structure become more cohesive. The goal is to develop these scattered chronicles into a flexible and atmospheric setting that Game Masters can readily adapt for their own tables.
+| State | Meaning |
+| --- | --- |
+| `UNANNOUNCED` | A reserved roadmap slot without a public title |
+| `ANNOUNCED` | The title and premise are public, but active development has not begun |
+| `FOUNDATION` | Core structure and campaign architecture are being established |
+| `ACTIVE DRAFT` | Playable material is currently being written |
+
+### One-shots — 10 planned
+
+| ID | Title | State | Notes |
+| --- | --- | --- | --- |
+| OS-01 | **The Dark Alley** | `ANNOUNCED` | A complete rewrite of an older original one-shot, rebuilt to fit The Mirrored Realms |
+| OS-02 | **Mirror and Scars** | `ANNOUNCED` | An episodic series whose chapters can each be played independently; the complete series occupies one roadmap slot |
+| OS-03 | — | `UNANNOUNCED` | |
+| OS-04 | — | `UNANNOUNCED` | |
+| OS-05 | — | `UNANNOUNCED` | |
+| OS-06 | — | `UNANNOUNCED` | |
+| OS-07 | — | `UNANNOUNCED` | |
+| OS-08 | — | `UNANNOUNCED` | |
+| OS-09 | — | `UNANNOUNCED` | |
+| OS-10 | — | `UNANNOUNCED` | |
+
+### Short Adventures / Multishots — 5 planned
+
+| ID | Title | State | Notes |
+| --- | --- | --- | --- |
+| SA-01 | [**The Pack in the Twilight**](Stories/The%20Pack%20in%20the%20Twilight/Prelude.md) | `ACTIVE DRAFT` · **5%** | The first short adventure in active development |
+| SA-02 | **Confronting Yourself** | `ANNOUNCED` | Development has not begun |
+| SA-03 | **The Mysteries of the Phantomhives** | `ANNOUNCED` | Development has not begun |
+| SA-04 | — | `UNANNOUNCED` | |
+| SA-05 | — | `UNANNOUNCED` | |
+
+### Campaigns / Campaign Frameworks — 3 planned
+
+| ID | Title | State | Notes |
+| --- | --- | --- | --- |
+| CF-01 | [**Shattered Hope**](History%20%26%20Myths/The%20Shattered%20Hope%20Era.md) | `FOUNDATION` · **1%** | The main campaign of The Mirrored Realms |
+| CF-02 | — | `UNANNOUNCED` | |
+| CF-03 | — | `UNANNOUNCED` | |
+
+## Development Principles
+
+- **Playability before volume:** A smaller finished adventure is more valuable than many disconnected drafts.
+- **Mystery with usable answers:** Players may encounter uncertainty, but Game Masters should receive enough truth to run the setting confidently.
+- **Connected, not linear:** Records should reward curiosity and cross-reference related lore without demanding a fixed reading order.
+- **Open by design:** Tables may reuse, alter, publish, and build upon original project material under CC BY 4.0.
+- **Revision is expected:** Early concepts may change when stronger ideas emerge through writing, feedback, and playtesting.
 
 ## Contributing
 
-Ideas, corrections, playtest reports, writing, and original artwork are welcome through GitHub issues and pull requests. By contributing original material to this repository, contributors agree to publish that contribution under the project's [CC BY 4.0 license](LICENSE). Contributors retain credit for their work.
+Corrections, playtest reports, writing, mechanics, and original artwork are welcome through [GitHub Issues](https://github.com/ShadowOkami4/Mirrorgate/issues) and pull requests.
 
-Please contribute only material that you created or have the right to release under CC BY 4.0. Do not submit protected setting material, artwork, or text from other games or fictional universes.
+By contributing original material to this repository, you agree to make that contribution available under the project's [CC BY 4.0 license](LICENSE). You retain authorship and receive credit for accepted work. Please submit only material you created or have the right to release under those terms.
+
+Do not submit protected text, artwork, characters, settings, or other material from games and fictional universes that you do not control.
 
 ## Artwork and Artist Contributions
 
 > [!NOTE]
-> AI-generated images are currently used as visual aids, references, and temporary representations while the setting is being developed. They help communicate characters, locations, creatures, and atmosphere; they are not intended to discourage or replace contributions from artists.
+> AI-generated images are currently used as visual aids, concept references, and temporary representations during development. They help communicate characters, locations, creatures, and atmosphere. They are not intended to discourage or replace contributions from artists.
 
-Artists are warmly invited to propose original artwork for The Mirrored Realms. This may include character art, creatures, locations, maps, symbols, items, or other visual interpretations of the setting. Accepted artwork will identify and credit its artist wherever the work appears.
+Artists are invited to propose original character art, creatures, locations, maps, symbols, items, or other visual interpretations of The Mirrored Realms. Suitable original artwork may replace temporary visual references over time. Every accepted work will identify and credit its artist wherever practical.
 
-Artists may contribute work voluntarily or propose a paid commission. **Requests for payment are welcome, but payment cannot be promised.** Budget, scope, schedule, attribution, and usage rights must be agreed upon before commissioned work begins. Submitting an idea or finished artwork does not by itself create a payment obligation.
+### Volunteer Art and Paid Proposals
 
-Artwork intended for inclusion in this open repository must be material the artist has the right to share and must be releasable under [CC BY 4.0](LICENSE). A paid commission does not remove the artist's right to be credited. No artist should begin paid work on the assumption of compensation without a separate written agreement with the project owner.
+Artists may offer work voluntarily or propose a paid commission. **Requests for payment are welcome, but payment cannot be promised.** Available budget, project needs, scope, schedule, attribution, delivery files, and usage rights must all be agreed upon before commissioned work begins.
 
-To propose artwork or a commission, open a GitHub issue describing the subject, intended scope, portfolio or examples, preferred credit, and whether payment is being requested. Please do not submit finished unsolicited work that cannot be released under the project's license.
+An artwork suggestion, portfolio submission, or unsolicited finished piece does not create a payment obligation. Artists should not begin work expecting payment until a separate written agreement has been accepted by both the artist and the project owner.
 
-## License
+### Credit and Open Licensing
 
-Except where a file explicitly states otherwise, original material created for **The Mirrored Realms** is licensed under the [Creative Commons Attribution 4.0 International License](LICENSE). You may copy, modify, redistribute, publish, and use it commercially.
+Artwork included in this open repository must be original material the artist has the right to share and must be releasable under [CC BY 4.0](LICENSE). This allows the setting and its artwork to be reused and adapted while preserving attribution. Payment for a commission does not remove the artist's right to be credited.
 
-Attribution should identify **The Mirrored Realms** and link to either the [project website](https://shadowokami.com/MirrorGate) or the [GitHub repository](https://github.com/ShadowOkami4/Mirrorgate). See [NOTICE.md](NOTICE.md) for a ready-to-use attribution statement, the required SRD 5.2.1 notice, and exclusions for third-party software.
+To propose artwork, open an [artwork proposal issue](https://github.com/ShadowOkami4/Mirrorgate/issues) containing:
+
+- the subject or part of the setting you want to illustrate;
+- a short description of the proposed work;
+- a portfolio or relevant examples, if available;
+- your preferred artist credit and links;
+- whether the proposal is voluntary or requests payment; and
+- any schedule, format, or accessibility considerations.
+
+Please do not submit finished unsolicited work that cannot be released under the project's license.
+
+## License and Attribution
+
+Except where explicitly stated otherwise, original material created for **The Mirrored Realms** is licensed under the [Creative Commons Attribution 4.0 International License](LICENSE). It may be copied, adapted, redistributed, published, and used commercially with appropriate credit.
+
+A simple attribution can identify **The Mirrored Realms** and link to either the [project website](https://shadowokami.com/MirrorGate) or this repository. See [NOTICE.md](NOTICE.md) for a ready-to-use attribution statement, the required SRD 5.2.1 notice, and third-party exclusions.
 
 ---
 
-*The realm is unfinished. Its possibilities are not.*
+<div align="center">
+  <p><em>The realm is unfinished. Its possibilities are not.</em></p>
+</div>
