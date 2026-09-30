@@ -38,21 +38,21 @@ The project combines setting lore, characters, factions, creatures, homebrew mec
 
 ## Explore the Archive
 
-The vault is meant to be explored through connected records rather than read strictly from beginning to end. Its folders provide broad project layers, while hub notes, properties, backlinks, and graph view reveal the relationships between people, places, lore, and releases. The [Vault Guide](00%20Project/Vault%20Guide.md) explains the shared conventions.
+The vault is meant to be explored through connected records rather than read strictly from beginning to end. Its folders provide broad project layers, while hub notes, properties, backlinks, and graph view reveal the relationships between people, places, lore, and releases. The same records can also be read in order as books—a setting guide, a player's companion, a Game Master's codex, a bestiary, and one book per adventure—from the [Bookshelf](04%20Books/Bookshelf.md). The [Vault Guide](90%20Scriptorium/Vault%20Guide.md) explains the shared conventions.
 
 | Subject | Starting record |
 | --- | --- |
-| Entrance | [Library of Kagami](00%20Project/Welcome.md) |
-| Vault navigation | [Vault Guide](00%20Project/Vault%20Guide.md) · [Roadmap](00%20Project/Roadmap.md) |
-| World | [Zerkalo](01%20Setting/Zerkalo.md) |
-| Cosmology | [The Mirrorgate](01%20Setting/Cosmology/The%20Mirrorgate.md) |
-| History | [History & Myths](01%20Setting/History%20%26%20Myths/History%20%26%20Myths.md) |
-| Geography | [Geography & Politics](01%20Setting/Geography%20%26%20Politics/Geography%20%26%20Politics.md) |
-| Peoples | [Species & Cultures](01%20Setting/Species%20%26%20Cultures/Species%20%26%20Cultures.md) |
-| Powers | [People & Powers](02%20People%20%26%20Powers/People%20%26%20Powers.md) |
-| Game material | [Game Material](03%20Game%20Material/Game%20Material.md) |
-| Adventures | [Adventures & Fiction](04%20Adventures/Adventures%20%26%20Fiction.md) |
-| Player / GM entry | [Player Guide](05%20Player%20Guide/Player%20Guide.md) · [GM Reference](06%20GM%20Reference/GM%20Reference.md) |
+| Entrance | [Library of Kagami](00%20Library%20of%20Kagami/Welcome.md) |
+| Vault navigation | [Vault Guide](90%20Scriptorium/Vault%20Guide.md) · [Roadmap](90%20Scriptorium/Roadmap.md) |
+| World | [Zerkalo](01%20Encyclopedia/Zerkalo.md) |
+| Cosmology | [The Mirrorgate](01%20Encyclopedia/Cosmology/The%20Mirrorgate.md) |
+| History | [History & Myths](01%20Encyclopedia/History%20%26%20Myths/History%20%26%20Myths.md) |
+| Geography | [Geography & Politics](01%20Encyclopedia/Geography%20%26%20Politics/Geography%20%26%20Politics.md) |
+| Peoples | [Species & Cultures](01%20Encyclopedia/Species%20%26%20Cultures/Species%20%26%20Cultures.md) |
+| Powers | [People & Powers](01%20Encyclopedia/People%20%26%20Powers/People%20%26%20Powers.md) |
+| Rules | [Rules Compendium](02%20Rules%20Compendium/Rules%20Compendium.md) |
+| Adventures | [Adventures & Fiction](03%20Adventures/Adventures%20%26%20Fiction.md) |
+| Books | [Bookshelf](04%20Books/Bookshelf.md) · [Player's Companion](04%20Books/Player's%20Companion.md) · [Game Master's Codex](04%20Books/Game%20Master's%20Codex.md) |
 
 ### Open the Project in Obsidian
 
@@ -63,7 +63,7 @@ The vault is meant to be explored through connected records rather than read str
    ```
 
 2. Open the repository folder as a vault in [Obsidian](https://obsidian.md/).
-3. Open [00 Project/Welcome.md](00%20Project/Welcome.md) and follow whichever record catches your attention.
+3. Open [00 Library of Kagami/Welcome.md](00%20Library%20of%20Kagami/Welcome.md) and follow whichever record catches your attention.
 
 > [!NOTE]
 > Internal links such as `[[The Mirrorgate]]` are written for Obsidian. The navigation links in this README also work directly on GitHub.
@@ -81,7 +81,7 @@ The planned collection contains **18 journeys**: ten one-shots, five short adven
 
 ### Current Production
 
-| [Shattered Hope](04%20Adventures/Campaigns/CF-01%20Shattered%20Hope/Shattered%20Hope.md) | [The Pack in the Twilight](04%20Adventures/Multishots/SA-01%20The%20Pack%20in%20the%20Twilight/The%20Pack%20in%20the%20Twilight.md) |
+| [Shattered Hope](03%20Adventures/Campaigns/CF-01%20Shattered%20Hope/Shattered%20Hope.md) | [The Pack in the Twilight](03%20Adventures/Multishots/SA-01%20The%20Pack%20in%20the%20Twilight/The%20Pack%20in%20the%20Twilight.md) |
 | --- | --- |
 | **Main campaign · 1%** | **Short adventure / multishot · 5%** |
 | `FOUNDATION` | `ACTIVE DRAFT` |
@@ -124,8 +124,8 @@ The planned collection contains **18 journeys**: ten one-shots, five short adven
 
 | ID | Title | State | Notes |
 | --- | --- | --- | --- |
-| OS-01 | [**The Dark Alley**](04%20Adventures/One-Shots/OS-01%20The%20Dark%20Alley/The%20Dark%20Alley.md) | `ANNOUNCED` | A complete rewrite of an older original one-shot, rebuilt to fit The Mirrored Realms |
-| OS-02 | [**Mirror and Scars**](04%20Adventures/One-Shots/OS-02%20Mirror%20and%20Scars/Mirror%20and%20Scars.md) | `ANNOUNCED` | An episodic series whose chapters can each be played independently; the complete series occupies one roadmap slot |
+| OS-01 | [**The Dark Alley**](03%20Adventures/One-Shots/OS-01%20The%20Dark%20Alley/The%20Dark%20Alley.md) | `ANNOUNCED` | A complete rewrite of an older original one-shot, rebuilt to fit The Mirrored Realms |
+| OS-02 | [**Mirror and Scars**](03%20Adventures/One-Shots/OS-02%20Mirror%20and%20Scars/Mirror%20and%20Scars.md) | `ANNOUNCED` | An episodic series whose chapters can each be played independently; the complete series occupies one roadmap slot |
 | OS-03 | — | `UNANNOUNCED` | |
 | OS-04 | — | `UNANNOUNCED` | |
 | OS-05 | — | `UNANNOUNCED` | |
@@ -137,19 +137,19 @@ The planned collection contains **18 journeys**: ten one-shots, five short adven
 
 ### Short Adventures / Multishots — 5 planned
 
-| ID | Title | State | Notes |
-| --- | --- | --- | --- |
-| SA-01 | [**The Pack in the Twilight**](04%20Adventures/Multishots/SA-01%20The%20Pack%20in%20the%20Twilight/The%20Pack%20in%20the%20Twilight.md) | `ACTIVE DRAFT` · **5%** | The first short adventure in active development |
-| SA-02 | [**Confronting Yourself**](04%20Adventures/Multishots/SA-02%20Confronting%20Yourself/Confronting%20Yourself.md) | `ANNOUNCED` | Development has not begun |
-| SA-03 | [**The Mysteries of the Phantomhives**](04%20Adventures/Multishots/SA-03%20The%20Mysteries%20of%20the%20Phantomhives/The%20Mysteries%20of%20the%20Phantomhives.md) | `ANNOUNCED` | Development has not begun |
-| SA-04 | — | `UNANNOUNCED` | |
-| SA-05 | — | `UNANNOUNCED` | |
+| ID    | Title                                                                                                                                                              | State                   | Notes                                           |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- | ----------------------------------------------- |
+| SA-01 | [**The Pack in the Twilight**](03%20Adventures/Multishots/SA-01%20The%20Pack%20in%20the%20Twilight/The%20Pack%20in%20the%20Twilight.md)                            | `ACTIVE DRAFT` · **5%** | The first short adventure in active development |
+| SA-02 | [**Confronting Yourself**](03%20Adventures/Multishots/SA-02%20Confronting%20Yourself/Confronting%20Yourself.md)                                                    | `ANNOUNCED`             | Development has not begun                       |
+| SA-03 | [**The Mysteries of the Phantomhives**](03%20Adventures/Multishots/SA-03%20The%20Mysteries%20of%20the%20Phantomhives/The%20Mysteries%20of%20the%20Phantomhives.md) | `ANNOUNCED`             | Development has not begun                       |
+| SA-04 | —                                                                                                                                                                  | `UNANNOUNCED`           |                                                 |
+| SA-05 | —                                                                                                                                                                  | `UNANNOUNCED`           |                                                 |
 
 ### Campaigns / Campaign Frameworks — 3 planned
 
 | ID | Title | State | Notes |
 | --- | --- | --- | --- |
-| CF-01 | [**Shattered Hope**](04%20Adventures/Campaigns/CF-01%20Shattered%20Hope/Shattered%20Hope.md) | `FOUNDATION` · **1%** | The main campaign of The Mirrored Realms |
+| CF-01 | [**Shattered Hope**](03%20Adventures/Campaigns/CF-01%20Shattered%20Hope/Shattered%20Hope.md) | `FOUNDATION` · **1%** | The main campaign of The Mirrored Realms |
 | CF-02 | — | `UNANNOUNCED` | |
 | CF-03 | — | `UNANNOUNCED` | |
 
@@ -172,7 +172,7 @@ Do not submit protected text, artwork, characters, settings, or other material f
 ## Artwork and Artist Contributions
 
 > [!NOTE]
-> AI-generated images are currently used as visual aids, concept references, and temporary representations during development. They help communicate characters, locations, creatures, and atmosphere. They are not intended to discourage or replace contributions from artists. The vault's [Asset Register](z_Assets/Asset%20Register.md) records their current status.
+> AI-generated images are currently used as visual aids, concept references, and temporary representations during development. They help communicate characters, locations, creatures, and atmosphere. They are not intended to discourage or replace contributions from artists. The vault's [Asset Register](90%20Scriptorium/Asset%20Register.md) records their current status.
 
 Artists are invited to propose original character art, creatures, locations, maps, symbols, items, or other visual interpretations of The Mirrored Realms. Suitable original artwork may replace temporary visual references over time. Every accepted work will identify and credit its artist wherever practical.
 

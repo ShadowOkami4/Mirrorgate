@@ -1,0 +1,7 @@
+/* The Mirrored Realms — shared callouts */
+
+/* GM-only material inside shared entries: > [!gm] or > [!gm]- (collapsed) */
+.callout[data-callout="gm"] {
+  --callout-color: 158, 42, 43;
+  --callout-icon: lucide-eye-off;
+}

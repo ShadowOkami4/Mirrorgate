@@ -3,7 +3,7 @@
   "showInlineTitle": false,
   "spellcheck": false,
   "pdfExportSettings": {
-    "pageSize": "Letter",
+    "pageSize": "Tabloid",
     "landscape": false,
     "margin": "0",
     "downscalePercent": 100
@@ -11,8 +11,9 @@
   "promptDelete": false,
   "attachmentFolderPath": "z_Assets",
   "alwaysUpdateLinks": true,
+  "propertiesInDocument": "hidden",
   "userIgnoreFilters": [
-    "00 Project/Templates/",
+    "90 Scriptorium/Templates/",
     "99 Archive/",
     "README.md",
     "NOTICE.md"
