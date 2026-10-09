@@ -17,7 +17,7 @@ This book collects the player-safe entries of the library in reading order. GM-o
 
 ### Part I — The World
 
-1. [[Zerkalo]]
+1. [[Kagameru]]
 2. [[The Mirrorgate]]
 3. [[Life in the Mirrorgate]]
 
@@ -31,7 +31,7 @@ This book collects the player-safe entries of the library in reading order. GM-o
 ### Part III — Atlas
 
 8. [[Geography & Politics]]
-9. [[Continents of Zerkalo]] — [[Specula]], [[Drychwen]], [[Scáthan]], [[Veidra]], [[Skuggsjá]], [[Tezcatl]]
+9. [[Continents of Kagameru]] — [[Specula]], [[Drychwen]], [[Scáthan]], [[Veidra]], [[Skuggsjá]], [[Tezcatl]]
 10. [[Lustro]] and its capital, [[Ogledal]]
 11. [[Hansha]] and [[Utsushi]]
 12. [[Forest of Thieves]]
@@ -55,7 +55,7 @@ This book collects the player-safe entries of the library in reading order. GM-o
 - [[Pronunciation Guide]]
 
 > [!note] Planned
-> Player-safe entries for the royal houses and factions of Zerkalo. Their current records are GM-facing and appear in the [[Game Master's Codex]].
+> Player-safe entries for the royal houses and factions of Kagameru. Their current records are GM-facing and appear in the [[Game Master's Codex]].
 
 ---
 

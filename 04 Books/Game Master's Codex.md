@@ -28,14 +28,15 @@ The setting is in early development. Review each release page before play; annou
 ### Part III — Powers
 
 7. [[People & Powers]]
-8. [[Royal Bloodlines of Zerkalo]] — [[Blackwood Bloodline]], [[Phantomhive Bloodline]]
+8. [[Royal Bloodlines of Kagameru]] — [[Blackwood Bloodline]], [[Phantomhive Bloodline]]
 9. [[Factions & Organizations]] — [[The Unsilvered]], [[Lustral Office]]
 10. [[NPCs]]
 
 ### Part IV — Adventures
 
 11. [[Adventures & Fiction]]
-12. [[Roadmap]]
+12. [[Atlas VTT Guide]] — running sessions as a virtual tabletop
+13. [[Roadmap]]
 
 ### Appendix
 

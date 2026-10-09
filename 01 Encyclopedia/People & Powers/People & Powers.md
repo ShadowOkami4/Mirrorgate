@@ -7,12 +7,12 @@ parent: "[[Welcome]]"
 ---
 # People & Powers
 
-This hub gathers the people, bloodlines, and organizations that shape [[Zerkalo]].
+This hub gathers the people, bloodlines, and organizations that shape [[Kagameru]].
 
 ## Browse
 
 - [[Factions & Organizations]]
-- [[Royal Bloodlines of Zerkalo]]
+- [[Royal Bloodlines of Kagameru]]
 - [[NPCs]]
 
 ## Useful Connections

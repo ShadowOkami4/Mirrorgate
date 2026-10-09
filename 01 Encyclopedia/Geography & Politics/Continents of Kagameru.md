@@ -5,12 +5,12 @@ audience: shared
 canon: current
 parent: "[[Geography & Politics]]"
 ---
-# Continents of Zerkalo
+# Continents of Kagameru
 
 > *"One must be careful with old maps. They are often correct about mountains and terribly wrong about everything important."*  
 > —[[Professor Phineas Phantomhive II]]
 
-The surviving atlas fragments of [[Zerkalo]] name six great landmasses. Scholars have long noticed something curious about these names: in the oldest tongues of the world, every one of them means *mirror*. Whether the first cartographers were poets, pessimists, or simply well informed remains a matter of debate.
+The surviving atlas fragments of [[Kagameru]] name six great landmasses. Scholars have long noticed something curious about these names: in the oldest tongues of the world, every one of them means *mirror*. Whether the first cartographers were poets, pessimists, or simply well informed remains a matter of debate.
 
 | Continent | Pronunciation | Character | Name meaning |
 | --- | --- | --- | --- |
@@ -36,4 +36,4 @@ Even incomplete records show recurring causes of conflict:
 
 ---
 
-Related: [[Geography & Politics]], [[Scars of the Primordial War]], [[Royal Bloodlines of Zerkalo]], [[Pronunciation Guide]]
+Related: [[Geography & Politics]], [[Scars of the Primordial War]], [[Royal Bloodlines of Kagameru]], [[Pronunciation Guide]]

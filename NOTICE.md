@@ -19,3 +19,5 @@ The Mirrored Realms is designed to be **compatible with fifth edition** using th
 ## Third-Party Software
 
 Files supplied by Obsidian plugins, themes, or other third-party tools are not authored by The Mirrored Realms contributors and are not relicensed under the project license. Their original licenses and copyright notices continue to apply.
+
+This includes the [Atlas VTT](https://github.com/ByteMirror/atlas-vtt) plugin by Fabian Urbanek (ByteMirror), which is licensed under the GNU Affero General Public License, and any artwork it supplies, such as its starter tokens.

@@ -3,7 +3,7 @@ type: cosmology
 status: draft
 audience: shared
 canon: current
-parent: "[[Zerkalo]]"
+parent: "[[Kagameru]]"
 aliases:
   - Mirrorgate
 ---
@@ -39,7 +39,7 @@ How faithfully a shard resembles its original depends on **mirror memory**—how
 
 Every reflected place is also *reversed*. Writing runs backward, familiar streets turn the wrong way, and doors open on the wrong side. Experienced travelers learn to read signs in a mirror—or carry one.
 
-Not every shard reflects [[Zerkalo]]. The Mirrorgate touches other worlds too, and some shards show cities, skies, and landscapes that no Zerkalo map records.
+Not every shard reflects [[Kagameru]]. The Mirrorgate touches other worlds too, and some shards show cities, skies, and landscapes that no Kagameru map records.
 
 ## Time Behind the Glass
 
@@ -105,7 +105,7 @@ Whether this recurrence is coincidence, curse, bloodline anomaly, or deliberate 
 > | 8 | A lair of [[Shardkin]] gathered around a broken mirror |
 
 > [!gm]- Known Place Within the Mirrorgate (SA-01 spoiler)
-> The [[Sanctum of the Flower in the Mirror]] is a ruined temple caught within the Mirrorgate. It is the interstitial counterpart of the [[Temple of the Moon in Water]] in the [[Forest of Thieves]]: two manifestations of one location divided between Zerkalo and the plane between time and space. Unlike an ordinary reflection, the sanctum is not a copy—it is the missing half of the temple.
+> The [[Sanctum of the Flower in the Mirror]] is a ruined temple caught within the Mirrorgate. It is the interstitial counterpart of the [[Temple of the Moon in Water]] in the [[Forest of Thieves]]: two manifestations of one location divided between Kagameru and the plane between time and space. Unlike an ordinary reflection, the sanctum is not a copy—it is the missing half of the temple.
 
 > [!gm]- Adventure Use
 > - A mirror in a noble estate opens only during thunderstorms.

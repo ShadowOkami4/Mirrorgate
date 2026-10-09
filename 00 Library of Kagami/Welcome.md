@@ -14,11 +14,11 @@ Permit me to introduce myself. I am [[Professor Phineas Phantomhive II]], chroni
 
 You now stand within its library.
 
-I must warn you that this is no ordinary collection. Its shelves hold the scattered histories of [[Zerkalo]]: accounts of forgotten kingdoms, studies of strange peoples, disputed maps, sacred traditions, travelers' tales, and more than a few observations whose accuracy my colleagues have had the poor manners to question.
+I must warn you that this is no ordinary collection. Its shelves hold the scattered histories of [[Kagameru]]: accounts of forgotten kingdoms, studies of strange peoples, disputed maps, sacred traditions, travelers' tales, and more than a few observations whose accuracy my colleagues have had the poor manners to question.
 
 Nor is the collection arranged only by place. Some records belong to a region, others to a century, and a troubling number appear to belong to moments that have not yet happened or should have happened differently.
 
-When I began this work in my youth among the familiar hills and halls of [[Hansha]], I believed the world could be catalogued within a handful of respectable volumes. That confidence did not survive my first expedition. Zerkalo proved far older, wider, and considerably less cooperative than any scholar could reasonably anticipate.
+When I began this work in my youth among the familiar hills and halls of [[Hansha]], I believed the world could be catalogued within a handful of respectable volumes. That confidence did not survive my first expedition. Kagameru proved far older, wider, and considerably less cooperative than any scholar could reasonably anticipate.
 
 Thus, the encyclopedia remains unfinished.
 
@@ -28,7 +28,7 @@ Do not mistake its disorder for emptiness, however. Every shelf offers another p
 
 Choose your first subject:
 
-- **Explore the world:** [[Zerkalo]], [[Geography & Politics]], [[History & Myths]], [[Species & Cultures]], and [[Religion & Deities]]
+- **Explore the world:** [[Kagameru]], [[Geography & Politics]], [[History & Myths]], [[Species & Cultures]], and [[Religion & Deities]]
 - **Meet its powers:** [[People & Powers]]
 - **Read it as a book:** the [[Bookshelf]] — [[Encyclopedia Kagami]], [[Player's Companion]], [[Game Master's Codex]], and [[Mirrorgate Bestiary]]
 - **Prepare play:** [[Rules Compendium]] and [[Adventures & Fiction]]

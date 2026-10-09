@@ -5,12 +5,12 @@ audience: gm
 canon: current
 parent: "[[People & Powers]]"
 ---
-# Royal Bloodlines of Zerkalo
+# Royal Bloodlines of Kagameru
 
 > *“A bloodline is a story people insist on telling with crowns.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-The noble and royal bloodlines of [[Zerkalo]] preserve fragments of older ages: inheritance records, marriage contracts, curse traditions, divine claims, and family myths that may conceal genuine historical power.
+The noble and royal bloodlines of [[Kagameru]] preserve fragments of older ages: inheritance records, marriage contracts, curse traditions, divine claims, and family myths that may conceal genuine historical power.
 
 Not every important bloodline rules a kingdom. Some command academies, monasteries, mercantile leagues, monster-hunting orders, or nothing more than a name that refuses to vanish.
 

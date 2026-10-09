@@ -42,9 +42,16 @@ These rules keep the vault readable in Obsidian, on GitHub, and for future contr
 - Move superseded material to `99 Archive` instead of maintaining two competing active versions.
 - In a `shared` entry, place GM-only material—secrets, adventure hooks, checks—inside a collapsed GM callout: `> [!gm]- Adventure Use`. Players can read the entry without opening it.
 
+## Atlas VTT
+
+- Never move or rename the `atlas-vtt` folder; the plugin requires it at the vault root.
+- Create one Atlas collection per release, named with its ID and title, such as `SA-01 The Pact in the Twilight`.
+- Pin library notes to scenes instead of writing new text inside Atlas.
+- See the [[Atlas VTT Guide]].
+
 ## Names
 
-- **Continents, realms, and cities** take their names from words meaning *mirror* or *reflection* in real-world languages: Zerkalo, Lustro, Specula, Ogledal.
+- **The world, continents, countries, and cities** take names inspired by real-world words for *mirror*, *reflection*, *time*, and *space*, bent so they sound like places rather than dictionary words. The full rules, regional language flavours, and checks are in the [[Naming Guide]].
 - **Local places**—forests, inns, roads, temples—use descriptive common-tongue names: Forest of Thieves, To the Eternal Lady, Temple of the Moon in Water.
 - **Personal names** follow no fixed rule.
 - Record every new name, its pronunciation, and its meaning in the [[Pronunciation Guide]] and in a short "The Name" section of its entry.

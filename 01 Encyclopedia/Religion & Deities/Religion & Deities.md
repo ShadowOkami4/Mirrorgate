@@ -3,14 +3,14 @@ type: moc
 status: active
 audience: shared
 canon: current
-parent: "[[Zerkalo]]"
+parent: "[[Kagameru]]"
 ---
 # Religion & Deities
 
 > *“Nothing encourages theological disagreement quite like dead gods who may still be answering prayers.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-The faiths of [[Zerkalo]] are shaped by uncertainty. The oldest myths claim that the Prime Gods were destroyed at the end of [[The Primordial War]], yet divine signs, miracles, avatars, relics, and prophetic dreams continue to trouble any simple explanation.
+The faiths of [[Kagameru]] are shaped by uncertainty. The oldest myths claim that the Prime Gods were destroyed at the end of [[The Primordial War]], yet divine signs, miracles, avatars, relics, and prophetic dreams continue to trouble any simple explanation.
 
 This section will gather gods, saints, cults, churches, sacred traditions, and disputed theological records.
 
@@ -32,7 +32,7 @@ This section will gather gods, saints, cults, churches, sacred traditions, and d
 
 ## Otherworldly Faiths
 
-- [[Aurora]] — deity of life from the unknown world of [[Phineas Phantomhive I]]. This is not the main religion of Zerkalo.
+- [[Aurora]] — deity of life from the unknown world of [[Phineas Phantomhive I]]. This is not the main religion of Kagameru.
 
 ---
 

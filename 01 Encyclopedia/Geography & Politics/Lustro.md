@@ -11,7 +11,7 @@ located-in: "[[Specula]]"
 > *“A crown may command a border. It cannot command what people remember seeing in the mirror.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-**Lustro** is the central kingdom of [[Zerkalo]], lying in the heartland continent of [[Specula]], and the most politically important realm currently documented in the setting. It is a kingdom of strict law, controlled public speech, royal ceremony, and carefully maintained official history. Its capital is [[Ogledal]].
+**Lustro** is the central kingdom of [[Kagameru]], lying in the heartland continent of [[Specula]], and the most politically important realm currently documented in the setting. It is a kingdom of strict law, controlled public speech, royal ceremony, and carefully maintained official history. Its capital is [[Ogledal]].
 
 The [[Blackwood Bloodline]] is one of Lustro's most important royal families.
 
@@ -87,4 +87,4 @@ See [[The Unsilvered]].
 
 ---
 
-Related: [[Geography & Politics]], [[Royal Bloodlines of Zerkalo]], [[Blackwood Bloodline]], [[The Unsilvered]], [[Lustral Office]], [[Ogledal]], [[Specula]], [[The Mirrorgate]]
+Related: [[Geography & Politics]], [[Royal Bloodlines of Kagameru]], [[Blackwood Bloodline]], [[The Unsilvered]], [[Lustral Office]], [[Ogledal]], [[Specula]], [[The Mirrorgate]]

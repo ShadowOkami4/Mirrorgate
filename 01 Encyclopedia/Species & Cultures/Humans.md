@@ -10,7 +10,7 @@ parent: "[[Species & Cultures]]"
 > *“Give a human an empty field and, before the season turns, it will contain a road, an inn, three competing laws, and an argument over who discovered it first.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-Humans are among the most widespread and adaptable peoples of [[Zerkalo]]. They dwell in crowded cities, isolated farmsteads, wandering caravans, fortified borderlands, and settlements built where wiser folk once declared settlement impossible.
+Humans are among the most widespread and adaptable peoples of [[Kagameru]]. They dwell in crowded cities, isolated farmsteads, wandering caravans, fortified borderlands, and settlements built where wiser folk once declared settlement impossible.
 
 Other peoples sometimes mistake humanity's comparatively short lives for a weakness. In truth, it is the source of much that defines them. Humans rarely possess the luxury of centuries. They build quickly, travel far, preserve what they can, and entrust unfinished ambitions to those who follow. A human kingdom may rise within an elf's lifetime, yet its language, customs, and old grudges can endure long after its walls have fallen.
 
@@ -20,7 +20,7 @@ There is no single human culture. Human societies are shaped by homeland, histor
 
 Some human cultures trace their legitimacy through ancient dynasties and carefully preserved bloodlines. Others choose leaders by merit, wealth, military strength, divine favor, or the enthusiastic approval of a sufficiently loud crowd. Their settlements range from independent villages to sprawling empires, and their loyalties may rest with a family, guild, temple, sovereign, city, or ideal.
 
-Wherever humans settle, they readily adopt useful customs from those around them. Foreign foods become local staples, borrowed words enter everyday speech, and unfamiliar gods acquire shrines beside older deities. This talent for adaptation has allowed human communities to flourish throughout Zerkalo—but it has also earned them a reputation for claiming as tradition anything they have practiced for more than two generations.
+Wherever humans settle, they readily adopt useful customs from those around them. Foreign foods become local staples, borrowed words enter everyday speech, and unfamiliar gods acquire shrines beside older deities. This talent for adaptation has allowed human communities to flourish throughout Kagameru—but it has also earned them a reputation for claiming as tradition anything they have practiced for more than two generations.
 
 ## Restless and Resourceful
 

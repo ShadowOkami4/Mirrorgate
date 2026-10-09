@@ -18,6 +18,8 @@ The vault works both as a **library** and as a set of **books**.
 
 Nothing is written twice. Books link to entries instead of copying them.
 
+At the table, the vault can also run sessions as a virtual tabletop with the Atlas VTT plugin. See the [[Atlas VTT Guide]].
+
 ## Vault Layers
 
 | Folder | Purpose |
@@ -29,6 +31,7 @@ Nothing is written twice. Books link to entries instead of copying them.
 | `04 Books` | the bookshelf and the table of contents for each book |
 | `90 Scriptorium` | the project office: roadmap, conventions, templates, and the asset register |
 | `z_Assets` | images |
+| `atlas-vtt` | Atlas VTT data: scenes, maps, tokens, and collections. Managed by the plugin and fixed at the vault root; see the [[Atlas VTT Guide]] |
 | `99 Archive` | preserved superseded material, excluded from the active graph |
 
 Visual files and their provenance are tracked in the [[Asset Register]].
@@ -73,7 +76,7 @@ The templates, archive, and repository-only documents are excluded in the shared
 
 ## Editing Rules
 
-See the [[Style Guide]] before adding or reorganizing material. For current priorities, use the [[Roadmap]].
+See the [[Style Guide]] before adding or reorganizing material, and the [[Naming Guide]] before inventing a place name. For current priorities, use the [[Roadmap]].
 
 ---
 

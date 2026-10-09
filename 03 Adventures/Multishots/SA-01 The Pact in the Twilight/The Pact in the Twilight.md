@@ -8,7 +8,7 @@ audience: gm
 canon: current
 parent: "[[Multishots]]"
 ---
-# The Pack in the Twilight
+# The Pact in the Twilight
 
 > [!tip] Production status
 > **Active draft · 5%**
@@ -23,15 +23,15 @@ Strangers from distant roads each receive the same letter, asking them to come t
 
 Sandra cannot leave the inn. Her old friend [[Maria Rose]] sent a plea for help from a temple in the north, where strange luminous plants have begun to spread. Sandra asks the adventurers to go in her place.
 
-The temple is not entirely in Zerkalo. The [[Temple of the Moon in Water]] in the forest is only one half of a place divided by [[The Mirrorgate]]; its other half is [[Sanctum of the Flower in the Mirror]]. And somewhere in the twilight between the trees, something is hunting the party.
+The temple is not entirely in Kagameru. The [[Temple of the Moon in Water]] in the forest is only one half of a place divided by [[The Mirrorgate]]; its other half is [[Sanctum of the Flower in the Mirror]]. And somewhere in the twilight between the trees, something is hunting the party.
 
 ## Adventure Background
 
 > [!gm] What the GM Knows
 > - Sandra's artifact reacted to each adventurer before she sent the letters. She does not know whether it chose them as protectors, liberators, or victims.
-> - The luminous plants grow from glasslike cracks in the earth. They are not native to Zerkalo—or perhaps to any plane.
+> - The luminous plants grow from glasslike cracks in the earth. They are not native to Kagameru—or perhaps to any plane.
 > - Maria Rose is a ghost. How she became one, and where she currently exists between the two temples, is not yet defined.
-> - Sandra's wards are weakening faster than she admits. She suspects the disturbance is not trying to enter Zerkalo, but to retrieve something already here.
+> - Sandra's wards are weakening faster than she admits. She suspects the disturbance is not trying to enter Kagameru, but to retrieve something already here.
 > - Large wolf tracks circle the party. They vanish for several paces at a time, as though the creature passes through shadow itself.
 
 ## Running the Adventure
@@ -45,18 +45,21 @@ The temple is not entirely in Zerkalo. The [[Temple of the Moon in Water]] in th
 ### Chapters
 
 0. [[SA-01 Prelude|Prelude]] — *Where Fate Gathers.* The letters, the forest, the thieves, and the lady at the lonely inn. *(active draft)*
-1. *Chapter 1 — not yet written.* The journey north to the temple.
+1. [[SA-01 Chapter 1|Chapter 1]] — *What the Thieves Found.* The journey north, the shattered thief, and the temple at twilight. *(draft; to be rewritten in a new direction)*
 2. *Further chapters — not yet outlined.*
 
 ### Appendices
 
 - **A. Characters:** [[Sandra Mistic]], [[Maria Rose]]
 - **B. Locations:** [[Forest of Thieves]], [[To the Eternal Lady]], [[Temple of the Moon in Water]], [[Sanctum of the Flower in the Mirror]]
-- **C. Creatures:** thieves and the pack *(stat blocks not yet written)*; [[Shardkin]] may appear near the temple
-- **D. Handouts:** Sandra's letter and Sandra's map *(not yet written)*
+- **C. Creatures:** thieves *(stat blocks not yet written)*; [[Remnant]], [[Glass Husk]], [[Glint]], [[Afterimage]] (Chapter 1 draft)
+- **NPCs introduced in play:** Oswin Pike, a surviving thief (Chapter 1)
+- **D. Handouts:** Sandra's letter, Sandra's map, and Mags Tallow's temple sketch *(not yet written)*
+- **E. Maps and Scenes:** Atlas VTT collection `SA-01 The Pact in the Twilight` *(not yet created)*; see the [[Atlas VTT Guide]]
 
 ## Open Work
 
+- [ ] Rewrite Chapter 1 in the intended story direction
 - [ ] Complete the adventure outline and chapter structure
 - [ ] Add encounters, maps, creature statistics, and consequences
 - [ ] Add rewards, scaling, and Game Master guidance

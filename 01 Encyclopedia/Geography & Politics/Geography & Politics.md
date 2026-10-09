@@ -3,14 +3,14 @@ type: moc
 status: active
 audience: shared
 canon: current
-parent: "[[Zerkalo]]"
+parent: "[[Kagameru]]"
 ---
 # Geography & Politics
 
 > *“Maps are arguments drawn in ink.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-The lands of [[Zerkalo]] are divided not only by mountains, rivers, and seas, but by memory, ambition, trade, faith, and old wounds left by powers no living cartographer fully understands.
+The lands of [[Kagameru]] are divided not only by mountains, rivers, and seas, but by memory, ambition, trade, faith, and old wounds left by powers no living cartographer fully understands.
 
 This section gathers notes on regions, borders, rulers, conflicts, and the political forces that shape the Mirrored Realms.
 
@@ -19,7 +19,7 @@ This section gathers notes on regions, borders, rulers, conflicts, and the polit
 
 ## Continents
 
-- [[Continents of Zerkalo]] — [[Specula]], [[Drychwen]], [[Scáthan]], [[Veidra]], [[Skuggsjá]], and [[Tezcatl]]
+- [[Continents of Kagameru]] — [[Specula]], [[Drychwen]], [[Scáthan]], [[Veidra]], [[Skuggsjá]], and [[Tezcatl]]
 
 ## Realms and Regions
 
@@ -38,7 +38,11 @@ This section gathers notes on regions, borders, rulers, conflicts, and the polit
 
 ## On Names
 
-The great lands and cities of Zerkalo carry names that mean *mirror* or *reflection* in the world's older tongues. Forests, inns, roads, and other local places are usually known by their common-tongue names. See the [[Pronunciation Guide]].
+The world, its continents, its kingdoms, and its great cities carry names grown from old-tongue roots for four things: *mirror*, *reflection*, *time*, and *space*. The roots come from many tongues, and none survives unchanged: each has been worn down by centuries of speech into something that sounds like a place rather than a word. The grander and older the land, the closer it stays to its root; villages often keep only a fragment of one, joined to a plain ending.
+
+Forests, inns, roads, and other local landmarks are known by their common-tongue names, such as the [[Forest of Thieves]] and [[To the Eternal Lady]]. Places within one realm tend to share the flavour of one old tongue, which is often the quickest way to guess where a traveler comes from.
+
+See the [[Pronunciation Guide]] for how to say them and the [[Naming Guide]] for how new names are made.
 
 ## Political Themes
 

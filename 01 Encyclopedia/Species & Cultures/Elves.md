@@ -10,7 +10,7 @@ parent: "[[Species & Cultures]]"
 > *“Long lives do not make a people patient. They simply give impatience more time to become tradition.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-The elves of [[Zerkalo]] are an ancient and diverse people whose histories often reach farther back than the written records of younger kingdoms.
+The elves of [[Kagameru]] are an ancient and diverse people whose histories often reach farther back than the written records of younger kingdoms.
 
 This entry is currently a placeholder for future cultural development.
 

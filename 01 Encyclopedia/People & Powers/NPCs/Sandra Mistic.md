@@ -4,7 +4,7 @@ status: active-draft
 audience: gm
 canon: current
 parent: "[[NPCs]]"
-release: "[[The Pack in the Twilight]]"
+release: "[[The Pact in the Twilight]]"
 banner: z_Assets/Sandra_Mistic_Disguised.png
 banner-height: 320
 banner-x: 51
@@ -38,9 +38,9 @@ Madam Sandra Mistic is the enigmatic proprietor of [[To the Eternal Lady]], a se
 
 Beneath that living disguise, however, Sandra is an ancient lich.
 
-Sandra is not native to [[Zerkalo]]. She came from another world, carrying—or pursuing—an artifact of such terrible power that a single mortal lifetime was not enough to guard it. She did not embrace lichdom for dominion, immortality, vanity, or limitless arcane power. She accepted undeath as a sentence and a promise: to protect the artifact until her final death, no matter how long the vigil demanded.
+Sandra is not native to [[Kagameru]]. She came from another world, carrying—or pursuing—an artifact of such terrible power that a single mortal lifetime was not enough to guard it. She did not embrace lichdom for dominion, immortality, vanity, or limitless arcane power. She accepted undeath as a sentence and a promise: to protect the artifact until her final death, no matter how long the vigil demanded.
 
-The inn itself may not be native to Zerkalo either. It does not always remain in the same forest, and some accounts suggest it has crossed between worlds. Sandra is bound to it, but whether she guides its wandering or merely endures it is unclear.
+The inn itself may not be native to Kagameru either. It does not always remain in the same forest, and some accounts suggest it has crossed between worlds. Sandra is bound to it, but whether she guides its wandering or merely endures it is unclear.
 
 That distinction matters to her. Sandra hates being mistaken for the sort of lich who builds towers from bones and calls it ambition. She sees herself as a jailer, innkeeper, and last line of defense. The fact that her methods are frightening does not make her cruel, at least not in her own eyes.
 
@@ -163,7 +163,7 @@ Sandra can freely explain:
 - She cannot leave the inn because of her bond to the artifact.
 - The letters were enchanted to locate people capable of answering the call.
 - The [[Temple of the Moon in Water]] is connected to the current disturbance and to the [[Sanctum of the Flower in the Mirror]] within [[The Mirrorgate]].
-- She is not from Zerkalo, though she avoids describing her home unless trust has been earned.
+- She is not from Kagameru, though she avoids describing her home unless trust has been earned.
 - She did not become a lich for power; she accepted undeath to keep the artifact guarded.
 - Her tavern is protected ground, and violence inside it can have permanent consequences.
 
@@ -172,7 +172,7 @@ Sandra initially conceals:
 - The artifact reacted individually to every member of the party.
 - Their gathering resembles part of an old warning or prophecy.
 - Her wards are weakening more quickly than she admits.
-- She suspects the disturbance is not trying to enter Zerkalo—it may be trying to retrieve something already here.
+- She suspects the disturbance is not trying to enter Kagameru—it may be trying to retrieve something already here.
 - Her phylactery is sustained through those she judges to have violated the sanctuary of the tavern beyond forgiveness.
 
 > [!warning] GM Secret

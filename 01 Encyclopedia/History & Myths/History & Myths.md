@@ -3,14 +3,14 @@ type: moc
 status: active
 audience: shared
 canon: current
-parent: "[[Zerkalo]]"
+parent: "[[Kagameru]]"
 ---
 # History & Myths
 
 > *“History is what survives the fire. Myth is what people carry out of it.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-The history of [[Zerkalo]] is not a single clean road. It is a shelf of damaged maps, contradictory testimonies, temple songs, royal propaganda, and field notes rescued from ruins that should not have survived at all.
+The history of [[Kagameru]] is not a single clean road. It is a shelf of damaged maps, contradictory testimonies, temple songs, royal propaganda, and field notes rescued from ruins that should not have survived at all.
 
 This section gathers the oldest accounts of the Mirrored Realms: the wars before memory, the relics left behind by impossible powers, and the stories that still shape the ambitions of kings, cults, scholars, and adventurers.
 
@@ -26,7 +26,7 @@ This section gathers the oldest accounts of the Mirrored Realms: the wars before
 
 ## Bloodlines and Recurring Names
 
-- [[Royal Bloodlines of Zerkalo]]
+- [[Royal Bloodlines of Kagameru]]
 - [[Phantomhive Bloodline]]
 - [[Blackwood Bloodline]]
 

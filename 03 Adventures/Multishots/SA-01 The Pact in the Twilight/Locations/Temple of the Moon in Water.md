@@ -3,8 +3,8 @@ type: location
 status: active-draft
 audience: gm
 canon: current
-parent: "[[The Pack in the Twilight]]"
-release: "[[The Pack in the Twilight]]"
+parent: "[[The Pact in the Twilight]]"
+release: "[[The Pact in the Twilight]]"
 aliases:
   - Ruined Temple
 ---
@@ -15,9 +15,9 @@ aliases:
 
 The **Temple of the Moon in Water**—to most who know of it, simply *the ruined temple*—stands in the northern reaches of the [[Forest of Thieves]]. It is the site marked on the map given to the adventurers by [[Sandra Mistic]] and the place where her old friend, [[Maria Rose]], investigated the spread of the luminous plants.
 
-The ruin exists within [[Zerkalo]], but it is not confined to Zerkalo. Somewhere beyond its broken surfaces and displaced reflections, the same temple continues inside [[The Mirrorgate]] as [[Sanctum of the Flower in the Mirror]].
+The ruin exists within [[Kagameru]], but it is not confined to Kagameru. Somewhere beyond its broken surfaces and displaced reflections, the same temple continues inside [[The Mirrorgate]] as [[Sanctum of the Flower in the Mirror]].
 
-These are not simply two temples built to resemble one another. They are two manifestations of one place divided across reality: a physical ruin in Zerkalo and a temple caught within the plane between time and space.
+These are not simply two temples built to resemble one another. They are two manifestations of one place divided across reality: a physical ruin in Kagameru and a temple caught within the plane between time and space.
 
 ## The Name
 

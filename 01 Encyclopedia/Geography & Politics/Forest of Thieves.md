@@ -4,16 +4,16 @@ status: active-draft
 audience: shared
 canon: current
 parent: "[[Geography & Politics]]"
-release: "[[The Pack in the Twilight]]"
+release: "[[The Pact in the Twilight]]"
 ---
 # Forest of Thieves
 
 > *“Forests do not become infamous because of trees.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-The **Forest of Thieves** is a dense, badly roaded woodland known for bandit activity, travelers who arrive late or not at all, and—more recently—the growing presence of luminous plants that do not belong to the natural order of [[Zerkalo]].
+The **Forest of Thieves** is a dense, badly roaded woodland known for bandit activity, travelers who arrive late or not at all, and—more recently—the growing presence of luminous plants that do not belong to the natural order of [[Kagameru]].
 
-It is the setting of [[The Pack in the Twilight]].
+It is the setting of [[The Pact in the Twilight]].
 
 ## Atmosphere
 

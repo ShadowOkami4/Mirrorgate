@@ -26,7 +26,7 @@ Hansha presently functions as:
 
 - the professor's scholarly point of origin
 - a possible home for academies, archives, and old lecture halls
-- a civilized contrast to the stranger roads of [[Zerkalo]]
+- a civilized contrast to the stranger roads of [[Kagameru]]
 - a starting point for expeditions into less understood regions
 
 ## Open Questions
@@ -44,4 +44,4 @@ The exact political status of Hansha remains undecided. It may become:
 
 ---
 
-Related: [[Zerkalo]], [[Utsushi]], [[Professor Phineas Phantomhive II]], [[Phantomhive Bloodline]]
+Related: [[Kagameru]], [[Utsushi]], [[Professor Phineas Phantomhive II]], [[Phantomhive Bloodline]]

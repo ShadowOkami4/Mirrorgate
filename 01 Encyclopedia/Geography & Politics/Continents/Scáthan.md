@@ -3,17 +3,17 @@ type: continent
 status: concept
 audience: shared
 canon: current
-parent: "[[Continents of Zerkalo]]"
-located-in: "[[Zerkalo]]"
+parent: "[[Continents of Kagameru]]"
+located-in: "[[Kagameru]]"
 aliases:
   - Scathan
 ---
 # Scáthan
 
-> *"Every map has an edge where the ink grows nervous. On most maps of Zerkalo, that edge is labelled Scáthan."*  
+> *"Every map has an edge where the ink grows nervous. On most maps of Kagameru, that edge is labelled Scáthan."*  
 > —[[Professor Phineas Phantomhive II]]
 
-**Scáthan** (*SKAW-han*) is one of the six [[Continents of Zerkalo]]. It appears in accounts of long nights, shadowed coasts, and lands where planar distortion is unusually common.
+**Scáthan** (*SKAW-han*) is one of the six [[Continents of Kagameru]]. It appears in accounts of long nights, shadowed coasts, and lands where planar distortion is unusually common.
 
 ## The Name
 
@@ -25,4 +25,4 @@ No settlements have yet been recorded.
 
 ---
 
-Related: [[Continents of Zerkalo]], [[Geography & Politics]]
+Related: [[Continents of Kagameru]], [[Geography & Politics]]

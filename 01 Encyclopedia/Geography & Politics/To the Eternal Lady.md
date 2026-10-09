@@ -4,7 +4,7 @@ status: active-draft
 audience: shared
 canon: current
 parent: "[[Geography & Politics]]"
-release: "[[The Pack in the Twilight]]"
+release: "[[The Pact in the Twilight]]"
 ---
 # To the Eternal Lady
 
@@ -47,7 +47,7 @@ This forgotten longing may be connected to [[Sandra Mistic]], to something hidde
 > - safe-looking refuge after the forest ambush
 > - magical structure containing illusions, echoes, and concealed wards
 > - entrance to the chamber where Sandra reveals her true nature
-> - wandering location that may connect Zerkalo to other worlds
+> - wandering location that may connect Kagameru to other worlds
 > - clue that Sandra, the artifact, and the inn may all be displaced from where they belong
 
 > [!gm]- First Impressions
@@ -72,7 +72,7 @@ This forgotten longing may be connected to [[Sandra Mistic]], to something hidde
 > - **DC 15 Perception:** Notice that Sandra does not breathe.
 > - **DC 15 Survival:** Realize the inn's position does not match the surrounding paths; the road seems to have adjusted itself around the building.
 > - **DC 16 Arcana:** Detect planar displacement woven into the foundations. The inn has been moved across great distances, possibly across worlds.
-> - **DC 17 History:** Recognize a carved place-name that does not belong to any known region of Zerkalo.
+> - **DC 17 History:** Recognize a carved place-name that does not belong to any known region of Kagameru.
 
 ---
 

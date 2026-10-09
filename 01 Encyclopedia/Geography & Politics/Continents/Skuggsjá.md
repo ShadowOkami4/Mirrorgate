@@ -3,8 +3,8 @@ type: continent
 status: concept
 audience: shared
 canon: current
-parent: "[[Continents of Zerkalo]]"
-located-in: "[[Zerkalo]]"
+parent: "[[Continents of Kagameru]]"
+located-in: "[[Kagameru]]"
 aliases:
   - Skuggsja
 ---
@@ -13,7 +13,7 @@ aliases:
 > *"The north does not forgive a poor map. It simply buries the cartographer and waits for the next one."*  
 > —[[Professor Phineas Phantomhive II]]
 
-**Skuggsjá** (*SKOOG-syah*) is one of the six [[Continents of Zerkalo]]. It is associated with the far north: cold seas, hard winters, and isolated holds.
+**Skuggsjá** (*SKOOG-syah*) is one of the six [[Continents of Kagameru]]. It is associated with the far north: cold seas, hard winters, and isolated holds.
 
 ## The Name
 
@@ -25,4 +25,4 @@ No settlements have yet been recorded.
 
 ---
 
-Related: [[Continents of Zerkalo]], [[Geography & Politics]]
+Related: [[Continents of Kagameru]], [[Geography & Politics]]

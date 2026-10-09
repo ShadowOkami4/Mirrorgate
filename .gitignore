@@ -3,3 +3,13 @@
 
 # Personal Obsidian session state
 .obsidian/workspace.json
+
+# Windows shortcuts
+*.lnk
+
+# Atlas VTT data (personal settings, test scenes, and third-party starter tokens).
+# The plugin requires this folder at the vault root. Publish release collections deliberately.
+/atlas-vtt/
+
+# Cartography working files (large map renders and generator data)
+/Cartography/

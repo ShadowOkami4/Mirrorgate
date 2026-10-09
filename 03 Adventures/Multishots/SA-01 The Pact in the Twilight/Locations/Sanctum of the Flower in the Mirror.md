@@ -3,8 +3,8 @@ type: location
 status: active-draft
 audience: gm
 canon: current
-parent: "[[The Pack in the Twilight]]"
-release: "[[The Pack in the Twilight]]"
+parent: "[[The Pact in the Twilight]]"
+release: "[[The Pact in the Twilight]]"
 aliases:
   - The Temple Behind the Mirror
 ---
@@ -19,7 +19,7 @@ Almost everything in the Mirrorgate is a copy: a reflection of somewhere else, r
 
 ## The Name
 
-Its lintel carries the half of the old saying that is missing from the ruin in Zerkalo: *the flower in the mirror*. Read together, the two inscriptions form the complete saying—*the flower in the mirror, the moon in the water*—a description of things that can be seen but never grasped.
+Its lintel carries the half of the old saying that is missing from the ruin in Kagameru: *the flower in the mirror*. Read together, the two inscriptions form the complete saying—*the flower in the mirror, the moon in the water*—a description of things that can be seen but never grasped.
 
 In a world where every reflected sign reads backward, this inscription reads the right way round. Travelers who notice have their first proof that the sanctum is not a reflection.
 
@@ -34,12 +34,12 @@ Beneath the shard hangs an upside-down forest: the reflection of the trees aroun
 The shard holds two different kinds of place, joined along a visible seam.
 
 - **The reflected ruin.** Most of the shard is a deep reflection of the Temple of the Moon in Water as it stands today, created by the pool's long mirror memory. It is faithful but reversed: broken columns lean the wrong way, moss grows on the wrong side of the stones, and the courtyard mirrors the ruin down to its fallen leaves.
-- **The true sanctum.** At the heart of the shard stand the chambers that are missing from the ruin in Zerkalo—the rooms behind doorways that open onto nothing, and the walls whose outlines are all that remain on the other side. These are not reversed. They are the originals.
+- **The true sanctum.** At the heart of the shard stand the chambers that are missing from the ruin in Kagameru—the rooms behind doorways that open onto nothing, and the walls whose outlines are all that remain on the other side. These are not reversed. They are the originals.
 - **The seam.** Where the two halves meet, reversed and unreversed stonework are fused along a jagged line, like a fracture that healed badly. [[Life in the Mirrorgate|Seam moss]] glows along its entire length.
 
 ## Time in the Sanctum
 
-The reflected ruin keeps time with the forest outside the real temple: an afternoon there is an afternoon in Zerkalo.
+The reflected ruin keeps time with the forest outside the real temple: an afternoon there is an afternoon in Kagameru.
 
 The true sanctum does not. Cut loose from its original place, its time has come apart, and each chamber may belong to a different moment: untouched stone, active worship, fresh destruction, and ancient ruin can stand side by side. A doorway beside the altar might open back onto the physical ruin centuries—or only seconds—away from the moment the traveler left.
 
@@ -75,7 +75,7 @@ Possible directions include:
 
 - What faith was practiced here, and does the true sanctum remember it?
 - Why was half of the temple taken into the Mirrorgate, and by whom or what?
-- Can changes made in the true sanctum alter the ruin in Zerkalo?
+- Can changes made in the true sanctum alter the ruin in Kagameru?
 - What happened to Maria Rose?
 - Are the luminous plants in the Forest of Thieves connected to the sanctum or its shard?
 - What relationship, if any, exists between the temple and Sandra's artifact?

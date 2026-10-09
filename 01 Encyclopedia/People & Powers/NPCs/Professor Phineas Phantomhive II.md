@@ -16,7 +16,7 @@ banner-y: 0
 
 ## Role in the Setting
 
-Professor Phineas serves as an in-world guide to the scattered records of [[Zerkalo]]. His notes often appear at the beginning of entries, offering dry commentary, warnings, or scholarly corrections that may or may not be as objective as he believes.
+Professor Phineas serves as an in-world guide to the scattered records of [[Kagameru]]. His notes often appear at the beginning of entries, offering dry commentary, warnings, or scholarly corrections that may or may not be as objective as he believes.
 
 He began his work in [[Hansha]], convinced that the world could be catalogued cleanly. Years of travel through ruins, courts, monster-haunted roads, and mirror-touched places corrected this optimism.
 
@@ -32,9 +32,10 @@ He began his work in [[Hansha]], convinced that the world could be catalogued cl
 
 The Phantomhive records currently name:
 
-- [[Phineas Phantomhive I]] — the original Phineas, apparently from another world.
+- [[Phineas Phantomhive I]] — the original Phineas, a hero without magic from the world of [[Aurora]].
 - **Phineas Phantomhive II**
-- **Jürgen Phantomhive**
+- **Jürgen Phantomhive** — his uncle
+- **Elisabeth Phantomhive** — his aunt
 
 The exact relation between these names requires further documentation.
 

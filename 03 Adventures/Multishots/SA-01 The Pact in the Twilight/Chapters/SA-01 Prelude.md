@@ -3,13 +3,13 @@ type: adventure-chapter
 status: active-draft
 audience: gm
 canon: current
-parent: "[[The Pack in the Twilight]]"
-release: "[[The Pack in the Twilight]]"
+parent: "[[The Pact in the Twilight]]"
+release: "[[The Pact in the Twilight]]"
 ---
-# Prelude: The Pack in the Twilight
+# Prelude: The Pact in the Twilight
 
 > [!info] Adventure Information
-> **Adventure:** [[The Pack in the Twilight]] (SA-01)  
+> **Adventure:** [[The Pact in the Twilight]] (SA-01)  
 > **Format:** Multishot  
 > **Starting Level:** 4  
 > **Difficulty:** Not yet determined
@@ -67,7 +67,7 @@ The plants cannot be identified by ordinary magical or scholarly knowledge. Exam
 
 - **DC 10 Wisdom (Perception):** The plants lean toward warm-blooded creatures and recoil slightly from undead beings or necrotic magic.
 - **DC 12 Intelligence (Investigation):** Their roots do not grow naturally through the soil. They emerge from thin, glasslike cracks beneath the earth.
-- **DC 13 Intelligence (Nature):** The plants share no recognizable traits with the native flora of Zerkalo.
+- **DC 13 Intelligence (Nature):** The plants share no recognizable traits with the native flora of Kagameru.
 - **DC 14 Intelligence (Arcana):** They radiate faint conjuration magic mixed with an unfamiliar planar resonance.
 - **DC 15 Wisdom (Survival):** The plants do not belong in this forest. Their growth suggests that they may not belong anywhere in this world—or even upon this plane of existence.
 
@@ -117,7 +117,7 @@ Beyond the thieves, the southern path descends into a sheltered hollow. There, w
 
 At its center stands [[To the Eternal Lady]], an elegant inn impossibly untouched by the surrounding wilderness. Its windows glow amber against the night. Music and laughter drift from within, offering a welcome so perfect that it almost feels rehearsed.
 
-Local thieves speak of the place as if it has always been here. Older travelers disagree. Some claim the same inn once stood in another forest entirely, and a few stranger tales insist it has appeared beneath skies that did not belong to Zerkalo.
+Local thieves speak of the place as if it has always been here. Older travelers disagree. Some claim the same inn once stood in another forest entirely, and a few stranger tales insist it has appeared beneath skies that did not belong to Kagameru.
 
 > [!quote] Read Aloud
 > The door opens upon polished wood, golden lamplight, and the welcome heat of a crowded hearth. Travelers drink beneath hanging lanterns while dice tumble across gaming tables. The scent of roasted meat and spiced ale fills the room.
@@ -140,7 +140,7 @@ Characters observing the common room may make the following checks:
 - **DC 14 Intelligence (Arcana):** Powerful illusion and abjuration magic permeate the building. The inn is protected, concealed, and larger within than its exterior should allow.
 - **DC 15 Wisdom (Perception):** Sandra never breathes, and no condensation forms when she speaks near a freshly polished glass.
 - **DC 16 Intelligence (Arcana):** The building carries traces of planar displacement. It has not merely been hidden; at some point, it has been moved.
-- **DC 17 Intelligence (History):** A carved mark on one beam resembles a place-name from no known Zerkalo record.
+- **DC 17 Intelligence (History):** A carved mark on one beam resembles a place-name from no known Kagameru record.
 
 The patrons are harmless magical echoes created to make the inn feel inhabited. Sandra does not volunteer this fact, but she admits it if confronted privately. She created them because years of solitary vigilance became unbearable.
 
@@ -182,7 +182,7 @@ Before or during Sandra's explanation, the characters may examine the chamber:
 
 A character can attempt a **DC 13 Wisdom (Insight) check** while Sandra explains herself. On a success, the character believes she is sincere about wishing the party no harm. On a result of 17 or higher, the character realizes that Sandra is withholding one fact: she knows more about the artifact's connection to the party than she is willing to reveal.
 
-She remains at the inn because she is the guardian of an artifact that came from beyond this world. Sandra is not native to Zerkalo either. She came from another world and accepted undeath so the artifact would never be left unguarded. Its nature makes it too dangerous to abandon, and the magic binding Sandra to its protection prevents her from leaving. For years, she has kept watch while the world beyond her doors continued without her.
+She remains at the inn because she is the guardian of an artifact that came from beyond this world. Sandra is not native to Kagameru either. She came from another world and accepted undeath so the artifact would never be left unguarded. Its nature makes it too dangerous to abandon, and the magic binding Sandra to its protection prevents her from leaving. For years, she has kept watch while the world beyond her doors continued without her.
 
 Recently, a plea for aid reached her from an old friend, [[Maria Rose]]. Sandra cannot answer it herself, so she sent enchanted letters in search of those whom fate—or the artifact—judged capable of acting in her place.
 
@@ -223,4 +223,4 @@ And beyond the reach of the inn's warm light, something in the twilight is waiti
 
 ---
 
-**Contents:** [[The Pack in the Twilight]] · **Next:** Chapter 1 *(not yet written)*
+**Contents:** [[The Pact in the Twilight]] · **Next:** [[SA-01 Chapter 1|Chapter 1: What the Thieves Found]]

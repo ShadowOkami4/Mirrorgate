@@ -3,15 +3,15 @@ type: continent
 status: concept
 audience: shared
 canon: current
-parent: "[[Continents of Zerkalo]]"
-located-in: "[[Zerkalo]]"
+parent: "[[Continents of Kagameru]]"
+located-in: "[[Kagameru]]"
 ---
 # Drychwen
 
 > *"Old forests keep better records than old kingdoms. They are merely worse at sharing them."*  
 > —[[Professor Phineas Phantomhive II]]
 
-**Drychwen** (*DRUKH-wen*) is one of the six [[Continents of Zerkalo]]. Older records associate it with old forests, noble settlements, and some of the earliest magical traditions of the world.
+**Drychwen** (*DRUKH-wen*) is one of the six [[Continents of Kagameru]]. Older records associate it with old forests, noble settlements, and some of the earliest magical traditions of the world.
 
 ## The Name
 
@@ -23,4 +23,4 @@ No settlements have yet been recorded.
 
 ---
 
-Related: [[Continents of Zerkalo]], [[Geography & Politics]]
+Related: [[Continents of Kagameru]], [[Geography & Politics]]

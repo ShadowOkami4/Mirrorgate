@@ -11,7 +11,7 @@ Short adventures intended to span more than one session.
 
 ## In Development
 
-1. [[The Pack in the Twilight]] — active draft, 5%
+1. [[The Pact in the Twilight]] — active draft, 5%
 
 ## Announced
 

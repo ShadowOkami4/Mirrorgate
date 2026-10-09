@@ -16,14 +16,14 @@ parent: "[[Bookshelf]]"
 
 ### Chapter 1 — The World in Brief
 
-1. [[Zerkalo]]
+1. [[Kagameru]]
 2. [[The Mirrorgate]]
 3. [[The Shattered Hope Era]]
 4. [[Geography & Politics]]
 5. [[Religion & Deities]]
 6. [[Pronunciation Guide]]
 
-### Chapter 2 — Peoples of Zerkalo
+### Chapter 2 — Peoples of Kagameru
 
 7. [[Species & Cultures]] — [[Humans]], [[Elves]], [[Dwarves]], [[Orcs]]
 

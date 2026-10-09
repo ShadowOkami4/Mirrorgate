@@ -32,7 +32,7 @@ Only fragments survive. Dwight is described as a **war medic rogue**: someone wh
 
 - A bloodstained medical kit bears Dwight's name.
 - A coded field journal records Phineas I's travels.
-- A healing technique from Dwight's world works on wounds that Zerkalo magic cannot mend.
+- A healing technique from Dwight's world works on wounds that Kagameru magic cannot mend.
 - Someone claims Dwight betrayed Phineas, but the evidence is incomplete.
 
 ---

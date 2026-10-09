@@ -21,7 +21,7 @@ The planned collection contains **18 journeys**: ten one-shots, five short adven
 | Release | Kind | State | Progress |
 | --- | --- | --- | ---: |
 | [[Shattered Hope]] | Main campaign framework | Foundation | **1%** |
-| [[The Pack in the Twilight]] | Short adventure | Active draft | **5%** |
+| [[The Pact in the Twilight]] | Short adventure | Active draft | **5%** |
 
 ## Announced Queue
 

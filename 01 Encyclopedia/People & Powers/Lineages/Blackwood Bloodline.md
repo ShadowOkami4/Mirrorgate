@@ -3,14 +3,14 @@ type: lineage
 status: draft
 audience: gm
 canon: current
-parent: "[[Royal Bloodlines of Zerkalo]]"
+parent: "[[Royal Bloodlines of Kagameru]]"
 ---
 # Blackwood Bloodline
 
 > *“Some families inherit estates. The Blackwoods appear to have inherited consequences.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-The **Blackwood Bloodline** is one of the most important royal families of [[Zerkalo]], known especially for its connection to [[Lustro]]. Unlike lesser noble houses that preserve power through wealth or military service alone, the Blackwoods are tied to the legitimacy, continuity, and political identity of the realm itself.
+The **Blackwood Bloodline** is one of the most important royal families of [[Kagameru]], known especially for its connection to [[Lustro]]. Unlike lesser noble houses that preserve power through wealth or military service alone, the Blackwoods are tied to the legitimacy, continuity, and political identity of the realm itself.
 
 They are not merely aristocrats. They are a royal house whose name carries authority, expectation, and danger.
 
@@ -79,4 +79,4 @@ Possible explanations:
 
 ---
 
-Related: [[Royal Bloodlines of Zerkalo]], [[Lustro]], [[The Unsilvered]], [[Scars of the Primordial War]], [[The Mirrorgate]]
+Related: [[Royal Bloodlines of Kagameru]], [[Lustro]], [[The Unsilvered]], [[Scars of the Primordial War]], [[The Mirrorgate]]

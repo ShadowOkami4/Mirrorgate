@@ -32,7 +32,7 @@ Common scar effects include:
 
 ## Connection to the Mirrorgate
 
-The scars and [[The Mirrorgate]] are inseparable in most serious scholarship. One theory claims the Mirrorgate was born when the Primordial War tore a path through time and space. Another claims the Mirrorgate already existed, and the war merely widened its doors until the damage spread into Zerkalo.
+The scars and [[The Mirrorgate]] are inseparable in most serious scholarship. One theory claims the Mirrorgate was born when the Primordial War tore a path through time and space. Another claims the Mirrorgate already existed, and the war merely widened its doors until the damage spread into Kagameru.
 
 Either way, many scars behave like shallow Mirrorgate crossings. They may not allow full travel between worlds, but they let moments, reflections, identities, and impossible distances leak through.
 

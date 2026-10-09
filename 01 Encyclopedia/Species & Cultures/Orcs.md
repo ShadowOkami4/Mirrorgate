@@ -10,7 +10,7 @@ parent: "[[Species & Cultures]]"
 > *“The dullest scholars call orcs violent and stop writing. Better scholars ask who taught them to survive.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-The orcs of [[Zerkalo]] are not a single culture, nation, or story. Their communities vary widely across the world, shaped by homeland, history, faith, trade, war, and alliance.
+The orcs of [[Kagameru]] are not a single culture, nation, or story. Their communities vary widely across the world, shaped by homeland, history, faith, trade, war, and alliance.
 
 This entry is currently a placeholder for future cultural development.
 

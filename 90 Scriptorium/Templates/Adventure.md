@@ -38,6 +38,7 @@ parent: "[[Adventures & Fiction]]"
 - **B. Locations:**
 - **C. Creatures:**
 - **D. Handouts:**
+- **E. Maps and Scenes:** Atlas VTT collection `ID Title`
 
 ## Open Work
 

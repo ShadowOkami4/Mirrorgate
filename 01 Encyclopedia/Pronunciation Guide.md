@@ -3,14 +3,14 @@ type: reference
 status: active
 audience: shared
 canon: current
-parent: "[[Zerkalo]]"
+parent: "[[Kagameru]]"
 ---
 # Pronunciation Guide
 
 > *"I have heard my own homeland mispronounced in eleven languages, two of which I am fairly sure were invented on the spot."*  
 > —[[Professor Phineas Phantomhive II]]
 
-The great lands and cities of [[Zerkalo]] take their names from words meaning *mirror* or *reflection* in the world's older tongues. Local places—forests, inns, roads, and ruins—usually go by their common-tongue names. Personal names follow no single rule.
+The world, great lands, realms, and cities of [[Kagameru]] take their names from old-tongue roots for *mirror*, *reflection*, *time*, and *space*. Local places—forests, inns, roads, and ruins—usually go by their common-tongue names. Personal names follow no single rule. The rules for new names are in the [[Naming Guide]].
 
 Stressed syllables are shown in capitals. Tables are welcome to use their own pronunciations.
 
@@ -18,7 +18,7 @@ Stressed syllables are shown in capitals. Tables are welcome to use their own pr
 
 | Name | Pronunciation | Meaning |
 | --- | --- | --- |
-| [[Zerkalo]] | ZYER-kah-loh | mirror |
+| [[Kagameru]] | kah-gah-MEH-roo | mirror (from Japanese *kagami*) |
 | Kagami (the Encyclopedia and Library of Kagami) | kah-GAH-mee | mirror |
 | [[The Mirrorgate]] | MIR-er-gate | — |
 
@@ -44,4 +44,4 @@ Stressed syllables are shown in capitals. Tables are welcome to use their own pr
 
 ---
 
-Related: [[Continents of Zerkalo]], [[Geography & Politics]]
+Related: [[Continents of Kagameru]], [[Geography & Politics]]

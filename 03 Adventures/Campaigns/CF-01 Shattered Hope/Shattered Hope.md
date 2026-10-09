@@ -21,7 +21,7 @@ parent: "[[Campaigns]]"
 - [[The Shattered Hope Era]]
 - [[Scars of the Primordial War]]
 - [[The Mirrorgate]]
-- [[Royal Bloodlines of Zerkalo]]
+- [[Royal Bloodlines of Kagameru]]
 
 The campaign is not yet ready to run. Plot structure, player guidance, encounters, and campaign-facing material remain future work.
 
