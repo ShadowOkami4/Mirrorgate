@@ -26,6 +26,10 @@ This section gathers notes on regions, borders, rulers, conflicts, and the polit
 - [[Lustro]] — the central kingdom, in [[Specula]]
 - [[Hansha]] — homeland of the Professor
 
+### On the Current Map
+
+The current world map shows 23 realms. Only [[Lustro]] and [[Hansha]] are described so far; the others are listed, with their name roots, under *Realms on the Current Map* in the [[Naming Guide]].
+
 ## Settlements
 
 - [[Ogledal]] — royal capital of Lustro

@@ -20,7 +20,7 @@ This section gathers playable adventures, campaign premises, fiction fragments, 
 
 ## Currently in Development
 
-- [[The Pact in the Twilight]] — short adventure, 5%
+- [[The Pact in the Twilight]] — short adventure, 25%
 - [[Shattered Hope]] — main campaign framework, 1%
 
 For the complete production overview, see the [[Roadmap]].

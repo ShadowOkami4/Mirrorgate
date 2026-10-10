@@ -64,6 +64,8 @@ See [[The Unsilvered]].
 ## Known Places
 
 - [[Ogledal]] — the royal capital
+- Glasscombe — a small village on the Old Road, the last settlement before the [[Forest of Thieves]]
+- [[Forest of Thieves]] — a lawless wood on the kingdom's border
 
 ## Institutions
 

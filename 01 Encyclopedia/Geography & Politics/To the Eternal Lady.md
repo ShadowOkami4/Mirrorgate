@@ -11,7 +11,7 @@ release: "[[The Pact in the Twilight]]"
 > *“Every lonely road eventually invents an inn. This one, regrettably, may have invented itself.”*  
 > —[[Professor Phineas Phantomhive II]]
 
-**To the Eternal Lady**, often called **the Eternal Lady Inn** in travelers' tales, is the secluded inn operated by [[Sandra Mistic]]. It currently stands in the [[Forest of Thieves]], but calling it a local inn is misleading.
+**To the Eternal Lady**, often called **the Eternal Lady Inn** in travelers' tales, is the secluded inn operated by [[Sandra Mistic]]. It currently stands in the [[Forest of Thieves]], in a sheltered hollow about 3 km off the Old Road, reached by an unmarked side path. Calling it a local inn, however, is misleading.
 
 The Eternal Lady is not truly stationary.
 

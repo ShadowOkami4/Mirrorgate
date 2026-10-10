@@ -16,6 +16,8 @@ aliases:
 
 They gather wherever reflection, time, or distance has been damaged: beside cracked mirrors, in ruins where the hours run wrong, and near crossings into [[The Mirrorgate]].
 
+In the material world, shardkin are extremely rare. Finding them outside the Mirrorgate is a sign that something has gone badly wrong.
+
 Shardkin are not the natives of the Mirrorgate. The plane has living plants and animals of its own, and most of them avoid shardkin as carefully as travelers do. See [[Life in the Mirrorgate]].
 
 ## One Person, Three Monsters

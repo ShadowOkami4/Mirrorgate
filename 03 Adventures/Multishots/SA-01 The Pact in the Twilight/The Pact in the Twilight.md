@@ -2,7 +2,7 @@
 id: SA-01
 type: multishot
 status: active-draft
-progress: 5
+progress: 25
 level: 4
 audience: gm
 canon: current
@@ -11,9 +11,9 @@ parent: "[[Multishots]]"
 # The Pact in the Twilight
 
 > [!tip] Production status
-> **Active draft · 5%**
+> **Active draft · 25%**
 >
-> `█░░░░░░░░░░░░░░░░░░░`
+> `█████░░░░░░░░░░░░░░░`
 
 *A multishot adventure for characters of 4th level.*
 
@@ -45,21 +45,26 @@ The temple is not entirely in Kagameru. The [[Temple of the Moon in Water]] in t
 ### Chapters
 
 0. [[SA-01 Prelude|Prelude]] — *Where Fate Gathers.* The letters, the forest, the thieves, and the lady at the lonely inn. *(active draft)*
-1. [[SA-01 Chapter 1|Chapter 1]] — *What the Thieves Found.* The journey north, the shattered thief, and the temple at twilight. *(draft; to be rewritten in a new direction)*
-2. *Further chapters — not yet outlined.*
+1. [[SA-01 Chapter 1|Chapter 1]] — *The Road to the Temple.* Leaving the inn, the owlbear family, the thieves' attack, and arrival at the temple. *(draft)*
+2. [[SA-01 Chapter 2|Chapter 2]] — *The Temple of the Moon in Water.* A puzzle and discovery dungeon ending at the great mirror in the worship hall. *(draft)*
+3. [[SA-01 Chapter 3|Chapter 3]] — *The Sanctum of the Flower in the Mirror.* The second half of the dungeon, the floating shards of the outer ring, Maria, and the red fog. *(draft)*
+4. *Chapter 4 — not yet written.*
+
+### Story Beats
+
+Planned scenes not yet assigned to a chapter are collected in [[SA-01 Story Beats]], starting with *The Red Fog*.
 
 ### Appendices
 
 - **A. Characters:** [[Sandra Mistic]], [[Maria Rose]]
 - **B. Locations:** [[Forest of Thieves]], [[To the Eternal Lady]], [[Temple of the Moon in Water]], [[Sanctum of the Flower in the Mirror]]
-- **C. Creatures:** thieves *(stat blocks not yet written)*; [[Remnant]], [[Glass Husk]], [[Glint]], [[Afterimage]] (Chapter 1 draft)
-- **NPCs introduced in play:** Oswin Pike, a surviving thief (Chapter 1)
-- **D. Handouts:** Sandra's letter, Sandra's map, and Mags Tallow's temple sketch *(not yet written)*
+- **C. Creatures:** Owlbear, Bandit Captain, Scout, and Bandit from the SRD 5.2.1 (Chapter 1); [[Glass Husk]] (temple)
+- **D. Handouts:** Sandra's letter and Sandra's map *(not yet written)*
 - **E. Maps and Scenes:** Atlas VTT collection `SA-01 The Pact in the Twilight` *(not yet created)*; see the [[Atlas VTT Guide]]
 
 ## Open Work
 
-- [ ] Rewrite Chapter 1 in the intended story direction
+- [x] Write Chapter 1
 - [ ] Complete the adventure outline and chapter structure
 - [ ] Add encounters, maps, creature statistics, and consequences
 - [ ] Add rewards, scaling, and Game Master guidance

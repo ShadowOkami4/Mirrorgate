@@ -16,6 +16,10 @@ This work includes material from the System Reference Document 5.2.1 (“SRD 5.2
 
 The Mirrored Realms is designed to be **compatible with fifth edition** using the SRD 5.2.1 rules foundation.
 
+## Music Recommendations
+
+The [Soundtrack](90%20Scriptorium/Soundtrack.md) page recommends music from other works. No music is distributed with this project. Every recommended track remains the property of its composer and rights holders, and is credited by franchise and copyright on that page. Recommended music comes from *Celeste* (© Maddy Makes Games, music by Lena Raine), *The Legend of Zelda* and *Super Mario* (© Nintendo), and *Professor Layton* (© Level-5). Planned remixes of copyrighted music are not covered by the project license and will only be published where permitted.
+
 ## Third-Party Software
 
 Files supplied by Obsidian plugins, themes, or other third-party tools are not authored by The Mirrored Realms contributors and are not relicensed under the project license. Their original licenses and copyright notices continue to apply.

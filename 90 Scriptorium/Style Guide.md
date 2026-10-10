@@ -49,6 +49,11 @@ These rules keep the vault readable in Obsidian, on GitHub, and for future contr
 - Pin library notes to scenes instead of writing new text inside Atlas.
 - See the [[Atlas VTT Guide]].
 
+## Music
+
+- Every important place and character gets a music recommendation on the [[Soundtrack]] page: either a generic mood or a specific track.
+- Credit specific tracks with their title, franchise or work, composer, and rights holder. Never add music files to the vault.
+
 ## Names
 
 - **The world, continents, countries, and cities** take names inspired by real-world words for *mirror*, *reflection*, *time*, and *space*, bent so they sound like places rather than dictionary words. The full rules, regional language flavours, and checks are in the [[Naming Guide]].

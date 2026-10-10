@@ -35,7 +35,16 @@ How faithfully a shard resembles its original depends on **mirror memory**—how
 - **Deep reflections.** A mirror that has hung in the same room for centuries produces a near-perfect copy on the other side: the same furniture, the same cracks in the plaster, the same view from the window. Great houses, old temples, and palaces with famous mirrors have some of the most faithful reflections in the Mirrorgate.
 - **Shallow reflections.** A place reflected only briefly—in a hand mirror, a puddle, a polished shield—becomes a blurred, dreamlike shard. Rooms are the wrong size, doors lead to the wrong places, and details dissolve under close inspection.
 - **Still water.** Lakes and ponds are the oldest mirrors of all. Much of the Mirrorgate's wilderness is reflected from them, which is why its forests so often hang upside down beneath the shards, growing toward a sky that is really the bottom of a lake.
-- **The unreflected.** Places that have never been reflected do not appear at all. Caves, sealed vaults, and the hearts of mountains leave holes in the Shardlands.
+- **Eyes and other reflections.** Mirrors are not the only things that reflect a place into the Mirrorgate (see below).
+- **The unseen.** Places that nothing has ever reflected—no surface and no eye—do not appear at all. Sealed vaults and the hearts of mountains leave holes in the Shardlands.
+
+### The Anomaly of the Unmirrored Places
+
+For a long time, scholars of the Mirrorgate could not explain why some places appeared there in extraordinary detail although no mirror had ever stood in them. Old ruins, the oldest streets of towns, and sites far from any lake were reflected behind the glass as faithfully as palaces whose mirrors had hung for centuries—sometimes more faithfully. Many scholars dismissed the reports as mistakes.
+
+Wise mages eventually found the answer: a mirror is not the only thing that reflects. Rain puddles in a street, wet stone, the polished stalagmites of a cave, and above all the eyes of everyone who has ever looked at a place all reflect it back into the Mirrorgate. Every glance adds a little to a place's mirror memory.
+
+This is why a dwarven monument deep inside a cave, where no water has ever stood, can appear in the Mirrorgate in almost perfect detail: generations of eyes have looked upon it. The more often and the longer a place is seen, the more faithfully the Mirrorgate remembers it.
 
 Every reflected place is also *reversed*. Writing runs backward, familiar streets turn the wrong way, and doors open on the wrong side. Experienced travelers learn to read signs in a mirror—or carry one.
 
@@ -80,6 +89,7 @@ Whether this recurrence is coincidence, curse, bloodline anomaly, or deliberate 
 
 ## Signs of Mirrorgate Influence
 
+- glasslike shards drifting in the air, turning slowly, vanishing, and reappearing elsewhere—common near places where the Mirrorgate bleeds into the material plane, such as war-scars and ancient sites, even where no mirror stands
 - mirrors showing a delayed or incorrect reflection
 - glass surfaces rippling like water
 - familiar rooms arranged in impossible layouts
@@ -105,7 +115,7 @@ Whether this recurrence is coincidence, curse, bloodline anomaly, or deliberate 
 > | 8 | A lair of [[Shardkin]] gathered around a broken mirror |
 
 > [!gm]- Known Place Within the Mirrorgate (SA-01 spoiler)
-> The [[Sanctum of the Flower in the Mirror]] is a ruined temple caught within the Mirrorgate. It is the interstitial counterpart of the [[Temple of the Moon in Water]] in the [[Forest of Thieves]]: two manifestations of one location divided between Kagameru and the plane between time and space. Unlike an ordinary reflection, the sanctum is not a copy—it is the missing half of the temple.
+> The [[Sanctum of the Flower in the Mirror]] is a ruined temple caught within the Mirrorgate. It is the interstitial counterpart of the [[Temple of the Moon in Water]] in the [[Forest of Thieves]]: two manifestations of one location divided between Kagameru and the plane between time and space. Unlike an ordinary reflection, the sanctum is not a copy—it is the missing half of the temple, torn into the Mirrorgate by a rift when a ritual to revive a dead moon god failed. It is one of the only places in the plane that is not a reflection, and it is disconnected from every other part of it.
 
 > [!gm]- Adventure Use
 > - A mirror in a noble estate opens only during thunderstorms.

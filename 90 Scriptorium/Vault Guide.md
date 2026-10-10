@@ -18,7 +18,7 @@ The vault works both as a **library** and as a set of **books**.
 
 Nothing is written twice. Books link to entries instead of copying them.
 
-At the table, the vault can also run sessions as a virtual tabletop with the Atlas VTT plugin. See the [[Atlas VTT Guide]].
+At the table, the vault can also run sessions as a virtual tabletop with the Atlas VTT plugin. See the [[Atlas VTT Guide]]. Music recommendations for places and characters are collected on the [[Soundtrack]] page.
 
 ## Vault Layers
 

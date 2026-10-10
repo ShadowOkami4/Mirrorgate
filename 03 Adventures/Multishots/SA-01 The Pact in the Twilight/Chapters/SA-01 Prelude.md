@@ -223,4 +223,4 @@ And beyond the reach of the inn's warm light, something in the twilight is waiti
 
 ---
 
-**Contents:** [[The Pact in the Twilight]] · **Next:** [[SA-01 Chapter 1|Chapter 1: What the Thieves Found]]
+**Contents:** [[The Pact in the Twilight]] · **Next:** [[SA-01 Chapter 1|Chapter 1: The Road to the Temple]]

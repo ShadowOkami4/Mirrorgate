@@ -52,6 +52,11 @@ Sandra cannot leave [[To the Eternal Lady]] to answer Maria's plea herself. Her 
 - A plea for help from Maria reached Sandra.
 - She is connected to the Temple of the Moon in Water and the Sanctum of the Flower in the Mirror.
 
+## In the Sanctum
+
+> [!gm]- Planned Story (SA-01 spoiler)
+> The party finds Maria in the great hall of the [[Sanctum of the Flower in the Mirror]], where the failed ritual took place. She explains what happened to the shrine, warns of a strange evil power looming within it, and shares her research on the wild fauna of the sanctum's outer ring. Later, a red fog corrupts her, and the party must fight her. See [[SA-01 Chapter 3#The Red Fog]].
+
 ## Open Development
 
 - Maria's ancestry, homeland, age, appearance, and former occupation

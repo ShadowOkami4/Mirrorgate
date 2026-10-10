@@ -63,11 +63,42 @@ Places inside one country or region share a language flavour so the map feels co
 | [[Hansha]] | Japanese | Hansha, Utsushi |
 | [[Drychwen]] | Welsh and Brythonic | Drychwen |
 | [[Scáthan]] | Gaelic (Irish, Scottish) | Scáthan |
-| [[Veidra]] | Baltic (Lithuanian, Latvian) | Veidra |
+| [[Veidra]] | Baltic (Lithuanian, Latvian) and Finnic (Finnish, Estonian) | Veidra |
 | [[Skuggsjá]] | Old Norse and Scandinavian | Skuggsjá |
-| [[Tezcatl]] | Nahuatl and Mesoamerican | Tezcatl |
+| [[Tezcatl]] | Nahuatl and Mesoamerican (including Quechua) | Tezcatl |
+| Southern Ice | not yet assigned | — |
 
 When a new country or region is defined, add a row here before naming its places.
+
+## Realms on the Current Map
+
+The current world map adds realms that are not yet described in the encyclopedia. Their names were generated from the roots in this guide. They are **provisional**: none has yet been checked against real places or published settings, and none has been added to the [[Pronunciation Guide]].
+
+| Realm | Continent | Flavour | Root | Seat |
+| --- | --- | --- | --- | --- |
+| Espeth | [[Specula]] | Latin | *espejo* (Spanish, mirror) | Reflessium |
+| Spiageleth | [[Specula]] | Germanic | *spiegel* (German, mirror) | Tijdorf |
+| Riflessora | [[Specula]] | Latin | *riflesso* (Italian, reflection) | Spazo |
+| Ruemarn | [[Specula]] | Germanic | *ruimte* (Dutch, space) | Ruimtehold |
+| Romheim | [[Skuggsjá]] | Norse | *rum* (Old Norse, space) | Rumby |
+| Rymhold | [[Skuggsjá]] | Norse | *rymd* (Swedish, space) | Spegihold |
+| Amsydd | [[Drychwen]] | Welsh | *amser* (Welsh, time) | Adlewydd |
+| Miroydd | [[Drychwen]] | Welsh | *mirour* (Cornish, mirror) | Amsan |
+| Melezydd | [[Drychwen]] | Welsh | *melezour* (Breton, mirror) | Adlawan |
+| Ilhuicapan | [[Tezcatl]] | Nahuatl | *ilhuicatl* (Nahuatl, sky / space) | Cahca |
+| Punora | [[Tezcatl]] | Quechua | *punchaw* (Quechua, time (day)) | Rikay |
+| Nanapan | [[Tezcatl]] | Nahuatl | *nen* (Yucatec Maya, mirror) | Tezcapan |
+| Rirora | [[Tezcatl]] | Quechua | *rirpu* (Quechua, mirror) | Rirpampa |
+| Xihuitara | [[Tezcatl]] | Nahuatl | *xihuitl* (Nahuatl, time (year)) | Tezco |
+| Laekara | [[Veidra]] | Baltic | *laikas* (Lithuanian, time) | Veidrodys |
+| Telene | [[Veidra]] | Baltic | *telpa* (Latvian, space) | Veava |
+| Tilemaa | [[Veidra]] | Finnic | *tila* (Finnish, space) | Averlo |
+| Kuvajara | [[Veidra]] | Finnic | *kuvajainen* (Finnish, reflection) | Aikanen |
+| Kosmija | [[Veidra]] | Baltic | *kosmosas* (Lithuanian, space) | Spogulys |
+| Aimsara | [[Scáthan]] | Gaelic | *aimsir* (Irish, time) | Amach |
+| Tramor | [[Scáthan]] | Gaelic | *trath* (Irish, time) | Tretain |
+
+[[Lustro]] and [[Hansha]] appear on the map with their established names.
 
 ## Checks Before Adding a Name
 

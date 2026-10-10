@@ -21,8 +21,12 @@ The surviving atlas fragments of [[Kagameru]] name six great landmasses. Scholar
 | [[Skuggsjá]] | SKOOG-syah | cold seas, hard winters, isolated holds | "shadow-seer" |
 | [[Tezcatl]] | TESS-kaht | sun-scorched south, stone cities, temples, older rites | "mirror" of polished obsidian |
 
+## The Southern Ice
+
+Newer maps show a seventh landmass that the old atlas fragments do not name: a vast, icebound land in the far south. For now it is recorded simply as the **Southern Ice**. It has no old-tongue name, and nothing is yet known of its peoples or history.
+
 > [!warning] Provisional Canon
-> The continents are working references. Their borders, relative positions, and peoples have not yet been mapped.
+> The continents are working references. The current world map places them, but their borders and peoples may still change, and the Southern Ice has not yet been given a name or a place in the lore.
 
 ## Tensions Across the Map
 
