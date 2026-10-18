@@ -3,7 +3,7 @@ type: moc
 status: active
 audience: gm
 canon: current
-parent: "[[Welcome]]"
+parent: "[[Kagameru]]"
 ---
 # People & Powers
 

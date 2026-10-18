@@ -8,7 +8,7 @@ parent: "[[NPCs]]"
 # Jacob Blackwood
 
 > *“The quieter branch of a royal family is often quiet because it is listening.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 **Jacob Blackwood** is a known member of the [[Blackwood Bloodline]], an important royal family of [[Lustro]].
 

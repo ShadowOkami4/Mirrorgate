@@ -8,7 +8,7 @@ parent: "[[Bookshelf]]"
 # Mirrorgate Bestiary
 
 > *"A broken mirror does not stop reflecting. It merely becomes less polite about what it shows."*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 Creatures of the Mirrored Realms with fifth-edition stat blocks based on the SRD 5.2.1.
 

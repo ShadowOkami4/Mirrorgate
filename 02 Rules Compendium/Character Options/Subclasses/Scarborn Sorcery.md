@@ -9,7 +9,7 @@ parent: "[[Rules Compendium]]"
 # Scarborn Sorcery
 
 > *"Most sorcerers inherit their magic from a dragon, a storm, or an ancestor with poor judgment. The Scarborn inherit theirs from a wound in the world. I am told it itches."*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 *Sorcerer Subclass · Carry a Wound in Time and Space*
 

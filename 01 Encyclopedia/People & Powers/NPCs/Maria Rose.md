@@ -5,7 +5,7 @@ audience: gm
 canon: current
 parent: "[[NPCs]]"
 release: "[[The Pact in the Twilight]]"
-banner: z_Assets/Maria_Rose.png
+banner: z_Assets/Private/Maria_Rose.png
 banner-x: 50
 banner-y: 5
 ---

@@ -8,7 +8,7 @@ parent: "[[Rules Compendium]]"
 # Scar Hazards
 
 > *"Some battlefields are buried. Others continue happening."*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 This module gives Game Masters tools for running the [[Scars of the Primordial War]] at the table: places where time, space, memory, or reflection were wounded and never healed properly. The lore of the scars lives in the encyclopedia entry; this page covers only how they play.
 

@@ -8,7 +8,7 @@ parent: "[[Species & Cultures]]"
 # Humans
 
 > *“Give a human an empty field and, before the season turns, it will contain a road, an inn, three competing laws, and an argument over who discovered it first.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 Humans are among the most widespread and adaptable peoples of [[Kagameru]]. They dwell in crowded cities, isolated farmsteads, wandering caravans, fortified borderlands, and settlements built where wiser folk once declared settlement impossible.
 

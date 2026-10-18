@@ -13,3 +13,13 @@
 
 # Cartography working files (large map renders and generator data)
 /Cartography/
+
+# Private working files (YouTube descriptions, drafts not meant for the repository)
+/Private/
+
+# Private images (AI-generated visual aids; not published)
+/z_Assets/Private/
+
+# Project office and archive (kept local for now)
+/90 Scriptorium/
+/99 Archive/

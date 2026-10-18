@@ -8,7 +8,7 @@ parent: "[[Welcome]]"
 # Rules Compendium
 
 > *"Every mystery eventually meets a rules lawyer. I have found it best to prepare for this."*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The homebrew rules of the Mirrored Realms: fifth-edition material built on the SRD 5.2.1.
 

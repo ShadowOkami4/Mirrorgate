@@ -11,7 +11,7 @@ aliases:
 # Sanctum of the Flower in the Mirror
 
 > *"There are places reflected in mirrors, and there are places that wait behind them. Confusing the two is how expeditions become memorials."*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The **Sanctum of the Flower in the Mirror**, also called *the temple behind the mirror*, is the missing half of the [[Temple of the Moon in Water]]. Together, the two halves were once the **Shrine of the Unreachable Bloom**, a shrine to a moon god destroyed in [[The Primordial War]].
 

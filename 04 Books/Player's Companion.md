@@ -17,19 +17,20 @@ parent: "[[Bookshelf]]"
 ### Chapter 1 — The World in Brief
 
 1. [[Kagameru]]
-2. [[The Mirrorgate]]
-3. [[The Shattered Hope Era]]
-4. [[Geography & Politics]]
-5. [[Religion & Deities]]
-6. [[Pronunciation Guide]]
+2. [[Technology and Daily Life]]
+3. [[The Mirrorgate]]
+4. [[The Shattered Hope Era]]
+5. [[Geography & Politics]]
+6. [[Religion & Deities]]
+7. [[Pronunciation Guide]]
 
 ### Chapter 2 — Peoples of Kagameru
 
-7. [[Species & Cultures]] — [[Humans]], [[Elves]], [[Dwarves]], [[Orcs]]
+8. [[Species & Cultures]] — [[Humans]], [[Elves]], [[Dwarves]], [[Orcs]]
 
 ### Chapter 3 — Character Options
 
-8. **Subclasses:** [[Mirrorbound]] (Fighter), [[Scarborn Sorcery]] (Sorcerer)
+9. **Subclasses:** [[Mirrorbound]] (Fighter), [[Scarborn Sorcery]] (Sorcerer)
 
 *Planned:* species rules, backgrounds, further subclasses, and feats suited to the Mirrored Realms. See the [[Rules Compendium]].
 

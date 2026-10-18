@@ -8,7 +8,7 @@ parent: "[[Religion & Deities]]"
 # Aurora
 
 > *“A foreign god should not be made native merely because their story is beautiful.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 **Aurora** is a genderless deity of life worshiped as the central figure in the primary religion of the unknown world from which [[Phineas Phantomhive I]] came. Aurora is sometimes called a goddess, but the faith teaches that Aurora has no gender.
 

@@ -5,13 +5,14 @@ audience: gm
 canon: current
 parent: "[[The Pact in the Twilight]]"
 release: "[[The Pact in the Twilight]]"
+located-in: "[[Forest of Thieves]]"
 aliases:
   - Ruined Temple
 ---
 # Temple of the Moon in Water
 
 > *“A ruin is only an abandoned place when nothing on the other side remembers it.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The **Temple of the Moon in Water**—to most who know of it, simply *the ruined temple*—stands in the northern reaches of the [[Forest of Thieves]]. It is the site marked on the map given to the adventurers by [[Sandra Mistic]] and the place where her old friend, [[Maria Rose]], investigated the spread of the luminous plants.
 

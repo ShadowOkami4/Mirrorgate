@@ -8,7 +8,7 @@ parent: "[[NPCs]]"
 # Maria Blackwood
 
 > *“In royal houses, grace is rarely harmless.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 **Maria Blackwood** is a known member of the [[Blackwood Bloodline]], an important royal family of [[Lustro]].
 

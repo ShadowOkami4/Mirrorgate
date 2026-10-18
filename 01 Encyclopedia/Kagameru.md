@@ -8,7 +8,7 @@ parent: "[[Welcome]]"
 # Kagameru
 
 > *“Every world believes itself ordinary until one reads its footnotes.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 **Kagameru** is the central world of the Mirrored Realms: a land of old scars, unfinished histories, contested relics, and reflections that do not always obey their owners.
 
@@ -25,6 +25,7 @@ Its peoples build kingdoms, roads, temples, academies, inns, and border forts at
 - The present age is increasingly known as [[The Shattered Hope Era]].
 - Certain mirrors and planar wounds connect Kagameru to [[The Mirrorgate]].
 - Time, space, reflection, and memory are central forces in its oldest mysteries.
+- It stands between the Middle Ages and the early Industrial Revolution: crowns and castles, but also railways and early firearms. See [[Technology and Daily Life]].
 - Its peoples and cultures are recorded in [[Species & Cultures]].
 - Its lands and political powers are gathered under [[Geography & Politics]].
 

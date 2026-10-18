@@ -8,7 +8,7 @@ parent: "[[Species & Cultures]]"
 # Dwarves
 
 > *“A dwarf does not merely build a hall. A dwarf argues with the mountain until the mountain agrees to become architecture.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The dwarves of [[Kagameru]] are known in many regions for endurance, craft, memory, and a practical suspicion of anything described as “ancient power” by someone holding a shovel.
 

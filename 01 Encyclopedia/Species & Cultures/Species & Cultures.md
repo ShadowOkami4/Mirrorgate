@@ -8,7 +8,7 @@ parent: "[[Kagameru]]"
 # Species & Cultures
 
 > *“To study a people by their appearance alone is to judge a library by the color of its door.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The peoples of [[Kagameru]] are as varied as the lands they inhabit. Across its mirrored realms, ancient lineages stand beside young civilizations, wandering clans cross the borders of settled kingdoms, and communities separated by only a few miles may preserve vastly different customs, beliefs, and histories.
 

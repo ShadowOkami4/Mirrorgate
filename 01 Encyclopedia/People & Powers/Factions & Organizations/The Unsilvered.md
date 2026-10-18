@@ -10,7 +10,7 @@ aliases:
 # The Unsilvered
 
 > *“Rebellion is rarely one fire. More often it is a hundred candles hidden from the same wind.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 **The Unsilvered** are the anti-crown movements of [[Lustro]]. They are not a single army, faction, or ideology, but a loose collection of organizations, cells, families, scholars, defectors, smugglers, and local communities working against the strict rule of the crown.
 

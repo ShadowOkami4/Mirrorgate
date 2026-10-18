@@ -5,7 +5,7 @@ audience: gm
 canon: current
 parent: "[[NPCs]]"
 release: "[[The Pact in the Twilight]]"
-banner: z_Assets/Sandra_Mistic_Disguised.png
+banner: z_Assets/Private/Sandra_Mistic_Disguised.png
 banner-height: 320
 banner-x: 51
 banner-y: 9

@@ -9,7 +9,7 @@ parent: "[[Rules Compendium]]"
 # Mirrorbound
 
 > *"Most people glance into a mirror to see whether they look presentable. The Mirrorbound glance into one to check whether they are still standing in it."*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 *Fighter Subclass · Fight Alongside Your Own Reflection*
 

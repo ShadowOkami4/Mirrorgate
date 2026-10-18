@@ -8,7 +8,7 @@ parent: "[[Welcome]]"
 # Bookshelf
 
 > *"A library is where knowledge waits to be found. A book is where someone has already done the finding and put it in order. I recommend both, preferably in that sequence."*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The library can be explored in any order. The books below gather the same entries into a fixed reading order, the way a printed rulebook or setting guide would. Every chapter is a note in the library, so nothing is written twice.
 

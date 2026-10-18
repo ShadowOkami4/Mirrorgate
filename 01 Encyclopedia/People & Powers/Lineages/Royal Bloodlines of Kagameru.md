@@ -8,7 +8,7 @@ parent: "[[People & Powers]]"
 # Royal Bloodlines of Kagameru
 
 > *“A bloodline is a story people insist on telling with crowns.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The noble and royal bloodlines of [[Kagameru]] preserve fragments of older ages: inheritance records, marriage contracts, curse traditions, divine claims, and family myths that may conceal genuine historical power.
 

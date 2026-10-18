@@ -8,7 +8,7 @@ parent: "[[Welcome]]"
 # Adventures & Fiction
 
 > *“The difference between history and adventure is usually whether anyone survived long enough to organize the notes.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 This section gathers playable adventures, campaign premises, fiction fragments, session material, and narrative hooks set within the Mirrored Realms.
 
@@ -23,7 +23,7 @@ This section gathers playable adventures, campaign premises, fiction fragments, 
 - [[The Pact in the Twilight]] — short adventure, 25%
 - [[Shattered Hope]] — main campaign framework, 1%
 
-For the complete production overview, see the [[Roadmap]].
+
 
 ## Common Adventure Themes
 

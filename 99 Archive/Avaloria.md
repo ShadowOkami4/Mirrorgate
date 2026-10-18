@@ -1,6 +1,0 @@
-
-
-
-### Adelshäuser
-
-- [[Die Blackwood's]]

@@ -12,7 +12,7 @@ aliases:
 # Glint
 
 > *"They are drawn to warmth, to voices, and—most unsettlingly—to people who are dying. I prefer to believe they are only lonely."*
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 A **glint** is a splinter of a shattered soul: a flickering mote of light about the size of a child, barely aware of itself and painfully lonely. It drifts toward warmth and voices, circling the living as if trying to remember what being one of them was like.
 

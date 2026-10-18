@@ -8,9 +8,9 @@ parent: "[[Kagameru]]"
 # Pronunciation Guide
 
 > *"I have heard my own homeland mispronounced in eleven languages, two of which I am fairly sure were invented on the spot."*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
-The world, great lands, realms, and cities of [[Kagameru]] take their names from old-tongue roots for *mirror*, *reflection*, *time*, and *space*. Local places—forests, inns, roads, and ruins—usually go by their common-tongue names. Personal names follow no single rule. The rules for new names are in the [[Naming Guide]].
+The world, great lands, realms, and cities of [[Kagameru]] take their names from old-tongue roots for *mirror*, *reflection*, *time*, and *space*. Local places—forests, inns, roads, and ruins—usually go by their common-tongue names. Personal names follow no single rule.
 
 Stressed syllables are shown in capitals. Tables are welcome to use their own pronunciations.
 
@@ -39,8 +39,11 @@ Stressed syllables are shown in capitals. Tables are welcome to use their own pr
 | --- | --- | --- |
 | [[Lustro]] | LOO-stroh | mirror; "I survey, I purify" |
 | [[Ogledal]] | OG-leh-dahl | mirror; "to inspect" |
-| [[Hansha]] | HAHN-shah | reflection |
+| [[Hansha]] | HAHN-shah | reflection (a free city) |
 | [[Utsushi]] | oo-TSOO-shee | copy, transcription, reflection |
+| [[Zrcalin]] | ZR-chah-leen | mirror *(provisional)* |
+| [[Spatora]] | spah-TOR-ah | space, distance *(provisional)* |
+| [[Odrava]] | OD-rah-vah | reflection *(provisional)* |
 
 ---
 

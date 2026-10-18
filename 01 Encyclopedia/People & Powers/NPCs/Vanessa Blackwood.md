@@ -8,7 +8,7 @@ parent: "[[NPCs]]"
 # Vanessa Blackwood
 
 > *“Every royal family has one member everyone underestimates. Sensible historians learn their name first.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 **Vanessa Blackwood** is a known member of the [[Blackwood Bloodline]], an important royal family of [[Lustro]].
 

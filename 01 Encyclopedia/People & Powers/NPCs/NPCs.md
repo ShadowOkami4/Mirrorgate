@@ -8,7 +8,7 @@ parent: "[[People & Powers]]"
 # NPCs
 
 > *“People are the true crossroads of history. Roads merely help them arrive late.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 This folder gathers recurring and adventure-specific NPCs in one place so their relationships remain easy to track through Obsidian links and graph view.
 

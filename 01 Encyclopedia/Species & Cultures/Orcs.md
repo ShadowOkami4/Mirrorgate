@@ -8,7 +8,7 @@ parent: "[[Species & Cultures]]"
 # Orcs
 
 > *“The dullest scholars call orcs violent and stop writing. Better scholars ask who taught them to survive.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The orcs of [[Kagameru]] are not a single culture, nation, or story. Their communities vary widely across the world, shaped by homeland, history, faith, trade, war, and alliance.
 

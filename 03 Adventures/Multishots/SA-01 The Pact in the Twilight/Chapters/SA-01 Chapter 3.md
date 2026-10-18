@@ -41,7 +41,7 @@ The sanctum is the half of the Shrine of the Unreachable Bloom that the rift swa
 As in Chapter 2, every puzzle can be solved with thought alone; the hint checks are for players who get stuck. All magic items are from the SRD 5.2.1.
 
 > [!note] Music
-> *Resurrections* — part: **Blocks Active** plays in the sanctum, and part: **Badeline Conversation** during the conversation with Maria (see [[Soundtrack]]).
+> *Resurrections* — part: **Blocks Active** plays in the sanctum, and part: **Badeline Conversation** during the conversation with Maria.
 
 ## 3.1 — Through the Glass
 

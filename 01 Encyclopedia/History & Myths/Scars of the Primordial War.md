@@ -8,7 +8,7 @@ parent: "[[History & Myths]]"
 # Scars of the Primordial War
 
 > *“Some battlefields are buried. Others continue happening.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The **Scars of the Primordial War** are places where [[The Primordial War]] damaged time, space, memory, or reality itself. They are not ordinary ruins, nor are they simply sites where old magic remains. They are wounds in the world's structure.
 
@@ -29,6 +29,12 @@ Common scar effects include:
 - **age storms**, which make objects or creatures grow older or younger without pattern
 - **mirror wounds**, where reflective surfaces open toward [[The Mirrorgate]]
 - **chronal ghosts**, echoes of people caught in a moment that refuses to end
+
+## Known Scars
+
+- [[The Glass Crater]] — Specula *(provisional)*
+- [[The Repeating Vale]] — Specula *(provisional)*
+- [[The Folded Road]] — Specula *(provisional)*
 
 ## Connection to the Mirrorgate
 

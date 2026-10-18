@@ -11,7 +11,7 @@ aliases:
 # Remnant
 
 > *"It remembers being someone. It is the remembering that makes it cruel."*
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 A **remnant** is the self that survives when a person is shattered by a mirror: the part that remembers a name, a face, and a life, cut loose from the body and soul that once carried it. It looks like its former self seen through cracked glass—the right shape, but split along a dozen jagged seams that shift when it moves.
 

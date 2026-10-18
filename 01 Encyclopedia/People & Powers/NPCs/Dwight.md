@@ -8,7 +8,7 @@ parent: "[[NPCs]]"
 # Dwight
 
 > *“A medic with a rogue's hands is either a blessing, a crime, or both.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 **Dwight** is a legendary companion associated with [[Phineas Phantomhive I]] in stories from Phineas I's unknown world.
 

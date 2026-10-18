@@ -10,7 +10,7 @@ aliases:
 # Lustral Office
 
 > *"No kingdom censors its history. It merely purifies it."*  
-> —[[Professor Phineas Phantomhive II]], quoting an official of Lustro
+> —Professor Phineas Phantomhive II, quoting an official of Lustro
 
 The **Lustral Office** is the institution through which the crown of [[Lustro]] keeps its registers, approves its histories, and enforces its official doctrine that [[The Mirrorgate]] does not exist. Its armed agents are known as the **Lustral Guard**.
 

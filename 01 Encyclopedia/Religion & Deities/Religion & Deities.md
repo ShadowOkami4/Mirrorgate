@@ -8,7 +8,7 @@ parent: "[[Kagameru]]"
 # Religion & Deities
 
 > *“Nothing encourages theological disagreement quite like dead gods who may still be answering prayers.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The faiths of [[Kagameru]] are shaped by uncertainty. The oldest myths claim that the Prime Gods were destroyed at the end of [[The Primordial War]], yet divine signs, miracles, avatars, relics, and prophetic dreams continue to trouble any simple explanation.
 
@@ -21,6 +21,12 @@ This section will gather gods, saints, cults, churches, sacred traditions, and d
 - Do divine avatars preserve balance or continue the ancient war?
 - Which modern faiths are built on truth, and which are built on useful mistakes?
 - Can a god be dead and still dangerous?
+
+## Known Temples
+
+- [[The Veiled Cathedral]] — Ogledal *(provisional)*
+- [[The Hall of the Last Hour]] — a monastery beside a time-looping scar *(provisional)*
+- [[Temple of the Moon in Water]] — the ruined Shrine of the Unreachable Bloom
 
 ## Future Entries
 

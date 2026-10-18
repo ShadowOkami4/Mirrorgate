@@ -8,7 +8,7 @@ parent: "[[NPCs]]"
 # Thalrex Silberblick
 
 > *“A dragonborn barbarian with wild magic and glowing blue eyes is the sort of detail legends rarely invent politely.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 **Thalrex Silberblick** is a dragonborn barbarian remembered in legends surrounding [[Phineas Phantomhive I]].
 

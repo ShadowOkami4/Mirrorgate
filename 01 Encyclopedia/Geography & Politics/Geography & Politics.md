@@ -8,7 +8,7 @@ parent: "[[Kagameru]]"
 # Geography & Politics
 
 > *“Maps are arguments drawn in ink.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The lands of [[Kagameru]] are divided not only by mountains, rivers, and seas, but by memory, ambition, trade, faith, and old wounds left by powers no living cartographer fully understands.
 
@@ -24,16 +24,18 @@ This section gathers notes on regions, borders, rulers, conflicts, and the polit
 ## Realms and Regions
 
 - [[Lustro]] — the central kingdom, in [[Specula]]
-- [[Hansha]] — homeland of the Professor
+- [[Hansha]] — a free city of scholars and engineers on Specula *(provisional)*
 
 ### On the Current Map
 
-The current world map shows 23 realms. Only [[Lustro]] and [[Hansha]] are described so far; the others are listed, with their name roots, under *Realms on the Current Map* in the [[Naming Guide]].
+The current world map shows 23 realms. Only [[Lustro]] and [[Hansha]] are described so far; the others are listed provisionally.
 
 ## Settlements
 
 - [[Ogledal]] — royal capital of Lustro
-- [[Utsushi]] — academy-town of Hansha
+- [[Utsushi]] — the academy quarter of Hansha
+
+Many more places on Specula are listed in the [[Specula]] entry.
 
 ## Sites and Landmarks
 
@@ -46,7 +48,7 @@ The world, its continents, its kingdoms, and its great cities carry names grown 
 
 Forests, inns, roads, and other local landmarks are known by their common-tongue names, such as the [[Forest of Thieves]] and [[To the Eternal Lady]]. Places within one realm tend to share the flavour of one old tongue, which is often the quickest way to guess where a traveler comes from.
 
-See the [[Pronunciation Guide]] for how to say them and the [[Naming Guide]] for how new names are made.
+See the [[Pronunciation Guide]] for how to say them.
 
 ## Political Themes
 

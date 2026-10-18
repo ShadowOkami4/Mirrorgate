@@ -10,7 +10,7 @@ aliases:
 # The Mirrorgate
 
 > *"A mirror is a door pretending to be furniture."*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The **Mirrorgate** is the world behind the glass: a plane of broken land, reflected places, and unreliable time, lying just on the other side of every mirror. It is neither empty nor dead. Rivers run, weather turns, forests grow, and creatures that have never seen the material world make their homes there.
 

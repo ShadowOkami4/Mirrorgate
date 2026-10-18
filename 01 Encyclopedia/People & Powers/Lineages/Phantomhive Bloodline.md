@@ -8,7 +8,7 @@ parent: "[[Royal Bloodlines of Kagameru]]"
 # Phantomhive Bloodline
 
 > *“I assure you, my family is only mostly suspicious.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 The **Phantomhive** name appears in an unusual number of records from Kagameru and beyond. It is not merely a noble surname; in some accounts, it behaves like a historical echo, recurring across regions, institutions, and even incompatible realities connected to [[The Mirrorgate]].
 

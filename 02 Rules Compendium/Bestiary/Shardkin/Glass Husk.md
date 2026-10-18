@@ -11,7 +11,7 @@ aliases:
 # Glass Husk
 
 > *"The body remembers how to walk long after it has forgotten why."*
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 A **glass husk** is the body left behind when a person is shattered by a mirror. The soul is gone; in its place, something jagged has moved in. Thin plates of glass push through the skin like frost across a windowpane, and the husk's joints grind with the sound of a mirror being scratched.
 

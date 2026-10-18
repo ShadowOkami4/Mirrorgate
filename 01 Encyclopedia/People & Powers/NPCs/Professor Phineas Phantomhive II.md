@@ -4,9 +4,9 @@ status: draft
 audience: gm
 canon: current
 parent: "[[NPCs]]"
-banner: z_Assets/Professor_Phineas_Phantomhive.png
-banner-x: 49
-banner-y: 0
+banner: z_Assets/Private/Professor_Phineas_Phantomhive.png
+banner-x: 51
+banner-y: 7
 ---
 # Professor Phineas Phantomhive II
 

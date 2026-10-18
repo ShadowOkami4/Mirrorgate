@@ -9,7 +9,7 @@ cr: 6
 # Kaleidoscope
 
 > *"In each shard I saw a different face, and every one of them had once stood where I was standing. I left before it could add mine."*
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 A **kaleidoscope** is a slowly turning storm of broken mirror fragments, held together by nothing but reflected light. It forms in places where many mirrors have shattered—abandoned halls, collapsed palaces, the workshops of careless enchanters—and it gathers into itself every reflection that was ever lost there.
 

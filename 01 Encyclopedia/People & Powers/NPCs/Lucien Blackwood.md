@@ -8,7 +8,7 @@ parent: "[[NPCs]]"
 # Lucien Blackwood
 
 > *“A royal name opens doors. It also paints targets on them.”*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 **Lucien Blackwood** is a known member of the [[Blackwood Bloodline]], an important royal family of [[Lustro]].
 

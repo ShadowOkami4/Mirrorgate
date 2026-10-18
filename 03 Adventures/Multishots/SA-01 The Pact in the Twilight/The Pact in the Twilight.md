@@ -60,7 +60,7 @@ Planned scenes not yet assigned to a chapter are collected in [[SA-01 Story Beat
 - **B. Locations:** [[Forest of Thieves]], [[To the Eternal Lady]], [[Temple of the Moon in Water]], [[Sanctum of the Flower in the Mirror]]
 - **C. Creatures:** Owlbear, Bandit Captain, Scout, and Bandit from the SRD 5.2.1 (Chapter 1); [[Glass Husk]] (temple)
 - **D. Handouts:** Sandra's letter and Sandra's map *(not yet written)*
-- **E. Maps and Scenes:** Atlas VTT collection `SA-01 The Pact in the Twilight` *(not yet created)*; see the [[Atlas VTT Guide]]
+- **E. Maps and Scenes:** Atlas VTT collection `SA-01 The Pact in the Twilight` *(not yet created)*
 
 ## Open Work
 

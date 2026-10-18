@@ -10,7 +10,7 @@ aliases:
 # Phineas Phantomhive I
 
 > *"A name may cross worlds more easily than a man. Unfortunately, in this case, both appear to have done so."*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 **Phineas Phantomhive I**, often called the **Original Phineas**, is one of the strangest figures connected to the [[Phantomhive Bloodline]]. He did not come from [[Kagameru]]. He was born in another world—a world whose people worship [[Aurora]], where the dead rarely return, and where a hero with no magic at all was remembered as one of the greatest of his age.
 

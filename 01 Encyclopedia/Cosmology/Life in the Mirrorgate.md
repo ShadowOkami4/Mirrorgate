@@ -8,7 +8,7 @@ parent: "[[The Mirrorgate]]"
 # Life in the Mirrorgate
 
 > *"I expected ghosts. I found a meadow full of deer, all of them watching me in a way that suggested I was the ghost."*  
-> —[[Professor Phineas Phantomhive II]]
+> —Professor Phineas Phantomhive II
 
 [[The Mirrorgate]] is not a graveyard of reflections. Life has taken root among its shards: plants that drink reflected light, animals that know which way is down on every island, and creatures that swim through the open sky of the Drift. They were born behind the glass, and most have never seen any other world.
 

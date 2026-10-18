@@ -32,7 +32,6 @@ Choose your first subject:
 - **Meet its powers:** [[People & Powers]]
 - **Read it as a book:** the [[Bookshelf]] — [[Encyclopedia Kagami]], [[Player's Companion]], [[Game Master's Codex]], and [[Mirrorgate Bestiary]]
 - **Prepare play:** [[Rules Compendium]] and [[Adventures & Fiction]]
-- **Follow the project:** [[Roadmap]], [[Vault Guide]], and [[Style Guide]]
 
 May your questions be many, your conclusions cautious, and your lantern well supplied.
 
