@@ -143,7 +143,7 @@ These paths are excluded from the repository by `.gitignore`:
 | `Cartography/` | map generator and full-size renders, which are too large for the repository |
 | `.obsidian/workspace.json` | personal window layout |
 | `.claude/`, `.claudian/` | local AI assistant data |
-| `z_Assets/Private/` | private images, such as AI-generated visual aids used only locally |
+| `z_Assets/Private/` | private images that are kept local and not published |
 
 ## Reading the Vault
 
@@ -336,6 +336,8 @@ I will not hide or lie about it: I use AI. [Claude](https://claude.ai), an AI as
 
 What I will not use AI for is the story itself. The plot, the characters, the direction of the adventures, and the vision of the world come from me. This world has taken years and many scrapped versions to grow into what it is, and I don't want that vision replaced by AI. Where AI has helped with wording, the story decisions behind it are still mine, and anything that does not match my vision gets rewritten.
 
+I also do not use AI-generated artwork. Every image in the Mirrored Realms is made by a person.
+
 ## Contributing
 
 Corrections, playtest reports, writing, mechanics, and original artwork are welcome through [GitHub Issues](https://github.com/ShadowOkami4/Mirrorgate/issues) and pull requests.
@@ -356,6 +358,7 @@ Artists are invited to propose original character art, creatures, locations, map
 - **Paid commissions** are planned as soon as the budget allows. Scope, schedule, price, attribution, and usage rights will be agreed in writing before any work begins.
 - **Voluntary contributions** are just as welcome.
 - Artwork in this repository must be original, and the artist must have the right to release it under [CC BY 4.0](LICENSE). Payment never removes the artist's right to be credited.
+- Artwork must be made by the artist without generative AI. AI-generated images are not accepted.
 
 To propose artwork or get in touch about a commission, open an [artwork proposal issue](https://github.com/ShadowOkami4/Mirrorgate/issues) with:
 
