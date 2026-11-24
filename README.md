@@ -118,7 +118,7 @@ The shared vault settings in `.obsidian/` enable the following community plugins
 | File Explorer++ | filtering and pinning in the file explorer |
 | Templater | note templates that link each new note to its section |
 | QuickAdd | *New Place*, *New Character*, *New Secret*, *New Area* … commands that create a note in the right folder |
-| Homepage | opens `Home.md` when the vault starts |
+| Hearth | the start screen for play: search (with dice rolls), the graph, Atlas VTT shortcuts, a scratchpad and recent notes |
 | Style Settings | options for the theme and CSS snippets |
 | Claudian | the maintainer's AI assistant (see [A Note on AI](#a-note-on-ai)); not needed to read or play |
 
@@ -133,7 +133,7 @@ The vault is written for **Game Masters**. Every page tells the whole story; tex
 
 | Path | Contents |
 | --- | --- |
-| `Home.md` | the entrance: the world map, where to start, and every section |
+| `Home.md` | the entrance: how to use the vault, and every section |
 | `01 Atlas/` | places, nested like the map: continent → realm → settlement → site |
 | `02 Characters/` | everyone the GM may play or mention |
 | `03 Factions/` | houses, orders, guilds, churches, cults |

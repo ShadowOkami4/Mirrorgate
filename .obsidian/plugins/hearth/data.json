@@ -5,7 +5,7 @@
   "tabIcon": "gem",
   "themeColorTarget": "none",
   "showSearch": true,
-  "searchPlaceholder": "Search the realms · #tag · key:value · > command · 2d6",
+  "searchPlaceholder": "Search the realms · #tag · key:value · > command · roll 2d6",
   "showNewNoteButton": true,
   "newNoteButtonMode": "newNote",
   "newNoteButtonLabel": "",
@@ -91,105 +91,28 @@
   "dashboards": [
     {
       "id": "dash-mirrored-realms",
-      "name": "The Mirrored Realms",
+      "name": "Session",
       "cards": [
         {
-          "id": "card-sections",
-          "kind": "links",
-          "title": "Sections",
-          "tileSizing": "scale",
+          "id": "card-graph",
+          "kind": "leaf",
+          "title": "The realms",
+          "leafView": {
+            "viewType": "graph"
+          },
           "x": 0,
           "y": 0,
           "w": 7,
-          "h": 4,
-          "links": [
-            {
-              "id": "sec-0",
-              "label": "Atlas",
-              "icon": "map",
-              "type": "note",
-              "target": "01 Atlas/Atlas.md"
-            },
-            {
-              "id": "sec-1",
-              "label": "Characters",
-              "icon": "users",
-              "type": "note",
-              "target": "02 Characters/Characters.md"
-            },
-            {
-              "id": "sec-2",
-              "label": "Factions",
-              "icon": "shield",
-              "type": "note",
-              "target": "03 Factions/Factions.md"
-            },
-            {
-              "id": "sec-3",
-              "label": "History",
-              "icon": "hourglass",
-              "type": "note",
-              "target": "04 History/History.md"
-            },
-            {
-              "id": "sec-4",
-              "label": "Faiths & Cosmos",
-              "icon": "sparkles",
-              "type": "note",
-              "target": "05 Faiths & Cosmos/Faiths & Cosmos.md"
-            },
-            {
-              "id": "sec-5",
-              "label": "Peoples",
-              "icon": "trees",
-              "type": "note",
-              "target": "06 Peoples/Peoples.md"
-            },
-            {
-              "id": "sec-6",
-              "label": "Secrets",
-              "icon": "lock",
-              "type": "note",
-              "target": "07 Secrets/Secrets.md"
-            },
-            {
-              "id": "sec-7",
-              "label": "Adventures",
-              "icon": "swords",
-              "type": "note",
-              "target": "08 Adventures/Adventures.md"
-            },
-            {
-              "id": "sec-8",
-              "label": "Rules",
-              "icon": "dices",
-              "type": "note",
-              "target": "09 Rules/Rules.md"
-            },
-            {
-              "id": "sec-9",
-              "label": "Books",
-              "icon": "library",
-              "type": "note",
-              "target": "10 Books/Books.md"
-            },
-            {
-              "id": "sec-10",
-              "label": "Meta",
-              "icon": "settings",
-              "type": "note",
-              "target": "99 Meta/Meta.md"
-            }
-          ],
+          "h": 6,
           "fx": 0,
           "fw": 0.5777777777777777,
           "fy": 0,
-          "fh": 416
+          "fh": 632
         },
         {
-          "id": "card-create",
+          "id": "card-tools",
           "kind": "links",
-          "title": "Create",
+          "title": "At the table",
           "tileSizing": "scale",
           "x": 7,
           "y": 0,
@@ -197,67 +120,60 @@
           "h": 4,
           "links": [
             {
-              "id": "new-0",
-              "label": "Place",
-              "icon": "map-pin",
+              "id": "t-vtt",
+              "label": "Atlas VTT",
+              "icon": "map",
               "type": "command",
-              "target": "quickadd:choice:07017701-6b04-4f6e-95f7-39e260439e8c"
+              "target": "atlas-vtt:open-dashboard"
             },
             {
-              "id": "new-1",
-              "label": "Character",
-              "icon": "user-plus",
+              "id": "t-player",
+              "label": "Players",
+              "icon": "monitor",
               "type": "command",
-              "target": "quickadd:choice:b3150078-ee00-4de6-8d29-3a404b251087"
+              "target": "atlas-vtt:open-player-window"
             },
             {
-              "id": "new-2",
-              "label": "Faction",
-              "icon": "shield-plus",
+              "id": "t-assets",
+              "label": "Assets",
+              "icon": "images",
               "type": "command",
-              "target": "quickadd:choice:a2ba823a-6138-4044-af08-5400443e9303"
+              "target": "atlas-vtt:open-scene-browser"
             },
             {
-              "id": "new-3",
-              "label": "Secret",
-              "icon": "lock",
-              "type": "command",
-              "target": "quickadd:choice:787b2627-24f3-4ac9-a1b6-59aa5336dc67"
+              "id": "t-tables",
+              "label": "Tables",
+              "icon": "table",
+              "type": "note",
+              "target": "99 Meta/GM Toolkit/Tables/Tables.md"
             },
             {
-              "id": "new-4",
-              "label": "Event",
-              "icon": "hourglass",
-              "type": "command",
-              "target": "quickadd:choice:781df3aa-10e4-46ca-9204-84487d743b41"
+              "id": "t-bestiary",
+              "label": "Bestiary",
+              "icon": "paw-print",
+              "type": "note",
+              "target": "09 Rules/Bestiary/Bestiary.md"
             },
             {
-              "id": "new-5",
-              "label": "Adventure",
-              "icon": "swords",
-              "type": "command",
-              "target": "quickadd:choice:23b98c58-88f0-4545-aaec-8de9a89be89c"
-            },
-            {
-              "id": "new-6",
-              "label": "Encounter",
+              "id": "t-enc",
+              "label": "Encounters",
               "icon": "skull",
-              "type": "command",
-              "target": "quickadd:choice:491a2622-cda6-461d-b4a8-d920417547b8"
+              "type": "note",
+              "target": "99 Meta/GM Toolkit/Encounters/Encounters.md"
             },
             {
-              "id": "new-7",
-              "label": "Session",
+              "id": "t-sessions",
+              "label": "Sessions",
               "icon": "notebook-pen",
-              "type": "command",
-              "target": "quickadd:choice:69102a66-fd15-4455-90dc-340d0ab8a796"
+              "type": "note",
+              "target": "99 Meta/GM Toolkit/Sessions/Sessions.md"
             },
             {
-              "id": "new-8",
-              "label": "Area",
-              "icon": "folder-plus",
-              "type": "command",
-              "target": "quickadd:choice:97916d25-d909-42ce-b143-2185ec01de89"
+              "id": "t-home",
+              "label": "Home",
+              "icon": "house",
+              "type": "note",
+              "target": "Home.md"
             }
           ],
           "fx": 0.591111111111111,
@@ -266,67 +182,31 @@
           "fh": 416
         },
         {
-          "id": "card-start",
-          "kind": "links",
-          "title": "Start here",
-          "tileSizing": "scale",
-          "x": 0,
+          "id": "card-scratch",
+          "kind": "text",
+          "title": "Scratchpad",
+          "text": "",
+          "x": 7,
           "y": 4,
-          "w": 4,
-          "h": 3,
-          "links": [
-            {
-              "id": "start-home",
-              "label": "Home",
-              "icon": "house",
-              "type": "note",
-              "target": "Home.md"
-            },
-            {
-              "id": "start-bible",
-              "label": "Bible",
-              "icon": "book-open",
-              "type": "note",
-              "target": "99 Meta/World Bible.md"
-            },
-            {
-              "id": "start-toolkit",
-              "label": "Toolkit",
-              "icon": "drama",
-              "type": "note",
-              "target": "99 Meta/GM Toolkit/GM Toolkit.md"
-            }
-          ],
-          "fx": 0,
-          "fw": 0.3244444444444444,
+          "w": 5,
+          "h": 5,
+          "fx": 0.591111111111111,
+          "fw": 0.40888888888888886,
           "fy": 432,
-          "fh": 308
+          "fh": 524
         },
         {
           "id": "card-recent",
           "kind": "recent",
           "title": "Recently edited",
           "count": 8,
-          "x": 4,
-          "y": 4,
-          "w": 5,
+          "x": 0,
+          "y": 6,
+          "w": 7,
           "h": 3,
-          "fx": 0.3377777777777778,
-          "fw": 0.40888888888888886,
-          "fy": 432,
-          "fh": 308
-        },
-        {
-          "id": "card-stats",
-          "kind": "stats",
-          "title": "The vault",
-          "x": 9,
-          "y": 4,
-          "w": 3,
-          "h": 3,
-          "fx": 0.76,
-          "fw": 0.24,
-          "fy": 432,
+          "fx": 0,
+          "fw": 0.5777777777777777,
+          "fy": 648,
           "fh": 308
         }
       ]

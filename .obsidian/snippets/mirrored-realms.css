@@ -133,5 +133,41 @@ body .hub .el-ul > ul > li:has(> a.internal-link[data-href="World Bible"]) {
   border: 1px solid color-mix(in srgb, var(--mp-accent) 22%, transparent);
 }
 .home .mr-intro b { color: var(--text-normal); }
-/* "Start here" cards: wider, three in a row */
-.home .el-h2:has(> h2[data-heading="Start here"]) + .el-ul > ul { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+/* "How to use this vault": numbered steps with glowing number badges */
+.home .el-ol > ol {
+  list-style: none;
+  counter-reset: mr-step;
+  padding: 0;
+  margin: 0.8em 0 1.6em;
+  display: grid;
+  gap: 8px;
+}
+.home .el-ol > ol > li {
+  counter-increment: mr-step;
+  position: relative;
+  padding: 10px 14px 10px 56px;
+  border-radius: var(--radius-m);
+  background: var(--mp-glass);
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 16%, transparent);
+  line-height: 1.5;
+}
+.home .el-ol > ol > li::marker { content: ""; }
+.home .el-ol > ol > li::before {
+  content: counter(mr-step);
+  position: absolute;
+  left: 14px;
+  top: 10px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-family: var(--mp-serif);
+  font-weight: 700;
+  color: var(--mp-accent);
+  background: color-mix(in srgb, var(--mp-accent) 14%, var(--background-primary));
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 50%, transparent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--mp-accent) 28%, transparent);
+}
+.home .el-ol > ol > li strong { color: var(--mp-silver-hi); }
