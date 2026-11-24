@@ -227,21 +227,6 @@
       "type": "pairs"
     },
     {
-      "key": "personality",
-      "label": "Personality",
-      "type": "entries"
-    },
-    {
-      "key": "appearance",
-      "label": "Appearance",
-      "type": "markdown"
-    },
-    {
-      "key": "notes",
-      "label": "Notes",
-      "type": "entries"
-    },
-    {
       "key": "description",
       "label": "Description",
       "type": "markdown",
@@ -409,31 +394,6 @@
         "field": "spellbook",
         "label": "Spellbook",
         "look": "run-in"
-      },
-      {
-        "id": "mrabout0",
-        "type": "section",
-        "heading": "Character",
-        "collapsible": "open",
-        "blocks": [
-          {
-            "id": "mrperso0",
-            "type": "entries",
-            "field": "personality"
-          },
-          {
-            "id": "mrappea0",
-            "type": "text",
-            "field": "appearance",
-            "heading": "Appearance"
-          },
-          {
-            "id": "mrnotes0",
-            "type": "entries",
-            "field": "notes",
-            "heading": "Notes"
-          }
-        ]
       },
       {
         "id": "mrfeat00",

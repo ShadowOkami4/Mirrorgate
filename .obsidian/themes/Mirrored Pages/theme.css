@@ -1671,6 +1671,46 @@ body .atlas-statblock[data-layout*="boss"] .atlas-sb-heading {
 }
 body .atlas-statblock[data-layout*="boss"] .atlas-sb-header::before { content: "◆◆◆ Boss"; }
 
+/* character sheets: long lists (skills, coins) as a two- or three-column grid
+   of name / bonus rows instead of one comma-separated run */
+body .atlas-statblock[data-layout*="character"] .atlas-sb-pairs {
+  display: block;
+  margin-top: 4px;
+}
+body .atlas-statblock[data-layout*="character"] .atlas-sb-pairs > .atlas-sb-label {
+  display: block;
+  margin-bottom: 6px;
+}
+body .atlas-statblock[data-layout*="character"] .atlas-sb-pairs .atlas-sb-value {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;            /* hides the ", " separators between entries */
+  column-gap: 0;
+}
+body .atlas-statblock[data-layout*="character"] .atlas-sb-pairs .atlas-sb-value > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  box-sizing: border-box;
+  flex: 0 0 calc(50% - 8px);
+  margin: 0 8px 3px 0;
+  padding: 2px 8px;
+  border-radius: var(--radius-s);
+  font-size: var(--font-ui-small);
+  line-height: 1.5;
+  background: color-mix(in srgb, var(--mp-accent) 5%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--mp-accent) 14%, transparent);
+}
+body .atlas-statblock[data-layout*="character"] .atlas-sb-pairs .atlas-sb-value > span:hover {
+  background: color-mix(in srgb, var(--mp-accent) 14%, transparent);
+}
+@container (min-width: 30em) {
+  body .atlas-statblock[data-layout*="character"] .atlas-sb-pairs .atlas-sb-value > span { flex-basis: calc(33.333% - 8px); }
+}
+body .atlas-statblock[data-layout*="character"] .atlas-sb-item:has(> .atlas-sb-pairs),
+body .atlas-statblock[data-layout*="character"] .atlas-sb-pairs { container-type: inline-size; }
+
 /* Map toolbar and panels: dark glass with an accent edge */
 body .atlas-tool-bar {
   background: var(--mp-glass);
