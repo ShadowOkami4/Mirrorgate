@@ -2,12 +2,13 @@
 type: hub
 cssclasses:
   - hub
+  - mr-history
 up: "[[Home]]"
 tags:
   - hub
 ---
 
-↑ [[Home]]
+> [!up] [[Home]]
 
 Eras and events as they really happened, oldest first.
 

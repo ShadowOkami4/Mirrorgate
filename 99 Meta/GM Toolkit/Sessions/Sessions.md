@@ -2,12 +2,14 @@
 type: hub
 cssclasses:
   - hub
+  - mr-meta
+  - mr-sessions
 up: "[[GM Toolkit]]"
 tags:
   - hub
 ---
 
-↑ [[GM Toolkit]]
+> [!up] [[GM Toolkit]]
 
 Session prep and notes for your own table.
 

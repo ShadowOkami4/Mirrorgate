@@ -2,12 +2,14 @@
 type: hub
 cssclasses:
   - hub
+  - mr-meta
+  - mr-tables
 up: "[[GM Toolkit]]"
 tags:
   - hub
 ---
 
-↑ [[GM Toolkit]]
+> [!up] [[GM Toolkit]]
 
 Random tables: names, weather, rumours, loot.
 

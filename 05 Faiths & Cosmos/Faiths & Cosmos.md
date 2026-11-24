@@ -2,12 +2,13 @@
 type: hub
 cssclasses:
   - hub
+  - mr-faiths-cosmos
 up: "[[Home]]"
 tags:
   - hub
 ---
 
-↑ [[Home]]
+> [!up] [[Home]]
 
 Deities, cults, planes and the Mirrorgate: how the world works beneath the surface.
 

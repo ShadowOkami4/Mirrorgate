@@ -146,6 +146,7 @@ settings:
 
 /* ---------- Fonts ------------------------------------------------------- */
 body {
+  --mp-card-default-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M10.5 3 8 9l4 13 4-13-2.5-6%22/%3E%3Cpath d=%22M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z%22/%3E%3Cpath d=%22M2 9h20%22/%3E%3C/svg%3E");
   --mp-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, "URW Palladio L", Georgia, serif;
   --mp-glass-blur: 10px;
   --font-text-theme: var(--font-interface-theme);
@@ -612,6 +613,106 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 .markdown-rendered tr:last-child td { border-bottom: none; }
 .markdown-rendered code { border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); }
 
+/* ---------- Back link: > [!up] [[Parent]] ------------------------------- */
+/* A slim pill with an up-arrow badge. It takes the page's section colour
+   (--mp-section-color) when a snippet sets one. */
+.callout[data-callout="up"] {
+  --mp-c: var(--mp-section-color, var(--mp-accent));
+  --callout-icon: lucide-corner-left-up;
+  display: inline-flex;
+  margin: 0 0 14px;
+  overflow: visible;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--mp-c) 40%, transparent);
+  background: color-mix(in srgb, var(--mp-c) 10%, var(--mp-glass));
+  box-shadow: inset 0 1px 0 var(--mp-glass-shine);
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+.callout[data-callout="up"]:hover {
+  border-color: var(--mp-c);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--mp-c) 30%, transparent), inset 0 1px 0 var(--mp-glass-shine);
+}
+.callout[data-callout="up"]::before,
+.callout[data-callout="up"]::after { display: none; }
+.callout[data-callout="up"] .callout-title {
+  gap: 7px;
+  padding: 3px 14px 3px 4px;
+  font-family: var(--font-interface);
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: none;
+  border: none;
+}
+.callout[data-callout="up"] .callout-icon { width: 22px; height: 22px; box-shadow: none; }
+.callout[data-callout="up"] .callout-icon .svg-icon { width: 13px; height: 13px; }
+.callout[data-callout="up"] .callout-title-inner a.internal-link { text-decoration: none; color: color-mix(in srgb, var(--mp-c) 55%, var(--text-normal)); }
+.callout[data-callout="up"] .callout-content { display: none; }
+
+/* ---------- Hub pages (cssclasses: hub): section header ----------------- */
+/* The note title becomes a header panel in the section colour, with the
+   section icon and a large faded copy of it. Snippets set
+   --mp-section-color and --mp-section-icon per page class. */
+.hub {
+  --mp-sec: var(--mp-section-color, var(--mp-accent));
+  --mp-sec-icon: var(--mp-section-icon, var(--mp-card-default-icon));
+}
+.hub:not(.home) .inline-title {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 14px;
+  padding: 30px 24px 26px 86px;
+  border-radius: var(--radius-l);
+  border: 1px solid color-mix(in srgb, var(--mp-sec) 40%, transparent);
+  background:
+    linear-gradient(90deg, var(--mp-sec), transparent 70%) top left / 100% 2px no-repeat,
+    radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--mp-sec) 30%, transparent), transparent 60%),
+    linear-gradient(115deg, transparent 0 62%, var(--mp-glass-shine) 67%, transparent 74%),
+    linear-gradient(160deg, color-mix(in srgb, var(--mp-sec) 12%, var(--mp-glass)), var(--mp-glass));
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-text-fill-color: var(--mp-silver-hi);
+  color: var(--mp-silver-hi);
+  box-shadow: var(--shadow-l), inset 0 1px 0 var(--mp-glass-shine);
+  text-shadow: 0 0 22px color-mix(in srgb, var(--mp-sec) 45%, transparent);
+}
+.hub:not(.home) .inline-title::before {
+  content: "";
+  position: absolute;
+  left: 26px;
+  top: 50%;
+  width: 38px;
+  height: 38px;
+  transform: translateY(-50%);
+  background: var(--mp-sec);
+  -webkit-mask: var(--mp-sec-icon) center / contain no-repeat;
+  mask: var(--mp-sec-icon) center / contain no-repeat;
+  filter: drop-shadow(0 0 8px var(--mp-sec));
+}
+.hub:not(.home) .inline-title::after {
+  content: "";
+  position: absolute;
+  right: -14px;
+  bottom: -26px;
+  width: 140px;
+  height: 140px;
+  background: var(--mp-sec);
+  opacity: 0.1;
+  transform: rotate(-12deg);
+  -webkit-mask: var(--mp-sec-icon) center / contain no-repeat;
+  mask: var(--mp-sec-icon) center / contain no-repeat;
+  pointer-events: none;
+}
+/* the paragraph after the back link reads as the section's lead */
+.hub:not(.home) :is(.el-div, .el-blockquote):has(> .callout[data-callout="up"]) + .el-p > p {
+  font-family: var(--mp-serif);
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--text-normal) 82%, var(--mp-sec));
+  padding-left: 14px;
+  border-left: 2px solid color-mix(in srgb, var(--mp-sec) 50%, transparent);
+}
+
 /* ---------- Section cards (cssclasses: hub) ----------------------------- */
 /* The list under a heading in a hub note becomes a grid of mirror cards.
    Each card reads two variables, so a vault snippet can give a card its own
@@ -629,7 +730,7 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 }
 .hub .el-h2 + .el-ul > ul > li {
   --mp-card-color: var(--mp-accent);
-  --mp-card-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M10.5 3 8 9l4 13 4-13-2.5-6%22/%3E%3Cpath d=%22M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z%22/%3E%3Cpath d=%22M2 9h20%22/%3E%3C/svg%3E");
+  --mp-card-icon: var(--mp-card-default-icon);
   position: relative;
   overflow: hidden;
   min-height: 76px;

@@ -2,12 +2,14 @@
 type: hub
 cssclasses:
   - hub
+  - mr-rules
+  - mr-options
 up: "[[Rules]]"
 tags:
   - hub
 ---
 
-↑ [[Rules]]
+> [!up] [[Rules]]
 
 Character options: species, subclasses, backgrounds, feats, spells.
 

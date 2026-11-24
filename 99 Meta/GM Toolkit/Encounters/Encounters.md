@@ -2,12 +2,14 @@
 type: hub
 cssclasses:
   - hub
+  - mr-meta
+  - mr-encounters
 up: "[[GM Toolkit]]"
 tags:
   - hub
 ---
 
-↑ [[GM Toolkit]]
+> [!up] [[GM Toolkit]]
 
 Reusable encounters and set pieces.
 

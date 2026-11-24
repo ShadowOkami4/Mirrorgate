@@ -7,15 +7,18 @@ if (parts[parts.length - 1] !== name) {
   parts.push(name);
 }
 const up = parts.length > 1 ? strip(parts[parts.length - 2]) : "Home";
+const sec = "mr-" + ((tp.file.folder(true).split("/").filter(Boolean)[0] || "home").replace(/^\d+\s+/, "").toLowerCase().replace(/&/g, "").replace(/\s+/g, "-").replace(/-+/g, "-"));
 -%>
 ---
+cssclasses:
+  - <% sec %>
 type: adventure
 up: "[[<% up %>]]"
 level: ""
 players: ""
 ---
 
-↑ [[<% up %>]]
+> [!up] [[<% up %>]]
 
 <% tp.file.cursor() %>
 

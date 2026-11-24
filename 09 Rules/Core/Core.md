@@ -2,12 +2,14 @@
 type: hub
 cssclasses:
   - hub
+  - mr-rules
+  - mr-core
 up: "[[Rules]]"
 tags:
   - hub
 ---
 
-↑ [[Rules]]
+> [!up] [[Rules]]
 
 Core rules and setting-specific mechanics.
 

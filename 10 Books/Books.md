@@ -2,12 +2,13 @@
 type: hub
 cssclasses:
   - hub
+  - mr-books
 up: "[[Home]]"
 tags:
   - hub
 ---
 
-↑ [[Home]]
+> [!up] [[Home]]
 
 Compiled book editions made from the vault.
 

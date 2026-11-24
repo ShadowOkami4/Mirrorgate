@@ -2,12 +2,13 @@
 type: hub
 cssclasses:
   - hub
+  - mr-meta
 up: "[[Home]]"
 tags:
   - hub
 ---
 
-↑ [[Home]]
+> [!up] [[Home]]
 
 How this vault works, and tools for running games.
 

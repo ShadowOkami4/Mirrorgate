@@ -2,12 +2,14 @@
 type: hub
 cssclasses:
   - hub
+  - mr-meta
+  - mr-gm-toolkit
 up: "[[Meta]]"
 tags:
   - hub
 ---
 
-↑ [[Meta]]
+> [!up] [[Meta]]
 
 Tools for the table: encounters, random tables and session notes.
 

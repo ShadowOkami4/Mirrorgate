@@ -2,12 +2,13 @@
 type: hub
 cssclasses:
   - hub
+  - mr-rules
 up: "[[Home]]"
 tags:
   - hub
 ---
 
-↑ [[Home]]
+> [!up] [[Home]]
 
 How to play in Kagameru.
 

@@ -1,11 +1,14 @@
 ---
 type: guide
+cssclasses:
+  - mr-meta
+  - mr-world-bible
 up: "[[Meta]]"
 tags:
   - guide
 ---
 
-↑ [[Meta]]
+> [!up] [[Meta]]
 
 How Kagameru is built. Carried over from the old cartography project when the vault was rebuilt (2026-11-24). **Canon is open:** every rule below is up for review. Mark each one *keep*, *change* or *drop* as the rewrite settles it.
 

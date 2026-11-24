@@ -2,12 +2,14 @@
 type: hub
 cssclasses:
   - hub
+  - mr-rules
+  - mr-bestiary
 up: "[[Rules]]"
 tags:
   - hub
 ---
 
-↑ [[Rules]]
+> [!up] [[Rules]]
 
 Creatures and statblocks.
 
