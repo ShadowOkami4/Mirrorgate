@@ -1512,7 +1512,14 @@ body .atlas-sb-sheet .atlas-sb-row > .atlas-sb-item:has(> .atlas-sb-labelled--st
 body .atlas-sb-sheet .atlas-sb-row > .atlas-sb-item > .atlas-sb-stat.atlas-sb-labelled--stacked { text-align: center; align-items: center; }
 body .atlas-sb-section-heading__row { margin-top: 18px; margin-bottom: 8px; }
 body .atlas-sb-sheet .atlas-sb-entries > :where(:not(:first-child)) { margin-top: 10px; }
-body .atlas-sb-scores--table { gap: 10px 12px; margin: 6px 0; }
+body .atlas-sb-sheet .atlas-sb-scores--table {
+  gap: 10px;
+  margin: 6px 0;
+  /* wrap to fewer cards per row instead of spilling out of the column */
+  grid-template-columns: repeat(auto-fit, minmax(min(10.5em, 100%), 1fr));
+}
+body .atlas-sb-sheet .atlas-sb-scores--table > * { min-width: 0; }
+body .atlas-sb-sheet .atlas-sb-scores--table .atlas-sb-score-group { width: 100%; table-layout: fixed; }
 
 /* spellcasting: frequency labels in small caps, diamond markers */
 body .atlas-sb-spell-level {
