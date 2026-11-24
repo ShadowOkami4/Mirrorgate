@@ -2,13 +2,24 @@
 type: hub
 cssclasses:
   - hub
+  - home
 tags:
   - hub
 ---
 
+![[Kagameru_World_Map.jpg|banner]]
+
 # The Mirrored Realms
 
-A setting for tabletop roleplaying games, written for **Game Masters**. Every page tells the GM the whole story. Text players may read sits in a **Player info** box at the bottom of the page.
+<p class="mr-tagline">An evolving campaign setting of living reflections, broken time, folded space, and divine scars.</p>
+
+<p class="mr-intro">Written for <b>Game Masters</b>. Every page tells the whole story; what players may read sits in a <b>Player info</b> box at the bottom of the page.</p>
+
+## Start here
+
+- [[World Bible]] <small>How Kagameru is built, and the rules up for review</small>
+- [[Adventures]] <small>Ready-to-run adventures</small>
+- [[GM Toolkit]] <small>Encounters, tables and session notes</small>
 
 ## Sections
 
@@ -23,7 +34,3 @@ A setting for tabletop roleplaying games, written for **Game Masters**. Every pa
 - [[Rules]] <small>Mechanics, options, bestiary</small>
 - [[Books]] <small>Compiled editions</small>
 - [[Meta]] <small>World Bible, GM toolkit, templates</small>
-
-## Everything in the vault
-
-![[Index.base]]

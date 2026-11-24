@@ -122,7 +122,7 @@ The shared vault settings in `.obsidian/` enable the following community plugins
 | Style Settings | options for the theme and CSS snippets |
 | Claudian | the maintainer's AI assistant (see [A Note on AI](#a-note-on-ai)); not needed to read or play |
 
-Index tables use Obsidian's core **Bases** plugin. The vault uses its own theme, **[Mirrored Pages](https://github.com/ShadowOkami4/mirrored-pages)** (silver-mirror look, dark and light, also styles Atlas VTT), which also styles the Player info box (`> [!player]`) and GM callouts (`> [!gm]-`). The CSS snippet `mirrored-realms` gives each section card on the hub notes its own icon and colour, matching the graph view.
+The tables inside hub notes use Obsidian's core **Bases** plugin. The vault uses its own theme, **[Mirrored Pages](https://github.com/ShadowOkami4/mirrored-pages)** (silver-mirror look, dark and light, also styles Atlas VTT), which also styles the Player info box (`> [!player]`) and GM callouts (`> [!gm]-`). The CSS snippet `mirrored-realms` gives each section card on the hub notes its own icon and colour, matching the graph view.
 
 ## Repository Layout
 
@@ -133,7 +133,7 @@ The vault is written for **Game Masters**. Every page tells the whole story; tex
 
 | Path | Contents |
 | --- | --- |
-| `Home.md` | the entrance: every section and an index of all notes |
+| `Home.md` | the entrance: the world map, where to start, and every section |
 | `01 Atlas/` | places, nested like the map: continent → realm → settlement → site |
 | `02 Characters/` | everyone the GM may play or mention |
 | `03 Factions/` | houses, orders, guilds, churches, cults |
@@ -161,7 +161,7 @@ These paths are excluded from the repository by `.gitignore`:
 
 - **By folder.** Every folder has a hub note with the folder's name (`Atlas.md`, `Characters.md` …). Its *In this section* table lists what is inside.
 - **By graph.** Every note's `up` property links to its hub, and every hub links up to [Home](Home.md), so the graph branches out from Home. Each section has its own colour; pages with a finished player box are parchment-coloured.
-- **By index.** `Home.md` embeds tables of places, characters, secrets and adventures, plus *Player-ready* and *Needs player box* lists.
+- **By table.** Each hub's *In this section* table (a Bases view) lists what is in its folder, including the `player` column.
 
 ### Player Info
 

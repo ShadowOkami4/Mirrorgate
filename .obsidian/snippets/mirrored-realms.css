@@ -78,3 +78,55 @@ body .hub .el-ul > ul > li:has(> a.internal-link[data-href="World Bible"]) {
   --mp-card-color: #8a96a6;
   --mp-card-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 7v14%22/%3E%3Cpath d=%22M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z%22/%3E%3C/svg%3E");
 }
+
+/* ---------- Home: map banner with a mirrored reflection ------------------ */
+.home .inline-title { display: none; }
+.home .internal-embed.image-embed[alt="banner"] {
+  display: block;
+  margin: 0 0 0.4em;
+}
+.home .internal-embed.image-embed[alt="banner"] img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50% 40%;
+  border: none;
+  border-radius: var(--radius-l) var(--radius-l) 0 0;
+  box-shadow: none;
+  filter: saturate(0.75) brightness(0.8) contrast(1.05);
+  -webkit-mask-image: linear-gradient(180deg, #000 45%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 45%, transparent 100%);
+  -webkit-box-reflect: below -4px linear-gradient(transparent 62%, rgba(0, 0, 0, 0.18));
+}
+.home .el-h1 { position: relative; margin-top: -92px; z-index: 2; }
+.home .el-h1 h1 {
+  font-size: 2.7em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.85);
+}
+.home .el-h1 h1::after { left: 18%; right: 18%; }
+.home .mr-tagline {
+  margin-top: -0.3em;
+  text-align: center;
+  font-family: var(--mp-serif);
+  font-style: italic;
+  font-size: 1.12em;
+  color: var(--mp-silver-hi);
+  opacity: 0.85;
+}
+.home .mr-intro {
+  max-width: 34em;
+  margin: 1.2em auto 1.8em;
+  padding: 0.7em 1.1em;
+  text-align: center;
+  font-size: 0.93em;
+  color: var(--text-muted);
+  border-radius: var(--radius-m);
+  background: var(--mp-glass);
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 22%, transparent);
+}
+.home .mr-intro b { color: var(--text-normal); }
+/* "Start here" cards: wider, three in a row */
+.home .el-h2:has(> h2[data-heading="Start here"]) + .el-ul > ul { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
