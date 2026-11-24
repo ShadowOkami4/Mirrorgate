@@ -1370,7 +1370,7 @@ body:not(.mp-no-emblem) .workspace-leaf-content[data-type="markdown"] .view-cont
 
 /* ---------- Atlas VTT --------------------------------------------------- */
 /* Atlas VTT reads Obsidian's colour variables, so most of it follows the
-   theme on its own. These lines tune its accents to the mirror palette. */
+   theme on its own. These rules tune its accents, statblocks and toolbar. */
 .atlas-vtt-plugin,
 .atlas-vtt {
   --atlas-theme-red: var(--mp-gm);
@@ -1379,9 +1379,83 @@ body:not(.mp-no-emblem) .workspace-leaf-content[data-type="markdown"] .view-cont
   --atlas-card-ring-preview: color-mix(in srgb, var(--mp-accent) 30%, transparent);
   --atlas-dice-font: var(--mp-serif);
 }
-.atlas-vtt-plugin .atlas-statblock h1,
-.atlas-vtt-plugin .atlas-statblock h2,
-.atlas-vtt-plugin .atlas-statblock h3 { font-family: var(--h2-font); }
+
+/* Statblocks: a framed mirror pane with a serif header and shard rules */
+body .atlas-statblock {
+  border-color: color-mix(in srgb, var(--mp-accent) 30%, var(--background-modifier-border));
+  background:
+    linear-gradient(90deg, var(--mp-accent), transparent 70%) top left / 100% 2px no-repeat,
+    linear-gradient(115deg, transparent 0 64%, color-mix(in srgb, var(--mp-silver-hi) 4%, transparent) 67%, transparent 71%),
+    var(--background-primary);
+  box-shadow: var(--shadow-l), inset 0 1px 0 var(--mp-glass-shine);
+}
+body .atlas-sb-heading {
+  font-family: var(--mp-serif);
+  font-size: 1.55em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  background: linear-gradient(180deg, var(--mp-silver-hi) 0%, var(--mp-silver-hi) 45%, var(--mp-silver-lo) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body .atlas-sb-header__subtitle {
+  font-family: var(--mp-serif);
+  font-style: italic;
+  color: var(--text-muted);
+}
+body .atlas-sb-section-heading {
+  padding-bottom: 4px;
+  font-family: var(--mp-serif);
+  font-size: 0.82em;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: color-mix(in srgb, var(--mp-accent) 80%, var(--text-normal));
+  text-shadow: 0 0 10px color-mix(in srgb, var(--mp-accent) 40%, transparent);
+  background:
+    linear-gradient(90deg, var(--mp-accent), color-mix(in srgb, var(--mp-silver-lo) 40%, transparent) 55%, transparent) bottom left / 100% 1px no-repeat;
+}
+body .atlas-sb-rule,
+body .atlas-sb-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--mp-accent) 20%, var(--mp-silver-lo) 60%, transparent);
+  opacity: 0.7;
+}
+body .atlas-sb-label { color: color-mix(in srgb, var(--mp-accent) 65%, var(--text-normal)); }
+body .atlas-sb-score-group {
+  padding: 4px 8px;
+  border-radius: var(--radius-s);
+  background: color-mix(in srgb, var(--mp-accent) 6%, transparent);
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 18%, transparent);
+}
+body .atlas-sb-score-label { font-family: var(--mp-serif); font-weight: 700; color: var(--mp-silver-hi); }
+body .atlas-sb-entries em:first-child,
+body .atlas-sb-entries strong:first-child { color: var(--mp-silver-hi); }
+
+/* Map toolbar and panels: dark glass with an accent edge */
+body .atlas-tool-bar {
+  background: var(--mp-glass);
+  -webkit-backdrop-filter: blur(var(--mp-glass-blur));
+  backdrop-filter: blur(var(--mp-glass-blur));
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 32%, transparent);
+  box-shadow: var(--shadow-l), inset 0 1px 0 var(--mp-glass-shine), inset 0 2px 0 color-mix(in srgb, var(--mp-accent) 35%, transparent);
+}
+body .atlas-tool-bar :is(button, .clickable-icon):hover {
+  color: var(--mp-accent);
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--mp-accent) 55%, transparent));
+}
+body .atlas-tool-bar :is([aria-pressed="true"], .is-active, .mod-active) {
+  color: var(--mp-accent);
+  background: color-mix(in srgb, var(--mp-accent) 16%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--mp-accent) 45%, transparent), 0 0 12px color-mix(in srgb, var(--mp-accent) 25%, transparent);
+}
+body .atlas-toolbar-tray {
+  background: var(--mp-glass);
+  -webkit-backdrop-filter: blur(var(--mp-glass-blur));
+  backdrop-filter: blur(var(--mp-glass-blur));
+  border-color: color-mix(in srgb, var(--mp-accent) 28%, transparent);
+}
 
 /* ---------- Print / export ---------------------------------------------- */
 @media print {
