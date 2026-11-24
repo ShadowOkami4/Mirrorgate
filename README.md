@@ -122,7 +122,7 @@ The shared vault settings in `.obsidian/` enable the following community plugins
 | Style Settings | options for the theme and CSS snippets |
 | Claudian | the maintainer's AI assistant (see [A Note on AI](#a-note-on-ai)); not needed to read or play |
 
-Index tables use Obsidian's core **Bases** plugin. The vault uses the **Encore** theme and the CSS snippet `mirrored-realms`, which styles the collapsible GM callouts.
+Index tables use Obsidian's core **Bases** plugin. The vault uses its own theme, **[Mirrored Pages](https://github.com/ShadowOkami4/mirrored-pages)** (silver-mirror look, dark and light, also styles Atlas VTT), which also styles the collapsible GM callouts (`> [!gm]-`).
 
 ## Repository Layout
 

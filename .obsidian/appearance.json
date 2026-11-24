@@ -1,7 +1,6 @@
 {
-  "cssTheme": "Encore",
-  "enabledCssSnippets": [
-    "mirrored-realms"
-  ],
-  "showRibbon": true
+  "cssTheme": "Mirrored Pages",
+  "enabledCssSnippets": [],
+  "showRibbon": true,
+  "theme": "obsidian"
 }

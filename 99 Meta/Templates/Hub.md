@@ -9,6 +9,8 @@ const up = parts.length > 1 ? parts[parts.length - 2] : "Home";
 -%>
 ---
 type: hub
+cssclasses:
+  - hub
 up: "[[<% up %>]]"
 tags:
   - hub

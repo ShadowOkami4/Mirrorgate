@@ -1,19 +1,12 @@
 {
   "collapse-filter": true,
-  "search": "-path:\"90 Assets\" -path:\"99 Meta/Templates\" -path:\"Private\" -path:\"atlas-vtt\"",
+  "search": "-path:\"90 Assets\" -path:\"99 Meta/Templates\" -path:\"99 Meta/Views\" -path:\"Private\" -path:\"atlas-vtt\"",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
   "colorGroups": [
-    {
-      "query": "tag:#hub",
-      "color": {
-        "a": 1,
-        "rgb": 16119285
-      }
-    },
     {
       "query": "path:\"01 World\"",
       "color": {
@@ -67,6 +60,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 150,
-  "scale": 0.012369287773296378,
+  "scale": 0.7132754626224377,
   "close": false
 }

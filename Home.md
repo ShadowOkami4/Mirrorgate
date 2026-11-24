@@ -1,5 +1,7 @@
 ---
 type: hub
+cssclasses:
+  - hub
 tags:
   - hub
 ---

@@ -1,0 +1,503 @@
+/* ==========================================================================
+   Mirrored Pages
+   A silver-mirror theme for Obsidian: deep slate glass in the dark,
+   brushed silver in the light, serif headings with a reflected rule.
+   Made for The Mirrored Realms; works in any vault. Styles Atlas VTT too.
+
+   MIT License · https://github.com/ShadowOkami4/mirrored-pages
+   ========================================================================== */
+
+/* @settings
+
+name: Mirrored Pages
+id: mirrored-pages
+settings:
+  -
+    id: mp-colours
+    title: Colours
+    type: heading
+    level: 2
+    collapsed: false
+  -
+    id: mp-accent
+    title: Mirror accent
+    description: Accent colour for links, buttons and the reflected rule
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-dark: '#8fb6e0'
+    default-light: '#3f6f9f'
+  -
+    id: mp-gm
+    title: GM callout colour
+    description: Colour of the [!gm] callout
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-dark: '#d0706a'
+    default-light: '#9e2a2b'
+  -
+    id: mp-surface
+    title: Surface
+    type: class-select
+    allowEmpty: false
+    default: mp-surface-slate
+    options:
+      -
+        label: Slate (cool)
+        value: mp-surface-slate
+      -
+        label: Obsidian (near black)
+        value: mp-surface-obsidian
+      -
+        label: Pewter (warmer grey)
+        value: mp-surface-pewter
+  -
+    id: mp-type
+    title: Typography
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: mp-heading-font
+    title: Heading style
+    type: class-select
+    allowEmpty: false
+    default: mp-headings-serif
+    options:
+      -
+        label: Serif
+        value: mp-headings-serif
+      -
+        label: Sans-serif
+        value: mp-headings-sans
+  -
+    id: mp-body-serif
+    title: Serif body text
+    description: Read notes in a serif typeface instead of sans-serif
+    type: class-toggle
+    default: false
+  -
+    id: file-line-width
+    title: Page width
+    description: Width of the readable line, in pixels
+    type: variable-number-slider
+    default: 760
+    min: 560
+    max: 1100
+    step: 20
+    format: px
+  -
+    id: mp-effects
+    title: Effects
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: mp-no-sheen
+    title: Turn off heading sheen
+    description: Plain heading colour instead of the silver gradient
+    type: class-toggle
+    default: false
+  -
+    id: mp-no-reflection
+    title: Turn off reflected rule
+    description: No mirrored line under the first two heading levels
+    type: class-toggle
+    default: false
+  -
+    id: mp-glass-blur
+    title: Glass blur
+    description: Blur behind callouts, menus and cards (0 turns glass off)
+    type: variable-number-slider
+    default: 10
+    min: 0
+    max: 24
+    step: 1
+    format: px
+  -
+    id: mp-no-starfield
+    title: Turn off starfield
+    description: Plain background in the graph view
+    type: class-toggle
+    default: false
+*/
+
+/* ---------- Fonts ------------------------------------------------------- */
+body {
+  --mp-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, "URW Palladio L", Georgia, serif;
+  --mp-glass-blur: 10px;
+  --font-text-theme: var(--font-interface-theme);
+  --file-line-width: 760px;
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 14px;
+  --callout-radius: var(--radius-m);
+  --h1-font: var(--mp-serif);
+  --h2-font: var(--mp-serif);
+  --h3-font: var(--mp-serif);
+  --h4-font: var(--mp-serif);
+  --inline-title-font: var(--mp-serif);
+  --h1-size: 2.05em;
+  --h2-size: 1.6em;
+  --h3-size: 1.3em;
+  --h4-size: 1.12em;
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --inline-title-size: 2.2em;
+  --inline-title-weight: 600;
+  --heading-spacing: 1.6em;
+}
+body.mp-headings-sans {
+  --h1-font: var(--font-interface);
+  --h2-font: var(--font-interface);
+  --h3-font: var(--font-interface);
+  --h4-font: var(--font-interface);
+  --inline-title-font: var(--font-interface);
+}
+body.mp-body-serif { --font-text-theme: var(--mp-serif); }
+
+/* ---------- Dark: deep slate glass -------------------------------------- */
+.theme-dark {
+  --mp-accent: #8fb6e0;
+  --mp-gm: #d0706a;
+  --mp-ink: #d8dde4;
+  --mp-silver-hi: #f4f7fb;
+  --mp-silver-lo: #9aa6b4;
+  --mp-glass: rgba(30, 36, 46, 0.62);
+  --mp-glass-edge: rgba(200, 215, 235, 0.10);
+  --mp-glass-shine: rgba(255, 255, 255, 0.05);
+
+  --background-primary: #14171c;
+  --background-primary-alt: #181c22;
+  --background-secondary: #101318;
+  --background-secondary-alt: #0c0f13;
+  --background-modifier-border: #262c35;
+  --background-modifier-border-hover: #333b46;
+  --background-modifier-border-focus: #4a5666;
+  --background-modifier-hover: rgba(160, 185, 215, 0.07);
+  --background-modifier-active-hover: rgba(143, 182, 224, 0.14);
+  --background-modifier-form-field: #191d24;
+
+  --text-normal: var(--mp-ink);
+  --text-muted: #9aa3ae;
+  --text-faint: #6b7480;
+  --text-accent: var(--mp-accent);
+  --text-accent-hover: #b4cfee;
+  --text-on-accent: #0f1318;
+  --text-selection: rgba(143, 182, 224, 0.25);
+  --interactive-accent: var(--mp-accent);
+  --interactive-accent-hover: #a7c6e8;
+  --interactive-normal: #1d222a;
+  --interactive-hover: #252b35;
+
+  --h1-color: var(--mp-silver-hi);
+  --h2-color: #e6ebf1;
+  --h3-color: #d4dbe4;
+  --h4-color: #c3ccd7;
+  --h5-color: var(--text-muted);
+  --h6-color: var(--text-faint);
+
+  --code-background: #10141a;
+  --blockquote-border-color: var(--mp-silver-lo);
+  --hr-color: #2c333d;
+  --table-header-background: rgba(143, 182, 224, 0.06);
+  --table-border-color: #262c35;
+
+  --graph-line: #2f3742;
+  --graph-node: #b9c3cf;
+  --graph-node-focused: var(--mp-accent);
+  --graph-node-tag: #8e9bb0;
+  --graph-node-attachment: #5d6775;
+  --graph-node-unresolved: #4a525e;
+  --graph-text: #d8dde4;
+
+  --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(200, 215, 235, 0.04);
+  --shadow-l: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(200, 215, 235, 0.06);
+}
+.theme-dark.mp-surface-obsidian {
+  --background-primary: #0e1013;
+  --background-primary-alt: #121418;
+  --background-secondary: #0a0b0e;
+  --background-secondary-alt: #07080a;
+  --background-modifier-border: #1f232a;
+  --mp-glass: rgba(22, 25, 31, 0.66);
+}
+.theme-dark.mp-surface-pewter {
+  --background-primary: #1b1c1f;
+  --background-primary-alt: #202125;
+  --background-secondary: #161719;
+  --background-secondary-alt: #121315;
+  --background-modifier-border: #2d2f34;
+  --mp-glass: rgba(40, 41, 46, 0.62);
+}
+
+/* ---------- Light: brushed silver --------------------------------------- */
+.theme-light {
+  --mp-accent: #3f6f9f;
+  --mp-gm: #9e2a2b;
+  --mp-ink: #2a3038;
+  --mp-silver-hi: #1c232c;
+  --mp-silver-lo: #7d8896;
+  --mp-glass: rgba(255, 255, 255, 0.62);
+  --mp-glass-edge: rgba(40, 60, 90, 0.12);
+  --mp-glass-shine: rgba(255, 255, 255, 0.7);
+
+  --background-primary: #f4f5f7;
+  --background-primary-alt: #eceef1;
+  --background-secondary: #e6e9ed;
+  --background-secondary-alt: #dde1e6;
+  --background-modifier-border: #d2d7de;
+  --background-modifier-border-hover: #c1c8d1;
+  --background-modifier-border-focus: #9aa6b4;
+  --background-modifier-hover: rgba(40, 70, 110, 0.06);
+  --background-modifier-active-hover: rgba(63, 111, 159, 0.12);
+  --background-modifier-form-field: #ffffff;
+
+  --text-normal: var(--mp-ink);
+  --text-muted: #5b6470;
+  --text-faint: #8a939e;
+  --text-accent: var(--mp-accent);
+  --text-accent-hover: #2d5884;
+  --text-on-accent: #ffffff;
+  --text-selection: rgba(63, 111, 159, 0.2);
+  --interactive-accent: var(--mp-accent);
+  --interactive-accent-hover: #345f8b;
+  --interactive-normal: #ffffff;
+  --interactive-hover: #eef1f5;
+
+  --h1-color: var(--mp-silver-hi);
+  --h2-color: #232a33;
+  --h3-color: #2e3641;
+  --h4-color: #3a434f;
+  --h5-color: var(--text-muted);
+  --h6-color: var(--text-faint);
+
+  --code-background: #eaedf1;
+  --blockquote-border-color: var(--mp-silver-lo);
+  --hr-color: #d2d7de;
+  --table-header-background: rgba(63, 111, 159, 0.06);
+  --table-border-color: #d2d7de;
+
+  --graph-line: #c6ccd4;
+  --graph-node: #4c5866;
+  --graph-node-focused: var(--mp-accent);
+  --graph-node-tag: #6d7c90;
+  --graph-node-attachment: #9aa4b0;
+  --graph-node-unresolved: #b4bcc6;
+  --graph-text: #2a3038;
+
+  --shadow-s: 0 1px 2px rgba(30, 40, 60, 0.08), 0 0 0 1px rgba(30, 40, 60, 0.04);
+  --shadow-l: 0 10px 30px rgba(30, 40, 60, 0.14), 0 0 0 1px rgba(30, 40, 60, 0.06);
+}
+.theme-light.mp-surface-obsidian { --background-primary: #fafbfc; --background-secondary: #eef0f3; }
+.theme-light.mp-surface-pewter { --background-primary: #f3f2f0; --background-secondary: #e7e5e2; --background-modifier-border: #d6d3cf; }
+
+/* ---------- Headings: silver sheen + reflected rule --------------------- */
+body:not(.mp-no-sheen) .markdown-rendered h1,
+body:not(.mp-no-sheen) .markdown-source-view.mod-cm6 .cm-header-1,
+body:not(.mp-no-sheen) .inline-title {
+  background: linear-gradient(180deg, var(--mp-silver-hi) 0%, var(--mp-silver-hi) 45%, var(--mp-silver-lo) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-dark .inline-title,
+.theme-dark .markdown-rendered h1 { letter-spacing: 0.01em; }
+
+body:not(.mp-no-reflection) .markdown-rendered h1,
+body:not(.mp-no-reflection) .markdown-rendered h2,
+body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 {
+  position: relative;
+  padding-bottom: 0.35em;
+}
+body:not(.mp-no-reflection) .markdown-rendered h1::after,
+body:not(.mp-no-reflection) .markdown-rendered h2::after,
+body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1::after,
+body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 6px;
+  /* the rule, and its faint reflection below it */
+  background:
+    linear-gradient(90deg, transparent, var(--mp-accent) 18%, var(--mp-silver-lo) 60%, transparent) top / 100% 1px no-repeat,
+    linear-gradient(90deg, transparent, color-mix(in srgb, var(--mp-accent) 30%, transparent) 18%, color-mix(in srgb, var(--mp-silver-lo) 20%, transparent) 60%, transparent) 0 4px / 100% 1px no-repeat;
+  opacity: 0.85;
+}
+body:not(.mp-no-reflection) .markdown-rendered h2::after,
+body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2::after { opacity: 0.5; right: 30%; }
+
+.markdown-rendered h3 { color: var(--h3-color); }
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 { letter-spacing: 0.02em; }
+.markdown-rendered h5,
+.markdown-rendered h6 { text-transform: uppercase; font-size: 0.85em; }
+
+/* ---------- Glass surfaces --------------------------------------------- */
+.callout,
+.menu,
+.suggestion-container,
+.modal,
+.prompt,
+.popover.hover-popover,
+.tooltip,
+.notice {
+  -webkit-backdrop-filter: blur(var(--mp-glass-blur));
+  backdrop-filter: blur(var(--mp-glass-blur));
+}
+.menu,
+.suggestion-container,
+.prompt,
+.popover.hover-popover {
+  background-color: var(--mp-glass);
+  border: 1px solid var(--mp-glass-edge);
+  box-shadow: var(--shadow-l), inset 0 1px 0 var(--mp-glass-shine);
+}
+.modal { border: 1px solid var(--mp-glass-edge); box-shadow: var(--shadow-l), inset 0 1px 0 var(--mp-glass-shine); }
+
+/* ---------- Callouts: frosted glass panels ------------------------------ */
+.callout {
+  --callout-padding: 12px 16px;
+  background-color: color-mix(in srgb, rgb(var(--callout-color)) 7%, var(--mp-glass));
+  border: 1px solid color-mix(in srgb, rgb(var(--callout-color)) 28%, var(--mp-glass-edge));
+  border-left-width: 3px;
+  box-shadow: var(--shadow-s), inset 0 1px 0 var(--mp-glass-shine);
+  mix-blend-mode: normal;
+}
+.callout-title { font-family: var(--h3-font); letter-spacing: 0.01em; }
+.callout[data-callout="gm"] {
+  --callout-color: var(--mp-gm-rgb, 208, 112, 106);
+  --callout-icon: lucide-eye-off;
+  background-color: color-mix(in srgb, var(--mp-gm) 9%, var(--mp-glass));
+  border-color: color-mix(in srgb, var(--mp-gm) 40%, transparent);
+}
+.callout[data-callout="gm"] .callout-title { color: var(--mp-gm); }
+.callout[data-callout="gm"] .callout-icon { color: var(--mp-gm); }
+
+/* ---------- Text details ------------------------------------------------ */
+.markdown-rendered blockquote {
+  border-left: 2px solid var(--blockquote-border-color);
+  background: linear-gradient(90deg, var(--background-modifier-hover), transparent 70%);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+  padding: 0.4em 1em;
+  font-style: italic;
+}
+.markdown-rendered hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--mp-silver-lo), transparent);
+  opacity: 0.6;
+}
+.markdown-rendered a.internal-link,
+.cm-hmd-internal-link { text-decoration-color: color-mix(in srgb, var(--mp-accent) 40%, transparent); }
+.markdown-rendered table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--table-border-color);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+.markdown-rendered th { font-family: var(--h3-font); font-weight: 600; letter-spacing: 0.02em; }
+.markdown-rendered td,
+.markdown-rendered th { border-left: none; border-right: none; }
+.markdown-rendered tr:last-child td { border-bottom: none; }
+.markdown-rendered code { border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); }
+
+/* ---------- Hub notes (cssclasses: hub) as glass cards ------------------ */
+/* Reading view wraps each block in its own div: .el-h2 then .el-ul */
+.hub .el-h2 + .el-ul > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 10px;
+  padding: 0;
+  margin-inline-start: 0;
+  list-style: none;
+}
+.hub .el-h2 + .el-ul > ul > li {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: var(--radius-m);
+  background: var(--mp-glass);
+  border: 1px solid var(--mp-glass-edge);
+  box-shadow: var(--shadow-s), inset 0 1px 0 var(--mp-glass-shine);
+  font-family: var(--h3-font);
+  font-size: 1.05em;
+  transition: border-color 120ms ease, transform 120ms ease;
+}
+.hub .el-h2 + .el-ul > ul > li .list-bullet,
+.hub .el-h2 + .el-ul > ul > li::marker { display: none; content: ""; }
+.hub .el-h2 + .el-ul > ul > li:hover {
+  border-color: color-mix(in srgb, var(--mp-accent) 55%, transparent);
+  transform: translateY(-1px);
+}
+.hub .el-h2 + .el-ul a.internal-link { text-decoration: none; }
+
+/* ---------- Bases & embeds --------------------------------------------- */
+.markdown-rendered .internal-embed .bases-view,
+.bases-embed {
+  border-radius: var(--radius-m);
+}
+
+/* ---------- Workspace chrome ------------------------------------------- */
+.workspace-tab-header.is-active { box-shadow: inset 0 1px 0 var(--mp-glass-shine); }
+.workspace-ribbon,
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split { background-color: var(--background-secondary); }
+.nav-folder-title,
+.nav-file-title { border-radius: var(--radius-s); }
+.nav-file-title.is-active,
+.tree-item-self.is-active {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--mp-accent) 18%, transparent), transparent);
+  color: var(--text-normal);
+}
+::selection { background: var(--text-selection); }
+body {
+  --scrollbar-thumb-bg: color-mix(in srgb, var(--mp-silver-lo) 30%, transparent);
+  --scrollbar-active-thumb-bg: color-mix(in srgb, var(--mp-silver-lo) 50%, transparent);
+}
+
+/* ---------- Graph: starfield ------------------------------------------- */
+.theme-dark:not(.mp-no-starfield) .workspace-leaf-content[data-type="graph"] .view-content,
+.theme-dark:not(.mp-no-starfield) .workspace-leaf-content[data-type="localgraph"] .view-content {
+  background-color: #0b0e12;
+  background-image:
+    radial-gradient(1px 1px at 12% 18%, rgba(255, 255, 255, 0.55), transparent 60%),
+    radial-gradient(1px 1px at 72% 34%, rgba(200, 220, 255, 0.45), transparent 60%),
+    radial-gradient(1.5px 1.5px at 38% 76%, rgba(255, 255, 255, 0.5), transparent 60%),
+    radial-gradient(1px 1px at 88% 82%, rgba(190, 210, 240, 0.4), transparent 60%),
+    radial-gradient(1px 1px at 55% 8%, rgba(255, 255, 255, 0.35), transparent 60%),
+    radial-gradient(1px 1px at 5% 60%, rgba(220, 230, 255, 0.4), transparent 60%),
+    radial-gradient(ellipse at 50% 40%, rgba(143, 182, 224, 0.07), transparent 65%);
+  background-size: 340px 340px, 420px 420px, 380px 380px, 460px 460px, 300px 300px, 520px 520px, 100% 100%;
+}
+.theme-light:not(.mp-no-starfield) .workspace-leaf-content[data-type="graph"] .view-content {
+  background-image: radial-gradient(ellipse at 50% 40%, rgba(63, 111, 159, 0.06), transparent 65%);
+}
+
+/* ---------- Atlas VTT --------------------------------------------------- */
+/* Atlas VTT reads Obsidian's colour variables, so most of it follows the
+   theme on its own. These lines tune its accents to the mirror palette. */
+.atlas-vtt-plugin,
+.atlas-vtt {
+  --atlas-theme-red: var(--mp-gm);
+  --atlas-fight-banner-accent: var(--mp-accent);
+  --atlas-card-ring-hover: color-mix(in srgb, var(--mp-accent) 45%, transparent);
+  --atlas-card-ring-preview: color-mix(in srgb, var(--mp-accent) 30%, transparent);
+  --atlas-dice-font: var(--mp-serif);
+}
+.atlas-vtt-plugin .atlas-statblock h1,
+.atlas-vtt-plugin .atlas-statblock h2,
+.atlas-vtt-plugin .atlas-statblock h3 { font-family: var(--h2-font); }
+
+/* ---------- Print / export ---------------------------------------------- */
+@media print {
+  .markdown-rendered h1,
+  .inline-title { -webkit-text-fill-color: currentColor; background: none; }
+  .callout { backdrop-filter: none; box-shadow: none; }
+}

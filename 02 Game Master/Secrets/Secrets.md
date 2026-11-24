@@ -1,5 +1,7 @@
 ---
 type: hub
+cssclasses:
+  - hub
 up: "[[Game Master]]"
 tags:
   - hub
