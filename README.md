@@ -122,7 +122,7 @@ The shared vault settings in `.obsidian/` enable the following community plugins
 | Style Settings | options for the theme and CSS snippets |
 | Claudian | the maintainer's AI assistant (see [A Note on AI](#a-note-on-ai)); not needed to read or play |
 
-Index tables use Obsidian's core **Bases** plugin. The vault uses its own theme, **[Mirrored Pages](https://github.com/ShadowOkami4/mirrored-pages)** (silver-mirror look, dark and light, also styles Atlas VTT), which also styles the Player info box (`> [!player]`) and GM callouts (`> [!gm]-`).
+Index tables use Obsidian's core **Bases** plugin. The vault uses its own theme, **[Mirrored Pages](https://github.com/ShadowOkami4/mirrored-pages)** (silver-mirror look, dark and light, also styles Atlas VTT), which also styles the Player info box (`> [!player]`) and GM callouts (`> [!gm]-`). The CSS snippet `mirrored-realms` gives each section card on the hub notes its own icon and colour, matching the graph view.
 
 ## Repository Layout
 

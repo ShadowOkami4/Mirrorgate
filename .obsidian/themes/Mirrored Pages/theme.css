@@ -606,34 +606,110 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 .markdown-rendered tr:last-child td { border-bottom: none; }
 .markdown-rendered code { border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); }
 
-/* ---------- Hub notes (cssclasses: hub) as glass cards ------------------ */
-/* Reading view wraps each block in its own div: .el-h2 then .el-ul */
+/* ---------- Section cards (cssclasses: hub) ----------------------------- */
+/* The list under a heading in a hub note becomes a grid of mirror cards.
+   Each card reads two variables, so a vault snippet can give a card its own
+   colour and icon by matching the link name:
+     li:has(> a[data-href="Atlas"]) { --mp-card-color: #4a90e2; --mp-card-icon: url(...); }
+   Text after the link (e.g. <small>…</small>) becomes the card's subtitle. */
 .hub .el-h2 + .el-ul > ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 12px;
   padding: 0;
+  margin: 0.8em 0 1.4em;
   margin-inline-start: 0;
   list-style: none;
 }
 .hub .el-h2 + .el-ul > ul > li {
+  --mp-card-color: var(--mp-accent);
+  --mp-card-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M10.5 3 8 9l4 13 4-13-2.5-6%22/%3E%3Cpath d=%22M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z%22/%3E%3Cpath d=%22M2 9h20%22/%3E%3C/svg%3E");
+  position: relative;
+  overflow: hidden;
+  min-height: 76px;
   margin: 0;
-  padding: 12px 14px;
-  border-radius: var(--radius-m);
-  background: var(--mp-glass);
-  border: 1px solid var(--mp-glass-edge);
+  padding: 15px 16px 14px 64px;
+  border-radius: var(--radius-l);
+  border: 1px solid color-mix(in srgb, var(--mp-card-color) 35%, transparent);
+  background:
+    linear-gradient(90deg, var(--mp-card-color), transparent 75%) top left / 100% 2px no-repeat,
+    radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--mp-card-color) 24%, transparent), transparent 62%),
+    linear-gradient(160deg, color-mix(in srgb, var(--mp-card-color) 7%, var(--mp-glass)), var(--mp-glass));
   box-shadow: var(--shadow-s), inset 0 1px 0 var(--mp-glass-shine);
-  font-family: var(--h3-font);
-  font-size: 1.05em;
-  transition: border-color 120ms ease, transform 120ms ease;
+  transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
 }
 .hub .el-h2 + .el-ul > ul > li .list-bullet,
 .hub .el-h2 + .el-ul > ul > li::marker { display: none; content: ""; }
-.hub .el-h2 + .el-ul > ul > li:hover {
-  border-color: color-mix(in srgb, var(--mp-accent) 55%, transparent);
-  transform: translateY(-1px);
+/* icon badge */
+.hub .el-h2 + .el-ul > ul > li::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 17px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--mp-card-color) 16%, var(--background-primary));
+  border: 1px solid color-mix(in srgb, var(--mp-card-color) 55%, transparent);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--mp-card-color) 30%, transparent);
 }
-.hub .el-h2 + .el-ul a.internal-link { text-decoration: none; }
+/* icon */
+.hub .el-h2 + .el-ul > ul > li::after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 26px;
+  width: 18px;
+  height: 18px;
+  background: var(--mp-card-color);
+  -webkit-mask: var(--mp-card-icon) center / contain no-repeat;
+  mask: var(--mp-card-icon) center / contain no-repeat;
+}
+/* title: the whole card is the link */
+.hub .el-h2 + .el-ul > ul > li > a.internal-link {
+  display: block;
+  font-family: var(--h3-font);
+  font-size: 1.12em;
+  font-weight: 600;
+  line-height: 1.25;
+  color: color-mix(in srgb, var(--mp-card-color) 45%, var(--text-normal));
+  text-decoration: none;
+}
+.hub .el-h2 + .el-ul > ul > li > a.internal-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+/* large faded icon in the corner, like a reflection */
+.hub .el-h2 + .el-ul > ul > li > a.internal-link::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: -14px;
+  width: 72px;
+  height: 72px;
+  background: var(--mp-card-color);
+  opacity: 0.09;
+  transform: rotate(-12deg);
+  -webkit-mask: var(--mp-card-icon) center / contain no-repeat;
+  mask: var(--mp-card-icon) center / contain no-repeat;
+  pointer-events: none;
+}
+.hub .el-h2 + .el-ul > ul > li small {
+  display: block;
+  margin-top: 3px;
+  font-family: var(--font-interface);
+  font-size: 0.8em;
+  line-height: 1.35;
+  color: var(--text-muted);
+}
+.hub .el-h2 + .el-ul > ul > li:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--mp-card-color) 75%, transparent);
+  box-shadow: 0 10px 26px color-mix(in srgb, var(--mp-card-color) 22%, transparent), inset 0 1px 0 var(--mp-glass-shine);
+}
+.hub .el-h2 + .el-ul > ul > li:hover > a.internal-link::after { opacity: 0.16; }
 
 /* ---------- Bases & embeds --------------------------------------------- */
 .markdown-rendered .internal-embed .bases-view,

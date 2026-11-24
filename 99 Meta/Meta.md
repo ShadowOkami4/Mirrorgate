@@ -16,7 +16,7 @@ How this vault works, and tools for running games.
 
 ## Sections
 
-- [[GM Toolkit]]
+- [[GM Toolkit]] <small>Encounters, tables, sessions</small>
 
 ## In this section
 

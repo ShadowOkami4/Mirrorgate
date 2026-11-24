@@ -1,6 +1,8 @@
 {
   "cssTheme": "Mirrored Pages",
-  "enabledCssSnippets": [],
+  "enabledCssSnippets": [
+    "mirrored-realms"
+  ],
   "showRibbon": true,
   "theme": "obsidian"
 }
