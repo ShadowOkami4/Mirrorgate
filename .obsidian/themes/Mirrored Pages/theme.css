@@ -53,7 +53,7 @@ settings:
     default: mp-surface-slate
     options:
       -
-        label: Slate (cool)
+        label: Slate (cool, dark)
         value: mp-surface-slate
       -
         label: Obsidian (near black)
@@ -131,6 +131,12 @@ settings:
     type: class-toggle
     default: false
   -
+    id: mp-no-emblem
+    title: Turn off page emblem
+    description: No small mirror-shard emblem in the bottom-right corner of notes
+    type: class-toggle
+    default: false
+  -
     id: mp-no-cracks
     title: Turn off mirror cracks
     description: No cracked-glass lines over the graph view
@@ -181,32 +187,32 @@ body.mp-body-serif { --font-text-theme: var(--mp-serif); }
   --mp-ink: #d8dde4;
   --mp-silver-hi: #f4f7fb;
   --mp-silver-lo: #9aa6b4;
-  --mp-glass: rgba(30, 36, 46, 0.62);
+  --mp-glass: rgba(20, 24, 32, 0.66);
   --mp-glass-edge: rgba(200, 215, 235, 0.10);
   --mp-glass-shine: rgba(255, 255, 255, 0.05);
 
-  --background-primary: #14171c;
-  --background-primary-alt: #181c22;
-  --background-secondary: #101318;
-  --background-secondary-alt: #0c0f13;
-  --background-modifier-border: #262c35;
-  --background-modifier-border-hover: #333b46;
-  --background-modifier-border-focus: #4a5666;
+  --background-primary: #0d1014;
+  --background-primary-alt: #11141a;
+  --background-secondary: #0a0c10;
+  --background-secondary-alt: #07090c;
+  --background-modifier-border: #1f242c;
+  --background-modifier-border-hover: #2b323c;
+  --background-modifier-border-focus: #44505f;
   --background-modifier-hover: rgba(160, 185, 215, 0.07);
   --background-modifier-active-hover: rgba(143, 182, 224, 0.14);
-  --background-modifier-form-field: #191d24;
+  --background-modifier-form-field: #12151b;
 
   --text-normal: var(--mp-ink);
   --text-muted: #9aa3ae;
   --text-faint: #6b7480;
   --text-accent: var(--mp-accent);
   --text-accent-hover: #b4cfee;
-  --text-on-accent: #0f1318;
+  --text-on-accent: #0a0d11;
   --text-selection: rgba(143, 182, 224, 0.25);
   --interactive-accent: var(--mp-accent);
   --interactive-accent-hover: #a7c6e8;
-  --interactive-normal: #1d222a;
-  --interactive-hover: #252b35;
+  --interactive-normal: #161a21;
+  --interactive-hover: #1e232c;
 
   --h1-color: var(--mp-silver-hi);
   --h2-color: #e6ebf1;
@@ -215,11 +221,11 @@ body.mp-body-serif { --font-text-theme: var(--mp-serif); }
   --h5-color: var(--text-muted);
   --h6-color: var(--text-faint);
 
-  --code-background: #10141a;
+  --code-background: #090b0f;
   --blockquote-border-color: var(--mp-silver-lo);
-  --hr-color: #2c333d;
+  --hr-color: #232931;
   --table-header-background: rgba(143, 182, 224, 0.06);
-  --table-border-color: #262c35;
+  --table-border-color: #1f242c;
 
   --graph-line: #2f3742;
   --graph-node: #b9c3cf;
@@ -233,12 +239,12 @@ body.mp-body-serif { --font-text-theme: var(--mp-serif); }
   --shadow-l: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(200, 215, 235, 0.06);
 }
 .theme-dark.mp-surface-obsidian {
-  --background-primary: #0e1013;
-  --background-primary-alt: #121418;
-  --background-secondary: #0a0b0e;
-  --background-secondary-alt: #07080a;
-  --background-modifier-border: #1f232a;
-  --mp-glass: rgba(22, 25, 31, 0.66);
+  --background-primary: #08090b;
+  --background-primary-alt: #0c0d10;
+  --background-secondary: #050607;
+  --background-secondary-alt: #030304;
+  --background-modifier-border: #1a1d22;
+  --mp-glass: rgba(16, 18, 22, 0.7);
 }
 .theme-dark.mp-surface-pewter {
   --background-primary: #1b1c1f;
@@ -797,6 +803,25 @@ body:not(.mp-no-cracks).theme-light .workspace-leaf-content[data-type="localgrap
     linear-gradient(180deg, #d7dee9 0%, #eef1f6 60%, #f6f7fa 100%);
   background-size: cover, 100% 100%, 100% 100%;
   background-position: center;
+}
+
+/* ---------- Page emblem: a small cracked mirror shard, bottom right ------ */
+body { --mp-emblem: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 40%22 fill=%22none%22 stroke=%22black%22 stroke-linejoin=%22round%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M16 2 L28 16 L16 30 L4 16 Z%22 stroke-width=%221.8%22/%3E%3Cpath d=%22M16 2 L16 30 M4 16 L28 16%22 stroke-width=%220.8%22 opacity=%220.55%22/%3E%3Cpath d=%22M19 6 L15.5 12 L18.5 15 L14 22%22 stroke-width=%221.3%22/%3E%3Cpath d=%22M16 32.5 L20 36 L16 39.5 L12 36 Z%22 stroke-width=%221%22 opacity=%220.45%22/%3E%3C/svg%3E"); }
+body:not(.mp-no-emblem) .workspace-leaf-content[data-type="markdown"] .view-content { position: relative; }
+body:not(.mp-no-emblem) .workspace-leaf-content[data-type="markdown"] .view-content::after {
+  content: "";
+  position: absolute;
+  right: 26px;
+  bottom: 46px;
+  width: 30px;
+  height: 38px;
+  z-index: 5;
+  pointer-events: none;
+  background: linear-gradient(160deg, var(--mp-silver-hi), var(--mp-accent) 70%);
+  -webkit-mask: var(--mp-emblem) center / contain no-repeat;
+  mask: var(--mp-emblem) center / contain no-repeat;
+  opacity: 0.75;
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--mp-accent) 60%, transparent));
 }
 
 /* ---------- Atlas VTT --------------------------------------------------- */
