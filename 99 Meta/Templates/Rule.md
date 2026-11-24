@@ -1,10 +1,9 @@
+<%* const f = tp.file.folder(false); const up = (!f || f === "/") ? "Home" : f; -%>
 ---
 type: rule
-up: "[[Core]]"
+up: "[[<% up %>]]"
 ---
 
-↑ [[Core]]
-
-# {{title}}
+↑ [[<% up %>]]
 
 ## Rule

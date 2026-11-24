@@ -1,12 +1,11 @@
+<%* const f = tp.file.folder(false); const up = (!f || f === "/") ? "Home" : f; -%>
 ---
 type: secret
-up: "[[Secrets]]"
+up: "[[<% up %>]]"
 reveals: []
 ---
 
-↑ [[Secrets]]
-
-# {{title}}
+↑ [[<% up %>]]
 
 ## The truth
 

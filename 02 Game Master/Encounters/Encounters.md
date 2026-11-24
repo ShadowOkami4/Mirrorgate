@@ -7,10 +7,8 @@ tags:
 
 ↑ [[Game Master]]
 
-# Encounters
-
 Reusable encounters, random tables and set pieces.
 
-## Contents
+## In this section
 
-*Nothing here yet. Every new note in this folder links back here with its `up` property.*
+![[Folder Contents.base]]

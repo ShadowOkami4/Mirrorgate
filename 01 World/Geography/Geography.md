@@ -7,10 +7,8 @@ tags:
 
 ↑ [[World]]
 
-# Geography
-
 Continents, realms, settlements and landmarks. Nest folders like the map: continent → realm → place.
 
-## Contents
+## In this section
 
-*Nothing here yet. Every new note in this folder links back here with its `up` property.*
+![[Folder Contents.base]]

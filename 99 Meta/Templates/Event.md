@@ -1,12 +1,11 @@
+<%* const f = tp.file.folder(false); const up = (!f || f === "/") ? "Home" : f; -%>
 ---
 type: event
-up: "[[History]]"
+up: "[[<% up %>]]"
 era: ""
 ---
 
-↑ [[History]]
-
-# {{title}}
+↑ [[<% up %>]]
 
 ## What happened
 

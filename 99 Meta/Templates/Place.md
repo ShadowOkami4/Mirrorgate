@@ -1,13 +1,12 @@
+<%* const f = tp.file.folder(false); const up = (!f || f === "/") ? "Home" : f; -%>
 ---
 type: place
-up: "[[Geography]]"
+up: "[[<% up %>]]"
 region: ""
 kind: ""
 ---
 
-↑ [[Geography]]
-
-# {{title}}
+↑ [[<% up %>]]
 
 ## Overview
 

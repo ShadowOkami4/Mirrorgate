@@ -1,0 +1,80 @@
+{
+  "data_version": 2,
+  "command_timeout": 5,
+  "templates_folder": "99 Meta/Templates",
+  "templates_pairs": [],
+  "trigger_on_file_creation_mode": "folder",
+  "only_trigger_for_matching_files": true,
+  "auto_jump_to_cursor": true,
+  "jump_to_cursor_after_file_name": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "folder_templates": [
+    {
+      "folder": "01 World/Geography",
+      "template": "99 Meta/Templates/Place.md"
+    },
+    {
+      "folder": "01 World/People",
+      "template": "99 Meta/Templates/Figure.md"
+    },
+    {
+      "folder": "01 World/Factions",
+      "template": "99 Meta/Templates/Faction.md"
+    },
+    {
+      "folder": "01 World/History",
+      "template": "99 Meta/Templates/Event.md"
+    },
+    {
+      "folder": "01 World/Faiths",
+      "template": "99 Meta/Templates/Faith.md"
+    },
+    {
+      "folder": "01 World/Peoples",
+      "template": "99 Meta/Templates/Species & Culture.md"
+    },
+    {
+      "folder": "02 Game Master/Secrets",
+      "template": "99 Meta/Templates/Secret.md"
+    },
+    {
+      "folder": "02 Game Master/NPCs",
+      "template": "99 Meta/Templates/NPC.md"
+    },
+    {
+      "folder": "02 Game Master/Encounters",
+      "template": "99 Meta/Templates/Encounter.md"
+    },
+    {
+      "folder": "02 Game Master/Sessions",
+      "template": "99 Meta/Templates/Session.md"
+    },
+    {
+      "folder": "03 Rules/Core",
+      "template": "99 Meta/Templates/Rule.md"
+    },
+    {
+      "folder": "03 Rules/Options",
+      "template": "99 Meta/Templates/Rule.md"
+    },
+    {
+      "folder": "03 Rules/Bestiary",
+      "template": "99 Meta/Templates/Creature.md"
+    }
+  ],
+  "file_templates": [],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [],
+  "startup_templates": [],
+  "intellisense_render": "1",
+  "ignore_folders_on_creation": [
+    {
+      "folder": "99 Meta/Templates"
+    },
+    {
+      "folder": "atlas-vtt"
+    }
+  ]
+}

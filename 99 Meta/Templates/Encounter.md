@@ -1,12 +1,11 @@
+<%* const f = tp.file.folder(false); const up = (!f || f === "/") ? "Home" : f; -%>
 ---
 type: encounter
-up: "[[Encounters]]"
+up: "[[<% up %>]]"
 region: ""
 ---
 
-↑ [[Encounters]]
-
-# {{title}}
+↑ [[<% up %>]]
 
 ## Setup
 

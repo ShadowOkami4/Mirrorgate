@@ -7,8 +7,6 @@ tags:
 
 ↑ [[Home]]
 
-# Meta
-
 How this vault works: the world bible, templates and guides.
 
 ## Contents

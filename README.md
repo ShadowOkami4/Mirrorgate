@@ -114,11 +114,11 @@ The shared vault settings in `.obsidian/` enable the following community plugins
 | Dice Roller | inline dice rolls in notes |
 | Enhancing Export | export of notes and books to PDF, DOCX, and other formats (requires Pandoc) |
 | Pixel Banner | banner images at the top of notes |
-| Hover Editor | reading and editing linked notes in pop-up windows |
-| Advanced Tables | table editing |
 | Iconize | folder and note icons |
 | File Explorer++ | filtering and pinning in the file explorer |
-| Templater, QuickAdd, Homepage | note templates, one-click note creation, and opening `Home.md` on start *(being set up)* |
+| Templater | note templates that link each new note to its section |
+| QuickAdd | *New Place*, *New NPC*, *New Area* … commands that create a note in the right folder |
+| Homepage | opens `Home.md` when the vault starts |
 | Style Settings | options for the theme and CSS snippets |
 | Claudian | the maintainer's AI assistant (see [A Note on AI](#a-note-on-ai)); not needed to read or play |
 

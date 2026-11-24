@@ -7,8 +7,6 @@ tags:
 
 ↑ [[Home]]
 
-# Game Master
-
 **Spoilers.** Everything a GM needs to run games in Kagameru.
 
 ## Sections
@@ -18,3 +16,7 @@ tags:
 - [[NPCs]]
 - [[Encounters]]
 - [[Sessions]]
+
+## In this section
+
+![[Folder Contents.base]]

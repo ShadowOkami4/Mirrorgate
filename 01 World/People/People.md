@@ -7,10 +7,8 @@ tags:
 
 ↑ [[World]]
 
-# People
-
 Notable public figures: rulers, heroes, scholars. What everyone knows about them. (GM-side NPC details go in [[NPCs]].)
 
-## Contents
+## In this section
 
-*Nothing here yet. Every new note in this folder links back here with its `up` property.*
+![[Folder Contents.base]]

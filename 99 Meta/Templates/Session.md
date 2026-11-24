@@ -1,13 +1,12 @@
+<%* const f = tp.file.folder(false); const up = (!f || f === "/") ? "Home" : f; -%>
 ---
 type: session
-up: "[[Sessions]]"
+up: "[[<% up %>]]"
 date: ""
 adventure: ""
 ---
 
-↑ [[Sessions]]
-
-# {{title}}
+↑ [[<% up %>]]
 
 ## Recap
 

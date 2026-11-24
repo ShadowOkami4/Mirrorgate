@@ -7,8 +7,6 @@ tags:
 
 ↑ [[Home]]
 
-# Rules
-
 How to play in Kagameru.
 
 ## Sections
@@ -16,3 +14,7 @@ How to play in Kagameru.
 - [[Core]]
 - [[Options]]
 - [[Bestiary]]
+
+## In this section
+
+![[Folder Contents.base]]

@@ -1,12 +1,11 @@
+<%* const f = tp.file.folder(false); const up = (!f || f === "/") ? "Home" : f; -%>
 ---
 type: creature
-up: "[[Bestiary]]"
+up: "[[<% up %>]]"
 cr: ""
 ---
 
-↑ [[Bestiary]]
-
-# {{title}}
+↑ [[<% up %>]]
 
 ## Description
 

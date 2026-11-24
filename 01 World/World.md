@@ -7,8 +7,6 @@ tags:
 
 ↑ [[Home]]
 
-# World
-
 Lore of Kagameru as the world knows it. Nothing here spoils an adventure; the truth behind it lives in [[Game Master]].
 
 ## Sections
@@ -19,3 +17,7 @@ Lore of Kagameru as the world knows it. Nothing here spoils an adventure; the tr
 - [[History]]
 - [[Faiths]]
 - [[Peoples]]
+
+## In this section
+
+![[Folder Contents.base]]

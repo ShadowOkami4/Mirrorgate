@@ -1,11 +1,10 @@
+<%* const f = tp.file.folder(false); const up = (!f || f === "/") ? "Home" : f; -%>
 ---
 type: faith
-up: "[[Faiths]]"
+up: "[[<% up %>]]"
 ---
 
-↑ [[Faiths]]
-
-# {{title}}
+↑ [[<% up %>]]
 
 ## Overview
 

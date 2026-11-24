@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.path != this.file.path
+views:
+  - type: table
+    name: Here
+    filters:
+      and:
+        - file.folder == this.file.folder
+    order: [file.name, type, region]
+  - type: table
+    name: Sub-areas
+    filters:
+      and:
+        - type == "hub"
+        - file.inFolder(this.file.folder)
+    order: [file.name, file.folder]
+  - type: table
+    name: Everything below
+    filters:
+      and:
+        - file.inFolder(this.file.folder)
+        - type != "hub"
+    order: [file.name, type, region, up]
