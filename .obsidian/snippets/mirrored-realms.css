@@ -171,3 +171,6 @@ body .hub .el-ul > ul > li:has(> a.internal-link[data-href="World Bible"]) {
   box-shadow: 0 0 12px color-mix(in srgb, var(--mp-accent) 28%, transparent);
 }
 .home .el-ol > ol > li strong { color: var(--mp-silver-hi); }
+
+/* Hearth start screen: no logo beside the title */
+.hearth-view .hearth-logo { display: none; }
