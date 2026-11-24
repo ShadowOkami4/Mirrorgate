@@ -9,13 +9,14 @@
     "downscalePercent": 100
   },
   "promptDelete": false,
-  "attachmentFolderPath": "z_Assets",
+  "attachmentFolderPath": "90 Assets",
   "alwaysUpdateLinks": true,
   "propertiesInDocument": "hidden",
   "userIgnoreFilters": [
-    "90 Scriptorium/Templates/",
-    "99 Archive/",
+    "99 Meta/Templates/",
     "README.md",
-    "NOTICE.md"
-  ]
+    "NOTICE.md",
+    "LICENSE"
+  ],
+  "newFileLocation": "current"
 }

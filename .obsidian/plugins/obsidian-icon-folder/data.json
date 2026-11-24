@@ -27,5 +27,26 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  }
+  },
+  "01 World": "LiGlobe2",
+  "01 World/Geography": "LiMap",
+  "01 World/People": "LiUsers",
+  "01 World/Factions": "LiShield",
+  "01 World/History": "LiHourglass",
+  "01 World/Faiths": "LiSun",
+  "01 World/Peoples": "LiTrees",
+  "02 Game Master": "LiEyeOff",
+  "02 Game Master/Adventures": "LiSwords",
+  "02 Game Master/Secrets": "LiLock",
+  "02 Game Master/NPCs": "LiDrama",
+  "02 Game Master/Encounters": "LiSkull",
+  "02 Game Master/Sessions": "LiNotebookPen",
+  "03 Rules": "LiDices",
+  "03 Rules/Core": "LiScale",
+  "03 Rules/Options": "LiUserCog",
+  "03 Rules/Bestiary": "LiPawPrint",
+  "04 Books": "LiLibrary",
+  "90 Assets": "LiImage",
+  "99 Meta": "LiSettings",
+  "Home.md": "LiHome"
 }

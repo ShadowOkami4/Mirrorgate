@@ -11,7 +11,7 @@
   </p>
   <p>
     <a href="https://shadowokami.com/MirrorGate">Project website</a> ·
-    <a href="00%20Library%20of%20Kagami/Welcome.md">Enter the library</a> ·
+    <a href="Home.md">Open the vault</a> ·
     <a href="#getting-started">Getting started</a> ·
     <a href="#release-roadmap">Roadmap</a> ·
     <a href="#contributing">Contributing</a> ·
@@ -59,13 +59,13 @@ The project combines setting lore, characters, factions, creatures, homebrew rul
 ## The Known World
 
 <p align="center">
-  <img src="z_Assets/Kagameru_World_Map.jpg" alt="Physical map of Kagameru, showing Specula, Drychwen, Scáthan, Veidra, Skuggsjá, Tezcatl, and the Southern Ice" width="100%">
+  <img src="90%20Assets/Maps/Kagameru_World_Map.jpg" alt="Physical map of Kagameru, showing Specula, Drychwen, Scáthan, Veidra, Skuggsjá, Tezcatl, and the Southern Ice" width="100%">
 </p>
 
 <details>
 <summary><strong>View the political map</strong></summary>
 <p align="center">
-  <img src="z_Assets/Kagameru_Political_Map.jpg" alt="Political map of Kagameru, showing its realms and their borders" width="100%">
+  <img src="90%20Assets/Maps/Kagameru_Political_Map.jpg" alt="Political map of Kagameru, showing its realms and their borders" width="100%">
 </p>
 </details>
 
@@ -79,8 +79,8 @@ The map previews are made with a self-made AI-assisted simulation. The maps them
 | Extent | 12,000 × 10,000 km |
 | Projection | flat, origin at the north-west corner; x runs east, y runs south |
 | Full resolution | 12,000 × 10,000 px (1 px ≈ 1 km) |
-| Images in this repository | 2,400 px wide copies in `z_Assets/` |
-| Source files | kept locally in `Cartography/`; not published, because the full-size renders exceed 20 MB each |
+| Images in this repository | 2,400 px wide copies in `90 Assets/Maps/` |
+| Source files | kept locally, outside the vault; not published, because the full-size renders exceed 20 MB each |
 
 ## Getting Started
 
@@ -99,7 +99,7 @@ The map previews are made with a self-made AI-assisted simulation. The maps them
 
 2. Open the repository folder as a vault in Obsidian.
 3. When Obsidian asks, trust the vault's community plugins so that its layout, callouts, and tools work as intended.
-4. Open [`00 Library of Kagami/Welcome.md`](00%20Library%20of%20Kagami/Welcome.md) and follow whichever record catches your attention.
+4. Open [`Home.md`](Home.md) and follow whichever section catches your attention.
 
 > [!NOTE]
 > Internal links such as `[[The Mirrorgate]]` are written for Obsidian and do not resolve on GitHub. The navigation links in this README use relative paths and work in both.
@@ -111,28 +111,33 @@ The shared vault settings in `.obsidian/` enable the following community plugins
 | Plugin | Purpose in this vault |
 | --- | --- |
 | Atlas VTT | battle maps, tokens, fog of war, dice, initiative, and a player view |
-| Dataview | queries over note properties |
 | Dice Roller | inline dice rolls in notes |
 | Enhancing Export | export of notes and books to PDF, DOCX, and other formats (requires Pandoc) |
 | Pixel Banner | banner images at the top of notes |
 | Hover Editor | reading and editing linked notes in pop-up windows |
 | Advanced Tables | table editing |
 | Iconize | folder and note icons |
+| File Explorer++ | filtering and pinning in the file explorer |
+| Templater, QuickAdd, Homepage | note templates, one-click note creation, and opening `Home.md` on start *(being set up)* |
 | Style Settings | options for the theme and CSS snippets |
 | Claudian | the maintainer's AI assistant (see [A Note on AI](#a-note-on-ai)); not needed to read or play |
 
-The vault uses the **Encore** theme and the CSS snippet `mirrored-realms`, which styles the collapsible GM callouts.
+Index tables use Obsidian's core **Bases** plugin. The vault uses the **Encore** theme and the CSS snippet `mirrored-realms`, which styles the collapsible GM callouts.
 
 ## Repository Layout
 
+> [!NOTE]
+> **The vault is being rebuilt (November 2026).** The folders below are the new skeleton; notes are rewritten section by section. The previous version is in the git history.
+
 | Path | Contents |
 | --- | --- |
-| `00 Library of Kagami/` | the entrance to the library |
-| `01 Encyclopedia/` | setting lore: cosmology, history, geography, peoples, faiths, factions, and characters |
-| `02 Rules Compendium/` | homebrew rules: rules modules, character options, and the bestiary |
-| `03 Adventures/` | one-shots, multishots, and campaign frameworks, each laid out as a book |
-| `04 Books/` | the bookshelf: tables of contents that arrange library entries into books |
-| `z_Assets/` | images; `z_Assets/Private/` is kept local and not published |
+| `Home.md` | the entrance: links to every section and an index of all notes |
+| `01 World/` | lore of Kagameru as the world knows it: geography, people, factions, history, faiths, peoples. No spoilers. |
+| `02 Game Master/` | **spoilers**: adventures, secrets, NPCs, encounters, session notes |
+| `03 Rules/` | core rules, character options, bestiary |
+| `04 Books/` | compiled book editions of the vault |
+| `90 Assets/` | maps and art; `90 Assets/Private/` is kept local and not published |
+| `99 Meta/` | the World Bible, note templates and the index |
 | `.obsidian/` | shared vault settings, plugins, theme, and snippets |
 
 These paths are excluded from the repository by `.gitignore`:
@@ -140,66 +145,37 @@ These paths are excluded from the repository by `.gitignore`:
 | Path | Reason |
 | --- | --- |
 | `atlas-vtt/` | local Atlas VTT data: personal settings, test scenes, and the plugin's third-party starter tokens. The plugin requires this folder at the vault root; never move or rename it. |
-| `Cartography/` | map generator and full-size renders, which are too large for the repository |
+| `Private/`, `90 Assets/Private/` | private files and images that are kept local and not published |
 | `.obsidian/workspace.json` | personal window layout |
 | `.claude/`, `.claudian/` | local AI assistant data |
-| `z_Assets/Private/` | private images that are kept local and not published |
 
 ## Reading the Vault
 
-The vault can be read in two ways, and nothing in it is written twice.
+The vault is written for **Game Masters**: download it, open it in Obsidian, and browse.
 
-- **As a library.** Short, linked entries in the voice of Professor Phineas Phantomhive II, chief chronicler of the Encyclopedia Kagami. Follow links, backlinks, and hub notes in any order.
-- **As books.** Tables of contents in `04 Books/` arrange the same entries into a fixed reading order: the [Encyclopedia Kagami](04%20Books/Encyclopedia%20Kagami.md), the [Player's Companion](04%20Books/Player's%20Companion.md), the [Game Master's Codex](04%20Books/Game%20Master's%20Codex.md), and the [Mirrorgate Bestiary](04%20Books/Mirrorgate%20Bestiary.md). Every adventure is a book of its own.
+- **By folder.** Every folder has a hub note with the folder's name (`World.md`, `Geography.md`, `NPCs.md` …) that lists what is inside.
+- **By graph.** Every note's `up` property links to its hub, and every hub links up to [Home](Home.md). The graph view therefore branches out from Home through each section. Hubs are white, World blue, Game Master red, adventures gold, Rules green, Books purple.
+- **By index.** `Home.md` embeds tables of every place, NPC and adventure.
 
-| Subject | Starting record |
-| --- | --- |
-| Entrance | [Library of Kagami](00%20Library%20of%20Kagami/Welcome.md) |
-| World | [Kagameru](01%20Encyclopedia/Kagameru.md) |
-| Cosmology | [The Mirrorgate](01%20Encyclopedia/Cosmology/The%20Mirrorgate.md) |
-| History | [History & Myths](01%20Encyclopedia/History%20%26%20Myths/History%20%26%20Myths.md) |
-| Geography | [Geography & Politics](01%20Encyclopedia/Geography%20%26%20Politics/Geography%20%26%20Politics.md) |
-| Peoples | [Species & Cultures](01%20Encyclopedia/Species%20%26%20Cultures/Species%20%26%20Cultures.md) |
-| Powers | [People & Powers](01%20Encyclopedia/People%20%26%20Powers/People%20%26%20Powers.md) |
-| Rules | [Rules Compendium](02%20Rules%20Compendium/Rules%20Compendium.md) |
-| Adventures | [Adventures & Fiction](03%20Adventures/Adventures%20%26%20Fiction.md) |
-| Books | [Bookshelf](04%20Books/Bookshelf.md) |
-
-### Folders and Graph
-
-The vault is organised so that its folders and its graph view tell the same story.
-
-- **Folders follow the world.** Places are filed where they lie: `Geography & Politics/Specula/Lustro/` holds Lustro and the places inside it, such as Ogledal and the Forest of Thieves.
-- **Each area has a hub note**, usually named like its folder, such as `Specula.md` or `Lustro.md`.
-- **The graph shows a tree.** Each note's `parent` property points to the hub or place that contains it, so the graph branches out from the [Library of Kagami](00%20Library%20of%20Kagami/Welcome.md) through Kagameru, the continents, and the realms down to single places. Links in the text add the connections between branches.
-- **Colours mark the layers.** The shared graph settings colour notes by area: geography, people and powers, history, cosmology, rules, adventures, and books.
+`01 World` holds what the world knows; `02 Game Master` holds the truth behind it. A secret links to the World notes it explains, so the local graph of any place shows its spoilers too.
 
 ### Note Properties
 
-Every note carries YAML front matter. Properties are hidden in the reading view and can be inspected in the Properties panel or in Source mode.
+Every note carries YAML front matter, hidden in the reading view. Templates in `99 Meta/Templates/` fill it in.
 
-| Property | Values | Meaning |
-| --- | --- | --- |
-| `type` | `npc`, `location`, `creature`, `adventure-chapter`, `moc`, … | what kind of note it is |
-| `status` | `concept`, `announced`, `draft`, `active-draft`, `foundation`, `active` | editorial state |
-| `audience` | `shared`, `gm` | whether players can read it safely |
-| `canon` | `current`, `superseded` | whether it belongs to the current setting |
-| `parent` | a link | the hub the note belongs to |
-| `id` | `OS-01`, `SA-01`, `CF-01`, … | stable release identifier |
-| `progress` | `0`–`100` | production estimate of a release |
-| `release` | a link | the adventure in which a note is used |
-| `located-in` | a link | the place containing this one |
-| `level`, `cr`, `chapter` | numbers | adventure level, challenge rating, chapter order |
-
-Spoilers inside player-safe notes sit in collapsible callouts marked **GM** (`> [!gm]-`). Players can read a `shared` entry without opening them.
+| Property | Meaning |
+| --- | --- |
+| `type` | what kind of note it is: `place`, `figure`, `faction`, `event`, `faith`, `people`, `adventure`, `secret`, `npc`, `encounter`, `session`, `rule`, `creature`, `hub` |
+| `up` | the hub (or containing place) the note belongs to |
+| `region` | where it is, for places, NPCs and factions |
 
 ## Rules and Game Material
 
 All rules material targets fifth edition and uses the terminology and stat block format of the **System Reference Document 5.2.1**.
 
-- **Character options**, such as the [Mirrorbound](02%20Rules%20Compendium/Character%20Options/Subclasses/Mirrorbound.md) fighter and [Scarborn Sorcery](02%20Rules%20Compendium/Character%20Options/Subclasses/Scarborn%20Sorcery.md), work in any fifth-edition world. Setting lore is kept in an optional section, *In the Mirrored Realms*.
-- **Creatures** use the current stat block layout: AC and Initiative, a combined ability and saving-throw table, `CR x (XP y; PB +z)`, and separate Traits, Actions, Bonus Actions, and Reactions. See the [Mirrorgate Bestiary](04%20Books/Mirrorgate%20Bestiary.md).
-- **Rules modules**, such as [Scar Hazards](02%20Rules%20Compendium/Rules%20Modules/Scar%20Hazards.md), keep mechanics out of the lore entries.
+- **Character options**, such as the Mirrorbound fighter and Scarborn Sorcery, work in any fifth-edition world. Setting lore is kept in an optional section, *In the Mirrored Realms*.
+- **Creatures** use the current stat block layout: AC and Initiative, a combined ability and saving-throw table, `CR x (XP y; PB +z)`, and separate Traits, Actions, Bonus Actions, and Reactions.
+- **Rules modules**, such as Scar Hazards, keep mechanics out of the lore entries.
 
 > [!NOTE]
 > Subclasses, creatures, and rules modules are **playtest drafts**. Numbers may change.
@@ -244,8 +220,8 @@ The planned collection contains **18 journeys**: ten one-shots, five short adven
 
 | Release | Kind | State | Progress | Current work |
 | --- | --- | --- | ---: | --- |
-| [The Pact in the Twilight](03%20Adventures/Multishots/SA-01%20The%20Pact%20in%20the%20Twilight/The%20Pact%20in%20the%20Twilight.md) | short adventure | `ACTIVE DRAFT` | **25%** | Prelude and Chapters 1–3 drafted; outlining the rest of the adventure |
-| [Shattered Hope](03%20Adventures/Campaigns/CF-01%20Shattered%20Hope/Shattered%20Hope.md) | main campaign | `FOUNDATION` | **1%** | defining the campaign spine and its major arcs |
+| The Pact in the Twilight | short adventure | `ACTIVE DRAFT` | **25%** | Prelude and Chapters 1–3 drafted; outlining the rest of the adventure |
+| Shattered Hope | main campaign | `FOUNDATION` | **1%** | defining the campaign spine and its major arcs |
 
 <details>
 <summary><strong>View current development milestones</strong></summary>
@@ -288,24 +264,24 @@ The planned collection contains **18 journeys**: ten one-shots, five short adven
 
 | ID | Title | State | Notes |
 | --- | --- | --- | --- |
-| OS-01 | [**The Dark Alley**](03%20Adventures/One-Shots/OS-01%20The%20Dark%20Alley/The%20Dark%20Alley.md) | `ANNOUNCED` | a complete rewrite of an older original one-shot, rebuilt to fit the Mirrored Realms |
-| OS-02 | [**Mirror and Scars**](03%20Adventures/One-Shots/OS-02%20Mirror%20and%20Scars/Mirror%20and%20Scars.md) | `ANNOUNCED` | an episodic series whose episodes can each be played on their own; the series occupies one slot |
+| OS-01 | **The Dark Alley** | `ANNOUNCED` | a complete rewrite of an older original one-shot, rebuilt to fit the Mirrored Realms |
+| OS-02 | **Mirror and Scars** | `ANNOUNCED` | an episodic series whose episodes can each be played on their own; the series occupies one slot |
 | OS-03 – OS-10 | — | `UNANNOUNCED` | |
 
 #### Short Adventures / Multishots — 5 planned
 
 | ID | Title | State | Notes |
 | --- | --- | --- | --- |
-| SA-01 | [**The Pact in the Twilight**](03%20Adventures/Multishots/SA-01%20The%20Pact%20in%20the%20Twilight/The%20Pact%20in%20the%20Twilight.md) | `ACTIVE DRAFT` · **25%** | the first short adventure in active development |
-| SA-02 | [**Confronting Yourself**](03%20Adventures/Multishots/SA-02%20Confronting%20Yourself/Confronting%20Yourself.md) | `ANNOUNCED` | development has not begun |
-| SA-03 | [**The Mysteries of the Phantomhives**](03%20Adventures/Multishots/SA-03%20The%20Mysteries%20of%20the%20Phantomhives/The%20Mysteries%20of%20the%20Phantomhives.md) | `ANNOUNCED` | development has not begun |
+| SA-01 | **The Pact in the Twilight** | `ACTIVE DRAFT` · **25%** | the first short adventure in active development |
+| SA-02 | **Confronting Yourself** | `ANNOUNCED` | development has not begun |
+| SA-03 | **The Mysteries of the Phantomhives** | `ANNOUNCED` | development has not begun |
 | SA-04 – SA-05 | — | `UNANNOUNCED` | |
 
 #### Campaigns / Campaign Frameworks — 3 planned
 
 | ID | Title | State | Notes |
 | --- | --- | --- | --- |
-| CF-01 | [**Shattered Hope**](03%20Adventures/Campaigns/CF-01%20Shattered%20Hope/Shattered%20Hope.md) | `FOUNDATION` · **1%** | the main campaign of the Mirrored Realms |
+| CF-01 | **Shattered Hope** | `FOUNDATION` · **1%** | the main campaign of the Mirrored Realms |
 | CF-02 – CF-03 | — | `UNANNOUNCED` | |
 
 </details>

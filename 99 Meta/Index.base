@@ -1,0 +1,41 @@
+filters:
+  and:
+    - type != "hub"
+    - '!file.inFolder("99 Meta")'
+    - file.ext == "md"
+views:
+  - type: table
+    name: Places
+    filters:
+      and:
+        - type == "place"
+    order:
+      - file.name
+      - region
+      - kind
+      - up
+  - type: table
+    name: NPCs
+    filters:
+      and:
+        - type == "npc"
+    order:
+      - file.name
+      - region
+      - up
+  - type: table
+    name: Adventures
+    filters:
+      and:
+        - type == "adventure"
+    order:
+      - file.name
+      - level
+      - players
+  - type: table
+    name: Everything
+    order:
+      - file.name
+      - type
+      - up
+      - file.folder
