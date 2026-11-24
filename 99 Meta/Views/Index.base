@@ -2,6 +2,9 @@ filters:
   and:
     - type != "hub"
     - '!file.inFolder("99 Meta/Templates")'
+    - '!file.inFolder("Private")'
+    - '!file.inFolder("90 Assets")'
+    - '!file.inFolder("atlas-vtt")'
     - file.ext == "md"
 views:
   - type: table

@@ -805,6 +805,278 @@ body:not(.mp-no-cracks).theme-light .workspace-leaf-content[data-type="localgrap
   background-position: center;
 }
 
+/* ---------- Sidebar: file explorer ------------------------------------- */
+body {
+  --nav-item-background-hover: color-mix(in srgb, var(--mp-accent) 8%, transparent);
+  --nav-item-background-active: color-mix(in srgb, var(--mp-accent) 16%, transparent);
+  --nav-item-color-active: var(--text-normal);
+  --nav-indentation-guide-color: color-mix(in srgb, var(--mp-silver-lo) 22%, transparent);
+  --nav-indentation-guide-width: 1px;
+}
+.nav-files-container .tree-item-self {
+  transition: background-color 120ms ease, color 120ms ease, box-shadow 120ms ease;
+}
+.nav-files-container .tree-item-self:hover {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--mp-accent) 14%, transparent);
+}
+.nav-files-container .tree-item-self.is-active,
+.nav-file-title.is-active {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--mp-accent) 24%, transparent), color-mix(in srgb, var(--mp-accent) 4%, transparent) 85%);
+  box-shadow: inset 2px 0 0 var(--mp-accent), 0 0 12px color-mix(in srgb, var(--mp-accent) 12%, transparent);
+  color: var(--text-normal);
+}
+.nav-folder-title .iconize-icon,
+.nav-file-title .iconize-icon,
+.nav-folder-title .tree-item-icon {
+  color: color-mix(in srgb, var(--mp-accent) 65%, var(--text-muted));
+}
+.nav-folder.is-collapsed > .nav-folder-title .iconize-icon { opacity: 0.8; }
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  border-top: 1px solid color-mix(in srgb, var(--mp-silver-lo) 18%, transparent);
+  background: linear-gradient(0deg, color-mix(in srgb, var(--mp-accent) 6%, transparent), transparent);
+}
+
+/* ---------- Tabs ------------------------------------------------------- */
+body {
+  --tab-background-active: var(--background-primary);
+  --tab-outline-color: color-mix(in srgb, var(--mp-silver-lo) 18%, transparent);
+}
+.workspace-tab-header-container { background-color: var(--background-secondary); }
+.workspace-tab-header .workspace-tab-header-inner-title { transition: opacity 120ms ease; }
+.workspace-tab-header:not(.is-active) .workspace-tab-header-inner-title { opacity: 0.6; }
+.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-title { opacity: 0.95; }
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+  box-shadow: inset 0 2px 0 var(--mp-accent);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--mp-accent) 12%, transparent), transparent 80%);
+  border-radius: var(--radius-s) var(--radius-s) 0 0;
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-title { font-weight: 600; }
+.mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-icon { color: var(--mp-accent); }
+
+/* ---------- Ribbon and status bar -------------------------------------- */
+.workspace-ribbon.mod-left { background-color: var(--background-secondary-alt); }
+.side-dock-ribbon-action,
+.workspace-ribbon .clickable-icon { transition: color 120ms ease, filter 120ms ease; }
+.side-dock-ribbon-action:hover,
+.workspace-ribbon .clickable-icon:hover {
+  color: var(--mp-accent);
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--mp-accent) 55%, transparent));
+}
+body {
+  --status-bar-background: color-mix(in srgb, var(--background-secondary) 80%, transparent);
+  --status-bar-border-color: color-mix(in srgb, var(--mp-accent) 25%, transparent);
+  --status-bar-text-color: var(--text-muted);
+}
+.status-bar {
+  -webkit-backdrop-filter: blur(var(--mp-glass-blur));
+  backdrop-filter: blur(var(--mp-glass-blur));
+  border-top-left-radius: var(--radius-m);
+  box-shadow: inset 0 1px 0 var(--mp-glass-shine);
+}
+
+/* ---------- Links ------------------------------------------------------ */
+.markdown-rendered a.internal-link,
+.markdown-rendered a.external-link {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, var(--mp-silver-lo) 50%, transparent);
+  transition: color 120ms ease, text-decoration-color 120ms ease, text-shadow 120ms ease;
+}
+.markdown-rendered a.internal-link:hover,
+.markdown-rendered a.external-link:hover {
+  color: var(--text-accent-hover);
+  text-decoration-color: var(--mp-accent);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--mp-accent) 45%, transparent);
+}
+.markdown-rendered a.internal-link.is-unresolved {
+  color: var(--text-muted);
+  text-decoration-style: dashed;
+  opacity: 0.8;
+}
+
+/* ---------- Lists: diamond bullets ------------------------------------- */
+body {
+  --list-marker-color: var(--mp-accent);
+  --list-marker-color-hover: var(--text-accent-hover);
+  --indentation-guide-color: color-mix(in srgb, var(--mp-silver-lo) 22%, transparent);
+  --indentation-guide-color-active: color-mix(in srgb, var(--mp-accent) 50%, transparent);
+}
+.markdown-rendered ul > li > .list-bullet::after,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ul .list-bullet::after {
+  width: 5px;
+  height: 5px;
+  border-radius: 1px;
+  transform: rotate(45deg);
+  background-color: var(--list-marker-color);
+  box-shadow: 0 0 6px color-mix(in srgb, var(--mp-accent) 50%, transparent);
+}
+.markdown-rendered ol > li::marker { color: var(--mp-accent); font-family: var(--mp-serif); font-weight: 600; }
+
+/* ---------- Checkboxes ------------------------------------------------- */
+body {
+  --checkbox-radius: 5px;
+  --checkbox-color: var(--mp-accent);
+  --checkbox-color-hover: var(--text-accent-hover);
+  --checkbox-border-color: color-mix(in srgb, var(--mp-accent) 55%, var(--mp-silver-lo));
+  --checkbox-border-color-hover: var(--mp-accent);
+  --checkbox-marker-color: var(--background-primary);
+}
+input[type="checkbox"].task-list-item-checkbox {
+  transition: box-shadow 140ms ease, background-color 140ms ease;
+}
+input[type="checkbox"].task-list-item-checkbox:checked {
+  box-shadow: 0 0 10px color-mix(in srgb, var(--mp-accent) 55%, transparent);
+}
+.markdown-rendered .task-list-item.is-checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"] {
+  color: var(--text-faint);
+  text-decoration-color: color-mix(in srgb, var(--mp-silver-lo) 60%, transparent);
+}
+
+/* ---------- Tags: glass pills ------------------------------------------ */
+body {
+  --tag-radius: 999px;
+  --tag-padding-x: 0.65em;
+  --tag-padding-y: 0.12em;
+  --tag-background: color-mix(in srgb, var(--mp-accent) 13%, transparent);
+  --tag-background-hover: color-mix(in srgb, var(--mp-accent) 24%, transparent);
+  --tag-border-width: 1px;
+  --tag-border-color: color-mix(in srgb, var(--mp-accent) 38%, transparent);
+  --tag-border-color-hover: var(--mp-accent);
+  --tag-color: color-mix(in srgb, var(--mp-accent) 75%, var(--text-normal));
+  --tag-color-hover: var(--text-normal);
+}
+a.tag { box-shadow: inset 0 1px 0 var(--mp-glass-shine); }
+
+/* ---------- Highlights, inline code, footnotes ------------------------- */
+body { --text-highlight-bg: color-mix(in srgb, var(--mp-accent) 26%, transparent); }
+.markdown-rendered mark,
+.markdown-source-view.mod-cm6 .cm-highlight {
+  color: var(--text-normal);
+  border-radius: 3px;
+  padding: 0 2px;
+  box-shadow: 0 0 10px color-mix(in srgb, var(--mp-accent) 25%, transparent), inset 0 -1px 0 color-mix(in srgb, var(--mp-accent) 60%, transparent);
+}
+.markdown-rendered :not(pre) > code,
+.markdown-source-view.mod-cm6 .cm-inline-code {
+  padding: 0.1em 0.42em;
+  font-size: 0.86em;
+  color: color-mix(in srgb, var(--mp-accent) 55%, var(--text-normal));
+  background: var(--code-background);
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 22%, var(--background-modifier-border));
+  border-radius: var(--radius-s);
+}
+.markdown-rendered sup.footnote-ref a,
+.markdown-rendered .footnote-link {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--mp-accent);
+  text-shadow: 0 0 8px color-mix(in srgb, var(--mp-accent) 50%, transparent);
+}
+.markdown-rendered section.footnotes {
+  margin-top: 2em;
+  padding: 0.6em 1em;
+  font-size: 0.9em;
+  border-radius: var(--radius-m);
+  background: var(--mp-glass);
+  border: 1px solid var(--mp-glass-edge);
+}
+
+/* ---------- Tables: note tables ---------------------------------------- */
+.markdown-rendered table { box-shadow: var(--shadow-s); }
+.markdown-rendered thead th {
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  background:
+    linear-gradient(90deg, var(--mp-accent), color-mix(in srgb, var(--mp-accent) 10%, transparent)) bottom / 100% 2px no-repeat,
+    color-mix(in srgb, var(--mp-accent) 10%, var(--background-primary-alt));
+}
+.markdown-rendered tbody tr:nth-child(even) td { background-color: color-mix(in srgb, var(--mp-silver-lo) 4%, transparent); }
+.markdown-rendered tbody tr { transition: background-color 120ms ease; }
+.markdown-rendered tbody tr:hover td { background-color: color-mix(in srgb, var(--mp-accent) 10%, transparent); }
+.markdown-rendered tbody td:first-child { font-family: var(--mp-serif); font-weight: 600; color: var(--text-normal); }
+
+/* ---------- Bases ------------------------------------------------------ */
+body {
+  --bases-table-header-background: color-mix(in srgb, var(--mp-accent) 9%, var(--background-primary-alt));
+  --bases-table-header-background-hover: color-mix(in srgb, var(--mp-accent) 18%, var(--background-primary-alt));
+  --bases-table-border-color: color-mix(in srgb, var(--mp-silver-lo) 16%, transparent);
+  --bases-embed-border-color: color-mix(in srgb, var(--mp-accent) 22%, var(--background-modifier-border));
+  --bases-embed-border-radius: var(--radius-l);
+  --bases-table-group-background: color-mix(in srgb, var(--mp-accent) 6%, transparent);
+}
+.bases-embed {
+  background: var(--mp-glass);
+  box-shadow: var(--shadow-s), inset 0 1px 0 var(--mp-glass-shine);
+}
+.bases-toolbar {
+  border-bottom: 1px solid color-mix(in srgb, var(--mp-accent) 20%, transparent);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--mp-accent) 9%, transparent), transparent 70%);
+}
+.bases-toolbar-item:hover { color: var(--mp-accent); }
+.bases-thead {
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  box-shadow: inset 0 -2px 0 color-mix(in srgb, var(--mp-accent) 45%, transparent);
+}
+.bases-tr { transition: background-color 120ms ease; }
+.bases-tbody .bases-tr:nth-child(even) { background-color: color-mix(in srgb, var(--mp-silver-lo) 4%, transparent); }
+.bases-tbody .bases-tr:hover { background-color: color-mix(in srgb, var(--mp-accent) 10%, transparent); }
+.bases-toolbar-result-count { color: var(--mp-accent); font-variant-numeric: tabular-nums; }
+
+/* ---------- Properties ------------------------------------------------- */
+body {
+  --metadata-background: var(--mp-glass);
+  --metadata-border-color: color-mix(in srgb, var(--mp-accent) 22%, transparent);
+  --metadata-border-width: 1px;
+  --metadata-border-radius: var(--radius-l);
+  --metadata-padding: 10px 14px;
+  --metadata-label-text-color: color-mix(in srgb, var(--mp-accent) 50%, var(--text-muted));
+  --metadata-label-font-size: 0.82em;
+  --metadata-property-background-hover: color-mix(in srgb, var(--mp-accent) 7%, transparent);
+}
+.metadata-container { box-shadow: var(--shadow-s), inset 0 1px 0 var(--mp-glass-shine); }
+.metadata-property-key { font-variant: small-caps; letter-spacing: 0.05em; }
+.metadata-properties-heading { font-family: var(--h3-font); }
+
+/* ---------- Embedded notes, images, code blocks ------------------------ */
+.markdown-rendered .markdown-embed,
+.markdown-source-view.mod-cm6 .markdown-embed {
+  padding: 4px 18px 8px;
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 25%, var(--background-modifier-border));
+  border-left: none;
+  border-radius: var(--radius-l);
+  background:
+    linear-gradient(115deg, transparent 0 60%, var(--mp-glass-shine) 65%, transparent 72%),
+    var(--mp-glass);
+  box-shadow: inset 3px 0 0 var(--mp-accent), var(--shadow-s);
+}
+.markdown-embed .markdown-embed-title { font-family: var(--h2-font); color: var(--mp-silver-hi); }
+.markdown-embed-link { color: var(--mp-accent); }
+
+.markdown-rendered img:not(.emoji):not([width="16"]),
+.markdown-source-view.mod-cm6 .image-embed img:not(.emoji) {
+  border-radius: var(--radius-m);
+  border: 1px solid color-mix(in srgb, var(--mp-silver-lo) 35%, transparent);
+  box-shadow: var(--shadow-l), 0 0 0 4px color-mix(in srgb, var(--mp-silver-lo) 6%, transparent);
+}
+
+body {
+  --code-border-width: 1px;
+  --code-border-color: color-mix(in srgb, var(--mp-accent) 20%, var(--background-modifier-border));
+  --code-radius: var(--radius-m);
+}
+.markdown-rendered pre {
+  box-shadow: inset 0 2px 0 color-mix(in srgb, var(--mp-accent) 55%, transparent), var(--shadow-s);
+}
+
+/* ---------- Hover previews -------------------------------------------- */
+.popover.hover-popover {
+  border-color: color-mix(in srgb, var(--mp-accent) 35%, transparent);
+  box-shadow: var(--shadow-l), inset 0 2px 0 var(--mp-accent), inset 0 3px 0 var(--mp-glass-shine);
+}
+
 /* ---------- Page emblem: a small cracked mirror shard, bottom right ------ */
 body { --mp-emblem: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 40%22 fill=%22none%22 stroke=%22black%22 stroke-linejoin=%22round%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M16 2 L28 16 L16 30 L4 16 Z%22 stroke-width=%221.8%22/%3E%3Cpath d=%22M16 2 L16 30 M4 16 L28 16%22 stroke-width=%220.8%22 opacity=%220.55%22/%3E%3Cpath d=%22M19 6 L15.5 12 L18.5 15 L14 22%22 stroke-width=%221.3%22/%3E%3Cpath d=%22M16 32.5 L20 36 L16 39.5 L12 36 Z%22 stroke-width=%221%22 opacity=%220.45%22/%3E%3C/svg%3E"); }
 body:not(.mp-no-emblem) .workspace-leaf-content[data-type="markdown"] .view-content { position: relative; }
