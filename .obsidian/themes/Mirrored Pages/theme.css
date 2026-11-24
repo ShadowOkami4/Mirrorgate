@@ -1433,8 +1433,10 @@ body .atlas-sb-label {
 
 /* ability scores: each group a small mirror card */
 body .atlas-sb-sheet .atlas-sb-score-group {
+  box-sizing: border-box;
+  max-width: 100%;
   border-collapse: separate;
-  padding: 6px 10px;
+  padding: 6px 8px;
   border-radius: var(--radius-m);
   background:
     linear-gradient(180deg, color-mix(in srgb, var(--mp-accent) 10%, transparent), transparent 80%),
@@ -1495,6 +1497,40 @@ body .atlas-sb-divider {
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--mp-accent) 20%, var(--mp-silver-lo) 60%, transparent);
   opacity: 0.7;
+}
+
+/* spacing: wider columns gap with a faint shard line, more padding */
+body .atlas-statblock-body { padding: 22px 24px; }
+body .atlas-sb-columns {
+  column-gap: 40px;
+  column-rule: 1px solid color-mix(in srgb, var(--mp-accent) 18%, transparent);
+}
+body .atlas-sb-columns > .atlas-sb-item { break-inside: avoid; }
+body .atlas-sb-sheet .atlas-sb-row { gap: 22px 40px; }
+body .atlas-sb-section-heading__row { margin-top: 18px; margin-bottom: 8px; }
+body .atlas-sb-sheet .atlas-sb-entries > :where(:not(:first-child)) { margin-top: 10px; }
+body .atlas-sb-scores--table { gap: 10px 12px; margin: 6px 0; }
+
+/* spellcasting: frequency labels in small caps, diamond markers */
+body .atlas-sb-spell-level {
+  font-family: var(--mp-serif);
+  font-variant: small-caps;
+  font-size: 1.05em;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--mp-accent) 75%, var(--text-normal));
+}
+body :is(.atlas-sb-spells, .atlas-sb-spell-list) { padding-left: 1.2em; }
+body :is(.atlas-sb-spells, .atlas-sb-spell-list) > li { list-style: none; position: relative; margin-top: 3px; }
+body :is(.atlas-sb-spells, .atlas-sb-spell-list) > li::before {
+  content: "";
+  position: absolute;
+  left: -0.95em;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  background: var(--mp-accent);
+  box-shadow: 0 0 6px color-mix(in srgb, var(--mp-accent) 60%, transparent);
 }
 
 /* portrait / token art: a round mirror frame */
