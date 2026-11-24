@@ -1,0 +1,88 @@
+{
+  "showChangelogOnUpdate": true,
+  "changelogMajorUpdatesOnly": false,
+  "checkForUpdates": true,
+  "hotkeys": {},
+  "onboarding": {
+    "enabled": true,
+    "completed": {
+      "assets": true,
+      "palette": true,
+      "tokenStatblocks": true
+    },
+    "tokenImported": true
+  },
+  "starterTokensAdded": true,
+  "laserPointer": {
+    "color": "#ff0059",
+    "size": 16
+  },
+  "diceDisplay": "full",
+  "diceVolume": 1,
+  "sound": {
+    "musicDb": 0,
+    "ambienceDb": -6,
+    "masterDb": 0,
+    "fadeSeconds": 4,
+    "crossfadeSeconds": 4,
+    "followScenes": true
+  },
+  "detectGridOnNewScenes": true,
+  "fogEdge": {
+    "style": "crackle",
+    "width": 15
+  },
+  "dragDistance": "always",
+  "diceColour": "light",
+  "diceFont": "medieval",
+  "initiativeNames": false,
+  "initiativeFromTurn": true,
+  "initiativeDock": "right",
+  "initiativeBanner": true,
+  "initiativeFollowTurn": false,
+  "initiativeMovesOnTurn": false,
+  "experimental": {
+    "dynamicLighting": true,
+    "onlinePlay": true,
+    "statblockEditor": true
+  },
+  "toolbar": {},
+  "dungeonGenerator": {
+    "style": "moss",
+    "view": {
+      "grid": "dashed",
+      "smallTiles": false,
+      "water": true,
+      "props": true,
+      "shadow": true,
+      "secrets": true,
+      "monochrome": false
+    },
+    "theme": "mansion",
+    "tags": [
+      "large",
+      "wet"
+    ],
+    "floors": 2,
+    "bossRoom": true,
+    "fiveRoom": false
+  },
+  "localPlayerView": {
+    "showToolbar": false,
+    "showTokenNameplates": false,
+    "showNotePreviews": false,
+    "showWidgets": false,
+    "showInitiative": false,
+    "showDiceRolls": false,
+    "showCommandPalette": false,
+    "showCursors": false,
+    "playersDraw": false,
+    "showTokenHP": false,
+    "showTokenStress": false,
+    "showGrid": false,
+    "tokenBarsCarriedOver": true
+  },
+  "tableTv": {
+    "viewGlideMs": 800
+  }
+}
