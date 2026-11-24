@@ -254,6 +254,7 @@
     ]
   },
   "layout": {
+    "name": "Mirrored Character",
     "maxColumns": 2,
     "columnWidth": 24,
     "blocks": [
@@ -298,13 +299,6 @@
             "type": "stat",
             "field": "speed",
             "look": "stacked"
-          },
-          {
-            "id": "mrmhd000",
-            "type": "stat",
-            "field": "hit_dice",
-            "look": "stacked",
-            "label": "Hit Dice"
           }
         ]
       },

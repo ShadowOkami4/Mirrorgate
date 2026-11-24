@@ -1580,6 +1580,35 @@ body .atlas-sb-portrait img {
   box-shadow: 0 0 16px color-mix(in srgb, var(--mp-accent) 25%, transparent), inset 0 1px 0 var(--mp-glass-shine);
 }
 
+/* character sheets: a warm parchment-gold card instead of the mirror blue.
+   Matches any template whose layout name contains "character". */
+body .atlas-statblock[data-layout*="character"] {
+  --mp-accent: var(--mp-player);
+  --text-accent: color-mix(in srgb, var(--mp-player) 85%, var(--text-normal));
+  --text-accent-hover: var(--mp-player);
+  --interactive-accent: var(--mp-player);
+  background:
+    radial-gradient(ellipse 80% 45% at 100% 0%, color-mix(in srgb, var(--mp-player) 14%, transparent), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 0% 100%, color-mix(in srgb, var(--mp-player) 6%, transparent), transparent 70%),
+    var(--background-primary);
+}
+body .atlas-statblock[data-layout*="character"] .atlas-sb-header {
+  background:
+    linear-gradient(90deg, var(--mp-player), transparent 70%) top left / 100% 2px no-repeat,
+    linear-gradient(270deg, color-mix(in srgb, var(--mp-player) 18%, transparent), transparent 85%);
+}
+body .atlas-statblock[data-layout*="character"] .atlas-sb-heading {
+  background: linear-gradient(180deg, #fbf3dc 0%, #f1e2b8 45%, color-mix(in srgb, var(--mp-player) 80%, #8a7650) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+body .atlas-statblock[data-layout*="character"] .atlas-sb-portrait img,
+body .atlas-statblock[data-layout*="character"] .atlas-sb-image-placeholder {
+  border-width: 2px;
+  border-color: var(--mp-player);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--mp-player) 15%, transparent), 0 0 22px color-mix(in srgb, var(--mp-player) 35%, transparent);
+}
+
 /* Map toolbar and panels: dark glass with an accent edge */
 body .atlas-tool-bar {
   background: var(--mp-glass);
