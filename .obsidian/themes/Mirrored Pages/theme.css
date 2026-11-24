@@ -1380,41 +1380,144 @@ body:not(.mp-no-emblem) .workspace-leaf-content[data-type="markdown"] .view-cont
   --atlas-dice-font: var(--mp-serif);
 }
 
-/* Statblocks: a framed mirror pane with a serif header and shard rules */
+/* Statblocks: a designed mirror card ----------------------------------- */
 body .atlas-statblock {
-  border-color: color-mix(in srgb, var(--mp-accent) 30%, var(--background-modifier-border));
+  position: relative;
+  border-color: color-mix(in srgb, var(--mp-accent) 35%, var(--background-modifier-border));
   background:
-    linear-gradient(90deg, var(--mp-accent), transparent 70%) top left / 100% 2px no-repeat,
+    radial-gradient(ellipse 80% 40% at 0% 0%, color-mix(in srgb, var(--mp-accent) 12%, transparent), transparent 70%),
     linear-gradient(115deg, transparent 0 64%, color-mix(in srgb, var(--mp-silver-hi) 4%, transparent) 67%, transparent 71%),
     var(--background-primary);
-  box-shadow: var(--shadow-l), inset 0 1px 0 var(--mp-glass-shine);
+  box-shadow: var(--shadow-l), inset 0 1px 0 var(--mp-glass-shine), inset 0 0 0 4px color-mix(in srgb, var(--mp-accent) 5%, transparent);
+}
+/* silver corner brackets */
+body .atlas-statblock::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  pointer-events: none;
+  --mp-k: color-mix(in srgb, var(--mp-accent) 70%, var(--text-normal));
+  background:
+    linear-gradient(var(--mp-k), var(--mp-k)) left top / 16px 1.5px,
+    linear-gradient(var(--mp-k), var(--mp-k)) left top / 1.5px 16px,
+    linear-gradient(var(--mp-k), var(--mp-k)) right top / 16px 1.5px,
+    linear-gradient(var(--mp-k), var(--mp-k)) right top / 1.5px 16px,
+    linear-gradient(var(--mp-k), var(--mp-k)) left bottom / 16px 1.5px,
+    linear-gradient(var(--mp-k), var(--mp-k)) left bottom / 1.5px 16px,
+    linear-gradient(var(--mp-k), var(--mp-k)) right bottom / 16px 1.5px,
+    linear-gradient(var(--mp-k), var(--mp-k)) right bottom / 1.5px 16px;
+  background-repeat: no-repeat;
+  opacity: 0.65;
+}
+
+/* header: name in silver serif on a tinted band */
+body .atlas-sb-header {
+  padding: 10px 14px 10px;
+  margin-bottom: 6px;
+  border-radius: var(--radius-m);
+  background:
+    linear-gradient(90deg, var(--mp-accent), transparent 70%) top left / 100% 2px no-repeat,
+    linear-gradient(90deg, color-mix(in srgb, var(--mp-accent) 16%, transparent), transparent 85%);
+  border-bottom: 1px solid color-mix(in srgb, var(--mp-accent) 30%, transparent);
 }
 body .atlas-sb-heading {
   font-family: var(--mp-serif);
-  font-size: 1.55em;
+  font-size: 1.7em;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.015em;
   background: linear-gradient(180deg, var(--mp-silver-hi) 0%, var(--mp-silver-hi) 45%, var(--mp-silver-lo) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px color-mix(in srgb, var(--mp-accent) 35%, transparent));
 }
-body .atlas-sb-header__subtitle {
+body .atlas-sb-header__subtitle,
+body .atlas-sb-sheet .atlas-sb-line {
   font-family: var(--mp-serif);
   font-style: italic;
-  color: var(--text-muted);
+  font-size: 0.95em;
+  color: color-mix(in srgb, var(--mp-silver-lo) 80%, var(--text-normal));
 }
-body .atlas-sb-section-heading {
-  padding-bottom: 4px;
+
+/* labels: AC, Initiative, Speed, Skills, Senses ... */
+body .atlas-sb-sheet .atlas-sb-labelled--run-in > .atlas-sb-label,
+body .atlas-sb-label {
   font-family: var(--mp-serif);
-  font-size: 0.82em;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  color: color-mix(in srgb, var(--mp-accent) 80%, var(--text-normal));
-  text-shadow: 0 0 10px color-mix(in srgb, var(--mp-accent) 40%, transparent);
-  background:
-    linear-gradient(90deg, var(--mp-accent), color-mix(in srgb, var(--mp-silver-lo) 40%, transparent) 55%, transparent) bottom left / 100% 1px no-repeat;
+  font-variant: small-caps;
+  font-size: 1.08em;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--mp-accent) 75%, var(--text-normal));
 }
+
+/* ability scores: each group a small mirror card */
+body .atlas-sb-sheet .atlas-sb-score-group {
+  border-collapse: separate;
+  padding: 6px 10px;
+  border-radius: var(--radius-m);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--mp-accent) 10%, transparent), transparent 80%),
+    var(--mp-glass);
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 28%, transparent);
+  box-shadow: inset 0 1px 0 var(--mp-glass-shine);
+}
+body .atlas-sb-sheet .atlas-sb-score-group th[scope="row"] {
+  font-family: var(--mp-serif);
+  font-weight: 700;
+  font-size: 1.05em;
+  letter-spacing: 0.06em;
+  color: var(--mp-silver-hi);
+}
+body .atlas-sb-sheet .atlas-sb-score-group th[scope="col"] {
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  color: color-mix(in srgb, var(--mp-accent) 60%, var(--text-muted));
+}
+body .atlas-sb-sheet .atlas-sb-score-group th[scope="row"] + td {
+  font-family: var(--mp-serif);
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--text-normal);
+}
+
+/* section headings: ribbon bars with a diamond */
+body .atlas-sb-section-heading {
+  position: relative;
+  padding: 4px 10px 4px 26px !important;
+  border-radius: var(--radius-s);
+  font-family: var(--mp-serif);
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--mp-silver-hi);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--mp-accent) 50%, transparent);
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--mp-accent) 30%, transparent), color-mix(in srgb, var(--mp-accent) 6%, transparent) 70%, transparent);
+  box-shadow: inset 2px 0 0 var(--mp-accent);
+}
+body .atlas-sb-section-heading::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  transform: translateY(-50%) rotate(45deg);
+  background: var(--mp-accent);
+  box-shadow: 0 0 8px var(--mp-accent);
+}
+
+/* entries: a thin accent bar, the name in silver serif */
+body .atlas-sb-sheet .atlas-sb-entries > * {
+  padding-left: 10px;
+  border-left: 2px solid color-mix(in srgb, var(--mp-accent) 28%, transparent);
+}
+body .atlas-sb-entries :is(strong, em, b, i):first-child {
+  font-family: var(--mp-serif);
+  font-size: 1.05em;
+  color: var(--mp-silver-hi);
+}
+
+/* rules and the gap between columns */
 body .atlas-sb-rule,
 body .atlas-sb-divider {
   border: none;
@@ -1422,16 +1525,17 @@ body .atlas-sb-divider {
   background: linear-gradient(90deg, transparent, var(--mp-accent) 20%, var(--mp-silver-lo) 60%, transparent);
   opacity: 0.7;
 }
-body .atlas-sb-label { color: color-mix(in srgb, var(--mp-accent) 65%, var(--text-normal)); }
-body .atlas-sb-score-group {
-  padding: 4px 8px;
-  border-radius: var(--radius-s);
-  background: color-mix(in srgb, var(--mp-accent) 6%, transparent);
-  border: 1px solid color-mix(in srgb, var(--mp-accent) 18%, transparent);
+body .atlas-sb-columns {
+  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--mp-accent) 35%, transparent) 20%, color-mix(in srgb, var(--mp-silver-lo) 25%, transparent) 80%, transparent) center / 1px 100% no-repeat;
 }
-body .atlas-sb-score-label { font-family: var(--mp-serif); font-weight: 700; color: var(--mp-silver-hi); }
-body .atlas-sb-entries em:first-child,
-body .atlas-sb-entries strong:first-child { color: var(--mp-silver-hi); }
+
+/* portrait / token art: a round mirror frame */
+body .atlas-sb-image-placeholder,
+body .atlas-sb-portrait img {
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 45%, transparent);
+  box-shadow: 0 0 16px color-mix(in srgb, var(--mp-accent) 25%, transparent), inset 0 1px 0 var(--mp-glass-shine);
+}
 
 /* Map toolbar and panels: dark glass with an accent edge */
 body .atlas-tool-bar {
