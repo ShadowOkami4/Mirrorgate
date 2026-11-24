@@ -2,14 +2,14 @@
 type: hub
 cssclasses:
   - hub
-up: "[[World]]"
+up: "[[Home]]"
 tags:
   - hub
 ---
 
-↑ [[World]]
+↑ [[Home]]
 
-Eras and events, oldest first.
+Compiled book editions made from the vault.
 
 ## In this section
 

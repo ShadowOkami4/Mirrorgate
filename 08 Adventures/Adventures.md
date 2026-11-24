@@ -2,12 +2,12 @@
 type: hub
 cssclasses:
   - hub
-up: "[[Game Master]]"
+up: "[[Home]]"
 tags:
   - hub
 ---
 
-↑ [[Game Master]]
+↑ [[Home]]
 
 Ready-to-run adventures. One folder per adventure, with its hub note inside.
 

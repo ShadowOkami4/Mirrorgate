@@ -1,7 +1,7 @@
 {
   "choices": [
     {
-      "id": "955ed3dc-4818-4f6c-a107-bbee0c712271",
+      "id": "97916d25-d909-42ce-b143-2185ec01de89",
       "name": "New Area",
       "type": "Template",
       "command": true,
@@ -15,9 +15,15 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "01 World",
-          "02 Game Master",
-          "03 Rules"
+          "01 Atlas",
+          "02 Characters",
+          "03 Factions",
+          "04 History",
+          "05 Faiths & Cosmos",
+          "06 Peoples",
+          "07 Secrets",
+          "09 Rules",
+          "99 Meta/GM Toolkit"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -37,7 +43,7 @@
       }
     },
     {
-      "id": "c88d10a3-5cfc-4bb1-a045-785d3f4bdb6c",
+      "id": "07017701-6b04-4f6e-95f7-39e260439e8c",
       "name": "New Place",
       "type": "Template",
       "command": true,
@@ -51,7 +57,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "01 World/Geography"
+          "01 Atlas"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -71,12 +77,12 @@
       }
     },
     {
-      "id": "553309b1-582d-4a39-b775-8dfbe4ee225e",
-      "name": "New Figure",
+      "id": "b3150078-ee00-4de6-8d29-3a404b251087",
+      "name": "New Character",
       "type": "Template",
       "command": true,
       "onePageInput": null,
-      "templatePath": "99 Meta/Templates/Figure.md",
+      "templatePath": "99 Meta/Templates/Character.md",
       "fileNameFormat": {
         "enabled": false,
         "format": ""
@@ -85,7 +91,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "01 World/People"
+          "02 Characters"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -105,7 +111,7 @@
       }
     },
     {
-      "id": "e96b5bc2-0acc-4733-9924-d769a04e47fa",
+      "id": "a2ba823a-6138-4044-af08-5400443e9303",
       "name": "New Faction",
       "type": "Template",
       "command": true,
@@ -119,7 +125,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "01 World/Factions"
+          "03 Factions"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -139,7 +145,7 @@
       }
     },
     {
-      "id": "9c529ae2-7c9d-4dbf-8eaf-0f046d7489cd",
+      "id": "781df3aa-10e4-46ca-9204-84487d743b41",
       "name": "New Event",
       "type": "Template",
       "command": true,
@@ -153,7 +159,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "01 World/History"
+          "04 History"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -173,8 +179,8 @@
       }
     },
     {
-      "id": "5302d818-9a75-44a3-843a-6b26b101cb51",
-      "name": "New Faith",
+      "id": "3b892246-6c20-4df1-ad70-3826716a920a",
+      "name": "New Faith or Cosmos entry",
       "type": "Template",
       "command": true,
       "onePageInput": null,
@@ -187,7 +193,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "01 World/Faiths"
+          "05 Faiths & Cosmos"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -207,7 +213,7 @@
       }
     },
     {
-      "id": "2a3a6f11-79cb-4175-b2ca-afd2cc236bdc",
+      "id": "daa3e7e5-ffc1-4d65-b3ce-1f422478ec1f",
       "name": "New Species or Culture",
       "type": "Template",
       "command": true,
@@ -221,7 +227,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "01 World/Peoples"
+          "06 Peoples"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -241,41 +247,7 @@
       }
     },
     {
-      "id": "c943032b-be60-451b-b21c-60aa22c3f74e",
-      "name": "New Adventure",
-      "type": "Template",
-      "command": true,
-      "onePageInput": null,
-      "templatePath": "99 Meta/Templates/Adventure.md",
-      "fileNameFormat": {
-        "enabled": false,
-        "format": ""
-      },
-      "discoverExistingNotesBeforeCreate": false,
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "02 Game Master/Adventures"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": true
-      },
-      "appendLink": false,
-      "copyLinkToClipboard": false,
-      "openFile": true,
-      "fileOpening": {
-        "location": "tab",
-        "direction": "vertical",
-        "mode": "default",
-        "focus": true
-      },
-      "fileExistsBehavior": {
-        "kind": "prompt"
-      }
-    },
-    {
-      "id": "d576525a-4196-4f13-9979-c19529a3cdd8",
+      "id": "787b2627-24f3-4ac9-a1b6-59aa5336dc67",
       "name": "New Secret",
       "type": "Template",
       "command": true,
@@ -289,7 +261,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "02 Game Master/Secrets"
+          "07 Secrets"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -309,12 +281,12 @@
       }
     },
     {
-      "id": "87d77876-86c0-4f11-8c6f-d6f9fee97671",
-      "name": "New NPC",
+      "id": "23b98c58-88f0-4545-aaec-8de9a89be89c",
+      "name": "New Adventure",
       "type": "Template",
       "command": true,
       "onePageInput": null,
-      "templatePath": "99 Meta/Templates/NPC.md",
+      "templatePath": "99 Meta/Templates/Adventure.md",
       "fileNameFormat": {
         "enabled": false,
         "format": ""
@@ -323,7 +295,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "02 Game Master/NPCs"
+          "08 Adventures"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -343,75 +315,7 @@
       }
     },
     {
-      "id": "fe384609-26c4-4c12-8792-0ababc177c13",
-      "name": "New Encounter",
-      "type": "Template",
-      "command": true,
-      "onePageInput": null,
-      "templatePath": "99 Meta/Templates/Encounter.md",
-      "fileNameFormat": {
-        "enabled": false,
-        "format": ""
-      },
-      "discoverExistingNotesBeforeCreate": false,
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "02 Game Master/Encounters"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": true
-      },
-      "appendLink": false,
-      "copyLinkToClipboard": false,
-      "openFile": true,
-      "fileOpening": {
-        "location": "tab",
-        "direction": "vertical",
-        "mode": "default",
-        "focus": true
-      },
-      "fileExistsBehavior": {
-        "kind": "prompt"
-      }
-    },
-    {
-      "id": "5541f9e4-6dd9-4140-9467-e3abf8822dcf",
-      "name": "New Session",
-      "type": "Template",
-      "command": true,
-      "onePageInput": null,
-      "templatePath": "99 Meta/Templates/Session.md",
-      "fileNameFormat": {
-        "enabled": false,
-        "format": ""
-      },
-      "discoverExistingNotesBeforeCreate": false,
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "02 Game Master/Sessions"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": true
-      },
-      "appendLink": false,
-      "copyLinkToClipboard": false,
-      "openFile": true,
-      "fileOpening": {
-        "location": "tab",
-        "direction": "vertical",
-        "mode": "default",
-        "focus": true
-      },
-      "fileExistsBehavior": {
-        "kind": "prompt"
-      }
-    },
-    {
-      "id": "77b75d9b-1673-4b64-82ec-8fd1c28a10ca",
+      "id": "35789a5b-28b7-4157-bfcf-4bcc8a932ba8",
       "name": "New Rule",
       "type": "Template",
       "command": true,
@@ -425,8 +329,8 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "03 Rules/Core",
-          "03 Rules/Options"
+          "09 Rules/Core",
+          "09 Rules/Options"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -446,7 +350,7 @@
       }
     },
     {
-      "id": "66f7283f-f249-4549-83f5-270b29e86e52",
+      "id": "65428bc1-3271-4486-875b-7ff3ee67db8e",
       "name": "New Creature",
       "type": "Template",
       "command": true,
@@ -460,7 +364,109 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "03 Rules/Bestiary"
+          "09 Rules/Bestiary"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": true
+      },
+      "appendLink": false,
+      "copyLinkToClipboard": false,
+      "openFile": true,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      },
+      "fileExistsBehavior": {
+        "kind": "prompt"
+      }
+    },
+    {
+      "id": "491a2622-cda6-461d-b4a8-d920417547b8",
+      "name": "New Encounter",
+      "type": "Template",
+      "command": true,
+      "onePageInput": null,
+      "templatePath": "99 Meta/Templates/Encounter.md",
+      "fileNameFormat": {
+        "enabled": false,
+        "format": ""
+      },
+      "discoverExistingNotesBeforeCreate": false,
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "99 Meta/GM Toolkit/Encounters"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": true
+      },
+      "appendLink": false,
+      "copyLinkToClipboard": false,
+      "openFile": true,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      },
+      "fileExistsBehavior": {
+        "kind": "prompt"
+      }
+    },
+    {
+      "id": "35f61f63-71e3-461b-8328-0bf9d7aca978",
+      "name": "New Table",
+      "type": "Template",
+      "command": true,
+      "onePageInput": null,
+      "templatePath": "99 Meta/Templates/Table.md",
+      "fileNameFormat": {
+        "enabled": false,
+        "format": ""
+      },
+      "discoverExistingNotesBeforeCreate": false,
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "99 Meta/GM Toolkit/Tables"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": true
+      },
+      "appendLink": false,
+      "copyLinkToClipboard": false,
+      "openFile": true,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      },
+      "fileExistsBehavior": {
+        "kind": "prompt"
+      }
+    },
+    {
+      "id": "69102a66-fd15-4455-90dc-340d0ab8a796",
+      "name": "New Session",
+      "type": "Template",
+      "command": true,
+      "onePageInput": null,
+      "templatePath": "99 Meta/Templates/Session.md",
+      "fileNameFormat": {
+        "enabled": false,
+        "format": ""
+      },
+      "discoverExistingNotesBeforeCreate": false,
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "99 Meta/GM Toolkit/Sessions"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,

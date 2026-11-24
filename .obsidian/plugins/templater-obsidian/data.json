@@ -11,56 +11,56 @@
   "user_scripts_folder": "",
   "folder_templates": [
     {
-      "folder": "01 World/Geography",
+      "folder": "01 Atlas",
       "template": "99 Meta/Templates/Place.md"
     },
     {
-      "folder": "01 World/People",
-      "template": "99 Meta/Templates/Figure.md"
+      "folder": "02 Characters",
+      "template": "99 Meta/Templates/Character.md"
     },
     {
-      "folder": "01 World/Factions",
+      "folder": "03 Factions",
       "template": "99 Meta/Templates/Faction.md"
     },
     {
-      "folder": "01 World/History",
+      "folder": "04 History",
       "template": "99 Meta/Templates/Event.md"
     },
     {
-      "folder": "01 World/Faiths",
+      "folder": "05 Faiths & Cosmos",
       "template": "99 Meta/Templates/Faith.md"
     },
     {
-      "folder": "01 World/Peoples",
+      "folder": "06 Peoples",
       "template": "99 Meta/Templates/Species & Culture.md"
     },
     {
-      "folder": "02 Game Master/Secrets",
+      "folder": "07 Secrets",
       "template": "99 Meta/Templates/Secret.md"
     },
     {
-      "folder": "02 Game Master/NPCs",
-      "template": "99 Meta/Templates/NPC.md"
+      "folder": "09 Rules/Core",
+      "template": "99 Meta/Templates/Rule.md"
     },
     {
-      "folder": "02 Game Master/Encounters",
+      "folder": "09 Rules/Options",
+      "template": "99 Meta/Templates/Rule.md"
+    },
+    {
+      "folder": "09 Rules/Bestiary",
+      "template": "99 Meta/Templates/Creature.md"
+    },
+    {
+      "folder": "99 Meta/GM Toolkit/Encounters",
       "template": "99 Meta/Templates/Encounter.md"
     },
     {
-      "folder": "02 Game Master/Sessions",
+      "folder": "99 Meta/GM Toolkit/Tables",
+      "template": "99 Meta/Templates/Table.md"
+    },
+    {
+      "folder": "99 Meta/GM Toolkit/Sessions",
       "template": "99 Meta/Templates/Session.md"
-    },
-    {
-      "folder": "03 Rules/Core",
-      "template": "99 Meta/Templates/Rule.md"
-    },
-    {
-      "folder": "03 Rules/Options",
-      "template": "99 Meta/Templates/Rule.md"
-    },
-    {
-      "folder": "03 Rules/Bestiary",
-      "template": "99 Meta/Templates/Creature.md"
     }
   ],
   "file_templates": [],

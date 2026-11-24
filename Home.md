@@ -8,15 +8,21 @@ tags:
 
 # The Mirrored Realms
 
-A setting for tabletop roleplaying games, written as an Obsidian vault. Start with a section, follow the links, or open the graph: every note links up to its section, and every section links up to here.
+A setting for tabletop roleplaying games, written for **Game Masters**. Every page tells the GM the whole story. Text players may read sits in a **Player info** box at the bottom of the page.
 
-| Section | What's inside |
-| --- | --- |
-| [[World]] | Lore of Kagameru. Safe to read before playing. |
-| [[Game Master]] | Adventures, NPCs, secrets. **Spoilers.** |
-| [[Rules]] | Mechanics, character options, bestiary. |
-| [[Books]] | Compiled book editions. |
-| [[Meta]] | The [[World Bible]], templates and guides. |
+## Sections
+
+- [[Atlas]]
+- [[Characters]]
+- [[Factions]]
+- [[History]]
+- [[Faiths & Cosmos]]
+- [[Peoples]]
+- [[Secrets]]
+- [[Adventures]]
+- [[Rules]]
+- [[Books]]
+- [[Meta]]
 
 ## Everything in the vault
 

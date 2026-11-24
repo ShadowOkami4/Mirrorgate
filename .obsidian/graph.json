@@ -8,38 +8,80 @@
   "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "path:\"01 World\"",
+      "query": "[player:true]",
+      "color": {
+        "a": 1,
+        "rgb": 15258778
+      }
+    },
+    {
+      "query": "path:\"01 Atlas\"",
       "color": {
         "a": 1,
         "rgb": 4886754
       }
     },
     {
-      "query": "path:\"02 Game Master/Adventures\"",
+      "query": "path:\"02 Characters\"",
       "color": {
         "a": 1,
-        "rgb": 14725184
+        "rgb": 4175528
       }
     },
     {
-      "query": "path:\"02 Game Master\"",
+      "query": "path:\"03 Factions\"",
+      "color": {
+        "a": 1,
+        "rgb": 14715452
+      }
+    },
+    {
+      "query": "path:\"04 History\"",
+      "color": {
+        "a": 1,
+        "rgb": 10181046
+      }
+    },
+    {
+      "query": "path:\"05 Faiths & Cosmos\"",
+      "color": {
+        "a": 1,
+        "rgb": 7106528
+      }
+    },
+    {
+      "query": "path:\"06 Peoples\"",
+      "color": {
+        "a": 1,
+        "rgb": 8368218
+      }
+    },
+    {
+      "query": "path:\"07 Secrets\"",
       "color": {
         "a": 1,
         "rgb": 14699082
       }
     },
     {
-      "query": "path:\"03 Rules\"",
+      "query": "path:\"08 Adventures\"",
+      "color": {
+        "a": 1,
+        "rgb": 14725184
+      }
+    },
+    {
+      "query": "path:\"09 Rules\"",
       "color": {
         "a": 1,
         "rgb": 5025616
       }
     },
     {
-      "query": "path:\"04 Books\"",
+      "query": "path:\"10 Books\"",
       "color": {
         "a": 1,
-        "rgb": 10181046
+        "rgb": 13658792
       }
     },
     {

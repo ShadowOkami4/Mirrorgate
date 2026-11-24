@@ -9,7 +9,7 @@ tags:
 
 ↑ [[Home]]
 
-Compiled books made from the vault: novelty editions on top of the notes.
+Deities, cults, planes and the Mirrorgate: how the world works beneath the surface.
 
 ## In this section
 

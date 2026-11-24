@@ -1,7 +1,7 @@
 filters:
   and:
     - type != "hub"
-    - '!file.inFolder("99 Meta")'
+    - '!file.inFolder("99 Meta/Templates")'
     - file.ext == "md"
 views:
   - type: table
@@ -9,33 +9,37 @@ views:
     filters:
       and:
         - type == "place"
-    order:
-      - file.name
-      - region
-      - kind
-      - up
+    order: [file.name, region, kind, player, up]
   - type: table
-    name: NPCs
+    name: Characters
     filters:
       and:
-        - type == "npc"
-    order:
-      - file.name
-      - region
-      - up
+        - type == "character"
+    order: [file.name, region, role, status, player]
+  - type: table
+    name: Secrets
+    filters:
+      and:
+        - type == "secret"
+    order: [file.name, reveals]
   - type: table
     name: Adventures
     filters:
       and:
         - type == "adventure"
-    order:
-      - file.name
-      - level
-      - players
+    order: [file.name, level, players]
+  - type: table
+    name: Player-ready
+    filters:
+      and:
+        - player == true
+    order: [file.name, type, file.folder]
+  - type: table
+    name: Needs player box
+    filters:
+      and:
+        - player == false
+    order: [file.name, type, file.folder]
   - type: table
     name: Everything
-    order:
-      - file.name
-      - type
-      - up
-      - file.folder
+    order: [file.name, type, player, up, file.folder]

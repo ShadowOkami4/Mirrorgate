@@ -8,7 +8,7 @@ views:
     filters:
       and:
         - file.folder == this.file.folder
-    order: [file.name, type, region]
+    order: [file.name, type, region, player]
   - type: table
     name: Sub-areas
     filters:
@@ -22,4 +22,4 @@ views:
       and:
         - file.inFolder(this.file.folder)
         - type != "hub"
-    order: [file.name, type, region, up]
+    order: [file.name, type, region, player, up]

@@ -37,6 +37,15 @@ settings:
     default-dark: '#d0706a'
     default-light: '#9e2a2b'
   -
+    id: mp-player
+    title: Player info colour
+    description: Colour of the [!player] box and its corner ribbon
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-dark: '#d9c48f'
+    default-light: '#8a6a2a'
+  -
     id: mp-surface
     title: Surface
     type: class-select
@@ -162,6 +171,7 @@ body.mp-body-serif { --font-text-theme: var(--mp-serif); }
 .theme-dark {
   --mp-accent: #8fb6e0;
   --mp-gm: #d0706a;
+  --mp-player: #d9c48f;
   --mp-ink: #d8dde4;
   --mp-silver-hi: #f4f7fb;
   --mp-silver-lo: #9aa6b4;
@@ -237,6 +247,7 @@ body.mp-body-serif { --font-text-theme: var(--mp-serif); }
 .theme-light {
   --mp-accent: #3f6f9f;
   --mp-gm: #9e2a2b;
+  --mp-player: #8a6a2a;
   --mp-ink: #2a3038;
   --mp-silver-hi: #1c232c;
   --mp-silver-lo: #7d8896;
@@ -379,6 +390,45 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 }
 .callout[data-callout="gm"] .callout-title { color: var(--mp-gm); }
 .callout[data-callout="gm"] .callout-icon { color: var(--mp-gm); }
+
+
+/* ---------- Player info box: > [!player] -------------------------------- */
+/* Text players may read, at the bottom of a GM page. A corner ribbon marks it. */
+.callout[data-callout="player"] {
+  --callout-color: 217, 196, 143;
+  --callout-icon: lucide-scroll-text;
+  position: relative;
+  margin-top: 2.2em;
+  padding-top: 18px;
+  background:
+    linear-gradient(160deg, color-mix(in srgb, var(--mp-player) 12%, transparent), transparent 60%),
+    color-mix(in srgb, var(--mp-player) 5%, var(--mp-glass));
+  border: 1px solid color-mix(in srgb, var(--mp-player) 45%, transparent);
+  border-left-width: 1px;
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+.callout[data-callout="player"]::after {
+  content: "Player info";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px 12px 4px 14px;
+  font-family: var(--font-interface);
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--background-primary);
+  background: var(--mp-player);
+  border-bottom-left-radius: var(--radius-m);
+  box-shadow: -1px 1px 0 color-mix(in srgb, var(--mp-player) 60%, transparent);
+}
+.callout[data-callout="player"] .callout-title,
+.callout[data-callout="player"] .callout-icon { color: var(--mp-player); }
+.callout[data-callout="player"] .callout-title { padding-right: 7em; }
+.callout[data-callout="player"] .callout-content { font-family: var(--mp-serif); }
+.theme-light .callout[data-callout="player"] .callout-content { color: #3b3222; }
 
 /* ---------- Text details ------------------------------------------------ */
 .markdown-rendered blockquote {

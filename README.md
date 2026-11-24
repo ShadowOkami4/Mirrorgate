@@ -117,28 +117,36 @@ The shared vault settings in `.obsidian/` enable the following community plugins
 | Iconize | folder and note icons |
 | File Explorer++ | filtering and pinning in the file explorer |
 | Templater | note templates that link each new note to its section |
-| QuickAdd | *New Place*, *New NPC*, *New Area* … commands that create a note in the right folder |
+| QuickAdd | *New Place*, *New Character*, *New Secret*, *New Area* … commands that create a note in the right folder |
 | Homepage | opens `Home.md` when the vault starts |
 | Style Settings | options for the theme and CSS snippets |
 | Claudian | the maintainer's AI assistant (see [A Note on AI](#a-note-on-ai)); not needed to read or play |
 
-Index tables use Obsidian's core **Bases** plugin. The vault uses its own theme, **[Mirrored Pages](https://github.com/ShadowOkami4/mirrored-pages)** (silver-mirror look, dark and light, also styles Atlas VTT), which also styles the collapsible GM callouts (`> [!gm]-`).
+Index tables use Obsidian's core **Bases** plugin. The vault uses its own theme, **[Mirrored Pages](https://github.com/ShadowOkami4/mirrored-pages)** (silver-mirror look, dark and light, also styles Atlas VTT), which also styles the Player info box (`> [!player]`) and GM callouts (`> [!gm]-`).
 
 ## Repository Layout
 
 > [!NOTE]
 > **The vault is being rebuilt (November 2026).** The folders below are the new skeleton; notes are rewritten section by section. The previous version is in the git history.
 
+The vault is written for **Game Masters**. Every page tells the whole story; text players may read sits in a **Player info** box at the bottom of the page.
+
 | Path | Contents |
 | --- | --- |
-| `Home.md` | the entrance: links to every section and an index of all notes |
-| `01 World/` | lore of Kagameru as the world knows it: geography, people, factions, history, faiths, peoples. No spoilers. |
-| `02 Game Master/` | **spoilers**: adventures, secrets, NPCs, encounters, session notes |
-| `03 Rules/` | core rules, character options, bestiary |
-| `04 Books/` | compiled book editions of the vault |
+| `Home.md` | the entrance: every section and an index of all notes |
+| `01 Atlas/` | places, nested like the map: continent → realm → settlement → site |
+| `02 Characters/` | everyone the GM may play or mention |
+| `03 Factions/` | houses, orders, guilds, churches, cults |
+| `04 History/` | eras and events as they really happened |
+| `05 Faiths & Cosmos/` | deities, planes, the Mirrorgate |
+| `06 Peoples/` | species and cultures |
+| `07 Secrets/` | hidden truths and twists, linked to the pages they explain |
+| `08 Adventures/` | ready-to-run adventures, one folder each |
+| `09 Rules/` | core rules, character options, bestiary |
+| `10 Books/` | compiled book editions |
 | `90 Assets/` | maps and art; `90 Assets/Private/` is kept local and not published |
-| `99 Meta/` | the World Bible, note templates and the index |
-| `.obsidian/` | shared vault settings, plugins, theme, and snippets |
+| `99 Meta/` | the World Bible, the GM Toolkit (encounters, tables, sessions), templates and views |
+| `.obsidian/` | shared vault settings, plugins, theme |
 
 These paths are excluded from the repository by `.gitignore`:
 
@@ -151,23 +159,31 @@ These paths are excluded from the repository by `.gitignore`:
 
 ## Reading the Vault
 
-The vault is written for **Game Masters**: download it, open it in Obsidian, and browse.
+- **By folder.** Every folder has a hub note with the folder's name (`Atlas.md`, `Characters.md` …). Its *In this section* table lists what is inside.
+- **By graph.** Every note's `up` property links to its hub, and every hub links up to [Home](Home.md), so the graph branches out from Home. Each section has its own colour; pages with a finished player box are parchment-coloured.
+- **By index.** `Home.md` embeds tables of places, characters, secrets and adventures, plus *Player-ready* and *Needs player box* lists.
 
-- **By folder.** Every folder has a hub note with the folder's name (`World.md`, `Geography.md`, `NPCs.md` …) that lists what is inside.
-- **By graph.** Every note's `up` property links to its hub, and every hub links up to [Home](Home.md). The graph view therefore branches out from Home through each section. Hubs are white, World blue, Game Master red, adventures gold, Rules green, Books purple.
-- **By index.** `Home.md` embeds tables of every place, NPC and adventure.
+### Player Info
 
-`01 World` holds what the world knows; `02 Game Master` holds the truth behind it. A secret links to the World notes it explains, so the local graph of any place shows its spoilers too.
+The last block of a lore page is the player box:
+
+```markdown
+> [!player] What players know
+> Ogledal is the royal capital of Lustro, known for its mirrored bridges.
+```
+
+The Mirrored Pages theme draws it with a *Player info* corner ribbon. Set `player: true` in the page's properties once the box is written.
 
 ### Note Properties
 
-Every note carries YAML front matter, hidden in the reading view. Templates in `99 Meta/Templates/` fill it in.
+Every note carries YAML front matter, hidden in the reading view. Templates in `99 Meta/Templates/` fill it in; QuickAdd's *New Place*, *New Character*, *New Secret* … commands create notes in the right folder.
 
 | Property | Meaning |
 | --- | --- |
-| `type` | what kind of note it is: `place`, `figure`, `faction`, `event`, `faith`, `people`, `adventure`, `secret`, `npc`, `encounter`, `session`, `rule`, `creature`, `hub` |
+| `type` | `place`, `character`, `faction`, `event`, `faith`, `people`, `secret`, `adventure`, `encounter`, `table`, `session`, `rule`, `creature`, `hub` |
 | `up` | the hub (or containing place) the note belongs to |
-| `region` | where it is, for places, NPCs and factions |
+| `player` | `true` once the page has a finished Player info box |
+| `region` | where it is, for places, characters and factions |
 
 ## Rules and Game Material
 

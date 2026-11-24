@@ -2,12 +2,12 @@
 type: hub
 cssclasses:
   - hub
-up: "[[World]]"
+up: "[[Home]]"
 tags:
   - hub
 ---
 
-↑ [[World]]
+↑ [[Home]]
 
 Species and cultures of Kagameru.
 

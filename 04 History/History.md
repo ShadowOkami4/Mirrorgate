@@ -2,14 +2,14 @@
 type: hub
 cssclasses:
   - hub
-up: "[[Game Master]]"
+up: "[[Home]]"
 tags:
   - hub
 ---
 
-↑ [[Game Master]]
+↑ [[Home]]
 
-Reusable encounters, random tables and set pieces.
+Eras and events as they really happened, oldest first.
 
 ## In this section
 

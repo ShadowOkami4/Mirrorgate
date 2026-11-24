@@ -9,10 +9,15 @@ tags:
 
 ↑ [[Home]]
 
-How this vault works: the world bible, templates and guides.
-
-## Contents
+How this vault works, and tools for running games.
 
 - [[World Bible]]: how Kagameru is built, and the inherited lore rules up for review
-- Templates live in `99 Meta/Templates/`: one per note type (Place, NPC, Faction, Adventure…). Each already links to its section.
-- [[Index.base|Index]]: tables of every place, NPC and adventure
+- Templates are in `99 Meta/Templates/`, one per note type.
+
+## Sections
+
+- [[GM Toolkit]]
+
+## In this section
+
+![[Folder Contents.base]]

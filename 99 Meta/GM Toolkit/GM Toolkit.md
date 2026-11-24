@@ -2,21 +2,19 @@
 type: hub
 cssclasses:
   - hub
-up: "[[Home]]"
+up: "[[Meta]]"
 tags:
   - hub
 ---
 
-↑ [[Home]]
+↑ [[Meta]]
 
-**Spoilers.** Everything a GM needs to run games in Kagameru.
+Tools for the table: encounters, random tables and session notes.
 
 ## Sections
 
-- [[Adventures]]
-- [[Secrets]]
-- [[NPCs]]
 - [[Encounters]]
+- [[Tables]]
 - [[Sessions]]
 
 ## In this section

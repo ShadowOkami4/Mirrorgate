@@ -2,14 +2,14 @@
 type: hub
 cssclasses:
   - hub
-up: "[[World]]"
+up: "[[GM Toolkit]]"
 tags:
   - hub
 ---
 
-↑ [[World]]
+↑ [[GM Toolkit]]
 
-Deities, cults and the planes they touch.
+Reusable encounters and set pieces.
 
 ## In this section
 

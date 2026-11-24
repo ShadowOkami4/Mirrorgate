@@ -2,14 +2,14 @@
 type: hub
 cssclasses:
   - hub
-up: "[[Game Master]]"
+up: "[[GM Toolkit]]"
 tags:
   - hub
 ---
 
-↑ [[Game Master]]
+↑ [[GM Toolkit]]
 
-Session notes and prep for your own table.
+Session prep and notes for your own table.
 
 ## In this section
 

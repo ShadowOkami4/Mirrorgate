@@ -2,14 +2,14 @@
 type: hub
 cssclasses:
   - hub
-up: "[[World]]"
+up: "[[GM Toolkit]]"
 tags:
   - hub
 ---
 
-↑ [[World]]
+↑ [[GM Toolkit]]
 
-Houses, orders, guilds, churches and other powers.
+Random tables: names, weather, rumours, loot.
 
 ## In this section
 
