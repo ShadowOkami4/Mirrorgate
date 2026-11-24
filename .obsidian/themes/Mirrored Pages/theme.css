@@ -713,6 +713,55 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
   border-left: 2px solid color-mix(in srgb, var(--mp-sec) 50%, transparent);
 }
 
+/* ---------- Hover previews of hub pages: a mini page ---------------------- */
+/* A coloured header band with the section icon, then the lead text.
+   The back link and the "In this section" table are left out. */
+.hover-popover .hub .markdown-preview-sizer { position: relative; padding-top: 0 !important; }
+.hover-popover .hub .markdown-preview-sizer::before {
+  content: var(--mp-section-name, "");
+  display: block;
+  box-sizing: border-box;
+  height: 64px;
+  margin: 2px 0 16px;
+  padding-left: 66px;
+  line-height: 62px;
+  font-family: var(--mp-serif);
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mp-silver-hi);
+  text-shadow: 0 0 16px color-mix(in srgb, var(--mp-sec) 55%, transparent);
+  border-radius: var(--radius-m);
+  border: 1px solid color-mix(in srgb, var(--mp-sec) 40%, transparent);
+  background:
+    linear-gradient(90deg, var(--mp-sec), transparent 70%) top left / 100% 2px no-repeat,
+    radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--mp-sec) 34%, transparent), transparent 65%),
+    linear-gradient(115deg, transparent 0 62%, var(--mp-glass-shine) 67%, transparent 74%),
+    linear-gradient(160deg, color-mix(in srgb, var(--mp-sec) 14%, var(--mp-glass)), var(--mp-glass));
+}
+.hover-popover .hub .markdown-preview-sizer::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  width: 32px;
+  height: 32px;
+  background: var(--mp-sec);
+  -webkit-mask: var(--mp-sec-icon) center / contain no-repeat;
+  mask: var(--mp-sec-icon) center / contain no-repeat;
+  filter: drop-shadow(0 0 8px var(--mp-sec));
+}
+.hover-popover .hub :is(.el-div, .el-blockquote):has(> .callout[data-callout="up"]),
+.hover-popover .hub .el-h2:has(> h2[data-heading="In this section"]),
+.hover-popover .hub :is(.el-p, .el-div):has(.bases-embed) { display: none; }
+.hover-popover .hub :is(.el-div, .el-blockquote):has(> .callout[data-callout="up"]) + .el-p > p {
+  margin-top: 0;
+  font-size: 1em;
+  padding-left: 12px;
+}
+.hover-popover:has(.hub) { border-color: color-mix(in srgb, var(--mp-accent) 30%, transparent); }
+
 /* ---------- Section cards (cssclasses: hub) ----------------------------- */
 /* The list under a heading in a hub note becomes a grid of mirror cards.
    Each card reads two variables, so a vault snippet can give a card its own
