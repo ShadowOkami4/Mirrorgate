@@ -199,34 +199,6 @@
       "meaning": "traits"
     },
     {
-      "key": "inventory",
-      "label": "Inventory",
-      "type": "scores",
-      "slots": [
-        "Item",
-        "Qty",
-        "Weight",
-        "Equipped"
-      ],
-      "slotKeys": [
-        "item",
-        "qty",
-        "weight",
-        "equipped"
-      ],
-      "align": [
-        "start",
-        "center",
-        "center",
-        "center"
-      ]
-    },
-    {
-      "key": "currency",
-      "label": "Coins",
-      "type": "pairs"
-    },
-    {
       "key": "description",
       "label": "Description",
       "type": "markdown",
@@ -426,26 +398,6 @@
             "type": "stat",
             "field": "languages",
             "look": "run-in"
-          }
-        ]
-      },
-      {
-        "id": "mrgear00",
-        "type": "section",
-        "heading": "Inventory",
-        "collapsible": "closed",
-        "blocks": [
-          {
-            "id": "mrinven0",
-            "type": "scores",
-            "field": "inventory",
-            "orientation": "row"
-          },
-          {
-            "id": "mrcoins0",
-            "type": "pairs",
-            "field": "currency",
-            "label": "Coins"
           }
         ]
       }

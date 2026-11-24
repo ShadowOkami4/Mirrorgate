@@ -391,6 +391,9 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 /* Each callout type gets its colour here, so the theme works whether Obsidian
    stores --callout-color as "r, g, b" (older) or as a full colour (1.15+). */
 .callout { --mp-c: var(--mp-accent); }
+/* Obsidian 1.15 colours the icon from --callout-color: keep it in step with the theme colour */
+.callout .callout-icon,
+.callout .callout-icon .svg-icon { color: var(--mp-c); }
 .callout:is([data-callout="info"], [data-callout="todo"]) { --mp-c: var(--color-blue); }
 .callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"], [data-callout="tip"], [data-callout="hint"], [data-callout="important"]) { --mp-c: var(--color-cyan); }
 .callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) { --mp-c: var(--color-green); }
@@ -399,6 +402,12 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 .callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"], [data-callout="danger"], [data-callout="error"], [data-callout="bug"]) { --mp-c: var(--color-red); }
 .callout[data-callout="example"] { --mp-c: var(--color-purple); }
 .callout:is([data-callout="quote"], [data-callout="cite"]) { --mp-c: var(--mp-silver-lo); }
+/* character-note callouts */
+.callout[data-callout="purse"] { --mp-c: #d9b25a; --callout-icon: lucide-coins; }
+.callout[data-callout="inventory"] { --mp-c: #c08a5a; --callout-icon: lucide-backpack; }
+.callout[data-callout="personality"] { --mp-c: #d07a9a; --callout-icon: lucide-heart-handshake; }
+.callout[data-callout="appearance"] { --mp-c: #7fb0c8; --callout-icon: lucide-scan-face; }
+.callout[data-callout="notes"] { --mp-c: var(--mp-silver-lo); --callout-icon: lucide-scroll-text; }
 
 .callout {
   --callout-padding: 0;
@@ -596,6 +605,77 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
     linear-gradient(45deg, transparent 35%, var(--mp-accent) 35% 65%, transparent 65%) right center / 7px 7px no-repeat;
   opacity: 0.8;
 }
+
+/* ---------- Character notes: inventory, appearance, personality --------- */
+/* tables inside callouts fill the callout and drop their outer frame */
+.callout .callout-content table { width: 100%; margin: 4px 0; box-shadow: none; border-color: color-mix(in srgb, var(--mp-c) 25%, transparent); }
+.callout .callout-content thead th {
+  background:
+    linear-gradient(90deg, var(--mp-c), color-mix(in srgb, var(--mp-c) 10%, transparent)) bottom / 100% 2px no-repeat,
+    color-mix(in srgb, var(--mp-c) 12%, var(--background-primary-alt));
+}
+.callout[data-callout="inventory"] td:not(:first-child),
+.callout[data-callout="inventory"] th:not(:first-child) { text-align: center; width: 1%; white-space: nowrap; }
+/* appearance and personality: a two-column list of short facts */
+.callout:is([data-callout="appearance"], [data-callout="personality"]) .callout-content ul {
+  columns: 2 14em;
+  column-gap: 24px;
+  padding-left: 0;
+  list-style: none;
+}
+.callout:is([data-callout="appearance"], [data-callout="personality"]) .callout-content li {
+  break-inside: avoid;
+  margin: 0 0 6px;
+  padding: 3px 0 3px 10px;
+  border-left: 2px solid color-mix(in srgb, var(--mp-c) 45%, transparent);
+}
+.callout:is([data-callout="appearance"], [data-callout="personality"]) .callout-content li .list-bullet { display: none; }
+.callout:is([data-callout="appearance"], [data-callout="personality"]) .callout-content li strong {
+  display: block;
+  font-family: var(--mp-serif);
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  color: color-mix(in srgb, var(--mp-c) 75%, var(--text-normal));
+}
+
+/* ---------- Coins: <span class="coin gp">34</span> ---------------------- */
+/* pp platinum · gp gold · ep electrum · sp silver · cp copper */
+.coin {
+  --coin: #c9a64a;
+  --coin-hi: #f4dc8a;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 2px 10px 2px 0;
+  padding: 2px 10px 2px 3px;
+  border-radius: 999px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--text-normal);
+  background: color-mix(in srgb, var(--coin) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--coin) 45%, transparent);
+}
+.coin::before {
+  content: var(--coin-label, "G");
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.55em;
+  height: 1.55em;
+  border-radius: 50%;
+  font-family: var(--mp-serif);
+  font-size: 0.78em;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.65);
+  background: radial-gradient(circle at 35% 30%, var(--coin-hi), var(--coin) 60%, color-mix(in srgb, var(--coin) 60%, #000) 100%);
+  box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--coin) 60%, #000), 0 0 8px color-mix(in srgb, var(--coin) 45%, transparent);
+}
+.coin::after { content: var(--coin-name, ""); font-weight: 500; font-size: 0.8em; color: var(--text-muted); }
+.coin.pp { --coin: #b9c6d6; --coin-hi: #f2f6fb; --coin-label: "P"; --coin-name: "pp"; }
+.coin.gp { --coin: #c9a64a; --coin-hi: #f4dc8a; --coin-label: "G"; --coin-name: "gp"; }
+.coin.ep { --coin: #a7b07a; --coin-hi: #e4e9b8; --coin-label: "E"; --coin-name: "ep"; }
+.coin.sp { --coin: #9ea4ab; --coin-hi: #e9ecef; --coin-label: "S"; --coin-name: "sp"; }
+.coin.cp { --coin: #b06a3c; --coin-hi: #e6a57a; --coin-label: "C"; --coin-name: "cp"; }
 
 /* ---------- Text details ------------------------------------------------ */
 .markdown-rendered a.internal-link,
