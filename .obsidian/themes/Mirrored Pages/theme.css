@@ -408,6 +408,8 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 .callout[data-callout="personality"] { --mp-c: #d07a9a; --callout-icon: lucide-heart-handshake; }
 .callout[data-callout="appearance"] { --mp-c: #7fb0c8; --callout-icon: lucide-scan-face; }
 .callout[data-callout="notes"] { --mp-c: var(--mp-silver-lo); --callout-icon: lucide-scroll-text; }
+.callout[data-callout="backstory"] { --mp-c: #a98be0; --callout-icon: lucide-book-open-text; }
+.callout[data-callout="companions"] { --mp-c: #7fb05a; --callout-icon: lucide-paw-print; }
 
 .callout {
   --callout-padding: 0;
@@ -637,6 +639,46 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
   letter-spacing: 0.05em;
   color: color-mix(in srgb, var(--mp-c) 75%, var(--text-normal));
 }
+
+/* ---------- Link buttons: <a class="button" href="…">Label</a> ---------- */
+.markdown-rendered a.button,
+.markdown-rendered a.button.external-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 8px 4px 0;
+  padding: 7px 16px 7px 12px;
+  border-radius: 999px;
+  font-family: var(--mp-serif);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--mp-silver-hi);
+  background:
+    linear-gradient(115deg, transparent 0 55%, var(--mp-glass-shine) 62%, transparent 70%),
+    linear-gradient(180deg, color-mix(in srgb, var(--mp-accent) 30%, transparent), color-mix(in srgb, var(--mp-accent) 12%, transparent));
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 60%, transparent);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--mp-accent) 22%, transparent), inset 0 1px 0 var(--mp-glass-shine);
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+}
+.markdown-rendered a.button::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: currentColor;
+  -webkit-mask: var(--button-icon, var(--mp-card-default-icon)) center / contain no-repeat;
+  mask: var(--button-icon, var(--mp-card-default-icon)) center / contain no-repeat;
+}
+.markdown-rendered a.button.external-link { background-image:
+    linear-gradient(115deg, transparent 0 55%, var(--mp-glass-shine) 62%, transparent 70%),
+    linear-gradient(180deg, color-mix(in srgb, var(--mp-accent) 30%, transparent), color-mix(in srgb, var(--mp-accent) 12%, transparent)); padding-right: 16px; }
+.markdown-rendered a.button:hover {
+  transform: translateY(-1px);
+  border-color: var(--mp-accent);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--mp-accent) 40%, transparent), inset 0 1px 0 var(--mp-glass-shine);
+  text-shadow: none;
+}
+.markdown-rendered a.button.dndbeyond { --mp-accent: #e0484f; }
 
 /* ---------- Coins: <span class="coin gp">34</span> ---------------------- */
 /* pp platinum · gp gold · ep electrum · sp silver · cp copper */
