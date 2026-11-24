@@ -1507,6 +1507,9 @@ body .atlas-sb-columns {
 }
 body .atlas-sb-columns > .atlas-sb-item { break-inside: avoid; }
 body .atlas-sb-sheet .atlas-sb-row { gap: 22px 40px; }
+body .atlas-sb-sheet .atlas-sb-row:has(> .atlas-sb-item > .atlas-sb-labelled--stacked) { gap: 8px; }
+body .atlas-sb-sheet .atlas-sb-row > .atlas-sb-item:has(> .atlas-sb-labelled--stacked) { flex: 1 1 4.5em; }
+body .atlas-sb-sheet .atlas-sb-row > .atlas-sb-item > .atlas-sb-stat.atlas-sb-labelled--stacked { text-align: center; align-items: center; }
 body .atlas-sb-section-heading__row { margin-top: 18px; margin-bottom: 8px; }
 body .atlas-sb-sheet .atlas-sb-entries > :where(:not(:first-child)) { margin-top: 10px; }
 body .atlas-sb-scores--table { gap: 10px 12px; margin: 6px 0; }
@@ -1532,6 +1535,42 @@ body :is(.atlas-sb-spells, .atlas-sb-spell-list) > li::before {
   background: var(--mp-accent);
   box-shadow: 0 0 6px color-mix(in srgb, var(--mp-accent) 60%, transparent);
 }
+
+/* stat tiles: stacked stats and metrics (strips such as AC, Initiative, Speed) */
+body .atlas-sb-sheet .atlas-sb-row > .atlas-sb-item > .atlas-sb-stat.atlas-sb-labelled--stacked,
+body .atlas-sb-sheet .atlas-sb-metric {
+  gap: 4px;
+  padding: 8px 6px 9px;
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 30%, transparent);
+  border-radius: var(--radius-m);
+  background:
+    linear-gradient(90deg, var(--mp-accent), transparent 80%) top left / 100% 2px no-repeat,
+    linear-gradient(180deg, color-mix(in srgb, var(--mp-accent) 12%, transparent), transparent 85%),
+    var(--mp-glass);
+  box-shadow: inset 0 1px 0 var(--mp-glass-shine);
+}
+body .atlas-sb-metric__heading,
+body .atlas-sb-sheet .atlas-sb-metric .atlas-sb-label,
+body .atlas-sb-sheet .atlas-sb-labelled--stacked > .atlas-sb-label {
+  font-family: var(--mp-serif);
+  font-size: 0.8em;
+  font-variant: small-caps;
+  text-transform: none;
+  letter-spacing: 0.08em;
+  color: color-mix(in srgb, var(--mp-accent) 75%, var(--text-normal));
+}
+body .atlas-sb-metric__value,
+body .atlas-sb-sheet .atlas-sb-stat.atlas-sb-labelled--stacked .atlas-sb-value {
+  font-family: var(--mp-serif);
+  font-weight: 700;
+  color: var(--mp-silver-hi);
+  text-shadow: 0 0 12px color-mix(in srgb, var(--mp-accent) 35%, transparent);
+}
+body .atlas-sb-metric__number { border-left-color: color-mix(in srgb, var(--mp-accent) 20%, transparent); }
+
+/* counters: spell slots and feature uses */
+body .atlas-sb-counter__name { font-family: var(--mp-serif); font-size: 0.85em; color: color-mix(in srgb, var(--mp-silver-lo) 80%, var(--text-normal)); }
+body .atlas-sb-counter__pip { border-color: var(--mp-accent); box-shadow: 0 0 5px color-mix(in srgb, var(--mp-accent) 35%, transparent); }
 
 /* portrait / token art: a round mirror frame */
 body .atlas-sb-image-placeholder,

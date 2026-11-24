@@ -145,7 +145,7 @@ The vault is written for **Game Masters**. Every page tells the whole story; tex
 | `09 Rules/` | core rules, character options, bestiary |
 | `10 Books/` | compiled book editions |
 | `90 Assets/` | maps and art; `90 Assets/Private/` is kept local and not published |
-| `99 Meta/` | the World Bible, the GM Toolkit (encounters, tables, sessions), templates and views |
+| `99 Meta/` | the World Bible, the GM Toolkit (encounters, tables, sessions), templates and views, and `Atlas Templates/` with the **Mirrored Realms Character (5E)** statblock template for Atlas VTT |
 | `.obsidian/` | shared vault settings, plugins, theme |
 
 These paths are excluded from the repository by `.gitignore`:
