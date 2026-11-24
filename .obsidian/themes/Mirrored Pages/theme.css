@@ -1833,6 +1833,50 @@ body .atlas-statblock[data-layout*="character"] .atlas-sb-pairs .atlas-sb-value 
 body .atlas-statblock[data-layout*="character"] .atlas-sb-item:has(> .atlas-sb-pairs),
 body .atlas-statblock[data-layout*="character"] .atlas-sb-pairs { container-type: inline-size; }
 
+/* companions (familiars, mounts, pets): a friendly green with a paw badge.
+   Matches any template whose layout name contains "companion". */
+body .atlas-statblock[data-layout*="companion"] {
+  --mp-accent: #8cc56a;
+  --text-accent: #a8d68c;
+  --interactive-accent: #8cc56a;
+  --mp-paw: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Ccircle cx=%2211%22 cy=%224%22 r=%222%22/%3E%3Ccircle cx=%2218%22 cy=%228%22 r=%222%22/%3E%3Ccircle cx=%2220%22 cy=%2216%22 r=%222%22/%3E%3Cpath d=%22M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z%22/%3E%3C/svg%3E");
+  background:
+    radial-gradient(ellipse 80% 45% at 100% 0%, rgba(140, 197, 106, 0.16), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 0% 100%, rgba(140, 197, 106, 0.06), transparent 70%),
+    var(--background-primary);
+}
+body.theme-light .atlas-statblock[data-layout*="companion"] { --mp-accent: #4f8a32; --text-accent: #3f7426; --interactive-accent: #4f8a32; }
+body .atlas-statblock[data-layout*="companion"]::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: var(--mp-accent);
+  -webkit-mask: radial-gradient(circle, #000 68%, transparent 70%);
+  mask: radial-gradient(circle, #000 68%, transparent 70%);
+  box-shadow: 0 0 14px rgba(140, 197, 106, 0.5);
+}
+body .atlas-statblock[data-layout*="companion"]::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  z-index: 4;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  background: var(--background-primary);
+  -webkit-mask: var(--mp-paw) center / contain no-repeat;
+  mask: var(--mp-paw) center / contain no-repeat;
+}
+body .atlas-statblock[data-layout*="companion"] .atlas-sb-portrait img,
+body .atlas-statblock[data-layout*="companion"] .atlas-sb-image-placeholder { border-color: var(--mp-accent); }
+
 /* Map toolbar and panels: dark glass with an accent edge */
 body .atlas-tool-bar {
   background: var(--mp-glass);

@@ -145,7 +145,7 @@ The vault is written for **Game Masters**. Every page tells the whole story; tex
 | `09 Rules/` | core rules, character options, bestiary |
 | `10 Books/` | compiled book editions |
 | `90 Assets/` | maps and art; `90 Assets/Private/` is kept local and not published |
-| `99 Meta/` | the World Bible, the GM Toolkit (encounters, tables, sessions), templates and views, and `Atlas Templates/` with statblock templates for Atlas VTT: **Character**, **NPC**, **Important NPC** (with a Story section) and **Boss** (tactics, legendary and lair actions) |
+| `99 Meta/` | the World Bible, the GM Toolkit (encounters, tables, sessions), templates and views, and `Atlas Templates/` with statblock templates for Atlas VTT: **Character**, **NPC**, **Important NPC** (with a Story section), **Boss** (tactics, legendary and lair actions) and **Companion** (familiars, mounts and pets, linked to their owner) |
 | `.obsidian/` | shared vault settings, plugins, theme |
 
 These paths are excluded from the repository by `.gitignore`:
