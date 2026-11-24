@@ -1616,6 +1616,61 @@ body .atlas-statblock[data-layout*="character"] .atlas-sb-image-placeholder {
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--mp-player) 15%, transparent), 0 0 22px color-mix(in srgb, var(--mp-player) 35%, transparent);
 }
 
+/* ranked statblocks: NPC (silver), Important NPC (violet), Boss (crimson).
+   Matched on the template layout name: "... npc", "... important ...", "... boss". */
+body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"]) .atlas-sb-header::before {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--font-interface);
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mp-accent);
+}
+body .atlas-statblock[data-layout*="npc"]:not([data-layout*="important"]) {
+  --mp-accent: color-mix(in srgb, var(--mp-silver-lo) 85%, var(--mp-silver-hi));
+  --text-accent: color-mix(in srgb, var(--mp-silver-lo) 70%, var(--text-normal));
+}
+body .atlas-statblock[data-layout*="npc"]:not([data-layout*="important"]) .atlas-sb-header::before { content: "◆ NPC"; }
+
+body .atlas-statblock[data-layout*="important"] {
+  --mp-accent: #b39af0;
+  --text-accent: #c7b5f5;
+  --interactive-accent: #b39af0;
+  background:
+    radial-gradient(ellipse 80% 45% at 100% 0%, rgba(150, 110, 230, 0.16), transparent 70%),
+    var(--background-primary);
+}
+.theme-light body .atlas-statblock[data-layout*="important"],
+body.theme-light .atlas-statblock[data-layout*="important"] { --mp-accent: #6b4fb3; --text-accent: #5a3fa0; --interactive-accent: #6b4fb3; }
+body .atlas-statblock[data-layout*="important"] .atlas-sb-header::before { content: "◆◆ Important NPC"; }
+
+body .atlas-statblock[data-layout*="boss"] {
+  --mp-accent: var(--mp-gm);
+  --text-accent: color-mix(in srgb, var(--mp-gm) 80%, var(--text-normal));
+  --interactive-accent: var(--mp-gm);
+  border-color: color-mix(in srgb, var(--mp-gm) 55%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--mp-gm) 25%, transparent), 0 0 32px color-mix(in srgb, var(--mp-gm) 22%, transparent), var(--shadow-l);
+  background:
+    radial-gradient(ellipse 90% 50% at 50% 0%, color-mix(in srgb, var(--mp-gm) 14%, transparent), transparent 70%),
+    var(--background-primary);
+}
+body .atlas-statblock[data-layout*="boss"] .atlas-sb-header {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background:
+    var(--mp-cracks-dark) center / cover no-repeat,
+    linear-gradient(90deg, var(--mp-gm), transparent 70%) top left / 100% 2px no-repeat,
+    linear-gradient(90deg, color-mix(in srgb, var(--mp-gm) 22%, transparent), transparent 85%);
+}
+body .atlas-statblock[data-layout*="boss"] .atlas-sb-heading {
+  font-size: 2em;
+  letter-spacing: 0.03em;
+  filter: drop-shadow(0 0 14px color-mix(in srgb, var(--mp-gm) 55%, transparent));
+}
+body .atlas-statblock[data-layout*="boss"] .atlas-sb-header::before { content: "◆◆◆ Boss"; }
+
 /* Map toolbar and panels: dark glass with an accent edge */
 body .atlas-tool-bar {
   background: var(--mp-glass);
