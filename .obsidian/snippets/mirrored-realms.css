@@ -79,36 +79,41 @@ body .hub .el-ul > ul > li:has(> a.internal-link[data-href="World Bible"]) {
   --mp-card-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 7v14%22/%3E%3Cpath d=%22M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z%22/%3E%3C/svg%3E");
 }
 
-/* ---------- Home: map banner with a mirrored reflection ------------------ */
+/* ---------- Home: night-sky header (no map) ------------------------------ */
 .home .inline-title { display: none; }
-.home .internal-embed.image-embed[alt="banner"] {
-  display: block;
-  margin: 0 0 0.4em;
+.home .el-h1 {
+  position: relative;
+  margin: 0 0 0.2em;
+  padding: 64px 20px 26px;
+  border-radius: var(--radius-l);
+  overflow: hidden;
+  background:
+    radial-gradient(1px 1px at 8% 22%, #fff, transparent 70%),
+    radial-gradient(1px 1px at 19% 64%, rgba(255,255,255,0.7), transparent 70%),
+    radial-gradient(1.5px 1.5px at 31% 18%, rgba(210,225,255,0.9), transparent 70%),
+    radial-gradient(1px 1px at 44% 78%, rgba(255,255,255,0.6), transparent 70%),
+    radial-gradient(1px 1px at 57% 12%, #fff, transparent 70%),
+    radial-gradient(2px 2px at 69% 40%, rgba(220,230,255,0.85), transparent 70%),
+    radial-gradient(1px 1px at 81% 70%, rgba(255,255,255,0.75), transparent 70%),
+    radial-gradient(1px 1px at 92% 26%, rgba(255,255,255,0.8), transparent 70%),
+    radial-gradient(1.5px 1.5px at 13% 88%, #fff, transparent 70%),
+    radial-gradient(1px 1px at 96% 88%, rgba(200,215,255,0.8), transparent 70%),
+    radial-gradient(ellipse 60% 70% at 50% 100%, color-mix(in srgb, var(--mp-accent) 22%, transparent), transparent 70%),
+    linear-gradient(180deg, #05070f 0%, #0b1226 70%, #111a33 100%);
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 25%, transparent);
+  box-shadow: var(--shadow-l), inset 0 1px 0 var(--mp-glass-shine);
 }
-.home .internal-embed.image-embed[alt="banner"] img {
-  display: block;
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  object-position: 50% 40%;
-  border: none;
-  border-radius: var(--radius-l) var(--radius-l) 0 0;
-  box-shadow: none;
-  filter: saturate(0.75) brightness(0.8) contrast(1.05);
-  -webkit-mask-image: linear-gradient(180deg, #000 45%, transparent 100%);
-  mask-image: linear-gradient(180deg, #000 45%, transparent 100%);
-  -webkit-box-reflect: below -4px linear-gradient(transparent 62%, rgba(0, 0, 0, 0.18));
-}
-.home .el-h1 { position: relative; margin-top: -92px; z-index: 2; }
+.theme-light .home .el-h1 { background: linear-gradient(180deg, #d7dee9, #eef1f6); }
 .home .el-h1 h1 {
+  margin: 0;
   font-size: 2.7em;
   letter-spacing: 0.03em;
   text-align: center;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.85);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.7);
 }
 .home .el-h1 h1::after { left: 18%; right: 18%; }
 .home .mr-tagline {
-  margin-top: -0.3em;
+  margin-top: 0.9em;
   text-align: center;
   font-family: var(--mp-serif);
   font-style: italic;

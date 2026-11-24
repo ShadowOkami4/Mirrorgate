@@ -7,8 +7,6 @@ tags:
   - hub
 ---
 
-![[Kagameru_World_Map.jpg|banner]]
-
 # The Mirrored Realms
 
 <p class="mr-tagline">An evolving campaign setting of living reflections, broken time, folded space, and divine scars.</p>
