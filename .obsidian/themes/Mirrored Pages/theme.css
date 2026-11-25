@@ -2300,6 +2300,12 @@ body .atlas-statblock[data-layout*="npc"]:not([data-layout*="important"]) {
   --text-accent: color-mix(in srgb, var(--mp-silver-lo) 70%, var(--text-normal));
 }
 
+/* bestiary creatures: the mirror accent, a plain "Creature" pill */
+body .atlas-statblock[data-layout*="creature"] {
+  --mp-rank: var(--mp-accent);
+  --mp-rank-name: "◆ Creature";
+}
+
 body .atlas-statblock[data-layout*="important"] {
   --mp-rank: #b39af0;
   --mp-rank-name: "◆◆ Important NPC";
@@ -2554,14 +2560,14 @@ body .atlas-statblock[data-layout]:has(> .atlas-statblock-body .atlas-sb-item[da
 }
 
 /* rank and creature type: a row of small pills above the name */
-body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"]) .atlas-sb-header__text {
+body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"], [data-layout*="creature"]) .atlas-sb-header__text {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
   gap: 6px;
 }
-body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"]) .atlas-sb-header__text > * { flex: 1 1 100%; min-width: 0; }
-body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"]) .atlas-sb-header__text::before,
+body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"], [data-layout*="creature"]) .atlas-sb-header__text > * { flex: 1 1 100%; min-width: 0; }
+body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"], [data-layout*="creature"]) .atlas-sb-header__text::before,
 body .atlas-statblock[data-layout]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header__text::after {
   flex: 0 0 auto;
   margin-bottom: 2px;
@@ -2575,7 +2581,7 @@ body .atlas-statblock[data-layout]:has(> .atlas-statblock-body .atlas-sb-item[da
   text-transform: uppercase;
   white-space: nowrap;
 }
-body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"]) .atlas-sb-header__text::before {
+body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"], [data-layout*="creature"]) .atlas-sb-header__text::before {
   content: var(--mp-rank-name);
   order: -2;
   color: var(--mp-rank);

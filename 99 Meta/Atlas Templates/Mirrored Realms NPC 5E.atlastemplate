@@ -35,7 +35,7 @@
       "meaning": "size"
     },
     {
-      "key": "type",
+      "key": "creature_type",
       "label": "Type",
       "type": "text",
       "meaning": "creature-type"
@@ -210,7 +210,7 @@
         "type": "heading",
         "className": "mp-type-undead",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Undead"
         },
@@ -221,7 +221,7 @@
         "type": "heading",
         "className": "mp-type-fiend",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Fiend"
         },
@@ -232,7 +232,7 @@
         "type": "heading",
         "className": "mp-type-celestial",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Celestial"
         },
@@ -243,7 +243,7 @@
         "type": "heading",
         "className": "mp-type-fey",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Fey"
         },
@@ -254,7 +254,7 @@
         "type": "heading",
         "className": "mp-type-dragon",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Dragon"
         },
@@ -265,7 +265,7 @@
         "type": "heading",
         "className": "mp-type-construct",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Construct"
         },
@@ -276,7 +276,7 @@
         "type": "heading",
         "className": "mp-type-aberration",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Aberration"
         },
@@ -287,7 +287,7 @@
         "type": "heading",
         "className": "mp-type-elemental",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Elemental"
         },
@@ -298,7 +298,7 @@
         "type": "heading",
         "className": "mp-type-giant",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Giant"
         },
@@ -309,7 +309,7 @@
         "type": "heading",
         "className": "mp-type-monstrosity",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Monstrosity"
         },
@@ -320,7 +320,7 @@
         "type": "heading",
         "className": "mp-type-ooze",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Ooze"
         },
@@ -331,7 +331,7 @@
         "type": "heading",
         "className": "mp-type-plant",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Plant"
         },
@@ -342,7 +342,7 @@
         "type": "heading",
         "className": "mp-type-beast",
         "showWhen": {
-          "field": "type",
+          "field": "creature_type",
           "is": "equal",
           "value": "Beast"
         },
@@ -353,11 +353,11 @@
         "type": "line",
         "fields": [
           "size",
-          "type",
+          "creature_type",
           "subtype",
           "alignment"
         ],
-        "pattern": "{size} {type}[ ({subtype})][, {alignment}]"
+        "pattern": "{size} {creature_type}[ ({subtype})][, {alignment}]"
       },
       {
         "id": "npstrip1",

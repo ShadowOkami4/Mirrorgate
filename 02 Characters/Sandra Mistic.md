@@ -22,6 +22,8 @@ hp: 315
 hit_dice: 42d8+126
 speed: 30 ft.
 cr: "21"
+xp: 33,000, or 41,000 in her inn
+pb: "+7"
 stats: [11, 16, 16, 21, 14, 16]
 saves:
   - dex: 10
@@ -37,6 +39,7 @@ damage_resistances: Cold, Lightning
 damage_immunities: Necrotic, Poison
 condition_immunities: Charmed, Exhaustion, Frightened, Paralyzed, Poisoned
 senses: Truesight 120 ft., Passive Perception 19
+gear: Component Pouch
 languages: All
 traits:
   - name: Legendary Resistance (4/Day, or 5/Day in her Inn)
@@ -44,19 +47,19 @@ traits:
   - name: Bound to the Inn
     desc: Sandra can't willingly leave To the Eternal Lady. While inside it, she knows the location of every creature in the inn.
   - name: Spirit Jar
-    desc: If destroyed, Sandra reforms in 1d10 days in the hidden vault beneath the altar, as long as her phylactery remains intact.
+    desc: If destroyed, Sandra reforms in 1d10 days if she has a spirit jar, reviving with all her Hit Points. The new body appears in the hidden vault beneath the altar.
 actions:
   - name: Multiattack
-    desc: Sandra makes three attacks, using Eldritch Burst or Binding Touch in any combination. She can replace one attack with a use of Spellcasting.
+    desc: Sandra makes three attacks, using Eldritch Burst or Binding Touch in any combination.
   - name: Eldritch Burst
     desc: "*Melee or Ranged Attack Roll:* +12, reach 5 ft. or range 120 ft. *Hit:* 31 (4d12 + 5) Force damage."
   - name: Binding Touch
     desc: "*Melee Attack Roll:* +12, reach 5 ft. *Hit:* 15 (3d6 + 5) Cold damage, and the target has the Paralyzed condition until the start of Sandra's next turn."
 reactions:
   - name: Protective Magic
-    desc: Sandra casts *Counterspell* or *Shield* in response to that spell's trigger.
+    desc: Sandra casts *Counterspell* or *Shield* in response to the spell's trigger, using the same spellcasting ability as Spellcasting.
 spells:
-  - "Sandra casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 20, +12 to hit with spell attacks):"
+  - "Sandra casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 20):"
   - At will: "*Detect Magic*, *Detect Thoughts*, *Disguise Self*, *Mage Hand*, *Prestidigitation*, *Silence*"
   - 2/day each: "*Dimension Door*, *Dispel Magic*, *Hold Monster*, *Plane Shift*"
   - 1/day each: "*Forcecage*, *Power Word Stun*, *Power Word Kill*, *Scrying*"
@@ -68,11 +71,12 @@ legendary_actions:
     desc: Sandra teleports one creature she can see within 60 ft. to an unoccupied space she can see within 60 ft. of it. An unwilling creature can make a DC 20 Charisma saving throw to resist.
   - name: Withering Gaze (Costs 2 Actions)
     desc: "*Constitution Saving Throw:* DC 20, one creature Sandra can see within 30 ft. *Failure:* 31 (9d6) Necrotic damage, and the target can't regain Hit Points until the start of Sandra's next turn. *Success:* Half damage."
-lair_actions:
-  - name: The Fire Dims
-    desc: On initiative count 20, every light in the room dims to dim light, and each creature that is not Sandra or one of her echoes has Disadvantage on its next attack roll.
-  - name: Glasses Crack
-    desc: "On initiative count 20, every glass in the inn cracks at once. Each creature of Sandra's choice within 30 ft. makes a DC 20 Wisdom saving throw or has the Frightened condition until the end of its next turn."
+regional_description: "The region around To the Eternal Lady is warped by Sandra's presence, creating the following effects. If Sandra is destroyed or the inn moves elsewhere, these effects end immediately; they resume if she gains a new body (see her Spirit Jar trait)."
+regional_effects:
+  - name: All-Seeing
+    desc: While in her inn, Sandra can cast *Clairvoyance*, requiring no spell components and using the same spellcasting ability as her Spellcasting.
+  - name: The Inn Keeps Its Debts
+    desc: Whenever a Humanoid that Sandra has judged beyond forgiveness dies within 1 mile of the inn, its soul is drawn into her spirit jar. A creature whose soul is taken this way can be brought back to life only by a *True Resurrection* or *Wish* spell.
 ---
 
 > [!up] [[Characters]]
@@ -108,12 +112,12 @@ Sandra is a **dormant boss**. She only fights when pushed past her limits, and s
 1. **Polite warning.** The room goes quiet, the fire dims, and Sandra asks them to stop.
 2. **Unmistakable warning.** Doors lock, glasses crack in unison, and her disguise slips just enough to make the point.
 3. **Containment.** Magic separates, restrains, silences or incapacitates the offenders (*Hold Monster*, *Forcecage*, *Silence*, *Power Word Stun*).
-4. **Final consequence.** If they keep endangering the inn, she kills them. The dead may sustain her phylactery.
+4. **Final consequence.** If they keep endangering the inn, she kills them. The dead may feed her spirit jar.
 
 She turns on the party only if they try to break the seals beneath the altar, threaten innocent guests, try to steal the artifact, ignore repeated warnings, or start and continue destructive violence in her tavern without cause. Exposing her identity is **not** enough.
 
 > [!gm]- GM guidance
-> Do not punish ordinary roleplay chaos. The rule establishes that the inn is safe ground, not a trap. Give clear warnings before lethal consequences unless the characters commit an obviously monstrous act. Once a fight starts, the statblock's *If Provoked* section holds her legendary and lair actions.
+> Do not punish ordinary roleplay chaos. The rule establishes that the inn is safe ground, not a trap. Give clear warnings before lethal consequences unless the characters commit an obviously monstrous act. Once a fight starts, the statblock's *If Provoked* section holds her legendary actions and regional effects.
 
 ## Appearance
 
@@ -173,7 +177,7 @@ She prefers negotiation to violence and grows quieter, not louder, when angry. S
 > - Their gathering resembles part of an old warning or prophecy.
 > - Her wards are weakening faster than she admits.
 > - The disturbance may not be trying to enter Kagameru, but to retrieve something already here.
-> - Her phylactery is sustained by those she judges to have violated the inn beyond forgiveness.
+> - Her spirit jar is sustained by those she judges to have violated the inn beyond forgiveness.
 > - She does not know whether the artifact chose the adventurers as protectors, liberators or victims.
 
 ## Relationships
