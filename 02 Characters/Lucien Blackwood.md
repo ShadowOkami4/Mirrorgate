@@ -4,7 +4,7 @@ cssclasses:
 type: character
 up: "[[Characters]]"
 region: Lustro
-role: Royal of Lustro; father of Jacob and Vanessa
+role: Consort of the Queen of Lustro
 faction: "[[Blackwood Bloodline]]"
 status: alive
 player: true
@@ -18,13 +18,14 @@ player: true
 > *"A royal name opens doors. It also paints targets on them."*
 
 > [!personality] At a glance
+> - **Title** Consort of Queen [[Maria Blackwood]]; married into the house
 > - **House** [[Blackwood Bloodline]]
 > - **Family** Married to [[Maria Blackwood]]; father of [[Jacob Blackwood]] and [[Vanessa Blackwood]]
 > - **Stands for** The strict royal order of [[Lustro]] and the crown's denial of [[The Mirrorgate]]
 
 ## Role
 
-**Lucien Blackwood** is one of the pillars of Lustro's strict royal order. His authority is the kind his own children quietly oppose, and his actions are important enough that Jacob and Vanessa live under careful watch. The [[Lustral Office]] answers, sooner or later, to people like him.
+**Lucien Blackwood** married into the Blackwoods and rules beside Queen [[Maria Blackwood]] as her consort. He is the visible hand of Lustro's strict royal order, and most of the kingdom's anger lands on him rather than on the queen. His authority is the kind his own children quietly oppose, and his actions are important enough that Jacob and Vanessa live under careful watch. The [[Lustral Office]] answers, sooner or later, to people like him.
 
 ## Wants
 
@@ -38,12 +39,11 @@ player: true
 > Lucien denies the Mirrorgate out of fear, ambition or obedience: the GM decides which. Whatever the reason, he knows more about the family's missing records than he admits.
 
 > [!gm]- Open questions
-> - Is Lucien the ruler, the heir, a royal advisor, or the power behind the throne?
-> - Is he a Blackwood by birth, or by marriage to Maria?
+> - Which house was Lucien born into, and what did that house gain from the marriage?
 
 ## Stats
 
 No statblock yet. In a fight he relies on the Lustral Guard; he does not draw a sword himself if he can avoid it.
 
 > [!player] What players know
-> Lucien Blackwood is one of the most powerful men in Lustro, a member of the royal family known for his strictness. Few people have a kind word to say about him in private, and fewer still in public.
+> Lucien Blackwood is the queen's consort and one of the most powerful men in Lustro, known for his strictness. Few people have a kind word to say about him in private, and fewer still in public.

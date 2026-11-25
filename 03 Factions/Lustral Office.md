@@ -57,7 +57,7 @@ The **Lustral Office** is how the crown of [[Lustro]] keeps its registers, appro
 - An Office inspector arrives in Glasscombe asking about glowing flowers.
 
 > [!gm]- Open questions
-> - Who commands the Office, and how close are they to [[Lucien Blackwood]] and [[Maria Blackwood]]?
+> - Who commands the Office? It answers to the crown directly, and so in the end to Queen [[Maria Blackwood]].
 > - Where does it keep what it confiscates?
 
 > [!player] What players know
