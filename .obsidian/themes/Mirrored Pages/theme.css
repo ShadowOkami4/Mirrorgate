@@ -2418,7 +2418,7 @@ body .atlas-statblock[data-layout*="dormant"] .atlas-sb-header {
     linear-gradient(90deg, rgba(150, 110, 230, 0.18), transparent 55%, color-mix(in srgb, var(--mp-gm) 16%, transparent));
 }
 body .atlas-statblock[data-layout*="dormant"] .atlas-sb-header::before {
-  content: "◆◆ Important NPC  ·  ◇ Dormant Boss";
+  content: "◆◆ Important NPC\A◇ Dormant Boss";
   display: block;
   margin-bottom: 4px;
   font-family: var(--font-interface);
@@ -2463,11 +2463,12 @@ body .atlas-statblock[data-layout]:has(> .atlas-statblock-body .atlas-sb-item[da
   box-shadow: 0 0 26px color-mix(in srgb, var(--mp-type) 12%, transparent), var(--shadow-l), inset 0 1px 0 var(--mp-glass-shine);
 }
 body .atlas-statblock[data-layout]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-statblock-body { background: var(--mp-type-texture); }
-/* the type joins the rank label: "◆ NPC · Undead" */
-body .atlas-statblock[data-layout*="npc"]:not([data-layout*="important"]):has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header::before { content: "◆ NPC  ·  " var(--mp-type-name); }
-body .atlas-statblock[data-layout*="important"]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header::before { content: "◆◆ Important NPC  ·  " var(--mp-type-name); }
-body .atlas-statblock[data-layout*="boss"]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header::before { content: "◆◆◆ Boss  ·  " var(--mp-type-name); }
-body .atlas-statblock[data-layout*="dormant"]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header::before { content: "◆◆ Important NPC  ·  ◇ Dormant Boss  ·  " var(--mp-type-name); }
+/* the type joins the rank label, stacked under the rank */
+body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"]) .atlas-sb-header::before { white-space: pre; line-height: 1.45; }
+body .atlas-statblock[data-layout*="npc"]:not([data-layout*="important"]):has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header::before { content: "◆ NPC\A" var(--mp-type-name); }
+body .atlas-statblock[data-layout*="important"]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header::before { content: "◆◆ Important NPC\A" var(--mp-type-name); }
+body .atlas-statblock[data-layout*="boss"]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header::before { content: "◆◆◆ Boss\A" var(--mp-type-name); }
+body .atlas-statblock[data-layout*="dormant"]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header::before { content: "◆◆ Important NPC\A◇ Dormant Boss\A" var(--mp-type-name); }
 body .atlas-statblock[data-layout]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-heading {
   background: linear-gradient(180deg, var(--mp-silver-hi) 0%, var(--mp-silver-hi) 40%, color-mix(in srgb, var(--mp-type) 55%, var(--mp-silver-hi)) 100%);
   -webkit-background-clip: text;
