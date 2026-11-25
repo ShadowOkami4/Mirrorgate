@@ -2262,23 +2262,16 @@ body .atlas-statblock[data-layout*="character"] .atlas-sb-image-placeholder {
 
 /* ranked statblocks: NPC (silver), Important NPC (violet), Boss (crimson).
    Matched on the template layout name: "... npc", "... important ...", "... boss". */
-body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"]) .atlas-sb-header::before {
-  display: block;
-  margin-bottom: 4px;
-  font-family: var(--font-interface);
-  font-size: 0.68em;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--mp-accent);
-}
 body .atlas-statblock[data-layout*="npc"]:not([data-layout*="important"]) {
+  --mp-rank: color-mix(in srgb, var(--mp-silver-lo) 85%, var(--mp-silver-hi));
+  --mp-rank-name: "◆ NPC";
   --mp-accent: color-mix(in srgb, var(--mp-silver-lo) 85%, var(--mp-silver-hi));
   --text-accent: color-mix(in srgb, var(--mp-silver-lo) 70%, var(--text-normal));
 }
-body .atlas-statblock[data-layout*="npc"]:not([data-layout*="important"]) .atlas-sb-header::before { content: "◆ NPC"; }
 
 body .atlas-statblock[data-layout*="important"] {
+  --mp-rank: #b39af0;
+  --mp-rank-name: "◆◆ Important NPC";
   --mp-accent: #b39af0;
   --text-accent: #c7b5f5;
   --interactive-accent: #b39af0;
@@ -2287,10 +2280,11 @@ body .atlas-statblock[data-layout*="important"] {
     var(--background-primary);
 }
 .theme-light body .atlas-statblock[data-layout*="important"],
-body.theme-light .atlas-statblock[data-layout*="important"] { --mp-accent: #6b4fb3; --text-accent: #5a3fa0; --interactive-accent: #6b4fb3; }
-body .atlas-statblock[data-layout*="important"] .atlas-sb-header::before { content: "◆◆ Important NPC"; }
+body.theme-light .atlas-statblock[data-layout*="important"] { --mp-rank: #6b4fb3; --mp-accent: #6b4fb3; --text-accent: #5a3fa0; --interactive-accent: #6b4fb3; }
 
 body .atlas-statblock[data-layout*="boss"] {
+  --mp-rank: var(--mp-gm);
+  --mp-rank-name: "◆◆◆ Boss";
   --mp-accent: var(--mp-gm);
   --text-accent: color-mix(in srgb, var(--mp-gm) 80%, var(--text-normal));
   --interactive-accent: var(--mp-gm);
@@ -2313,7 +2307,6 @@ body .atlas-statblock[data-layout*="boss"] .atlas-sb-heading {
   letter-spacing: 0.03em;
   filter: drop-shadow(0 0 14px color-mix(in srgb, var(--mp-gm) 55%, transparent));
 }
-body .atlas-statblock[data-layout*="boss"] .atlas-sb-header::before { content: "◆◆◆ Boss"; }
 
 /* character sheets: long lists (skills, coins) as a two- or three-column grid
    of name / bonus rows instead of one comma-separated run */
@@ -2403,6 +2396,8 @@ body .atlas-statblock[data-layout*="companion"] .atlas-sb-image-placeholder { bo
    Violet like an important NPC, with a crimson fracture at the header's edge
    and the "If Provoked" section in boss red. Layout name contains "dormant". */
 body .atlas-statblock[data-layout*="dormant"] {
+  --mp-rank: #b39af0;
+  --mp-rank-name: "◆◆ Dormant Boss";
   --mp-accent: #b39af0;
   --text-accent: #c7b5f5;
   --interactive-accent: #b39af0;
@@ -2416,20 +2411,6 @@ body .atlas-statblock[data-layout*="dormant"] .atlas-sb-header {
     var(--mp-cracks-dark) right center / 60% auto no-repeat,
     linear-gradient(90deg, #b39af0, transparent 55%, var(--mp-gm)) top left / 100% 2px no-repeat,
     linear-gradient(90deg, rgba(150, 110, 230, 0.18), transparent 55%, color-mix(in srgb, var(--mp-gm) 16%, transparent));
-}
-body .atlas-statblock[data-layout*="dormant"] .atlas-sb-header::before {
-  content: "◆◆ Important NPC\A◇ Dormant Boss";
-  display: block;
-  margin-bottom: 4px;
-  font-family: var(--font-interface);
-  font-size: 0.68em;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #b39af0, var(--mp-gm));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 body .atlas-statblock[data-layout*="dormant"] .atlas-sb-item:has(.atlas-sb-section-toggle),
 body .atlas-statblock[data-layout*="dormant"] .atlas-sb-item:has(.atlas-sb-chevron) {
@@ -2463,12 +2444,6 @@ body .atlas-statblock[data-layout]:has(> .atlas-statblock-body .atlas-sb-item[da
   box-shadow: 0 0 26px color-mix(in srgb, var(--mp-type) 12%, transparent), var(--shadow-l), inset 0 1px 0 var(--mp-glass-shine);
 }
 body .atlas-statblock[data-layout]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-statblock-body { background: var(--mp-type-texture); }
-/* the type joins the rank label, stacked under the rank */
-body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"]) .atlas-sb-header::before { white-space: pre; line-height: 1.45; }
-body .atlas-statblock[data-layout*="npc"]:not([data-layout*="important"]):has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header::before { content: "◆ NPC\A" var(--mp-type-name); }
-body .atlas-statblock[data-layout*="important"]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header::before { content: "◆◆ Important NPC\A" var(--mp-type-name); }
-body .atlas-statblock[data-layout*="boss"]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header::before { content: "◆◆◆ Boss\A" var(--mp-type-name); }
-body .atlas-statblock[data-layout*="dormant"]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header::before { content: "◆◆ Important NPC\A◇ Dormant Boss\A" var(--mp-type-name); }
 body .atlas-statblock[data-layout]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-heading {
   background: linear-gradient(180deg, var(--mp-silver-hi) 0%, var(--mp-silver-hi) 40%, color-mix(in srgb, var(--mp-type) 55%, var(--mp-silver-hi)) 100%);
   -webkit-background-clip: text;
@@ -2601,6 +2576,48 @@ body .atlas-statblock[data-layout]:has(.atlas-sb-item[data-cls="mp-type-aberrati
 body .atlas-statblock[data-layout]:has(.atlas-sb-item[data-cls="mp-type-giant"]) .atlas-sb-heading { font-size: 1.9em; letter-spacing: 0.05em; }
 body .atlas-statblock[data-layout]:has(.atlas-sb-item[data-cls="mp-type-ooze"]) .atlas-sb-score-group { border-radius: 14px 14px 18px 18px; }
 
+/* rank and creature type: a row of small pills above the name */
+body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"]) .atlas-sb-header__text {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 6px;
+}
+body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"]) .atlas-sb-header__text > * { flex: 1 1 100%; min-width: 0; }
+body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"]) .atlas-sb-header__text::before,
+body .atlas-statblock[data-layout]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header__text::after {
+  flex: 0 0 auto;
+  margin-bottom: 2px;
+  padding: 2px 9px;
+  border-radius: 99px;
+  font-family: var(--font-interface);
+  font-size: 0.62em;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+body .atlas-statblock:is([data-layout*="npc"], [data-layout*="important"], [data-layout*="boss"], [data-layout*="dormant"]) .atlas-sb-header__text::before {
+  content: var(--mp-rank-name);
+  order: -2;
+  color: var(--mp-rank);
+  background: color-mix(in srgb, var(--mp-rank) 16%, transparent);
+  border: 1px solid color-mix(in srgb, var(--mp-rank) 45%, transparent);
+}
+body .atlas-statblock[data-layout*="dormant"] .atlas-sb-header__text::before {
+  color: #e6dcff;
+  background: linear-gradient(90deg, rgba(179, 154, 240, 0.28), color-mix(in srgb, var(--mp-gm) 30%, transparent));
+  border-color: color-mix(in srgb, var(--mp-gm) 45%, #b39af0);
+}
+body.theme-light .atlas-statblock[data-layout*="dormant"] .atlas-sb-header__text::before { color: #4a2f80; }
+body .atlas-statblock[data-layout]:has(> .atlas-statblock-body .atlas-sb-item[data-cls^="mp-type-"]) .atlas-sb-header__text::after {
+  content: var(--mp-type-name);
+  order: -1;
+  color: var(--mp-accent);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--mp-type) 50%, transparent);
+}
 /* Map toolbar and panels: dark glass with an accent edge */
 body .atlas-tool-bar {
   background: var(--mp-glass);
