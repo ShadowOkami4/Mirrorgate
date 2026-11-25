@@ -155,6 +155,16 @@
       "meaning": "rating"
     },
     {
+      "key": "xp",
+      "label": "XP",
+      "type": "text"
+    },
+    {
+      "key": "pb",
+      "label": "Proficiency Bonus",
+      "type": "text"
+    },
+    {
       "key": "traits",
       "label": "Traits",
       "type": "entries"
@@ -197,6 +207,16 @@
     {
       "key": "lair_actions",
       "label": "Lair Actions",
+      "type": "entries"
+    },
+    {
+      "key": "regional_description",
+      "label": "Regional Effects Intro",
+      "type": "markdown"
+    },
+    {
+      "key": "regional_effects",
+      "label": "Regional Effects",
       "type": "entries"
     },
     {
@@ -469,6 +489,20 @@
         "look": "run-in"
       },
       {
+        "id": "dtxp0000",
+        "type": "stat",
+        "field": "xp",
+        "label": "XP",
+        "look": "run-in"
+      },
+      {
+        "id": "dtpb0000",
+        "type": "stat",
+        "field": "pb",
+        "label": "PB",
+        "look": "run-in"
+      },
+      {
         "id": "dtresi00",
         "type": "stat",
         "field": "damage_resistances",
@@ -544,6 +578,13 @@
             "type": "entries",
             "field": "lair_actions",
             "heading": "Lair Actions"
+          },
+          {
+            "id": "dtregn00",
+            "type": "entries",
+            "field": "regional_effects",
+            "heading": "Regional Effects",
+            "introField": "regional_description"
           }
         ]
       }

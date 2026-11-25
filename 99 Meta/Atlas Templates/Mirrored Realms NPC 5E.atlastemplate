@@ -155,6 +155,16 @@
       "meaning": "rating"
     },
     {
+      "key": "xp",
+      "label": "XP",
+      "type": "text"
+    },
+    {
+      "key": "pb",
+      "label": "Proficiency Bonus",
+      "type": "text"
+    },
+    {
       "key": "traits",
       "label": "Traits",
       "type": "entries"
@@ -421,6 +431,20 @@
         "id": "nplang00",
         "type": "stat",
         "field": "languages",
+        "look": "run-in"
+      },
+      {
+        "id": "npxp0000",
+        "type": "stat",
+        "field": "xp",
+        "label": "XP",
+        "look": "run-in"
+      },
+      {
+        "id": "nppb0000",
+        "type": "stat",
+        "field": "pb",
+        "label": "PB",
         "look": "run-in"
       },
       {
