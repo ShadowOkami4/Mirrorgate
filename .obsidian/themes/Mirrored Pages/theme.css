@@ -97,6 +97,58 @@ settings:
     step: 20
     format: px
   -
+    id: mp-styles
+    title: Effect strength
+    type: heading
+    level: 2
+    collapsed: false
+  -
+    id: mp-callout-style
+    title: Callout style
+    description: High is framed glass with corner brackets and a glint; Minimal is a plain tinted box with a coloured edge
+    type: class-select
+    allowEmpty: false
+    default: mp-callout-high
+    options:
+      -
+        label: High
+        value: mp-callout-high
+      -
+        label: Medium
+        value: mp-callout-medium
+      -
+        label: Minimal
+        value: mp-callout-minimal
+  -
+    id: mp-quote-style
+    title: Blockquote style
+    description: High is a glass pane with a large quotation mark; Minimal is a simple line on the left
+    type: class-select
+    allowEmpty: false
+    default: mp-quote-high
+    options:
+      -
+        label: High
+        value: mp-quote-high
+      -
+        label: Medium
+        value: mp-quote-medium
+      -
+        label: Minimal
+        value: mp-quote-minimal
+  -
+    id: mp-drop-cap
+    title: Drop cap
+    description: A large first letter on the paragraph right after a note's title
+    type: class-toggle
+    default: false
+  -
+    id: mp-no-heading-ornaments
+    title: Turn off heading ornaments
+    description: No diamond before level-3 headings
+    type: class-toggle
+    default: false
+  -
     id: mp-effects
     title: Effects
     type: heading
@@ -718,6 +770,123 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 .coin.ep { --coin: #a7b07a; --coin-hi: #e4e9b8; --coin-label: "E"; --coin-name: "ep"; }
 .coin.sp { --coin: #9ea4ab; --coin-hi: #e9ecef; --coin-label: "S"; --coin-name: "sp"; }
 .coin.cp { --coin: #b06a3c; --coin-hi: #e6a57a; --coin-label: "C"; --coin-name: "cp"; }
+
+/* ---------- Effect strength: callouts ------------------------------------ */
+/* Medium: no corner brackets or glint, softer badge */
+body.mp-callout-medium .callout:not([data-callout="up"])::before { display: none; }
+body.mp-callout-medium .callout:not([data-callout="up"]) {
+  background: color-mix(in srgb, var(--mp-c) 8%, var(--mp-glass));
+  box-shadow: var(--shadow-s);
+}
+body.mp-callout-medium .callout:not([data-callout="up"]) .callout-icon { box-shadow: none; }
+/* Minimal: a tinted box with a coloured left edge, no frame or badge */
+body.mp-callout-minimal .callout:not([data-callout="up"])::before { display: none; }
+body.mp-callout-minimal .callout:not([data-callout="up"]) {
+  border: none;
+  border-left: 3px solid var(--mp-c);
+  border-radius: var(--radius-s);
+  background: color-mix(in srgb, var(--mp-c) 7%, transparent);
+  box-shadow: none;
+}
+body.mp-callout-minimal .callout:not([data-callout="up"]) .callout-title {
+  padding: 8px 14px 4px;
+  background: none;
+  border-bottom: none;
+  font-family: var(--font-interface);
+}
+body.mp-callout-minimal .callout:not([data-callout="up"]) .callout-icon {
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+body.mp-callout-minimal .callout:not([data-callout="up"]) .callout-content { padding: 0 14px 10px; }
+
+/* ---------- Effect strength: blockquotes --------------------------------- */
+body.mp-quote-medium .markdown-rendered blockquote { box-shadow: inset 3px 0 0 var(--mp-accent); padding-left: 2.6em; }
+body.mp-quote-medium .markdown-rendered blockquote::before { font-size: 2.6em; text-shadow: none; }
+body.mp-quote-medium .markdown-rendered blockquote::after { display: none; }
+body.mp-quote-minimal .markdown-rendered blockquote {
+  padding: 0.2em 1em;
+  border-radius: 0;
+  background: none;
+  box-shadow: inset 2px 0 0 color-mix(in srgb, var(--mp-accent) 70%, transparent);
+  font-size: 1em;
+}
+body.mp-quote-minimal .markdown-rendered blockquote::before,
+body.mp-quote-minimal .markdown-rendered blockquote::after { display: none; }
+body.mp-quote-minimal .markdown-source-view.mod-cm6 .cm-content > .cm-line.HyperMD-quote { background: none; }
+
+/* ---------- Heading ornaments -------------------------------------------- */
+body:not(.mp-no-heading-ornaments) .markdown-rendered h3:not(.atlas-sb-heading) { position: relative; padding-left: 0.9em; }
+body:not(.mp-no-heading-ornaments) .markdown-rendered h3:not(.atlas-sb-heading)::before {
+  content: "";
+  position: absolute;
+  left: 0.1em;
+  top: 0.62em;
+  width: 0.36em;
+  height: 0.36em;
+  transform: rotate(45deg);
+  background: var(--mp-accent);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--mp-accent) 60%, transparent);
+}
+.markdown-rendered h4 { font-variant: small-caps; letter-spacing: 0.06em; color: color-mix(in srgb, var(--mp-accent) 40%, var(--h4-color)); }
+
+/* ---------- Drop cap ------------------------------------------------------ */
+body.mp-drop-cap .markdown-rendered .el-h1 + .el-p > p::first-letter {
+  float: left;
+  margin: 0.06em 0.12em 0 0;
+  font-family: var(--mp-serif);
+  font-size: 3.4em;
+  font-weight: 700;
+  line-height: 0.82;
+  color: var(--mp-accent);
+  text-shadow: 0 0 16px color-mix(in srgb, var(--mp-accent) 40%, transparent);
+}
+
+/* ---------- Keyboard keys: <kbd>Ctrl</kbd> -------------------------------- */
+.markdown-rendered kbd {
+  display: inline-block;
+  min-width: 1.6em;
+  padding: 0.05em 0.45em 0.12em;
+  font-family: var(--font-interface);
+  font-size: 0.82em;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-normal);
+  background: linear-gradient(180deg, var(--mp-glass-shine), transparent 60%), var(--background-secondary);
+  border: 1px solid color-mix(in srgb, var(--mp-silver-lo) 45%, transparent);
+  border-bottom-width: 3px;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- Custom task states ------------------------------------------- */
+/* - [/] in progress · - [-] cancelled · - [!] important · - [?] question · - [>] moved · - [*] starred */
+:is(li, .HyperMD-task-line)[data-task="/"] { --mp-task: #e0b040; --mp-task-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%223%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 2v4%22/%3E%3Cpath d=%22m16.2 7.8 2.9-2.9%22/%3E%3Cpath d=%22M18 12h4%22/%3E%3Cpath d=%22m16.2 16.2 2.9 2.9%22/%3E%3Cpath d=%22M12 18v4%22/%3E%3Cpath d=%22m4.9 19.1 2.9-2.9%22/%3E%3Cpath d=%22M2 12h4%22/%3E%3Cpath d=%22m4.9 4.9 2.9 2.9%22/%3E%3C/svg%3E"); }
+:is(li, .HyperMD-task-line)[data-task="-"] { --mp-task: #8a96a6; --mp-task-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%223%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M5 12h14%22/%3E%3C/svg%3E"); }
+:is(li, .HyperMD-task-line)[data-task="!"] { --mp-task: #e04a4a; --mp-task-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%223%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3%22/%3E%3Cpath d=%22M12 9v4%22/%3E%3Cpath d=%22M12 17h.01%22/%3E%3C/svg%3E"); }
+:is(li, .HyperMD-task-line)[data-task="?"] { --mp-task: #6c9fe0; --mp-task-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%223%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Ccircle cx=%2212%22 cy=%2212%22 r=%2210%22/%3E%3Cpath d=%22M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3%22/%3E%3Cpath d=%22M12 17h.01%22/%3E%3C/svg%3E"); }
+:is(li, .HyperMD-task-line)[data-task=">"] { --mp-task: #3fb6a8; --mp-task-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%223%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M5 12h14%22/%3E%3Cpath d=%22m12 5 7 7-7 7%22/%3E%3C/svg%3E"); }
+:is(li, .HyperMD-task-line)[data-task="*"] { --mp-task: #e0b040; --mp-task-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%223%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z%22/%3E%3C/svg%3E"); }
+:is(li, .HyperMD-task-line):is([data-task="/"], [data-task="-"], [data-task="!"], [data-task="?"], [data-task=">"], [data-task="*"]) input.task-list-item-checkbox:checked {
+  background-color: var(--mp-task);
+  border-color: var(--mp-task);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--mp-task) 55%, transparent);
+}
+:is(li, .HyperMD-task-line):is([data-task="/"], [data-task="-"], [data-task="!"], [data-task="?"], [data-task=">"], [data-task="*"]) input.task-list-item-checkbox:checked::after {
+  -webkit-mask-image: var(--mp-task-icon);
+  mask-image: var(--mp-task-icon);
+  -webkit-mask-size: 70%;
+}
+.markdown-rendered li.task-list-item.is-checked:is([data-task="/"], [data-task="!"], [data-task="?"], [data-task=">"], [data-task="*"]),
+.markdown-source-view.mod-cm6 .HyperMD-task-line:is([data-task="/"], [data-task="!"], [data-task="?"], [data-task=">"], [data-task="*"]) {
+  color: var(--text-normal);
+  text-decoration: none;
+}
+.markdown-rendered li.task-list-item.is-checked[data-task="-"] { color: var(--text-faint); text-decoration: line-through; }
+.markdown-rendered li[data-task="!"] { font-weight: 600; }
 
 /* ---------- Text details ------------------------------------------------ */
 .markdown-rendered a.internal-link,
