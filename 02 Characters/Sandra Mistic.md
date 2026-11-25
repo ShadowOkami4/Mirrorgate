@@ -77,6 +77,8 @@ lair_actions:
 
 > [!up] [[Characters]]
 
+# Sandra Mistic
+
 > [!quote] Madam Sandra Mistic
 > *"Welcome, dear. Sit, warm yourself, and do not start a fight in my house. I have so few rules left, and I dislike making examples of people."*
 
