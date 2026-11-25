@@ -75,7 +75,7 @@ Rules the old maps were checked against. **Hard** rules were treated as fixed, *
 | H15 | hard | naming | Forests, inns, roads, rivers, seas, ranges and other landmarks use common-tongue descriptive names. | |
 | H16 | hard | naming | Existing lore names are used exactly as written (Specula, Drychwen, Scáthan, Veidra, Skuggsjá, Tezcatl, Lustro, Hansha, Ogledal, Utsushi). | |
 | H17 | hard | naming | No names of real deities, sacred figures, or sacred objects. | |
-| H18 | hard | Forest of Thieves | Lawless frontier at the edge of Spazienza: claimed by no realm, so no realm polices its road. | |
+| H18 | hard | Forest of Thieves | Lawless frontier at the edge of Spazienza: claimed by no realm, so no realm polices its road. | **change** (2026-11-25): Lustro's crown claims the forest on paper but never patrols it, because the forest would prove the Mirrorgate exists. No realm polices its road. |
 | H19 | hard | Forest of Thieves | No settlement inside the forest; two or three small villages on its southern edge as the last outposts, Glasscombe among them. | |
 | H20 | hard | Forest of Thieves | Exactly one old road crosses the forest, roughly north to south; thieves ambush travellers on it. | |
 | H21 | hard | Forest of Thieves | At least one stream crossing (a ford) a short walk north of the inn on the way to the temple. | |
