@@ -59,14 +59,14 @@ Rules the old maps were checked against. **Hard** rules were treated as fixed, *
 | ID | Type | Subject | Rule | Review |
 | --- | --- | --- | --- | --- |
 | H01 | hard | world | The world is named Kagameru. | |
-| H02 | hard | continents | Exactly six named great landmasses: Specula, Drychwen, Scathan, Veidra, Skuggsja, Tezcatl. | |
+| H02 | hard | continents | Exactly six named great landmasses: Specula, Drychwen, Scathan, Veidra, Skuggsja, Tezcatl. | **keep** (2026-11-25): no seventh landmass; the old 'Southern Ice' is dropped. |
 | H03 | hard | Skuggsja | Lies in the far north; cold seas and hard winters (cold biomes dominate, coast on a cold sea). | |
 | H04 | hard | Tezcatl | The sun-scorched south: southernmost continent, hot climate (desert/savanna/tropical dominant). | |
 | H05 | hard | Specula | The heartland of Kagameru: the continent nearest the centre of the known world. | |
 | H06 | hard | Lustro | A kingdom on Specula; the central kingdom of Kagameru (central within Specula). | |
 | H07 | hard | Ogledal | Royal capital of Lustro, inside Lustro. | |
-| H08 | hard | Hansha | A homeland region of familiar hills (hilly terrain) containing the town Utsushi. | |
-| H09 | hard | Utsushi | An academy-town (town tier) located in Hansha. | |
+| H08 | hard | Hansha | A homeland region of familiar hills (hilly terrain) containing the town Utsushi. | **change** (2026-11-25): Hansha is a free city-state across a ring of hills; it holds the city and the farms and towns of its hills. |
+| H09 | hard | Utsushi | An academy-town (town tier) located in Hansha. | **change** (2026-11-25): Utsushi is the academy town on one of Hansha's hills. |
 | H10 | hard | Forest of Thieves | One bounded, dense, badly roaded wood about 90-130 km across (8 000-15 000 km²); the oldest part of a larger woodland, which keeps its own common-tongue name (the Southern Weald). | |
 | H11 | hard | To the Eternal Lady | Current site in the southern third of the Forest of Thieves, 10-20 km inside its southern edge, 2-4 km off the Old Road in a sheltered hollow, reached by an unmarked side path; not on the road network. | |
 | H12 | hard | Temple of the Moon in Water | In the northern third of the Forest of Thieves, 25-35 km north (N to NNW) of To the Eternal Lady, with no settlement between them. | |
@@ -92,5 +92,5 @@ Rules the old maps were checked against. **Hard** rules were treated as fixed, *
 | S10 | soft | Scars of the Primordial War | War-scars exist as sites (glasslike craters, ruined battlefields); shown as ruin sites. | |
 | S11 | soft | Dwarves | Mountain holds and fortified settlements in mountains. | |
 | S12 | soft | Lustro | Lustro has disputed borderlands and border conflicts over ruins. | |
-| S13 | soft | Hansha | Hansha is distinct from Lustro (its status is open; a separate realm is one listed option). | |
+| S13 | soft | Hansha | Hansha is distinct from Lustro (its status is open; a separate realm is one listed option). | **keep** (2026-11-25): Hansha is a free city-state, not part of Lustro. |
 | S14 | soft | archive | Superseded draft placed the Blackwoods on 'Avaloria' and the Phantomhives on 'Noctheris'. Informational only; not applied. | |
