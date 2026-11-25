@@ -3,14 +3,14 @@ cssclasses:
   - mr-atlas
 type: place
 kind: forest
-up: "[[Specula]]"
-region: Specula
+up: "[[Lustro]]"
+region: Lustro
 player: true
 tags:
   - sa-01
 ---
 
-> [!up] [[Specula]]
+> [!up] [[Lustro]]
 
 # Forest of Thieves
 
