@@ -27,6 +27,11 @@ The peoples of [[Kagameru]] are as varied as its lands: ancient lineages beside 
 | [[Elves]] | Long memory, old forests, fading courts | SRD 5.2.1 Elf |
 | [[Dwarves]] | Mountain holds, oaths and relics handled carefully | SRD 5.2.1 Dwarf |
 | [[Orcs]] | Many cultures, one reputation they did not choose | SRD 5.2.1 Orc |
+| [[Dragonborn]] | Dragon-blooded clans, many in Tezcatl | SRD 5.2.1 Dragonborn |
+| [[Gnomes]] | Inventors and illusionists, many in Hansha | SRD 5.2.1 Gnome |
+| [[Goliaths]] | Giant-blooded people of the cold north | SRD 5.2.1 Goliath |
+| [[Halflings]] | Lucky folk of Specula's farms and inns | SRD 5.2.1 Halfling |
+| [[Tieflings]] | Fiendish legacies, many on Scáthan's coasts | SRD 5.2.1 Tiefling |
 
 Daily life and technology: [[Technology and Daily Life]].
 
