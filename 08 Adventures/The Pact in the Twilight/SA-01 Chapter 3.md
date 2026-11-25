@@ -276,7 +276,7 @@ While they talk, the red fog rises.
 > *"You are a plague. You and all those like you. And I will unmake every one of you."*
 
 > [!combat] Maria, Corrupted
-> Use the **Maria Rose, Corrupted** statblock in [[Maria Rose]].
+> Use the [[Maria Rose, Corrupted]] boss statblock (CR 7).
 
 > [!note] Open Questions
 > - What is the power in the red fog, and what is its name?

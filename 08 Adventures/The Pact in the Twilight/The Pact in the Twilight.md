@@ -59,7 +59,8 @@ The temple is not entirely in [[Kagameru]]. The [[Temple of the Moon in Water]] 
 ## Characters
 
 - [[Sandra Mistic]]: the lich innkeeper who sends the letters (dormant boss)
-- [[Maria Rose]]: the ghost in the sanctum, corrupted by the red fog
+- [[Maria Rose]]: the ghost in the sanctum, and a possible ally afterwards
+- [[Maria Rose, Corrupted]]: Maria under the red fog, the boss of Chapter 3
 
 ## Places
 
@@ -71,7 +72,7 @@ The temple is not entirely in [[Kagameru]]. The [[Temple of the Moon in Water]] 
 
 - **SRD 5.2.1:** Owlbear, Bandit Captain, Scout, Bandit (Chapter 1)
 - **Shardkin:** [[Glass Husk]], [[Glint]], [[Remnant]] (Chapter 2); [[Counterfeit]], [[Afterimage]] (Chapter 3)
-- **Boss:** Maria Rose, Corrupted (Chapter 3)
+- **Boss:** [[Maria Rose, Corrupted]] (Chapter 3)
 
 > [!quest] Open work
 > - [ ] Write Chapter 4
