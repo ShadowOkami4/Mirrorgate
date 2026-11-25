@@ -1227,29 +1227,39 @@ body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-call
   background: linear-gradient(225deg, var(--background-primary) 0 50%, color-mix(in srgb, var(--mp-c) 30%, #1b2338) 50% 100%);
   box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.45);
 }
-/* the ex-libris seal in the margin */
+/* the seal: a blob of crimson wax pressed with PII. A flat stamped centre,
+   a dark groove and a raised lip; offset copies of the blob in the shadow
+   give it a lumpy, poured edge; the letters are debossed into the wax. */
 body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"])::after {
   content: "P\2161";
   position: absolute;
   z-index: 2;
-  top: 18px;
-  left: 11px;
-  width: 42px;
-  height: 42px;
+  top: 16px;
+  left: 10px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  border: 3px double color-mix(in srgb, var(--mp-c) 75%, transparent);
-  background: radial-gradient(circle at 35% 30%, rgba(255, 236, 190, 0.18), transparent 60%), color-mix(in srgb, var(--mp-c) 10%, var(--mp-paper));
-  box-shadow: 0 0 12px color-mix(in srgb, var(--mp-c) 30%, transparent), inset 0 0 6px rgba(0, 0, 0, 0.5);
+  transform: rotate(-8deg);
+  border-radius: 52% 48% 55% 45% / 47% 55% 45% 53%;
+  background:
+    linear-gradient(140deg, rgba(255, 190, 180, 0.22), transparent 40%, transparent 60%, rgba(20, 0, 4, 0.35)),
+    radial-gradient(circle at 50% 50%, #7d1424 0 44%, #4f0913 46% 49%, #b8394c 52%, #9a2536 57%, #7a1424 66%, #8c1d2d 100%);
+  box-shadow:
+    2px 1px 0 0 #8c1d2d,
+    -2px 2px 0 0 #7f1727,
+    1px -2px 0 0 #93202f,
+    -2px -1px 0 0 #8c1d2d,
+    3px 3px 0 -1px #7a1424,
+    0 4px 7px rgba(0, 0, 0, 0.55);
   font-family: var(--mp-serif);
   font-style: italic;
   font-weight: 700;
   font-size: 15px;
-  letter-spacing: -0.04em;
-  color: var(--mp-c);
-  text-shadow: 0 0 8px color-mix(in srgb, var(--mp-c) 50%, transparent);
+  letter-spacing: -0.05em;
+  color: #5a0c18;
+  text-shadow: 0 1px 0 rgba(255, 150, 150, 0.45), 0 -1px 0 rgba(15, 0, 3, 0.7);
   pointer-events: none;
 }
 /* the quote */
@@ -1334,8 +1344,8 @@ body.theme-light:not(.mp-callout-minimal) .callout:is([data-callout="professor"]
 /* hover: the card lifts and the seal warms */
 body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) { transition: transform 180ms ease, box-shadow 180ms ease; }
 body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]):hover { transform: translateY(-2px); }
-body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"])::after { transition: box-shadow 180ms ease; }
-body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]):hover::after { box-shadow: 0 0 20px color-mix(in srgb, var(--mp-c) 55%, transparent), inset 0 0 6px rgba(0, 0, 0, 0.5); }
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"])::after { transition: filter 180ms ease; }
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]):hover::after { filter: brightness(1.12) saturate(1.1); }
 /* light: cream paper and sepia ink */
 body.theme-light:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) {
   --mp-c: #8a5a1e;
