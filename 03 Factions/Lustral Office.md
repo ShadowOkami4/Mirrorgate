@@ -22,6 +22,7 @@ aliases:
 > - **Serves** The crown of [[Lustro]] and the [[Blackwood Bloodline]]
 > - **Armed agents** The Lustral Guard
 > - **Hunts** [[The Unsilvered]]
+> - **Blessed by** [[The Lustral Rite]], the crown's faith
 
 ## Overview
 

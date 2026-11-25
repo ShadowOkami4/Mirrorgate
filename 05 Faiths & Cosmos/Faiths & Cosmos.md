@@ -31,9 +31,13 @@ The faiths of [[Kagameru]] are shaped by uncertainty. The oldest myths say the P
 
 | Place | What it is |
 | --- | --- |
-| [[The Veiled Cathedral]] | Lustro's coronation church in Ogledal, whose mirrors are veiled during prayer |
+| [[The Veiled Cathedral]] | Seat of [[The Lustral Rite]] in Ogledal, whose mirrors are veiled during prayer |
 | [[The Hall of the Last Hour]] | A monastery watching a time-looping scar |
 | [[Temple of the Moon in Water]] | The ruined shrine of a dead moon god, half of it in [[The Mirrorgate]] |
+
+## Faiths of Kagameru
+
+- [[The Lustral Rite]]: the crown faith of [[Lustro]], whose monarch is crowned as the realm's Purifier.
 
 ## Otherworld faiths
 
@@ -44,7 +48,6 @@ The faiths of [[Kagameru]] are shaped by uncertainty. The oldest myths say the P
 > - Divine avatars
 > - Scar cults and chronal heresies
 > - Temple orders, saints, prophets and false prophets
-> - The crown's official faith in Lustro
 
 ## In this section
 
