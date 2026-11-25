@@ -221,6 +221,149 @@
     "columnWidth": 22,
     "blocks": [
       {
+        "id": "mtd00000",
+        "type": "heading",
+        "className": "mp-type-undead",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Undead"
+        },
+        "text": "undead"
+      },
+      {
+        "id": "mtd00001",
+        "type": "heading",
+        "className": "mp-type-fiend",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Fiend"
+        },
+        "text": "fiend"
+      },
+      {
+        "id": "mtd00002",
+        "type": "heading",
+        "className": "mp-type-celestial",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Celestial"
+        },
+        "text": "celestial"
+      },
+      {
+        "id": "mtd00003",
+        "type": "heading",
+        "className": "mp-type-fey",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Fey"
+        },
+        "text": "fey"
+      },
+      {
+        "id": "mtd00004",
+        "type": "heading",
+        "className": "mp-type-dragon",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Dragon"
+        },
+        "text": "dragon"
+      },
+      {
+        "id": "mtd00005",
+        "type": "heading",
+        "className": "mp-type-construct",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Construct"
+        },
+        "text": "construct"
+      },
+      {
+        "id": "mtd00006",
+        "type": "heading",
+        "className": "mp-type-aberration",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Aberration"
+        },
+        "text": "aberration"
+      },
+      {
+        "id": "mtd00007",
+        "type": "heading",
+        "className": "mp-type-elemental",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Elemental"
+        },
+        "text": "elemental"
+      },
+      {
+        "id": "mtd00008",
+        "type": "heading",
+        "className": "mp-type-giant",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Giant"
+        },
+        "text": "giant"
+      },
+      {
+        "id": "mtd00009",
+        "type": "heading",
+        "className": "mp-type-monstrosity",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Monstrosity"
+        },
+        "text": "monstrosity"
+      },
+      {
+        "id": "mtd00010",
+        "type": "heading",
+        "className": "mp-type-ooze",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Ooze"
+        },
+        "text": "ooze"
+      },
+      {
+        "id": "mtd00011",
+        "type": "heading",
+        "className": "mp-type-plant",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Plant"
+        },
+        "text": "plant"
+      },
+      {
+        "id": "mtd00012",
+        "type": "heading",
+        "className": "mp-type-beast",
+        "showWhen": {
+          "field": "creature_type",
+          "is": "equal",
+          "value": "Beast"
+        },
+        "text": "beast"
+      },
+      {
         "id": "dtline01",
         "type": "line",
         "fields": [

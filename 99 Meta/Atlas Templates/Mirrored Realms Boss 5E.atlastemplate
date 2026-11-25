@@ -216,6 +216,149 @@
     "columnWidth": 22,
     "blocks": [
       {
+        "id": "mtb00000",
+        "type": "heading",
+        "className": "mp-type-undead",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Undead"
+        },
+        "text": "undead"
+      },
+      {
+        "id": "mtb00001",
+        "type": "heading",
+        "className": "mp-type-fiend",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Fiend"
+        },
+        "text": "fiend"
+      },
+      {
+        "id": "mtb00002",
+        "type": "heading",
+        "className": "mp-type-celestial",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Celestial"
+        },
+        "text": "celestial"
+      },
+      {
+        "id": "mtb00003",
+        "type": "heading",
+        "className": "mp-type-fey",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Fey"
+        },
+        "text": "fey"
+      },
+      {
+        "id": "mtb00004",
+        "type": "heading",
+        "className": "mp-type-dragon",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Dragon"
+        },
+        "text": "dragon"
+      },
+      {
+        "id": "mtb00005",
+        "type": "heading",
+        "className": "mp-type-construct",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Construct"
+        },
+        "text": "construct"
+      },
+      {
+        "id": "mtb00006",
+        "type": "heading",
+        "className": "mp-type-aberration",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Aberration"
+        },
+        "text": "aberration"
+      },
+      {
+        "id": "mtb00007",
+        "type": "heading",
+        "className": "mp-type-elemental",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Elemental"
+        },
+        "text": "elemental"
+      },
+      {
+        "id": "mtb00008",
+        "type": "heading",
+        "className": "mp-type-giant",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Giant"
+        },
+        "text": "giant"
+      },
+      {
+        "id": "mtb00009",
+        "type": "heading",
+        "className": "mp-type-monstrosity",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Monstrosity"
+        },
+        "text": "monstrosity"
+      },
+      {
+        "id": "mtb00010",
+        "type": "heading",
+        "className": "mp-type-ooze",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Ooze"
+        },
+        "text": "ooze"
+      },
+      {
+        "id": "mtb00011",
+        "type": "heading",
+        "className": "mp-type-plant",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Plant"
+        },
+        "text": "plant"
+      },
+      {
+        "id": "mtb00012",
+        "type": "heading",
+        "className": "mp-type-beast",
+        "showWhen": {
+          "field": "type",
+          "is": "equal",
+          "value": "Beast"
+        },
+        "text": "beast"
+      },
+      {
         "id": "bsline01",
         "type": "line",
         "fields": [
