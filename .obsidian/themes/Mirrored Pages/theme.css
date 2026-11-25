@@ -446,7 +446,7 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 /* Obsidian 1.15 colours the icon from --callout-color: keep it in step with the theme colour */
 .callout .callout-icon,
 .callout .callout-icon .svg-icon { color: var(--mp-c); }
-.callout:is([data-callout="info"], [data-callout="todo"]) { --mp-c: var(--color-blue); }
+.callout:is([data-callout="info"], [data-callout="todo"]) { --mp-c: color-mix(in srgb, var(--color-blue) 65%, #d8e8ff); }
 .callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"], [data-callout="tip"], [data-callout="hint"], [data-callout="important"]) { --mp-c: var(--color-cyan); }
 .callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) { --mp-c: var(--color-green); }
 .callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) { --mp-c: var(--color-yellow); }
@@ -462,6 +462,19 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 .callout[data-callout="notes"] { --mp-c: var(--mp-silver-lo); --callout-icon: lucide-scroll-text; }
 .callout[data-callout="backstory"] { --mp-c: #a98be0; --callout-icon: lucide-book-open-text; }
 .callout[data-callout="companions"] { --mp-c: #7fb05a; --callout-icon: lucide-paw-print; }
+/* TTRPG callouts */
+.callout:is([data-callout="read-aloud"], [data-callout="boxed"]) { --mp-c: #d9c48f; --callout-icon: lucide-volume-2; }
+.callout[data-callout="handout"] { --mp-c: #c9a96a; --callout-icon: lucide-scroll; }
+.callout[data-callout="rumor"] { --mp-c: #b39af0; --callout-icon: lucide-message-circle; }
+.callout[data-callout="loot"] { --mp-c: #e0b040; --callout-icon: lucide-gem; }
+.callout[data-callout="lore"] { --mp-c: #7c80e8; --callout-icon: lucide-book-open; }
+.callout:is([data-callout="trap"], [data-callout="hazard"]) { --mp-c: #e08a3c; --callout-icon: lucide-triangle-alert; }
+.callout:is([data-callout="rule"], [data-callout="mechanic"]) { --mp-c: #4caf50; --callout-icon: lucide-dices; }
+.callout:is([data-callout="music"], [data-callout="ambience"]) { --mp-c: #d07aa8; --callout-icon: lucide-music; }
+.callout[data-callout="timeline"] { --mp-c: #a77bd0; --callout-icon: lucide-history; }
+.callout[data-callout="location"] { --mp-c: #4a90e2; --callout-icon: lucide-map-pin; }
+.callout[data-callout="quest"] { --mp-c: #e8a33d; --callout-icon: lucide-flag; }
+.callout[data-callout="secret"] { --mp-c: #c0506a; --callout-icon: lucide-lock; }
 
 .callout {
   --callout-padding: 0;
@@ -770,6 +783,200 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 .coin.ep { --coin: #a7b07a; --coin-hi: #e4e9b8; --coin-label: "E"; --coin-name: "ep"; }
 .coin.sp { --coin: #9ea4ab; --coin-hi: #e9ecef; --coin-label: "S"; --coin-name: "sp"; }
 .coin.cp { --coin: #b06a3c; --coin-hi: #e6a57a; --coin-label: "C"; --coin-name: "cp"; }
+
+/* ---------- Keyword callouts: each type has its own design ---------------- */
+/* In Minimal callout style they fall back to the plain tinted box. */
+
+/* read-aloud: boxed text to read to the players */
+body:not(.mp-callout-minimal) .callout:is([data-callout="read-aloud"], [data-callout="boxed"]) {
+  background:
+    radial-gradient(ellipse 90% 60% at 50% 0%, color-mix(in srgb, var(--mp-c) 16%, transparent), transparent 70%),
+    color-mix(in srgb, var(--mp-c) 6%, var(--mp-glass));
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="read-aloud"], [data-callout="boxed"]) .callout-content {
+  position: relative;
+  padding: 10px 26px 16px 46px;
+  font-family: var(--mp-serif);
+  font-size: 1.1em;
+  line-height: 1.65;
+  color: color-mix(in srgb, var(--mp-c) 18%, var(--text-normal));
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="read-aloud"], [data-callout="boxed"]) .callout-content::before {
+  content: "\201C";
+  position: absolute;
+  left: 12px;
+  top: -4px;
+  font-family: Georgia, serif;
+  font-size: 3.4em;
+  line-height: 1;
+  color: color-mix(in srgb, var(--mp-c) 55%, transparent);
+}
+
+/* handout: a sheet of paper the players are given */
+body:not(.mp-callout-minimal) .callout[data-callout="handout"] {
+  transform: rotate(-0.6deg);
+  border: 1px solid #b9a072;
+  background:
+    radial-gradient(ellipse at 20% 10%, rgba(255, 255, 255, 0.5), transparent 60%),
+    radial-gradient(ellipse at 90% 100%, rgba(150, 110, 60, 0.25), transparent 60%),
+    #ece0c4;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45), 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+body:not(.mp-callout-minimal) .callout[data-callout="handout"]::before { display: none; }
+body:not(.mp-callout-minimal) .callout[data-callout="handout"] .callout-title { color: #5a4526; background: rgba(120, 90, 40, 0.12); border-bottom: 1px dashed rgba(90, 69, 38, 0.4); }
+body:not(.mp-callout-minimal) .callout[data-callout="handout"] .callout-icon { color: #5a4526; background: rgba(255, 255, 255, 0.4); border-color: rgba(90, 69, 38, 0.4); box-shadow: none; }
+body:not(.mp-callout-minimal) .callout[data-callout="handout"] .callout-icon .svg-icon { color: #5a4526; }
+body:not(.mp-callout-minimal) .callout[data-callout="handout"] .callout-content { padding: 12px 24px 18px; font-family: var(--mp-serif); font-style: italic; font-size: 1.05em; color: #3a2f1e; }
+body:not(.mp-callout-minimal) .callout[data-callout="handout"] .callout-content :is(a, strong, em) { color: #3a2f1e; }
+
+/* rumor: a dashed speech bubble */
+body:not(.mp-callout-minimal) .callout[data-callout="rumor"] {
+  overflow: visible;
+  margin-bottom: 26px;
+  border: 1.5px dashed color-mix(in srgb, var(--mp-c) 60%, transparent);
+  border-radius: 18px;
+}
+body:not(.mp-callout-minimal) .callout[data-callout="rumor"]::before { display: none; }
+body:not(.mp-callout-minimal) .callout[data-callout="rumor"]::after {
+  content: "";
+  position: absolute;
+  left: 36px;
+  bottom: -12px;
+  width: 22px;
+  height: 22px;
+  transform: rotate(45deg);
+  background: color-mix(in srgb, var(--mp-c) 8%, var(--background-primary));
+  border-right: 1.5px dashed color-mix(in srgb, var(--mp-c) 60%, transparent);
+  border-bottom: 1.5px dashed color-mix(in srgb, var(--mp-c) 60%, transparent);
+}
+body:not(.mp-callout-minimal) .callout[data-callout="rumor"] .callout-title { border-radius: 18px 18px 0 0; background: none; border-bottom: none; font-style: italic; }
+body:not(.mp-callout-minimal) .callout[data-callout="rumor"] .callout-content { font-style: italic; }
+
+/* loot: gold glints, items as chips */
+body:not(.mp-callout-minimal) .callout[data-callout="loot"] {
+  background:
+    radial-gradient(circle at 92% 18%, rgba(255, 235, 160, 0.35) 0 2px, transparent 3px),
+    radial-gradient(circle at 80% 70%, rgba(255, 235, 160, 0.3) 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 60% 30%, rgba(255, 235, 160, 0.25) 0 1px, transparent 2px),
+    radial-gradient(ellipse at 100% 0%, color-mix(in srgb, var(--mp-c) 20%, transparent), transparent 60%),
+    color-mix(in srgb, var(--mp-c) 6%, var(--mp-glass));
+}
+body:not(.mp-callout-minimal) .callout[data-callout="loot"] .callout-content ul { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin-inline-start: 0; list-style: none; }
+body:not(.mp-callout-minimal) .callout[data-callout="loot"] .callout-content li {
+  margin: 0;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--mp-c) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--mp-c) 45%, transparent);
+}
+body:not(.mp-callout-minimal) .callout[data-callout="loot"] .callout-content li .list-bullet { display: none; }
+
+/* lore: an illuminated first letter */
+body:not(.mp-callout-minimal) .callout[data-callout="lore"] .callout-title { font-variant: small-caps; letter-spacing: 0.08em; }
+body:not(.mp-callout-minimal) .callout[data-callout="lore"] .callout-content { font-family: var(--mp-serif); }
+body:not(.mp-callout-minimal) .callout[data-callout="lore"] .callout-content > p:first-child::first-letter {
+  float: left;
+  margin: 0.08em 0.14em 0 0;
+  padding: 0.05em 0.12em;
+  font-size: 2.9em;
+  font-weight: 700;
+  line-height: 0.85;
+  color: var(--background-primary);
+  background: linear-gradient(160deg, var(--mp-silver-hi), var(--mp-c));
+  border-radius: 4px;
+  box-shadow: 0 0 12px color-mix(in srgb, var(--mp-c) 50%, transparent);
+}
+
+/* trap / hazard: warning stripes along the top */
+body:not(.mp-callout-minimal) .callout:is([data-callout="trap"], [data-callout="hazard"]) {
+  background:
+    repeating-linear-gradient(-45deg, var(--mp-c) 0 10px, #1a1208 10px 20px) top / 100% 6px no-repeat,
+    color-mix(in srgb, var(--mp-c) 7%, var(--mp-glass));
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="trap"], [data-callout="hazard"]) .callout-title { margin-top: 6px; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.9em; }
+
+/* rule / mechanic: graph paper */
+body:not(.mp-callout-minimal) .callout:is([data-callout="rule"], [data-callout="mechanic"]) {
+  background:
+    linear-gradient(color-mix(in srgb, var(--mp-c) 10%, transparent) 1px, transparent 1px) 0 0 / 16px 16px,
+    linear-gradient(90deg, color-mix(in srgb, var(--mp-c) 10%, transparent) 1px, transparent 1px) 0 0 / 16px 16px,
+    color-mix(in srgb, var(--mp-c) 5%, var(--mp-glass));
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="rule"], [data-callout="mechanic"]) .callout-content strong { color: color-mix(in srgb, var(--mp-c) 70%, var(--text-normal)); }
+
+/* music / ambience: equaliser bars along the bottom */
+body:not(.mp-callout-minimal) .callout:is([data-callout="music"], [data-callout="ambience"]) { padding-bottom: 16px; }
+body:not(.mp-callout-minimal) .callout:is([data-callout="music"], [data-callout="ambience"])::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 6px;
+  height: 12px;
+  background: linear-gradient(90deg, var(--mp-c), color-mix(in srgb, var(--mp-c) 15%, transparent));
+  -webkit-mask: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2212%22 viewBox=%220 0 60 12%22%3E%3Crect x=%220%22 y=%227%22 width=%226%22 height=%225%22 rx=%221%22/%3E%3Crect x=%2210%22 y=%221%22 width=%226%22 height=%2211%22 rx=%221%22/%3E%3Crect x=%2220%22 y=%225%22 width=%226%22 height=%227%22 rx=%221%22/%3E%3Crect x=%2230%22 y=%220%22 width=%226%22 height=%2212%22 rx=%221%22/%3E%3Crect x=%2240%22 y=%228%22 width=%226%22 height=%224%22 rx=%221%22/%3E%3Crect x=%2250%22 y=%223%22 width=%226%22 height=%229%22 rx=%221%22/%3E%3C/svg%3E") left bottom / 60px 12px repeat-x;
+  mask: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2212%22 viewBox=%220 0 60 12%22%3E%3Crect x=%220%22 y=%227%22 width=%226%22 height=%225%22 rx=%221%22/%3E%3Crect x=%2210%22 y=%221%22 width=%226%22 height=%2211%22 rx=%221%22/%3E%3Crect x=%2220%22 y=%225%22 width=%226%22 height=%227%22 rx=%221%22/%3E%3Crect x=%2230%22 y=%220%22 width=%226%22 height=%2212%22 rx=%221%22/%3E%3Crect x=%2240%22 y=%228%22 width=%226%22 height=%224%22 rx=%221%22/%3E%3Crect x=%2250%22 y=%223%22 width=%226%22 height=%229%22 rx=%221%22/%3E%3C/svg%3E") left bottom / 60px 12px repeat-x;
+  opacity: 0.75;
+}
+
+/* timeline: a vertical line with a dot per entry */
+body:not(.mp-callout-minimal) .callout[data-callout="timeline"] .callout-content ul { position: relative; padding-left: 22px; padding-inline-start: 22px; margin-inline-start: 0; list-style: none; }
+body:not(.mp-callout-minimal) .callout[data-callout="timeline"] .callout-content ul::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--mp-c), color-mix(in srgb, var(--mp-c) 20%, transparent));
+}
+body:not(.mp-callout-minimal) .callout[data-callout="timeline"] .callout-content li { position: relative; margin-bottom: 8px; }
+body:not(.mp-callout-minimal) .callout[data-callout="timeline"] .callout-content li .list-bullet { display: none; }
+body:not(.mp-callout-minimal) .callout[data-callout="timeline"] .callout-content li::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0.45em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--background-primary);
+  border: 2px solid var(--mp-c);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--mp-c) 60%, transparent);
+}
+body:not(.mp-callout-minimal) .callout[data-callout="timeline"] .callout-content li strong { color: color-mix(in srgb, var(--mp-c) 70%, var(--text-normal)); font-family: var(--mp-serif); }
+
+/* location: a faint map grid with contour rings */
+body:not(.mp-callout-minimal) .callout[data-callout="location"] {
+  background:
+    radial-gradient(circle at 85% 70%, transparent 0 30px, color-mix(in srgb, var(--mp-c) 16%, transparent) 31px 32px, transparent 33px 50px, color-mix(in srgb, var(--mp-c) 12%, transparent) 51px 52px, transparent 53px),
+    linear-gradient(color-mix(in srgb, var(--mp-c) 8%, transparent) 1px, transparent 1px) 0 0 / 40px 40px,
+    linear-gradient(90deg, color-mix(in srgb, var(--mp-c) 8%, transparent) 1px, transparent 1px) 0 0 / 40px 40px,
+    color-mix(in srgb, var(--mp-c) 5%, var(--mp-glass));
+}
+
+/* quest: a banner title */
+body:not(.mp-callout-minimal) .callout[data-callout="quest"] .callout-title {
+  font-size: 1.1em;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--mp-c) 40%, transparent), color-mix(in srgb, var(--mp-c) 8%, transparent) 90%);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 14px) 50%, 100% 100%, 0 100%);
+}
+
+/* secret: sealed with wax */
+body:not(.mp-callout-minimal) .callout[data-callout="secret"] { overflow: visible; margin-bottom: 22px; }
+body:not(.mp-callout-minimal) .callout[data-callout="secret"]::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  bottom: -12px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #e07a8a, #9a2a3c 60%, #5a1020);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5), inset 0 0 0 3px rgba(0, 0, 0, 0.15);
+}
 
 /* ---------- Effect strength: callouts ------------------------------------ */
 /* Medium: no corner brackets or glint, softer badge */
