@@ -1877,6 +1877,45 @@ body .atlas-statblock[data-layout*="companion"]::before {
 body .atlas-statblock[data-layout*="companion"] .atlas-sb-portrait img,
 body .atlas-statblock[data-layout*="companion"] .atlas-sb-image-placeholder { border-color: var(--mp-accent); }
 
+/* dormant threats: important NPCs who become bosses when provoked.
+   Violet like an important NPC, with a crimson fracture at the header's edge
+   and the "If Provoked" section in boss red. Layout name contains "dormant". */
+body .atlas-statblock[data-layout*="dormant"] {
+  --mp-accent: #b39af0;
+  --text-accent: #c7b5f5;
+  --interactive-accent: #b39af0;
+  background:
+    radial-gradient(ellipse 70% 40% at 100% 0%, color-mix(in srgb, var(--mp-gm) 12%, transparent), transparent 70%),
+    radial-gradient(ellipse 80% 45% at 0% 0%, rgba(150, 110, 230, 0.14), transparent 70%),
+    var(--background-primary);
+}
+body .atlas-statblock[data-layout*="dormant"] .atlas-sb-header {
+  background:
+    var(--mp-cracks-dark) right center / 60% auto no-repeat,
+    linear-gradient(90deg, #b39af0, transparent 55%, var(--mp-gm)) top left / 100% 2px no-repeat,
+    linear-gradient(90deg, rgba(150, 110, 230, 0.18), transparent 55%, color-mix(in srgb, var(--mp-gm) 16%, transparent));
+}
+body .atlas-statblock[data-layout*="dormant"] .atlas-sb-header::before {
+  content: "◆◆ Important NPC  ·  ◇ Dormant Boss";
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--font-interface);
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #b39af0, var(--mp-gm));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+body .atlas-statblock[data-layout*="dormant"] .atlas-sb-item:has(.atlas-sb-section-toggle),
+body .atlas-statblock[data-layout*="dormant"] .atlas-sb-item:has(.atlas-sb-chevron) {
+  --mp-accent: var(--mp-gm);
+  --text-accent: color-mix(in srgb, var(--mp-gm) 80%, var(--text-normal));
+  --interactive-accent: var(--mp-gm);
+}
+
 /* Map toolbar and panels: dark glass with an accent edge */
 body .atlas-tool-bar {
   background: var(--mp-glass);

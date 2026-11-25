@@ -1,0 +1,437 @@
+{
+  "format": "atlas-statblock-template",
+  "version": 1,
+  "id": "mirrored-realms-dormant-threat-mrdrm1",
+  "description": "An important NPC who is peaceful by default but becomes a boss when provoked: disposition and trigger up front, legendary and lair actions folded away under If Provoked.",
+  "suits": [
+    "NPC",
+    "Monster"
+  ],
+  "diceSetId": "builtin:d20",
+  "fields": [
+    {
+      "key": "name",
+      "label": "Name",
+      "type": "text"
+    },
+    {
+      "key": "image",
+      "label": "Portrait",
+      "type": "image"
+    },
+    {
+      "key": "size",
+      "label": "Size",
+      "type": "choice",
+      "options": [
+        "Tiny",
+        "Small",
+        "Medium",
+        "Large",
+        "Huge",
+        "Gargantuan"
+      ],
+      "open": true,
+      "meaning": "size"
+    },
+    {
+      "key": "creature_type",
+      "label": "Type",
+      "type": "text",
+      "meaning": "creature-type"
+    },
+    {
+      "key": "subtype",
+      "label": "Subtype",
+      "type": "text"
+    },
+    {
+      "key": "alignment",
+      "label": "Alignment",
+      "type": "text"
+    },
+    {
+      "key": "ac",
+      "label": "AC",
+      "type": "number",
+      "meaning": "armor"
+    },
+    {
+      "key": "initiative",
+      "label": "Initiative",
+      "type": "number",
+      "meaning": "initiative"
+    },
+    {
+      "key": "hp",
+      "label": "HP",
+      "type": "number",
+      "meaning": "hit-points"
+    },
+    {
+      "key": "hit_dice",
+      "label": "Hit Dice",
+      "type": "dice"
+    },
+    {
+      "key": "speed",
+      "label": "Speed",
+      "type": "text",
+      "meaning": "speed"
+    },
+    {
+      "key": "stats",
+      "label": "Abilities",
+      "type": "scores",
+      "addRows": false,
+      "addColumns": false,
+      "slots": [
+        "Str",
+        "Dex",
+        "Con",
+        "Int",
+        "Wis",
+        "Cha"
+      ],
+      "slotKeys": [
+        "str",
+        "dex",
+        "con",
+        "int",
+        "wis",
+        "cha"
+      ]
+    },
+    {
+      "key": "saves",
+      "label": "Saving Throws",
+      "type": "pairs"
+    },
+    {
+      "key": "skillsaves",
+      "label": "Skills",
+      "type": "pairs"
+    },
+    {
+      "key": "damage_vulnerabilities",
+      "label": "Vulnerabilities",
+      "type": "text"
+    },
+    {
+      "key": "damage_resistances",
+      "label": "Resistances",
+      "type": "text"
+    },
+    {
+      "key": "damage_immunities",
+      "label": "Damage Immunities",
+      "type": "text"
+    },
+    {
+      "key": "condition_immunities",
+      "label": "Condition Immunities",
+      "type": "text"
+    },
+    {
+      "key": "gear",
+      "label": "Gear",
+      "type": "text"
+    },
+    {
+      "key": "senses",
+      "label": "Senses",
+      "type": "text",
+      "meaning": "senses"
+    },
+    {
+      "key": "languages",
+      "label": "Languages",
+      "type": "text"
+    },
+    {
+      "key": "cr",
+      "label": "CR",
+      "type": "rating",
+      "meaning": "rating"
+    },
+    {
+      "key": "traits",
+      "label": "Traits",
+      "type": "entries"
+    },
+    {
+      "key": "actions",
+      "label": "Actions",
+      "type": "entries"
+    },
+    {
+      "key": "bonus_actions",
+      "label": "Bonus Actions",
+      "type": "entries"
+    },
+    {
+      "key": "reactions",
+      "label": "Reactions",
+      "type": "entries"
+    },
+    {
+      "key": "spells",
+      "label": "Spells",
+      "type": "spells"
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "markdown"
+    },
+    {
+      "key": "legendary_description",
+      "label": "Legendary Actions intro",
+      "type": "markdown"
+    },
+    {
+      "key": "legendary_actions",
+      "label": "Legendary Actions",
+      "type": "entries"
+    },
+    {
+      "key": "lair_actions",
+      "label": "Lair Actions",
+      "type": "entries"
+    },
+    {
+      "key": "disposition",
+      "label": "Disposition",
+      "type": "text"
+    },
+    {
+      "key": "provoked_when",
+      "label": "Provoked when",
+      "type": "text"
+    }
+  ],
+  "header": {
+    "hidden": [
+      "description"
+    ]
+  },
+  "layout": {
+    "name": "Mirrored Dormant Threat",
+    "maxColumns": 2,
+    "columnWidth": 22,
+    "blocks": [
+      {
+        "id": "dtline01",
+        "type": "line",
+        "fields": [
+          "size",
+          "creature_type",
+          "subtype",
+          "alignment"
+        ],
+        "pattern": "{size} {creature_type}[ ({subtype})][, {alignment}]"
+      },
+      {
+        "id": "dtdispo0",
+        "type": "row",
+        "align": "start",
+        "blocks": [
+          {
+            "id": "dtdispx0",
+            "type": "stat",
+            "field": "disposition",
+            "look": "run-in"
+          },
+          {
+            "id": "dtprovk0",
+            "type": "stat",
+            "field": "provoked_when",
+            "label": "Provoked when",
+            "look": "run-in"
+          }
+        ]
+      },
+      {
+        "id": "dtstrip1",
+        "type": "row",
+        "align": "start",
+        "blocks": [
+          {
+            "id": "dtac0000",
+            "type": "stat",
+            "field": "ac",
+            "look": "stacked"
+          },
+          {
+            "id": "dtinit00",
+            "type": "stat",
+            "field": "initiative",
+            "look": "stacked",
+            "display": "signed"
+          },
+          {
+            "id": "dtspeed0",
+            "type": "stat",
+            "field": "speed",
+            "look": "stacked"
+          },
+          {
+            "id": "dtcr0000",
+            "type": "stat",
+            "field": "cr",
+            "label": "CR",
+            "look": "stacked"
+          }
+        ]
+      },
+      {
+        "id": "dtstats0",
+        "type": "scores",
+        "field": "stats",
+        "orientation": "table",
+        "perLine": 3,
+        "rollable": true,
+        "columns": [
+          {
+            "label": "Mod",
+            "formula": "floor((value - 10) / 2)",
+            "display": "signed"
+          },
+          {
+            "label": "Save",
+            "field": "saves",
+            "formula": "floor((value - 10) / 2)",
+            "display": "signed"
+          }
+        ]
+      },
+      {
+        "id": "dtskill0",
+        "type": "pairs",
+        "field": "skillsaves",
+        "label": "Skills",
+        "display": "signed",
+        "rollable": true
+      },
+      {
+        "id": "dtsense0",
+        "type": "stat",
+        "field": "senses",
+        "look": "run-in"
+      },
+      {
+        "id": "dtlang00",
+        "type": "stat",
+        "field": "languages",
+        "look": "run-in"
+      },
+      {
+        "id": "dtresi00",
+        "type": "stat",
+        "field": "damage_resistances",
+        "label": "Resistances",
+        "look": "run-in"
+      },
+      {
+        "id": "dtvuln00",
+        "type": "stat",
+        "field": "damage_vulnerabilities",
+        "label": "Vulnerabilities",
+        "look": "run-in"
+      },
+      {
+        "id": "dtimmu00",
+        "type": "stat",
+        "field": "damage_immunities",
+        "label": "Immunities",
+        "look": "run-in",
+        "pattern": "{damage_immunities, condition_immunities|join:; }"
+      },
+      {
+        "id": "dtgear00",
+        "type": "stat",
+        "field": "gear",
+        "look": "run-in"
+      },
+      {
+        "id": "dttrait0",
+        "type": "entries",
+        "field": "traits",
+        "heading": "Traits"
+      },
+      {
+        "id": "dtactio0",
+        "type": "entries",
+        "field": "actions",
+        "heading": "Actions"
+      },
+      {
+        "id": "dtbonus0",
+        "type": "entries",
+        "field": "bonus_actions",
+        "heading": "Bonus Actions"
+      },
+      {
+        "id": "dtreact0",
+        "type": "entries",
+        "field": "reactions",
+        "heading": "Reactions"
+      },
+      {
+        "id": "dtspell0",
+        "type": "spells",
+        "field": "spells",
+        "heading": "Spellcasting"
+      },
+      {
+        "id": "dtprovs0",
+        "type": "section",
+        "heading": "If Provoked",
+        "collapsible": "closed",
+        "blocks": [
+          {
+            "id": "dtlegnd0",
+            "type": "entries",
+            "field": "legendary_actions",
+            "heading": "Legendary Actions",
+            "introField": "legendary_description"
+          },
+          {
+            "id": "dtlair00",
+            "type": "entries",
+            "field": "lair_actions",
+            "heading": "Lair Actions"
+          }
+        ]
+      }
+    ]
+  },
+  "recovery": [
+    {
+      "id": "long-rest",
+      "name": "Long rest",
+      "rules": [
+        {
+          "target": {
+            "kind": "resource",
+            "field": "hp"
+          },
+          "does": "full"
+        }
+      ]
+    }
+  ],
+  "sample": {
+    "name": "Mirrored Dormant Threat",
+    "ac": 12,
+    "hp": 11,
+    "stats": [
+      10,
+      12,
+      10,
+      10,
+      11,
+      10
+    ]
+  }
+}
