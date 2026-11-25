@@ -14,7 +14,7 @@ tags:
 
 # Veidra
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"The fey are the only people I know who treat a mirror as an invitation rather than a convenience."*
 
 **Veidra** (*VAY-drah*) is one of the six [[Kagameru#Continents|continents of Kagameru]]. It is usually linked to green realms, ancient groves, and cultures with strong ties to nature and fey-touched magic.

@@ -11,7 +11,7 @@ player: true
 
 # Dragonborn
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Every dragonborn family has a dragon in its story. Most of them would prefer it stayed there."*
 
 ## Overview

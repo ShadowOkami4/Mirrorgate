@@ -15,7 +15,7 @@ tags:
 
 # Shardkin
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A broken mirror does not stop reflecting. It merely becomes less polite about what it shows."*
 
 **Shardkin** are creatures made from broken reflections. Some were once people who met the wrong mirror. Others were never people at all, only images, moments, or echoes that learned to move without an owner.

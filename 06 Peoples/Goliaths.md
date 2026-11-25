@@ -11,7 +11,7 @@ player: true
 
 # Goliaths
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A goliath measures a mountain by how long it takes to climb, and a person by whether they kept up."*
 
 ## Overview

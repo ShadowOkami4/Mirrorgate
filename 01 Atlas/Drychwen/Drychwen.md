@@ -14,7 +14,7 @@ tags:
 
 # Drychwen
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Old forests keep better records than old kingdoms. They are merely worse at sharing them."*
 
 **Drychwen** (*DRUKH-wen*) is one of the six [[Kagameru#Continents|continents of Kagameru]]. Older records associate it with old forests, noble settlements, and some of the earliest magical traditions of the world.

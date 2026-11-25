@@ -16,7 +16,7 @@ tags:
 
 # Sanctum of the Flower in the Mirror
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"There are places reflected in mirrors, and there are places that wait behind them. Confusing the two is how expeditions become memorials."*
 
 > [!location] At a glance

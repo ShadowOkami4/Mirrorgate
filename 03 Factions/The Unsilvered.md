@@ -12,7 +12,7 @@ player: true
 
 # The Unsilvered
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Rebellion is rarely one fire. More often it is a hundred candles hidden from the same wind."*
 
 > [!info] At a glance

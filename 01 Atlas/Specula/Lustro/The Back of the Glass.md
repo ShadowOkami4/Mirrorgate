@@ -13,7 +13,7 @@ player: true
 
 # The Back of the Glass
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A mirror without its backing is only glass. A tavern with the right backing is a revolution."*
 
 **The Back of the Glass** is a crooked roadside tavern on a back road near the border between [[Lustro]] and [[Hansha]]. To the [[Lustral Office]], it is a place of cheap ale and poor reputation. To [[The Unsilvered]], it is one of their oldest meeting places: books from Hansha's presses pass through its cellar on their way into the kingdom.

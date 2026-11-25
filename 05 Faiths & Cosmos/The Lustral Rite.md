@@ -14,7 +14,7 @@ aliases:
 
 # The Lustral Rite
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"In Lustro, to purify is a sacrament, a duty, and a department. Visitors are advised not to confuse the three, because the officials certainly do not."*
 
 > [!info] At a glance

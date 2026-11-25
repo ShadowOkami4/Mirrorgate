@@ -12,7 +12,7 @@ status: playtest
 
 # Scar Hazards
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Some battlefields are buried. Others continue happening."*
 
 This module gives GMs tools for running the [[Scars of the Primordial War]] at the table: places where time, space, memory, or reflection were wounded and never healed properly. The lore of the scars lives in [[Scars of the Primordial War]]; this page covers only how they play.

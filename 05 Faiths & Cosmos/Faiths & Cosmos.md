@@ -14,7 +14,7 @@ tags:
 
 Deities, cults, planes and the Mirrorgate: how the world works beneath the surface.
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Nothing encourages theological disagreement quite like dead gods who may still be answering prayers."*
 
 The faiths of [[Kagameru]] are shaped by uncertainty. The oldest myths say the Prime Gods were destroyed at the end of [[The Primordial War]], yet divine signs, miracles, avatars, relics and prophetic dreams keep troubling any simple answer.

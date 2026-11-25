@@ -10,7 +10,7 @@ player: true
 
 # The Shattered Hope Era
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *“An age does not need to be pleasant to be important. In fact, history suggests the opposite.”*
 
 The **Shattered Hope Era** is a scholarly name for the unstable age now unfolding across [[Kagameru]]. It is defined by renewed interest in the [[Scars of the Primordial War]], growing political tension, and the uncomfortable suspicion that the oldest disasters of the world may not be finished.

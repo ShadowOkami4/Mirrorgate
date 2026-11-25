@@ -15,7 +15,7 @@ tags:
 
 # The Folded Road
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Travelers on the Folded Road arrive before they depart. The innkeepers at either end have learned to prepare rooms for guests who have not yet left."*
 
 The **Folded Road** is an old road across a war-scar where distance has folded in on itself. A traveler who sets out along it may arrive hours before leaving, walk for a day and find themselves a mile from the start, or meet themselves coming the other way. An ancient railway line runs alongside it, and trains on that line are said never to keep the same timetable twice.

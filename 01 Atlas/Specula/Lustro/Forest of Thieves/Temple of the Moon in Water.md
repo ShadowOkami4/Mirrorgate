@@ -16,7 +16,7 @@ tags:
 
 # Temple of the Moon in Water
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A ruin is only an abandoned place when nothing on the other side remembers it."*
 
 > [!location] At a glance

@@ -14,7 +14,7 @@ aliases:
 
 # Lustral Office
 
-> [!quote] Professor Phineas Phantomhive II, quoting an official of Lustro
+> [!professor] Professor Phineas Phantomhive II, quoting an official of Lustro
 > *"No kingdom censors its history. It merely purifies it."*
 
 > [!info] At a glance

@@ -13,7 +13,7 @@ player: true
 
 # The Veiled Cathedral
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"It is the only great church I know of where the mirrors are covered during prayer. The clergy insist this is about modesty. It is about the crown."*
 
 The **Veiled Cathedral** is the great church of [[Ogledal]], capital of [[Lustro]]. Monarchs are crowned beneath its dome as the realm's Purifier, and [[The Lustral Rite]], the crown's official faith, is preached from its pulpit.

@@ -13,7 +13,7 @@ tags:
 
 # Aurora
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A foreign god should not be made native merely because their story is beautiful."*
 
 > [!info] At a glance

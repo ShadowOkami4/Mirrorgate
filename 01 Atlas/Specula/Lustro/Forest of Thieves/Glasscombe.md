@@ -14,7 +14,7 @@ tags:
 
 # Glasscombe
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Glasscombe exists because the Old Road once needed a place to stop. The road has moved on. Glasscombe has not."*
 
 > [!location] At a glance

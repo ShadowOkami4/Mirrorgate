@@ -12,7 +12,7 @@ player: false
 
 # Mirrorgate Bestiary
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A broken mirror does not stop reflecting. It merely becomes less polite about what it shows."*
 
 Creatures of the Mirrored Realms, with SRD 5.2.1 statblocks in Atlas VTT. Every creature opens with its statblock beside its lore.

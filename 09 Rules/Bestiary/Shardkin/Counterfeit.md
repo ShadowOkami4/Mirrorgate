@@ -55,7 +55,7 @@ creature_type: Aberration
 
 # Counterfeit
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Every reflection has, at some point, considered whether it would make a better job of things than the original. Most of them have the decency not to act on it."*
 
 A **counterfeit** is a reflection that stepped out of its mirror and decided to stay. In its true form it is a featureless figure of polished silver, but it rarely keeps that form for long. It prefers to wear the face of whoever it was last reflecting—and it would very much like that person to stop existing, so that it can take their place.

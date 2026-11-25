@@ -14,7 +14,7 @@ tags:
 
 # Forest of Thieves
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Forests do not become infamous because of trees."*
 
 > [!location] At a glance

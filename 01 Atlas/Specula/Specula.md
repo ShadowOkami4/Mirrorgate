@@ -14,7 +14,7 @@ tags:
 
 # Specula
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A heartland is simply the place that has had the most time to argue about being one."*
 
 > [!note] Many places below are still in the old notes and come back in the next places batch.

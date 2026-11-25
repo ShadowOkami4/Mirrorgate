@@ -15,7 +15,7 @@ tags:
 
 # The Repeating Vale
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"In the Vale, it is always the same autumn. The apples never fall, and the harvest festival never ends."*
 
 The **Repeating Vale** is a farming valley caught in a time loop. The same autumn week repeats there again and again, and the villagers inside it do not notice. To them, every harvest festival is the first. Travelers who stay long enough begin to notice the same conversations, the same weather, and the same accidents.

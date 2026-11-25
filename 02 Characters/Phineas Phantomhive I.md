@@ -16,7 +16,7 @@ aliases:
 
 # Phineas Phantomhive I
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A name may cross worlds more easily than a man. Unfortunately, in this case, both appear to have done so."*
 
 > [!personality] At a glance

@@ -521,6 +521,7 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 .callout:is([data-callout="divine"], [data-callout="holy"]) { --mp-c: #f0cf6a; --callout-icon: lucide-sun; }
 .callout:is([data-callout="arcane"], [data-callout="magic"]) { --mp-c: #7c8cf0; --callout-icon: lucide-wand-sparkles; }
 .callout[data-callout="weather"] { --mp-c: #7fa8c8; --callout-icon: lucide-cloud-rain; }
+.callout:is([data-callout="professor"], [data-callout="phineas"]) { --mp-c: #d9b76a; --callout-icon: lucide-feather; }
 
 .callout {
   --callout-padding: 0;
@@ -1188,14 +1189,185 @@ body:not(.mp-callout-minimal) .callout[data-callout="weather"] {
     color-mix(in srgb, var(--mp-c) 6%, var(--mp-glass));
 }
 
+/* ---------- The Professor's annotations ---------------------------------
+   [!professor] (or [!phineas]): a note from Professor Phineas Phantomhive II,
+   pinned into the Encyclopedia Kagami. Ink-blue vellum with ruled lines and a
+   margin rule, a PⅡ ex-libris seal, a folded corner, and his name signed
+   beneath the quote with a pen flourish. The callout title is the signature. */
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) {
+  --mp-ink: #efe4c6;
+  --mp-paper: #0c1322;
+  --mp-margin: rgba(200, 90, 90, 0.35);
+  --mp-rule: rgba(217, 183, 106, 0.07);
+  display: flex;
+  flex-direction: column;
+  margin: 1.8em 0;
+  border: 1px solid color-mix(in srgb, var(--mp-c) 35%, transparent);
+  border-radius: 4px 14px 4px 4px;
+  background:
+    linear-gradient(90deg, transparent 0 63px, var(--mp-margin) 63px 64px, transparent 64px) ,
+    repeating-linear-gradient(180deg, transparent 0 calc(1.7em - 1px), var(--mp-rule) calc(1.7em - 1px) 1.7em),
+    radial-gradient(ellipse 90% 70% at 30% 20%, rgba(217, 183, 106, 0.07), transparent 70%),
+    linear-gradient(160deg, #111a2e, var(--mp-paper) 55%, #0a0f1b);
+  background-position: 0 0, 0 0.55em, 0 0, 0 0;
+  box-shadow:
+    0 14px 30px -12px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 4px color-mix(in srgb, var(--mp-c) 6%, transparent),
+    inset 0 0 40px rgba(0, 0, 0, 0.45);
+}
+/* the folded corner */
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"])::before {
+  content: "";
+  inset: 0 0 auto auto;
+  width: 26px;
+  height: 26px;
+  opacity: 1;
+  border-radius: 0 13px 0 4px;
+  background: linear-gradient(225deg, var(--background-primary) 0 50%, color-mix(in srgb, var(--mp-c) 30%, #1b2338) 50% 100%);
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.45);
+}
+/* the ex-libris seal in the margin */
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"])::after {
+  content: "P\2161";
+  position: absolute;
+  z-index: 2;
+  top: 18px;
+  left: 11px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 3px double color-mix(in srgb, var(--mp-c) 75%, transparent);
+  background: radial-gradient(circle at 35% 30%, rgba(255, 236, 190, 0.18), transparent 60%), color-mix(in srgb, var(--mp-c) 10%, var(--mp-paper));
+  box-shadow: 0 0 12px color-mix(in srgb, var(--mp-c) 30%, transparent), inset 0 0 6px rgba(0, 0, 0, 0.5);
+  font-family: var(--mp-serif);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.04em;
+  color: var(--mp-c);
+  text-shadow: 0 0 8px color-mix(in srgb, var(--mp-c) 50%, transparent);
+  pointer-events: none;
+}
+/* the quote */
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-content {
+  order: 1;
+  position: relative;
+  padding: 20px 30px 4px 80px;
+  font-family: var(--mp-serif);
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: var(--mp-ink);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-content em { color: var(--mp-ink); }
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-content::before {
+  content: "\201C";
+  position: absolute;
+  right: 92px;
+  top: -14px;
+  font-family: var(--mp-serif);
+  font-size: 150px;
+  line-height: 1;
+  color: var(--mp-c);
+  opacity: 0.09;
+  pointer-events: none;
+}
+/* the signature */
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-title {
+  order: 2;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 2px 30px 22px 80px;
+  background:
+    url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 240 22%22 fill=%22none%22 stroke=%22black%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M4 14 C 40 4, 70 20, 110 11 S 175 3, 200 10 C 214 14, 226 12, 236 6%22 stroke-width=%221.6%22/%3E%3Cpath d=%22M150 15 C 170 19, 196 18, 214 13%22 stroke-width=%220.9%22 opacity=%220.7%22/%3E%3Ccircle cx=%22236%22 cy=%226%22 r=%221.6%22 fill=%22black%22 stroke=%22none%22/%3E%3C/svg%3E") right 26px bottom 6px / 190px 18px no-repeat;
+  border-bottom: none;
+  font-family: var(--mp-serif);
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 600;
+  font-size: 0.95em;
+  letter-spacing: 0.05em;
+  color: var(--mp-c);
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-title { -webkit-mask: none; }
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-title::after {
+  content: "";
+  position: absolute;
+  right: 26px;
+  bottom: 6px;
+  width: 190px;
+  height: 18px;
+  background: var(--mp-c);
+  -webkit-mask: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 240 22%22 fill=%22none%22 stroke=%22black%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M4 14 C 40 4, 70 20, 110 11 S 175 3, 200 10 C 214 14, 226 12, 236 6%22 stroke-width=%221.6%22/%3E%3Cpath d=%22M150 15 C 170 19, 196 18, 214 13%22 stroke-width=%220.9%22 opacity=%220.7%22/%3E%3Ccircle cx=%22236%22 cy=%226%22 r=%221.6%22 fill=%22black%22 stroke=%22none%22/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 240 22%22 fill=%22none%22 stroke=%22black%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M4 14 C 40 4, 70 20, 110 11 S 175 3, 200 10 C 214 14, 226 12, 236 6%22 stroke-width=%221.6%22/%3E%3Cpath d=%22M150 15 C 170 19, 196 18, 214 13%22 stroke-width=%220.9%22 opacity=%220.7%22/%3E%3Ccircle cx=%22236%22 cy=%226%22 r=%221.6%22 fill=%22black%22 stroke=%22none%22/%3E%3C/svg%3E") center / contain no-repeat;
+  opacity: 0.85;
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-title { position: relative; background: none; }
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-title-inner::before { content: "\2014\00A0"; }
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-icon {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-icon .svg-icon { width: 15px; height: 15px; }
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-fold { display: none; }
+/* a satin bookmark ribbon hanging from the top edge */
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 52px;
+  width: 13px;
+  height: 44px;
+  background: linear-gradient(90deg, #6e1c2a, #b03a4c 45%, #7a2030);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+body.theme-light:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-content::after { background: linear-gradient(90deg, #8a2a36, #c24a5a 45%, #8a2a36); }
+/* hover: the card lifts and the seal warms */
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) { transition: transform 180ms ease, box-shadow 180ms ease; }
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]):hover { transform: translateY(-2px); }
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"])::after { transition: box-shadow 180ms ease; }
+body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]):hover::after { box-shadow: 0 0 20px color-mix(in srgb, var(--mp-c) 55%, transparent), inset 0 0 6px rgba(0, 0, 0, 0.5); }
+/* light: cream paper and sepia ink */
+body.theme-light:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) {
+  --mp-c: #8a5a1e;
+  --mp-ink: #3b2f1e;
+  --mp-paper: #f4ecd6;
+  --mp-margin: rgba(170, 60, 60, 0.35);
+  --mp-rule: rgba(90, 110, 160, 0.13);
+  background:
+    linear-gradient(90deg, transparent 0 63px, var(--mp-margin) 63px 64px, transparent 64px),
+    repeating-linear-gradient(180deg, transparent 0 calc(1.7em - 1px), var(--mp-rule) calc(1.7em - 1px) 1.7em),
+    linear-gradient(160deg, #fbf5e4, var(--mp-paper) 60%, #ece0c2);
+  background-position: 0 0, 0 0.55em, 0 0;
+  box-shadow: 0 10px 24px -12px rgba(60, 40, 10, 0.45), 0 0 0 1px rgba(90, 60, 20, 0.12);
+}
+body.theme-light:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-content { text-shadow: none; }
+body.theme-light:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"])::before {
+  background: linear-gradient(225deg, var(--background-primary) 0 50%, #e2d3ad 50% 100%);
+  box-shadow: -2px 2px 4px rgba(60, 40, 10, 0.25);
+}
+/* minimal: a quiet signed quote */
+body.mp-callout-minimal .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-content { order: 1; font-family: var(--mp-serif); font-style: italic; }
+body.mp-callout-minimal .callout:is([data-callout="professor"], [data-callout="phineas"]) { display: flex; flex-direction: column; }
+body.mp-callout-minimal .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-title { order: 2; justify-content: flex-end; font-style: italic; }
+
 /* ---------- Effect strength: callouts ------------------------------------ */
 /* Medium: no corner brackets or glint, softer badge */
-body.mp-callout-medium .callout:not([data-callout="up"])::before { display: none; }
-body.mp-callout-medium .callout:not([data-callout="up"]) {
+body.mp-callout-medium .callout:not([data-callout="up"], [data-callout="professor"], [data-callout="phineas"])::before { display: none; }
+body.mp-callout-medium .callout:not([data-callout="up"], [data-callout="professor"], [data-callout="phineas"]) {
   background: color-mix(in srgb, var(--mp-c) 8%, var(--mp-glass));
   box-shadow: var(--shadow-s);
 }
-body.mp-callout-medium .callout:not([data-callout="up"]) .callout-icon { box-shadow: none; }
+body.mp-callout-medium .callout:not([data-callout="up"], [data-callout="professor"], [data-callout="phineas"]) .callout-icon { box-shadow: none; }
 /* Minimal: a tinted box with a coloured left edge, no frame or badge */
 body.mp-callout-minimal .callout:not([data-callout="up"])::before { display: none; }
 body.mp-callout-minimal .callout:not([data-callout="up"]) {

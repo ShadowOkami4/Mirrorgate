@@ -11,7 +11,7 @@ player: true
 
 # Gnomes
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Hand a gnome a broken clock and you will get back a working clock, two improvements, and a lecture."*
 
 ## Overview

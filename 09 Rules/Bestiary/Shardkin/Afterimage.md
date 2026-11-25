@@ -41,7 +41,7 @@ creature_type: Aberration
 
 # Afterimage
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"I once watched one strike a man who had already walked away. He felt it anyway, two seconds later. He was very cross about it."*
 
 An **afterimage** is a moment that got left behind. It looks like a person-shaped smear of pale light, the kind of shape that lingers in the eye after staring too long at a lamp, and it lives two seconds behind the rest of the world.

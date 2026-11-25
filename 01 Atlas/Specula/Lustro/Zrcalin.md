@@ -13,7 +13,7 @@ player: true
 
 # Zrcalin
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Every road in Lustro leads to Ogledal. Every rail leads to Zrcalin, which the capital finds deeply irritating."*
 
 **Zrcalin** (*ZR-chah-leen*) is the great railway city of [[Lustro]], and one of the busiest cities on [[Specula]]. It grew up where the ancient lines of the continent's railway meet the newer steam lines, and it lives on trains: their cargo, their passengers, their repairs, and their timetables.

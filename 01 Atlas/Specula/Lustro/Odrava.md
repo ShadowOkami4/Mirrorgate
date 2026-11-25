@@ -13,7 +13,7 @@ player: true
 
 # Odrava
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Odrava smells of salt, tar, and coal smoke, which is to say it smells of money."*
 
 **Odrava** (*OD-rah-vah*) is the chief seaport of [[Lustro]]. Ships from across the seas unload here, and the end of a steam line carries their cargo inland to [[Zrcalin]] and [[Ogledal]]. It is one of the few places in the kingdom where foreign sailors, merchants, and ideas arrive every day, which makes it one of the places the [[Lustral Office]] watches most closely.

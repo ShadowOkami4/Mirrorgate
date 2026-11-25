@@ -14,7 +14,7 @@ player: true
 
 # Maria Blackwood
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"In royal houses, grace is rarely harmless."*
 
 > [!personality] At a glance

@@ -11,7 +11,7 @@ player: true
 
 # Halflings
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Ask a halfling for directions and you will get directions, a snack, and a warning about the road you did not ask about."*
 
 ## Overview

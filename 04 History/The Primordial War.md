@@ -10,7 +10,7 @@ player: true
 
 # The Primordial War
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *“Every culture claims the first war began for a different reason. This is understandable. None of them were there, and the gods who were have been notably unavailable for interview.”*
 
 Before the present age of [[Kagameru]], before its kingdoms drew borders and before most peoples preserved reliable histories, the world was said to have been scarred by a conflict now remembered only through myth.

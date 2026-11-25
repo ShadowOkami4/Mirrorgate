@@ -13,7 +13,7 @@ player: true
 
 # Thalrex Silberblick
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A dragonborn barbarian with wild magic and glowing blue eyes is the sort of detail legends rarely invent politely."*
 
 > [!personality] At a glance

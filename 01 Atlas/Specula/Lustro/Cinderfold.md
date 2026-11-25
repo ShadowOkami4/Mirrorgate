@@ -13,7 +13,7 @@ player: true
 
 # Cinderfold
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Every steam train on Specula runs on Cinderfold's coal. Nobody in Ogledal likes to be reminded of it."*
 
 **Cinderfold** is a mining town in the hills of [[Lustro]], and the reason the newer railway lines can run at all: its pits supply the coal for Specula's steam locomotives, and its ironworks cast rails and wheels. It is one of the very few places on Specula that looks anything like an industrial town, and even here, the works are small and the hills around them are still farmland.

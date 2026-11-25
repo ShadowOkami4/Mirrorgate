@@ -15,7 +15,7 @@ tags:
 
 # Lustro
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *“A crown may command a border. It cannot command what people remember seeing in the mirror.”*
 
 **Lustro** is the central kingdom of [[Kagameru]], lying in the heartland continent of [[Specula]], and the most politically important realm currently documented in the setting. It is a kingdom of strict law, controlled public speech, royal ceremony, and carefully maintained official history. Its capital is [[Ogledal]].

@@ -10,7 +10,7 @@ player: true
 
 # Technology and Daily Life
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Visitors from simpler worlds expect castles. Visitors from cleverer ones expect wonders. Kagameru disappoints both, then sells them a train ticket."*
 
 [[Kagameru]] stands between two ages. Most of the world still lives as it has for centuries: under crowns and noble houses, behind castle walls, in farming villages, guild towns, and temple cities. Yet in places, and above all on [[Specula]], it is a little more advanced than the worlds most adventurers know. Trains cross its heartland, and revolvers hang at the belts of a few travelers.

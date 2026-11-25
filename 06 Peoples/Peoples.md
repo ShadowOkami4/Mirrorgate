@@ -14,7 +14,7 @@ tags:
 
 Species and cultures of Kagameru.
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"To study a people by their appearance alone is to judge a library by the color of its door."*
 
 The peoples of [[Kagameru]] are as varied as its lands: ancient lineages beside young civilisations, wandering clans crossing the borders of settled kingdoms, and neighbouring villages a few miles apart that keep completely different customs.

@@ -13,7 +13,7 @@ player: true
 
 # Tenth Halt
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Tenth Halt is not a village that has a railway. It is a railway that accidentally grew a village."*
 
 **Tenth Halt** is a small village that grew up around a water stop on the steam line between [[Zrcalin]] and [[Cinderfold]]. Locomotives stop here to take on water from a great iron tank, and the village lives on the crews and passengers: a bakery, a few inns, a farrier, and farms that sell to the trains.

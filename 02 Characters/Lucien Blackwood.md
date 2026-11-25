@@ -14,7 +14,7 @@ player: true
 
 # Lucien Blackwood
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A royal name opens doors. It also paints targets on them."*
 
 > [!personality] At a glance

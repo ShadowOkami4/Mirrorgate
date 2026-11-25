@@ -11,7 +11,7 @@ player: true
 
 # Dwarves
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A dwarf does not merely build a hall. A dwarf argues with the mountain until the mountain agrees to become architecture."*
 
 ## Overview

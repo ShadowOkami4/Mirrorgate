@@ -13,7 +13,7 @@ player: true
 
 # The Hall of the Last Hour
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"The monks keep a record of every hour, because in their valley, some hours come back."*
 
 The **Hall of the Last Hour** is a monastery built at the edge of a war-scar where time repeats. Its monks keep careful records of every hour that passes, so they can tell which hours have happened before. They believe that watching broken time patiently is a form of devotion, and that someday the scar will repeat the hour in which it was made.

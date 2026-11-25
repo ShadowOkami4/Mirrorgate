@@ -14,7 +14,7 @@ player: true
 
 # Jacob Blackwood
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"The quieter branch of a royal family is often quiet because it is listening."*
 
 > [!personality] At a glance

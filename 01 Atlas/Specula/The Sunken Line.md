@@ -13,7 +13,7 @@ player: true
 
 # The Sunken Line
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"The tracks run straight into the hillside and down into the dark. Nobody has ever followed them to the end. Several people have tried."*
 
 **The Sunken Line** is an ancient railway line that leaves the rest of the network and descends into the earth through a great tunnel mouth. Unlike most ancient lines, no trains are seen on it. Its rails are polished, as if something still runs along them.

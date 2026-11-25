@@ -14,7 +14,7 @@ tags:
 
 # The Old Road
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Before the railway, every merchant in Lustro knew the Old Road. Now only thieves remember it."*
 
 > [!location] At a glance

@@ -11,7 +11,7 @@ player: true
 
 # Tieflings
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A tiefling's horns tell you about their ancestors. Their manners tell you about them."*
 
 ## Overview

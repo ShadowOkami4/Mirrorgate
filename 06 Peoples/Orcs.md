@@ -11,7 +11,7 @@ player: true
 
 # Orcs
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"The dullest scholars call orcs violent and stop writing. Better scholars ask who taught them to survive."*
 
 ## Overview

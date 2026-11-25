@@ -15,7 +15,7 @@ aliases:
 
 # Blackwood Bloodline
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Some families inherit estates. The Blackwoods appear to have inherited consequences."*
 
 > [!info] At a glance

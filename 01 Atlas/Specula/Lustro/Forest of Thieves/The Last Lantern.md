@@ -14,7 +14,7 @@ tags:
 
 # The Last Lantern
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Every traveller who enters the Forest of Thieves stops at the Last Lantern. The landlord counts them in. He tries not to count them out."*
 
 > [!location] At a glance

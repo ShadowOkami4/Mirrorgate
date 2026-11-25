@@ -13,7 +13,7 @@ player: true
 
 # The Watchful Gate
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"At the Watchful Gate, every train from Hansha is searched for three things: smugglers, weapons, and ideas. The last are the hardest to find."*
 
 **The Watchful Gate** is a fortified checkpoint on the railway where the line from [[Hansha]] enters [[Lustro]]. Every train is stopped here, every passenger's papers are checked, and every crate is opened by officers of the [[Lustral Office]], who are looking above all for books printed in Hansha.

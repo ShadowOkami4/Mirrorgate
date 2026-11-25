@@ -14,7 +14,7 @@ player: true
 
 # Vanessa Blackwood
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Every royal family has one member everyone underestimates. Sensible historians learn their name first."*
 
 > [!personality] At a glance

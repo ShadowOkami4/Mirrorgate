@@ -16,7 +16,7 @@ tags:
 
 # To the Eternal Lady
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Every lonely road eventually invents an inn. This one, regrettably, may have invented itself."*
 
 > [!location] At a glance

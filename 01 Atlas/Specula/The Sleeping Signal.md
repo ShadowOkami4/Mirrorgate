@@ -13,7 +13,7 @@ player: true
 
 # The Sleeping Signal
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"They serve a fine stew at the Sleeping Signal. The trains on the old line do not stop for it. They have never stopped for anything."*
 
 **The Sleeping Signal** is a lonely tavern built inside an abandoned signal box beside one of the ancient railway lines. The signals have not moved in living memory, yet trains still pass on the ancient line at night, without lights and without stopping. Rail workers, surveyors, and curious scholars from [[Hansha]] drink here and argue about what drives them.

@@ -1,15 +1,15 @@
 ---
 cssclasses:
-- mr-characters
+  - mr-characters
 type: character
-up: '[[Characters]]'
+up: "[[Characters]]"
 region: Sanctum of the Flower in the Mirror
 role: Maria Rose under the red fog; boss of SA-01 Chapter 3
 status: corrupted
 player: false
 tags:
-- sa-01
-- boss
+  - sa-01
+  - boss
 statblock: true
 atlas-template: mirrored-realms-boss-mrbos1
 name: Maria Rose, Corrupted
@@ -22,49 +22,49 @@ initiative: 3
 hp: 85
 hit_dice: 19d8
 speed: 5 ft., Fly 40 ft. (hover)
-cr: '7'
+cr: "7"
 xp: 2,900
-pb: '+3'
+pb: "+3"
 stats:
-- 7
-- 16
-- 10
-- 14
-- 14
-- 18
+  - 7
+  - 16
+  - 10
+  - 14
+  - 14
+  - 18
 saves:
-- wis: 5
-- cha: 7
+  - wis: 5
+  - cha: 7
 damage_resistances: Acid, Bludgeoning, Cold, Fire, Lightning, Piercing, Slashing, Thunder
 damage_immunities: Necrotic, Poison
 condition_immunities: Charmed, Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained
 senses: Darkvision 60 ft., Passive Perception 12
 languages: Common and the languages she knew in life
 traits:
-- name: Legendary Resistance (2/Day)
-  desc: If Maria fails a saving throw, she can choose to succeed instead.
-- name: Incorporeal Movement
-  desc: Maria can move through other creatures and objects as if they were Difficult Terrain. She takes 5 (1d10) Force damage if she ends her turn inside an object.
-- name: Beneath the Fog
-  desc: A creature within 30 feet of Maria that can see her can take an action to call to the real Maria. *Charisma (Persuasion) check:* DC 15; DC 12 if the creature carries Sandra's message ("the kettle is still on") or Maria's satchel. *Success:* Maria has the Incapacitated condition until the end of her next turn as she fights the fog. After three successes in total, the fog leaves her and the fight ends.
+  - name: Legendary Resistance (2/Day)
+    desc: If Maria fails a saving throw, she can choose to succeed instead.
+  - name: Incorporeal Movement
+    desc: Maria can move through other creatures and objects as if they were Difficult Terrain. She takes 5 (1d10) Force damage if she ends her turn inside an object.
+  - name: Beneath the Fog
+    desc: A creature within 30 feet of Maria that can see her can take an action to call to the real Maria. *Charisma (Persuasion) check:* DC 15; DC 12 if the creature carries Sandra's message ("the kettle is still on") or Maria's satchel. *Success:* Maria has the Incapacitated condition until the end of her next turn as she fights the fog. After three successes in total, the fog leaves her and the fight ends.
 actions:
-- name: Multiattack
-  desc: Maria makes two Withering Touch attacks.
-- name: Withering Touch
-  desc: '*Melee Attack Roll:* +6, reach 5 ft. *Hit:* 14 (2d10 + 3) Necrotic damage.'
-- name: Red Wail (Recharge 5–6)
-  desc: '*Wisdom Saving Throw:* DC 15, each creature in a 30-foot Emanation originating from Maria that isn''t an Undead. *Failure:* 18 (4d8) Psychic damage, and the target has the Frightened condition until the end of its next turn. *Success:* Half damage only.'
+  - name: Multiattack
+    desc: Maria makes two Withering Touch attacks.
+  - name: Withering Touch
+    desc: "*Melee Attack Roll:* +6, reach 5 ft. *Hit:* 14 (2d10 + 3) Necrotic damage."
+  - name: Red Wail (Recharge 5–6)
+    desc: "*Wisdom Saving Throw:* DC 15, each creature in a 30-foot Emanation originating from Maria that isn't an Undead. *Failure:* 18 (4d8) Psychic damage, and the target has the Frightened condition until the end of its next turn. *Success:* Half damage only."
 bonus_actions:
-- name: Fog Step
-  desc: Maria vanishes into the red fog and reappears in an unoccupied space she can see within 30 feet.
-legendary_description: 'Legendary Action Uses: 2. Immediately after another creature''s turn, Maria can expend a use to take one of the following actions. She regains all expended uses at the start of each of her turns.'
+  - name: Fog Step
+    desc: Maria vanishes into the red fog and reappears in an unoccupied space she can see within 30 feet.
+legendary_description: "Legendary Action Uses: 2. Immediately after another creature's turn, Maria can expend a use to take one of the following actions. She regains all expended uses at the start of each of her turns."
 legendary_actions:
-- name: Touch
-  desc: Maria makes one Withering Touch attack.
-- name: Grasping Fog
-  desc: '*Strength Saving Throw:* DC 15, one creature Maria can see within 30 feet. *Failure:* The target has the Restrained condition until the end of its next turn as red fog coils around it.'
-- name: Giggle in the Dark (Costs 2 Actions)
-  desc: Maria uses Fog Step. *Wisdom Saving Throw:* DC 15, each creature within 10 feet of the space she left. *Failure:* The target has the Frightened condition until the end of its next turn.
+  - name: Touch
+    desc: Maria makes one Withering Touch attack.
+  - name: Grasping Fog
+    desc: "*Strength Saving Throw:* DC 15, one creature Maria can see within 30 feet. *Failure:* The target has the Restrained condition until the end of its next turn as red fog coils around it."
+  - name: Giggle in the Dark (Costs 2 Actions)
+    desc: Maria uses Fog Step. *Wisdom Saving Throw:* DC 15, each creature within 10 feet of the space she left. *Failure:* The target has the Frightened condition until the end of its next turn.
 tactics: Maria opens with Red Wail, then drifts through the pillars with Fog Step and Giggle in the Dark so nobody can pin her down. She focuses whoever tries to reach her with words, and uses Grasping Fog on anyone running for the exit. Every time a character succeeds on *Beneath the Fog*, describe her real voice breaking through the giggle.
 ---
 

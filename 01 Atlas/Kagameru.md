@@ -12,7 +12,7 @@ player: true
 
 # Kagameru
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *“Every world believes itself ordinary until one reads its footnotes.”*
 
 **Kagameru** is the central world of the Mirrored Realms: a land of old scars, unfinished histories, contested relics, and reflections that do not always obey their owners.

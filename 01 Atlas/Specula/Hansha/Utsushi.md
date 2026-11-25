@@ -12,7 +12,7 @@ player: true
 
 # Utsushi
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Every scholar in Utsushi is either copying a book, correcting a copy, or arguing that the original was wrong."*
 
 **Utsushi** (*oo-TSOO-shee*) is the academy town of [[Hansha]], on one of the city's hills: a town of archives, lecture halls and copying-houses. It is where [[Professor Phineas Phantomhive II]] began the work that became the **Encyclopedia Kagami**.

@@ -11,7 +11,7 @@ player: true
 
 # Elves
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Long lives do not make a people patient. They simply give impatience more time to become tradition."*
 
 ## Overview

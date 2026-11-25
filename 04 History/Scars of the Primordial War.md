@@ -10,7 +10,7 @@ player: true
 
 # Scars of the Primordial War
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *“Some battlefields are buried. Others continue happening.”*
 
 The **Scars of the Primordial War** are places where [[The Primordial War]] damaged time, space, memory, or reality itself. They are not ordinary ruins, nor are they simply sites where old magic remains. They are wounds in the world's structure.

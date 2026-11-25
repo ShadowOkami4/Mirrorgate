@@ -14,7 +14,7 @@ tags:
 
 # Bloodlines
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A bloodline is a story people insist on telling with crowns."*
 
 The noble and royal bloodlines of [[Kagameru]] preserve fragments of older ages: inheritance records, marriage contracts, curse traditions, divine claims and family myths that may hide real historical power. Not every important bloodline rules a kingdom. Some command academies, monasteries, merchant leagues or monster-hunting orders; some have nothing but a name that refuses to vanish.

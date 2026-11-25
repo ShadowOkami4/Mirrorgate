@@ -13,7 +13,7 @@ player: true
 
 # Dwight
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A medic with a rogue's hands is either a blessing, a crime, or both."*
 
 > [!personality] At a glance

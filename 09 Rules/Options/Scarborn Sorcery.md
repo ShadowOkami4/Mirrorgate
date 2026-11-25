@@ -13,7 +13,7 @@ status: playtest
 
 # Scarborn Sorcery
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Most sorcerers inherit their magic from a dragon, a storm, or an ancestor with poor judgment. The Scarborn inherit theirs from a wound in the world. I am told it itches."*
 
 *Sorcerer Subclass · Carry a Wound in Time and Space*

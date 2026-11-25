@@ -10,7 +10,7 @@ player: true
 
 # Humans
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Give a human an empty field and, before the season turns, it will contain a road, an inn, three competing laws, and an argument over who discovered it first."*
 
 ## Overview

@@ -52,7 +52,7 @@ creature_type: Aberration
 
 # Remnant
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"It remembers being someone. It is the remembering that makes it cruel."*
 
 A **remnant** is the self that survives when a person is shattered by a mirror: the part that remembers a name, a face, and a life, cut loose from the body and soul that once carried it. It looks like its former self seen through cracked glass—the right shape, but split along a dozen jagged seams that shift when it moves.

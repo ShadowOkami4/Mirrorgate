@@ -15,7 +15,7 @@ tags:
 
 # Hansha
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *“A homeland is the place one spends youth trying to leave and age trying to explain.”*
 
 **Hansha** (*HAHN-shah*) is the greatest city of [[Specula]] and the ring of old hills around it: a **free city** of scholars, printers, engineers and bankers that belongs to no kingdom. It governs itself under an ancient charter and holds only the city and the farms and towns of its hills, among them the academy town of [[Utsushi]].

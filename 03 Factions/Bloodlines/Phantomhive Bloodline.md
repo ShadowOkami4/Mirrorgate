@@ -14,7 +14,7 @@ aliases:
 
 # Phantomhive Bloodline
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"I assure you, my family is only mostly suspicious."*
 
 > [!info] At a glance

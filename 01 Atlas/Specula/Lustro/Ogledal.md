@@ -12,7 +12,7 @@ player: true
 
 # Ogledal
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"In Ogledal, one is never alone. This is presented as a comfort."*
 
 **Ogledal** (*OG-leh-dahl*) is the royal capital of [[Lustro]] and the seat of the [[Blackwood Bloodline]]. It is a city of ceremony, registries, and polished stone, where public squares are arranged so that very little happens out of sight.

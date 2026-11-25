@@ -17,7 +17,7 @@ aliases:
 
 # Professor Phineas Phantomhive II
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"If the truth refuses to sit still, one must either chase it or become a librarian. I chose, regrettably, both."*
 
 > [!personality] At a glance

@@ -18,7 +18,7 @@ This book gathers the setting notes into a reading order. Every chapter is a not
 
 ## Foreword
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *To the traveller, the scholar, and the incurably curious: welcome.*
 
 Permit me to introduce myself. I am Professor Phineas Phantomhive II, chronicler of distant roads, collector of improbable histories, and, by circumstances too numerous to recount here, custodian of the **Encyclopedia Kagami**.

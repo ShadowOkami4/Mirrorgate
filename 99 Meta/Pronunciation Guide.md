@@ -11,7 +11,7 @@ tags:
 
 # Pronunciation Guide
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"I have heard my own homeland mispronounced in eleven languages, two of which I am fairly sure were invented on the spot."*
 
 The world, great lands, realms, and cities of [[Kagameru]] take their names from old-tongue roots for *mirror*, *reflection*, *time*, and *space*. Local places—forests, inns, roads, and ruins—usually go by their common-tongue names. Personal names follow no single rule.

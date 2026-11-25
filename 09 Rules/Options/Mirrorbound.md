@@ -13,7 +13,7 @@ status: playtest
 
 # Mirrorbound
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"Most people glance into a mirror to see whether they look presentable. The Mirrorbound glance into one to check whether they are still standing in it."*
 
 *Fighter Subclass · Fight Alongside Your Own Reflection*

@@ -14,7 +14,7 @@ tags:
 
 Compiled book editions made from the vault.
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"A library is where knowledge waits to be found. A book is where someone has already done the finding and put it in order. I recommend both, preferably in that sequence."*
 
 The vault can be explored in any order. These books gather the same notes into a fixed reading order, the way a printed setting guide would. Every chapter is a note in the vault, so nothing is written twice.

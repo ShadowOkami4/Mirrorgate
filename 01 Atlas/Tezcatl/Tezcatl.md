@@ -14,7 +14,7 @@ tags:
 
 # Tezcatl
 
-> [!quote] Professor Phineas Phantomhive II
+> [!professor] Professor Phineas Phantomhive II
 > *"The south polished its first mirrors from volcanic glass. I am told they showed more than faces. I am told this with alarming sincerity."*
 
 **Tezcatl** (*TESS-kaht*) is one of the six [[Kagameru#Continents|continents of Kagameru]]. It is associated with the sun-scorched south, stone cities, great temples, and rites older than most northern kingdoms.
