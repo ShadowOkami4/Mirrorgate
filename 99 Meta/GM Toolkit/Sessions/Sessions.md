@@ -11,6 +11,8 @@ tags:
 
 > [!up] [[GM Toolkit]]
 
+# Sessions
+
 Session prep and notes for your own table.
 
 ## In this section

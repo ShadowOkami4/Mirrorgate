@@ -10,6 +10,8 @@ tags:
 
 > [!up] [[Home]]
 
+# Faiths & Cosmos
+
 Deities, cults, planes and the Mirrorgate: how the world works beneath the surface.
 
 ## In this section

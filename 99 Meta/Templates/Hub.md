@@ -21,6 +21,8 @@ tags:
 
 > [!up] [[<% up %>]]
 
+# <% tp.file.title %>
+
 <% tp.file.cursor() %>
 
 ## In this section

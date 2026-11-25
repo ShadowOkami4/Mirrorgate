@@ -20,6 +20,8 @@ players: ""
 
 > [!up] [[<% up %>]]
 
+# <% tp.file.title %>
+
 <% tp.file.cursor() %>
 
 ## Summary

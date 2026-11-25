@@ -11,6 +11,8 @@ tags:
 
 > [!up] [[GM Toolkit]]
 
+# Encounters
+
 Reusable encounters and set pieces.
 
 ## In this section

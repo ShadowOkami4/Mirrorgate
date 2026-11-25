@@ -11,6 +11,8 @@ tags:
 
 > [!up] [[GM Toolkit]]
 
+# Tables
+
 Random tables: names, weather, rumours, loot.
 
 ## In this section

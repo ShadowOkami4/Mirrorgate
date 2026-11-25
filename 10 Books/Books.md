@@ -10,6 +10,8 @@ tags:
 
 > [!up] [[Home]]
 
+# Books
+
 Compiled book editions made from the vault.
 
 ## In this section

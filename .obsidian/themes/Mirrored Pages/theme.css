@@ -779,7 +779,9 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
   --mp-sec: var(--mp-section-color, var(--mp-accent));
   --mp-sec-icon: var(--mp-section-icon, var(--mp-card-default-icon));
 }
-.hub:not(.home) .inline-title {
+.hub:not(.home) .el-h1 > h1,
+.hub:not(.home) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+.hub:not(.home):not(:has(.el-h1)) .inline-title {
   position: relative;
   overflow: hidden;
   margin: 0 0 14px;
@@ -798,7 +800,9 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
   box-shadow: var(--shadow-l), inset 0 1px 0 var(--mp-glass-shine);
   text-shadow: 0 0 22px color-mix(in srgb, var(--mp-sec) 45%, transparent);
 }
-.hub:not(.home) .inline-title::before {
+.hub:not(.home) .el-h1 > h1::before,
+.hub:not(.home) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1::before,
+.hub:not(.home):not(:has(.el-h1)) .inline-title::before {
   content: "";
   position: absolute;
   left: 26px;
@@ -811,9 +815,13 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
   mask: var(--mp-sec-icon) center / contain no-repeat;
   filter: drop-shadow(0 0 8px var(--mp-sec));
 }
-.hub:not(.home) .inline-title::after {
+.hub:not(.home) .el-h1 > h1::after,
+.hub:not(.home) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1::after,
+.hub:not(.home):not(:has(.el-h1)) .inline-title::after {
   content: "";
   position: absolute;
+  left: auto;
+  top: auto;
   right: -14px;
   bottom: -26px;
   width: 140px;
@@ -825,8 +833,11 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
   mask: var(--mp-sec-icon) center / contain no-repeat;
   pointer-events: none;
 }
+.hub:not(.home) .el-h1 > h1 { font-size: 2.2em; margin: 0 0 14px; }
+.hub:not(.home) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 { font-size: 2.2em; margin-bottom: 14px; }
 /* the paragraph after the back link reads as the section's lead */
-.hub:not(.home) :is(.el-div, .el-blockquote):has(> .callout[data-callout="up"]) + .el-p > p {
+.hub:not(.home) :is(.el-div, .el-blockquote):has(> .callout[data-callout="up"]) + .el-p > p,
+.hub:not(.home) .el-h1 + .el-p > p {
   font-family: var(--mp-serif);
   font-size: 1.1em;
   line-height: 1.6;
@@ -836,52 +847,14 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 }
 
 /* ---------- Hover previews of hub pages: a mini page ---------------------- */
-/* A coloured header band with the section icon, then the lead text.
-   The back link and the "In this section" table are left out. */
-.hover-popover .hub .markdown-preview-sizer { position: relative; padding-top: 0 !important; }
-.hover-popover .hub .markdown-preview-sizer::before {
-  content: var(--mp-section-name, "");
-  display: block;
-  box-sizing: border-box;
-  height: 64px;
-  margin: 2px 0 16px;
-  padding-left: 66px;
-  line-height: 62px;
-  font-family: var(--mp-serif);
-  font-size: 1.3em;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--mp-silver-hi);
-  text-shadow: 0 0 16px color-mix(in srgb, var(--mp-sec) 55%, transparent);
-  border-radius: var(--radius-m);
-  border: 1px solid color-mix(in srgb, var(--mp-sec) 40%, transparent);
-  background:
-    linear-gradient(90deg, var(--mp-sec), transparent 70%) top left / 100% 2px no-repeat,
-    radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--mp-sec) 34%, transparent), transparent 65%),
-    linear-gradient(115deg, transparent 0 62%, var(--mp-glass-shine) 67%, transparent 74%),
-    linear-gradient(160deg, color-mix(in srgb, var(--mp-sec) 14%, var(--mp-glass)), var(--mp-glass));
-}
-.hover-popover .hub .markdown-preview-sizer::after {
-  content: "";
-  position: absolute;
-  top: 18px;
-  left: 20px;
-  width: 32px;
-  height: 32px;
-  background: var(--mp-sec);
-  -webkit-mask: var(--mp-sec-icon) center / contain no-repeat;
-  mask: var(--mp-sec-icon) center / contain no-repeat;
-  filter: drop-shadow(0 0 8px var(--mp-sec));
-}
+/* The coloured heading, then the lead text. The back link and the
+   "In this section" table are left out. */
+.hover-popover .hub .el-h1 > h1 { font-size: 1.5em; padding-top: 18px; padding-bottom: 16px; padding-left: 70px; }
+.hover-popover .hub .el-h1 > h1::before { left: 22px; width: 30px; height: 30px; }
 .hover-popover .hub :is(.el-div, .el-blockquote):has(> .callout[data-callout="up"]),
 .hover-popover .hub .el-h2:has(> h2[data-heading="In this section"]),
 .hover-popover .hub :is(.el-p, .el-div):has(.bases-embed) { display: none; }
-.hover-popover .hub :is(.el-div, .el-blockquote):has(> .callout[data-callout="up"]) + .el-p > p {
-  margin-top: 0;
-  font-size: 1em;
-  padding-left: 12px;
-}
+.hover-popover .hub .el-h1 + .el-p > p { font-size: 1em; padding-left: 12px; }
 .hover-popover:has(.hub) { border-color: color-mix(in srgb, var(--mp-accent) 30%, transparent); }
 
 /* ---------- Section cards (cssclasses: hub) ----------------------------- */

@@ -14,6 +14,8 @@ reveals: []
 
 > [!up] [[<% up %>]]
 
+# <% tp.file.title %>
+
 <% tp.file.cursor() %>
 
 ## The truth

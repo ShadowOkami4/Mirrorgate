@@ -13,6 +13,8 @@ up: "[[<% up %>]]"
 
 > [!up] [[<% up %>]]
 
+# <% tp.file.title %>
+
 <% tp.file.cursor() %>
 
 ## Rule

@@ -10,6 +10,8 @@ tags:
 
 > [!up] [[Home]]
 
+# History
+
 Eras and events as they really happened, oldest first.
 
 ## In this section

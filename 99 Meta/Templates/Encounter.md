@@ -14,6 +14,8 @@ region: ""
 
 > [!up] [[<% up %>]]
 
+# <% tp.file.title %>
+
 <% tp.file.cursor() %>
 
 ## Setup

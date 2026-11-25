@@ -10,6 +10,8 @@ tags:
 
 > [!up] [[Home]]
 
+# Meta
+
 How this vault works, and tools for running games.
 
 - [[World Bible]]: how Kagameru is built, and the inherited lore rules up for review

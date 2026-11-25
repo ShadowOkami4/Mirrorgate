@@ -10,6 +10,8 @@ tags:
 
 > [!up] [[Home]]
 
+# Rules
+
 How to play in Kagameru.
 
 ## Sections

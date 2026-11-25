@@ -11,6 +11,8 @@ tags:
 
 > [!up] [[Rules]]
 
+# Bestiary
+
 Creatures and statblocks.
 
 ## In this section

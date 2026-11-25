@@ -11,6 +11,8 @@ tags:
 
 > [!up] [[Meta]]
 
+# GM Toolkit
+
 Tools for the table: encounters, random tables and session notes.
 
 ## Sections

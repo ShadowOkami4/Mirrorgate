@@ -11,6 +11,8 @@ tags:
 
 > [!up] [[Rules]]
 
+# Options
+
 Character options: species, subclasses, backgrounds, feats, spells.
 
 ## In this section

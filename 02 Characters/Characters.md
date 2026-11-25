@@ -10,6 +10,8 @@ tags:
 
 > [!up] [[Home]]
 
+# Characters
+
 Everyone the GM may play or mention: rulers, villains, innkeepers. One note per character, with motives and stats.
 
 ## In this section

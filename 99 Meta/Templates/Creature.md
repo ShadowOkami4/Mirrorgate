@@ -14,6 +14,8 @@ cr: ""
 
 > [!up] [[<% up %>]]
 
+# <% tp.file.title %>
+
 <% tp.file.cursor() %>
 
 ## Description

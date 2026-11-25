@@ -11,6 +11,8 @@ tags:
 
 > [!up] [[Rules]]
 
+# Core
+
 Core rules and setting-specific mechanics.
 
 ## In this section

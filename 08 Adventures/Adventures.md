@@ -10,6 +10,8 @@ tags:
 
 > [!up] [[Home]]
 
+# Adventures
+
 Ready-to-run adventures. One folder per adventure, with its hub note inside.
 
 ## In this section

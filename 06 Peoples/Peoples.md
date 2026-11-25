@@ -10,6 +10,8 @@ tags:
 
 > [!up] [[Home]]
 
+# Peoples
+
 Species and cultures of Kagameru.
 
 ## In this section
