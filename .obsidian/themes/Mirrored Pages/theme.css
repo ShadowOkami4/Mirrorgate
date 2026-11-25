@@ -19,9 +19,29 @@ settings:
     level: 2
     collapsed: false
   -
+    id: mp-palette
+    title: Accent palette
+    description: Mirror is silver-blue with a violet second accent; Amethyst and Twilight are purple. A colour picked below overrides the palette's main accent
+    type: class-select
+    allowEmpty: false
+    default: mp-palette-mirror
+    options:
+      -
+        label: Mirror (silver-blue, violet)
+        value: mp-palette-mirror
+      -
+        label: Amethyst (purple, orchid)
+        value: mp-palette-amethyst
+      -
+        label: Twilight (violet, blue)
+        value: mp-palette-twilight
+      -
+        label: Moonsilver (no colour)
+        value: mp-palette-moonsilver
+  -
     id: mp-accent
     title: Mirror accent
-    description: Accent colour for links, buttons and the reflected rule
+    description: Accent colour for links, buttons and the reflected rule (overrides the palette)
     type: variable-themed-color
     format: hex
     opacity: false
@@ -61,6 +81,12 @@ settings:
       -
         label: Pewter (warmer grey)
         value: mp-surface-pewter
+  -
+    id: mp-framed-panes
+    title: Framed panes
+    description: Give the sidebars, ribbon and tab bar their own darker background instead of one seamless surface
+    type: class-toggle
+    default: false
   -
     id: mp-type
     title: Typography
@@ -234,7 +260,8 @@ body.mp-body-serif { --font-text-theme: var(--mp-serif); }
 
 /* ---------- Dark: deep slate glass -------------------------------------- */
 .theme-dark {
-  --mp-accent: #8fb6e0;
+  --mp-accent: var(--mp-pal-accent, #8fb6e0);
+  --mp-accent-2: var(--mp-pal-accent-2, #a98ae6);
   --mp-gm: #d0706a;
   --mp-player: #d9c48f;
   --mp-ink: #d8dde4;
@@ -252,18 +279,18 @@ body.mp-body-serif { --font-text-theme: var(--mp-serif); }
   --background-modifier-border-hover: #2b323c;
   --background-modifier-border-focus: #44505f;
   --background-modifier-hover: rgba(160, 185, 215, 0.07);
-  --background-modifier-active-hover: rgba(143, 182, 224, 0.14);
+  --background-modifier-active-hover: color-mix(in srgb, var(--mp-accent) 14%, transparent);
   --background-modifier-form-field: #12151b;
 
   --text-normal: var(--mp-ink);
   --text-muted: #9aa3ae;
   --text-faint: #6b7480;
   --text-accent: var(--mp-accent);
-  --text-accent-hover: #b4cfee;
+  --text-accent-hover: color-mix(in srgb, var(--mp-accent) 70%, white);
   --text-on-accent: #0a0d11;
-  --text-selection: rgba(143, 182, 224, 0.25);
+  --text-selection: color-mix(in srgb, var(--mp-accent) 25%, transparent);
   --interactive-accent: var(--mp-accent);
-  --interactive-accent-hover: #a7c6e8;
+  --interactive-accent-hover: color-mix(in srgb, var(--mp-accent) 82%, white);
   --interactive-normal: #161a21;
   --interactive-hover: #1e232c;
 
@@ -277,7 +304,7 @@ body.mp-body-serif { --font-text-theme: var(--mp-serif); }
   --code-background: #090b0f;
   --blockquote-border-color: var(--mp-silver-lo);
   --hr-color: #232931;
-  --table-header-background: rgba(143, 182, 224, 0.06);
+  --table-header-background: color-mix(in srgb, var(--mp-accent) 6%, transparent);
   --table-border-color: #1f242c;
 
   --graph-line: #2f3742;
@@ -310,7 +337,8 @@ body.mp-body-serif { --font-text-theme: var(--mp-serif); }
 
 /* ---------- Light: brushed silver --------------------------------------- */
 .theme-light {
-  --mp-accent: #3f6f9f;
+  --mp-accent: var(--mp-pal-accent, #3f6f9f);
+  --mp-accent-2: var(--mp-pal-accent-2, #6b4fb3);
   --mp-gm: #9e2a2b;
   --mp-player: #8a6a2a;
   --mp-ink: #2a3038;
@@ -328,18 +356,18 @@ body.mp-body-serif { --font-text-theme: var(--mp-serif); }
   --background-modifier-border-hover: #c1c8d1;
   --background-modifier-border-focus: #9aa6b4;
   --background-modifier-hover: rgba(40, 70, 110, 0.06);
-  --background-modifier-active-hover: rgba(63, 111, 159, 0.12);
+  --background-modifier-active-hover: color-mix(in srgb, var(--mp-accent) 12%, transparent);
   --background-modifier-form-field: #ffffff;
 
   --text-normal: var(--mp-ink);
   --text-muted: #5b6470;
   --text-faint: #8a939e;
   --text-accent: var(--mp-accent);
-  --text-accent-hover: #2d5884;
+  --text-accent-hover: color-mix(in srgb, var(--mp-accent) 75%, black);
   --text-on-accent: #ffffff;
-  --text-selection: rgba(63, 111, 159, 0.2);
+  --text-selection: color-mix(in srgb, var(--mp-accent) 20%, transparent);
   --interactive-accent: var(--mp-accent);
-  --interactive-accent-hover: #345f8b;
+  --interactive-accent-hover: color-mix(in srgb, var(--mp-accent) 85%, black);
   --interactive-normal: #ffffff;
   --interactive-hover: #eef1f5;
 
@@ -353,7 +381,7 @@ body.mp-body-serif { --font-text-theme: var(--mp-serif); }
   --code-background: #eaedf1;
   --blockquote-border-color: var(--mp-silver-lo);
   --hr-color: #d2d7de;
-  --table-header-background: rgba(63, 111, 159, 0.06);
+  --table-header-background: color-mix(in srgb, var(--mp-accent) 6%, transparent);
   --table-border-color: #d2d7de;
 
   --graph-line: #c6ccd4;
@@ -369,6 +397,15 @@ body.mp-body-serif { --font-text-theme: var(--mp-serif); }
 }
 .theme-light.mp-surface-obsidian { --background-primary: #fafbfc; --background-secondary: #eef0f3; }
 .theme-light.mp-surface-pewter { --background-primary: #f3f2f0; --background-secondary: #e7e5e2; --background-modifier-border: #d6d3cf; }
+
+
+/* ---------- Accent palettes ------------------------------------------- */
+.theme-dark.mp-palette-amethyst { --mp-pal-accent: #b39af0; --mp-pal-accent-2: #e08ad0; }
+.theme-light.mp-palette-amethyst { --mp-pal-accent: #6b4fb3; --mp-pal-accent-2: #9a3f90; }
+.theme-dark.mp-palette-twilight { --mp-pal-accent: #a48df0; --mp-pal-accent-2: #7fb0f0; }
+.theme-light.mp-palette-twilight { --mp-pal-accent: #5a4fb3; --mp-pal-accent-2: #3f6f9f; }
+.theme-dark.mp-palette-moonsilver { --mp-pal-accent: #c3cdd8; --mp-pal-accent-2: #9aa6b4; }
+.theme-light.mp-palette-moonsilver { --mp-pal-accent: #4f5a68; --mp-pal-accent-2: #7d8896; }
 
 /* ---------- Headings: silver sheen + reflected rule --------------------- */
 body:not(.mp-no-sheen) .markdown-rendered h1,
@@ -401,7 +438,7 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
   height: 6px;
   /* the rule, and its faint reflection below it */
   background:
-    linear-gradient(90deg, transparent, var(--mp-accent) 18%, var(--mp-silver-lo) 60%, transparent) top / 100% 1px no-repeat,
+    linear-gradient(90deg, transparent, var(--mp-accent) 18%, var(--mp-accent-2) 48%, var(--mp-silver-lo) 72%, transparent) top / 100% 1px no-repeat,
     linear-gradient(90deg, transparent, color-mix(in srgb, var(--mp-accent) 30%, transparent) 18%, color-mix(in srgb, var(--mp-silver-lo) 20%, transparent) 60%, transparent) 0 4px / 100% 1px no-repeat;
   opacity: 0.85;
 }
@@ -2586,6 +2623,215 @@ body .atlas-toolbar-tray {
   -webkit-backdrop-filter: blur(var(--mp-glass-blur));
   backdrop-filter: blur(var(--mp-glass-blur));
   border-color: color-mix(in srgb, var(--mp-accent) 28%, transparent);
+}
+
+
+/* ---------- Seamless workspace ----------------------------------------- */
+/* One surface from ribbon to status bar: sidebars, tab bar and ribbon share
+   the note's background, separated only by faint lines and a soft shade.
+   Style Settings > Framed panes brings back the darker side panels. */
+body:not(.mp-framed-panes) {
+  --divider-color: color-mix(in srgb, var(--mp-silver-lo) 9%, transparent);
+  --divider-color-hover: color-mix(in srgb, var(--mp-accent) 45%, transparent);
+  --tab-outline-color: transparent;
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-primary);
+  --titlebar-border-color: transparent;
+  --ribbon-background: var(--background-primary);
+  --ribbon-background-collapsed: var(--background-primary);
+  --tab-container-background: var(--background-primary);
+  --status-bar-background: color-mix(in srgb, var(--background-primary) 85%, transparent);
+  --status-bar-border-color: transparent;
+}
+body:not(.mp-framed-panes) .workspace-ribbon,
+body:not(.mp-framed-panes) .workspace-ribbon.mod-left,
+body:not(.mp-framed-panes) .workspace-split.mod-left-split,
+body:not(.mp-framed-panes) .workspace-split.mod-right-split,
+body:not(.mp-framed-panes) .workspace-tab-header-container,
+body:not(.mp-framed-panes) .workspace-split.mod-sidedock .view-header,
+body:not(.mp-framed-panes) .workspace-split.mod-sidedock .workspace-leaf-content,
+body:not(.mp-framed-panes) .workspace-split.mod-sidedock .view-content,
+body:not(.mp-framed-panes) .workspace-split.mod-sidedock .nav-header {
+  background-color: var(--background-primary);
+}
+/* a soft shade at the inner edge of each sidebar instead of a hard border */
+body:not(.mp-framed-panes) .workspace-split.mod-left-split {
+  border-right: none;
+  box-shadow: inset -1px 0 0 var(--divider-color);
+  background-image: linear-gradient(270deg, color-mix(in srgb, var(--mp-accent) 3%, transparent), transparent 40%);
+}
+body:not(.mp-framed-panes) .workspace-split.mod-right-split {
+  border-left: none;
+  box-shadow: inset 1px 0 0 var(--divider-color);
+  background-image: linear-gradient(90deg, color-mix(in srgb, var(--mp-accent) 3%, transparent), transparent 40%);
+}
+body:not(.mp-framed-panes) .workspace-ribbon.mod-left { border-right: none; }
+body:not(.mp-framed-panes) .workspace .mod-root .workspace-tab-header-container { border-bottom: 1px solid var(--divider-color); }
+body:not(.mp-framed-panes) .workspace-leaf-resize-handle { border-color: transparent; }
+body:not(.mp-framed-panes) .workspace-leaf-resize-handle:hover { border-color: var(--divider-color-hover); }
+body:not(.mp-framed-panes) .workspace-split.mod-left-split .workspace-sidedock-vault-profile { border-top-color: var(--divider-color); }
+/* tabs: no boxes; the active one gets a glowing accent line along its top */
+body:not(.mp-framed-panes) .workspace-tab-header,
+body:not(.mp-framed-panes) .workspace-tab-header.is-active { background: transparent; box-shadow: none; }
+body:not(.mp-framed-panes) .workspace-tab-header-inner { border-radius: var(--radius-s); }
+body:not(.mp-framed-panes) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner { background: color-mix(in srgb, var(--mp-accent) 7%, transparent); }
+body:not(.mp-framed-panes) .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+  background:
+    linear-gradient(90deg, transparent, var(--mp-accent), var(--mp-accent-2), transparent) top / 100% 2px no-repeat,
+    linear-gradient(180deg, color-mix(in srgb, var(--mp-accent) 10%, transparent), transparent 80%);
+  box-shadow: 0 -4px 14px -8px var(--mp-accent);
+}
+body:not(.mp-framed-panes) .workspace-tab-header::before,
+body:not(.mp-framed-panes) .workspace-tab-header::after { display: none; }
+body:not(.mp-framed-panes) .status-bar { border-top: none; box-shadow: inset 0 1px 0 var(--divider-color); }
+
+/* ---------- Dice Roller (sidebar view) --------------------------------- */
+.dice-roller-view {
+  --mp-die: color-mix(in srgb, var(--mp-accent) 70%, var(--mp-silver-hi));
+}
+.workspace-split .view-content.dice-roller-view {
+  padding: 12px 12px 16px;
+  gap: 14px;
+  background:
+    radial-gradient(ellipse 120% 40% at 50% 0%, color-mix(in srgb, var(--mp-accent-2) 10%, transparent), transparent 70%),
+    var(--background-primary);
+}
+.dice-roller-view::before {
+  content: "Dice";
+  display: block;
+  padding: 2px 0 6px;
+  text-align: center;
+  font-family: var(--mp-serif);
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, var(--mp-silver-hi), var(--mp-silver-lo));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg, transparent, var(--mp-accent), var(--mp-accent-2), transparent) 1;
+}
+/* the dice: a grid of small glass tiles */
+.dice-roller-view .dice-roller-grid .dice-buttons { gap: 6px; width: 100%; }
+.dice-roller-view .dice-buttons > * {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-width: 46px;
+  height: 50px;
+  margin: 0;
+  padding: 4px;
+  border-radius: var(--radius-m);
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 22%, var(--background-modifier-border));
+  background:
+    linear-gradient(180deg, var(--mp-glass-shine), transparent 55%),
+    var(--mp-glass);
+  box-shadow: inset 0 1px 0 var(--mp-glass-shine);
+  color: var(--mp-die);
+  --icon-color: var(--mp-die);
+  --icon-size: 24px;
+  transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease, color 120ms ease;
+}
+.dice-roller-view .dice-buttons > * svg { width: 24px; height: 24px; color: var(--mp-die); stroke: currentColor; opacity: 1; }
+.dice-roller-view .dice-buttons > * svg :is(text, tspan) { fill: currentColor; stroke: none; }
+.dice-roller-view .dice-buttons > *:hover {
+  transform: translateY(-1px);
+  color: var(--mp-silver-hi);
+  border-color: color-mix(in srgb, var(--mp-accent) 60%, transparent);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--mp-accent) 30%, transparent), inset 0 1px 0 var(--mp-glass-shine);
+}
+.dice-roller-view .dice-buttons > *:hover svg { color: var(--mp-silver-hi); filter: drop-shadow(0 0 6px var(--mp-accent)); }
+/* advantage / disadvantage: a two-part switch */
+.dice-roller-view .advantage-disadvantage { gap: 0 !important; }
+.dice-roller-view .advantage-disadvantage > :not(button) { margin: 0 8px; }
+.dice-roller-view .advantage-disadvantage button {
+  border-radius: 0;
+  font-family: var(--mp-serif);
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  background: var(--mp-glass);
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 25%, var(--background-modifier-border));
+  box-shadow: none;
+}
+.dice-roller-view .advantage-disadvantage button:first-of-type { border-radius: 99px 0 0 99px; }
+.dice-roller-view .advantage-disadvantage button:last-of-type { border-radius: 0 99px 99px 0; border-left: none; }
+.dice-roller-view .advantage-disadvantage button.mod-cta,
+.dice-roller-view .advantage-disadvantage button.is-active {
+  color: var(--text-on-accent);
+  background: linear-gradient(90deg, var(--mp-accent), var(--mp-accent-2));
+}
+/* formula field and the roll button */
+.dice-roller-view textarea,
+.dice-roller-view input[type="text"] {
+  font-family: var(--font-monospace);
+  border-radius: var(--radius-m);
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 25%, var(--background-modifier-border));
+  background: var(--background-modifier-form-field);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.dice-roller-view textarea:focus,
+.dice-roller-view input[type="text"]:focus {
+  border-color: var(--mp-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--mp-accent) 25%, transparent);
+}
+.dice-roller-view .dice-roller-roll {
+  padding: 6px 18px;
+  border: none;
+  border-radius: 99px;
+  font-family: var(--mp-serif);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-on-accent);
+  background: linear-gradient(90deg, var(--mp-accent), var(--mp-accent-2));
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--mp-accent-2) 35%, transparent), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+.dice-roller-view .dice-roller-roll:hover:not(:disabled) { filter: brightness(1.1); box-shadow: 0 4px 22px color-mix(in srgb, var(--mp-accent-2) 50%, transparent), inset 0 1px 0 rgba(255, 255, 255, 0.35); }
+.dice-roller-view hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--mp-accent) 50%, transparent), transparent);
+}
+/* results: each roll a small mirror card with a glowing number */
+.dice-roller-view .dice-roller-results-container .dice-roller-results-header {
+  border-bottom: none;
+  background: linear-gradient(90deg, var(--mp-accent), var(--mp-accent-2) 45%, transparent) bottom left / 100% 1px no-repeat;
+  padding-bottom: 4px;
+}
+.dice-roller-view .dice-roller-results-header h4 {
+  font-family: var(--mp-serif);
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  color: color-mix(in srgb, var(--mp-accent) 70%, var(--mp-silver-hi));
+}
+.dice-roller-view .dice-roller-results .view-result {
+  padding: 18px 10px 4px;
+  border-radius: var(--radius-m);
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 22%, var(--background-modifier-border));
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 30%, color-mix(in srgb, var(--mp-accent-2) 10%, transparent), transparent 70%),
+    var(--mp-glass);
+  box-shadow: inset 0 1px 0 var(--mp-glass-shine);
+}
+.dice-roller-view .dice-roller-results .view-result:first-child {
+  border-color: color-mix(in srgb, var(--mp-accent) 50%, transparent);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--mp-accent) 18%, transparent), inset 0 1px 0 var(--mp-glass-shine);
+}
+.dice-roller-view .dice-roller-results .view-result strong {
+  font-family: var(--mp-serif);
+  font-size: 2em;
+  line-height: 1.1;
+  color: var(--mp-silver-hi);
+  text-shadow: 0 0 16px color-mix(in srgb, var(--mp-accent) 60%, transparent);
+}
+.dice-roller-view .dice-roller-results .view-result .result-context {
+  border-top: 1px solid var(--divider-color, var(--background-modifier-border));
+  margin-top: 6px;
+  color: var(--text-faint);
 }
 
 /* ---------- Print / export ---------------------------------------------- */
