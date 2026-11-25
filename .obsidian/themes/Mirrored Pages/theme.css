@@ -1227,11 +1227,11 @@ body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-call
   background: linear-gradient(225deg, var(--background-primary) 0 50%, color-mix(in srgb, var(--mp-c) 30%, #1b2338) 50% 100%);
   box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.45);
 }
-/* the seal: a blob of crimson wax pressed with PII. A flat stamped centre,
+/* the seal: a blob of crimson wax pressed with the Phantomhive crest. A flat stamped centre,
    a dark groove and a raised lip; offset copies of the blob in the shadow
-   give it a lumpy, poured edge; the letters are debossed into the wax. */
+   give it a lumpy, poured edge; a hive-cell hexagon with a dot at each corner and a P are debossed into it. */
 body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"])::after {
-  content: "P\2161";
+  content: "P";
   position: absolute;
   z-index: 2;
   top: 16px;
@@ -1244,6 +1244,7 @@ body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-call
   transform: rotate(-8deg);
   border-radius: 52% 48% 55% 45% / 47% 55% 45% 53%;
   background:
+    url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 44 44%22%3E%3Cpolygon points=%2222.00,37.40 9.44,30.15 9.44,15.65 22.00,8.40 34.56,15.65 34.56,30.15%22 fill=%22none%22 stroke=%22rgba(255,150,150,0.45)%22 stroke-width=%221.4%22 stroke-linejoin=%22round%22/%3E%3Ccircle cx=%2222.00%22 cy=%2237.40%22 r=%221.5%22 fill=%22rgba(255,150,150,0.45)%22/%3E%3Ccircle cx=%229.44%22 cy=%2230.15%22 r=%221.5%22 fill=%22rgba(255,150,150,0.45)%22/%3E%3Ccircle cx=%229.44%22 cy=%2215.65%22 r=%221.5%22 fill=%22rgba(255,150,150,0.45)%22/%3E%3Ccircle cx=%2222.00%22 cy=%228.40%22 r=%221.5%22 fill=%22rgba(255,150,150,0.45)%22/%3E%3Ccircle cx=%2234.56%22 cy=%2215.65%22 r=%221.5%22 fill=%22rgba(255,150,150,0.45)%22/%3E%3Ccircle cx=%2234.56%22 cy=%2230.15%22 r=%221.5%22 fill=%22rgba(255,150,150,0.45)%22/%3E%3Cpolygon points=%2222.00,36.50 9.44,29.25 9.44,14.75 22.00,7.50 34.56,14.75 34.56,29.25%22 fill=%22none%22 stroke=%22rgba(70,4,14,0.9)%22 stroke-width=%221.4%22 stroke-linejoin=%22round%22/%3E%3Ccircle cx=%2222.00%22 cy=%2236.50%22 r=%221.5%22 fill=%22rgba(70,4,14,0.9)%22/%3E%3Ccircle cx=%229.44%22 cy=%2229.25%22 r=%221.5%22 fill=%22rgba(70,4,14,0.9)%22/%3E%3Ccircle cx=%229.44%22 cy=%2214.75%22 r=%221.5%22 fill=%22rgba(70,4,14,0.9)%22/%3E%3Ccircle cx=%2222.00%22 cy=%227.50%22 r=%221.5%22 fill=%22rgba(70,4,14,0.9)%22/%3E%3Ccircle cx=%2234.56%22 cy=%2214.75%22 r=%221.5%22 fill=%22rgba(70,4,14,0.9)%22/%3E%3Ccircle cx=%2234.56%22 cy=%2229.25%22 r=%221.5%22 fill=%22rgba(70,4,14,0.9)%22/%3E%3C/svg%3E") center / 100% 100% no-repeat,
     linear-gradient(140deg, rgba(255, 190, 180, 0.22), transparent 40%, transparent 60%, rgba(20, 0, 4, 0.35)),
     radial-gradient(circle at 50% 50%, #7d1424 0 44%, #4f0913 46% 49%, #b8394c 52%, #9a2536 57%, #7a1424 66%, #8c1d2d 100%);
   box-shadow:
@@ -1256,8 +1257,9 @@ body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-call
   font-family: var(--mp-serif);
   font-style: italic;
   font-weight: 700;
-  font-size: 15px;
-  letter-spacing: -0.05em;
+  font-size: 16px;
+  line-height: 1;
+  padding-top: 1px;
   color: #5a0c18;
   text-shadow: 0 1px 0 rgba(255, 150, 150, 0.45), 0 -1px 0 rgba(15, 0, 3, 0.7);
   pointer-events: none;
