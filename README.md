@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>The Mirrored Realms</h1>
+  <img src=".github/readme/banner.svg" alt="The Mirrored Realms: a 5.5e campaign setting of living reflections, broken time and divine scars" width="100%">
   <p><strong>An evolving campaign setting of living reflections, broken time, folded space, and divine scars.</strong></p>
   <p>
     <code>5.5e compatible</code> ·
@@ -12,6 +12,7 @@
   <p>
     <a href="https://shadowokami.com/MirrorGate">Project website</a> ·
     <a href="Home.md">Open the vault</a> ·
+    <a href="#a-look-inside">A look inside</a> ·
     <a href="#getting-started">Getting started</a> ·
     <a href="#release-roadmap">Roadmap</a> ·
     <a href="#contributing">Contributing</a> ·
@@ -27,7 +28,7 @@
 ## Contents
 
 - [About the Setting](#about-the-setting)
-- [The Known World](#the-known-world)
+- [A Look Inside](#a-look-inside)
 - [Getting Started](#getting-started)
 - [Repository Layout](#repository-layout)
 - [Reading the Vault](#reading-the-vault)
@@ -53,34 +54,46 @@ The project combines setting lore, characters, factions, creatures, homebrew rul
 | **Main campaign** | Shattered Hope (CF-01) |
 | **Rules foundation** | fifth edition, using the System Reference Document 5.2.1 |
 | **Format** | Obsidian vault of linked Markdown notes |
-| **Virtual tabletop** | Atlas VTT (optional) |
+| **Virtual tabletop** | Atlas VTT (optional), with statblock templates for every rank |
 | **License** | CC BY 4.0 for original project material |
 
-## The Known World
+## A Look Inside
+
+Screenshots from the vault in Obsidian, with its own theme, [Mirrored Pages](https://github.com/ShadowOkami4/mirrored-pages), and [Atlas VTT](https://github.com/ByteMirror/atlas-vtt) statblocks.
 
 <p align="center">
-  <img src="90%20Assets/Maps/Kagameru_World_Map.jpg" alt="Physical map of Kagameru, showing Specula, Drychwen, Scáthan, Veidra, Skuggsjá, Tezcatl, and the Southern Ice" width="100%">
+  <img src=".github/readme/home.jpg" alt="The Home page: a night-sky title card and colour-coded section cards for Atlas, Characters, Factions, History, Faiths and Cosmos, Peoples, Secrets, Adventures, Rules, Books and Meta" width="49%">
+  <img src=".github/readme/graph.jpg" alt="The graph view over a dark night sky with a faint struck-glass crack: every note linked to its section, sections coloured" width="49%">
 </p>
+<p align="center"><em>Left: the Home page, the entrance to every section. Right: the graph, where every note links up to its section and the sky has a crack in it.</em></p>
+
+<p align="center">
+  <img src=".github/readme/sandra-page.jpg" alt="Sandra Mistic's page: her lore on the left, her Atlas VTT statblock on the right with Dormant Boss and Undead tags" width="100%">
+</p>
+<p align="center"><em>A character page: lore for the GM on the left, the Atlas VTT statblock on the right.</em></p>
 
 <details>
-<summary><strong>View the political map</strong></summary>
+<summary><strong>Statblocks: ranks and creature types</strong></summary>
 <p align="center">
-  <img src="90%20Assets/Maps/Kagameru_Political_Map.jpg" alt="Political map of Kagameru, showing its realms and their borders" width="100%">
+  <img src=".github/readme/statblock-creature.jpg" alt="Kaleidoscope statblock with Creature and Aberration tags" width="32%">
+  <img src=".github/readme/statblock-dormant.jpg" alt="Sandra Mistic statblock in violet and red with Dormant Boss and Undead tags" width="32%">
+  <img src=".github/readme/statblock-boss.jpg" alt="Maria Rose, Corrupted statblock in red with Boss and Undead tags and legendary actions" width="32%">
 </p>
+<p align="center"><em>Every statblock wears its rank (Creature, NPC, Important NPC, Boss, Dormant Boss) and its creature type, read automatically from the type field.</em></p>
 </details>
 
-> [!WARNING]
-> **This is an early version of the world map.** Coastlines, borders, realms, and the positions of places may still change wherever they do not fit the stories being written. When the map and the stories disagree, the stories decide.
+<details>
+<summary><strong>Places and callouts</strong></summary>
+<p align="center">
+  <img src=".github/readme/place-page.jpg" alt="The Forest of Thieves page with a quote, an at-a-glance box and the overview" width="32%">
+  <img src=".github/readme/callouts-1.jpg" alt="Callouts for read-aloud text, handouts, rumours, loot, lore, traps and rules" width="32%">
+  <img src=".github/readme/callouts-2.jpg" alt="Callouts for prophecy, curses, visions, combat, clues, divine blessings, arcane wards and weather" width="32%">
+</p>
+<p align="center"><em>A place page, and some of the theme's TTRPG callouts: read aloud, handouts, rumours, loot, traps, combat, clues and more.</em></p>
+</details>
 
-The map previews are made with a self-made AI-assisted simulation. The maps themselves are then generated from a single seed (`27182818`) through procedural generation: terrain, erosion, climate, and biomes are simulated first, and rivers, realms, settlements, roads, and railways are placed on top.
-
-| Property | Value |
-| --- | --- |
-| Extent | 12,000 × 10,000 km |
-| Projection | flat, origin at the north-west corner; x runs east, y runs south |
-| Full resolution | 12,000 × 10,000 px (1 px ≈ 1 km) |
-| Images in this repository | 2,400 px wide copies in `90 Assets/Maps/` |
-| Source files | kept locally, outside the vault; not published, because the full-size renders exceed 20 MB each |
+> [!NOTE]
+> **About the world map.** The previous map previews have been withdrawn while the world is rewritten; a new version will follow once the lore has settled. The old images stay in `90 Assets/Maps/` for reference and are no longer canon.
 
 ## Getting Started
 
@@ -127,7 +140,7 @@ The tables inside hub notes use Obsidian's core **Bases** plugin. The vault uses
 ## Repository Layout
 
 > [!NOTE]
-> **The vault is being rebuilt (November 2026).** The folders below are the new skeleton; notes are rewritten section by section. The previous version is in the git history.
+> **The vault was rebuilt in November 2026** on the `rework/v2` branch. The old notes are being rewritten into this layout batch by batch, updated for SRD 5.2.1. Back so far: the world and its continents, Specula and Lustro, the Mirrorgate, history, faiths, all nine peoples, the royal houses and factions, the Shardkin, the subclasses, *The Pact in the Twilight* and the books. Still to come: the other adventures. The previous version is in the git history.
 
 The vault is written for **Game Masters**. Every page tells the whole story; text players may read sits in a **Player info** box at the bottom of the page.
 
@@ -145,7 +158,7 @@ The vault is written for **Game Masters**. Every page tells the whole story; tex
 | `09 Rules/` | core rules, character options, bestiary |
 | `10 Books/` | compiled book editions |
 | `90 Assets/` | maps and art; `90 Assets/Private/` is kept local and not published |
-| `99 Meta/` | the World Bible, the GM Toolkit (encounters, tables, sessions), templates and views, and `Atlas Templates/` with statblock templates for Atlas VTT: **Character**, **NPC**, **Important NPC** (with a Story section), **Boss** (tactics, legendary and lair actions), **Dormant Threat** (peaceful by default, a boss when provoked) and **Companion** (familiars, mounts and pets, linked to their owner) |
+| `99 Meta/` | the World Bible, the GM Toolkit (encounters, tables, sessions), templates and views, and `Atlas Templates/` with statblock templates for Atlas VTT: **Character**, **Creature** (bestiary monsters), **NPC**, **Important NPC** (with a Story section), **Boss** (tactics, legendary actions, regional effects), **Dormant Threat** (peaceful by default, a boss when provoked) and **Companion** (familiars, mounts and pets, linked to their owner) |
 | `.obsidian/` | shared vault settings, plugins, theme |
 
 These paths are excluded from the repository by `.gitignore`:
@@ -159,11 +172,19 @@ These paths are excluded from the repository by `.gitignore`:
 
 ## Reading the Vault
 
+<p align="center">
+  <img src=".github/readme/vault-layout.svg" alt="Diagram: Home in the centre, with ten section hubs from 01 Atlas to 10 Books around it" width="100%">
+</p>
+
 - **By folder.** Every folder has a hub note with the folder's name (`Atlas.md`, `Characters.md` …). Its *In this section* table lists what is inside.
 - **By graph.** Every note's `up` property links to its hub, and every hub links up to [Home](Home.md), so the graph branches out from Home. Each section has its own colour; pages with a finished player box are parchment-coloured.
 - **By table.** Each hub's *In this section* table (a Bases view) lists what is in its folder, including the `player` column.
 
 ### Player Info
+
+<p align="center">
+  <img src=".github/readme/page-anatomy.svg" alt="Diagram of a page: up link, title, quote, body, a folded GM callout, and the Player info box at the bottom" width="100%">
+</p>
 
 The last block of a lore page is the player box:
 
@@ -190,7 +211,7 @@ Every note carries YAML front matter, hidden in the reading view. Templates in `
 All rules material targets fifth edition and uses the terminology and stat block format of the **System Reference Document 5.2.1**.
 
 - **Character options**, such as the Mirrorbound fighter and Scarborn Sorcery, work in any fifth-edition world. Setting lore is kept in an optional section, *In the Mirrored Realms*.
-- **Creatures** use the current stat block layout: AC and Initiative, a combined ability and saving-throw table, `CR x (XP y; PB +z)`, and separate Traits, Actions, Bonus Actions, and Reactions.
+- **Creatures** use the current stat block layout: AC and Initiative, a combined ability and saving-throw table, XP and PB, and separate Traits, Actions, Bonus Actions, Reactions, Legendary Actions and Regional Effects. In Atlas VTT each statblock shows its rank and its creature type as tags; the type is read from the `creature_type` field.
 - **Rules modules**, such as Scar Hazards, keep mechanics out of the lore entries.
 
 > [!NOTE]
@@ -236,7 +257,7 @@ The planned collection contains **18 journeys**: ten one-shots, five short adven
 
 | Release | Kind | State | Progress | Current work |
 | --- | --- | --- | ---: | --- |
-| The Pact in the Twilight | short adventure | `ACTIVE DRAFT` | **25%** | Prelude and Chapters 1–3 drafted; outlining the rest of the adventure |
+| The Pact in the Twilight | short adventure | `ACTIVE DRAFT` | **30%** | Prelude and Chapters 1–3 drafted and updated for SRD 5.2.1; Chapter 4 next |
 | Shattered Hope | main campaign | `FOUNDATION` | **1%** | defining the campaign spine and its major arcs |
 
 <details>
@@ -246,8 +267,9 @@ The planned collection contains **18 journeys**: ten one-shots, five short adven
 
 - [x] Draft the opening premise, forest journey, and meeting with Sandra
 - [x] Draft the first chapters: the road north, the temple, and the sanctum behind the mirror
-- [ ] **Complete the adventure outline and chapter structure — current work**
-- [ ] Add encounters, maps, creature statistics, and consequences
+- [x] Statblocks for the Shardkin, Sandra Mistic and both forms of Maria Rose; encounter difficulty checked against the 2024 rules
+- [ ] **Write Chapter 4 and complete the chapter structure — current work**
+- [ ] Add maps, handouts, and consequences
 - [ ] Add rewards, scaling, and Game Master guidance
 - [ ] Playtest, revise, and prepare the adventure for release
 
@@ -288,7 +310,7 @@ The planned collection contains **18 journeys**: ten one-shots, five short adven
 
 | ID | Title | State | Notes |
 | --- | --- | --- | --- |
-| SA-01 | **The Pact in the Twilight** | `ACTIVE DRAFT` · **25%** | the first short adventure in active development |
+| SA-01 | **The Pact in the Twilight** | `ACTIVE DRAFT` · **30%** | the first short adventure in active development |
 | SA-02 | **Confronting Yourself** | `ANNOUNCED` | development has not begun |
 | SA-03 | **The Mysteries of the Phantomhives** | `ANNOUNCED` | development has not begun |
 | SA-04 – SA-05 | — | `UNANNOUNCED` | |
@@ -324,11 +346,12 @@ I will not hide or lie about it: I use AI. [Claude](https://claude.ai), an AI as
 - checking grammar and spelling;
 - minor help with balancing the game mechanics of subclasses, monsters, and items;
 - organizing the vault and rewording existing entries from my own notes and ideas;
-- the self-made simulation that helps prepare the world map previews.
+- the self-made simulation that helps prepare the world map previews;
+- the vault's own theme and plugin setup, and the banner and diagrams at the top of this README, which are drawn as code with Claude's help.
 
 What I will not use AI for is the story itself. The plot, the characters, the direction of the adventures, and the vision of the world come from me. This world has taken years and many scrapped versions to grow into what it is, and I don't want that vision replaced by AI. Where AI has helped with wording, the story decisions behind it are still mine, and anything that does not match my vision gets rewritten.
 
-I also do not use AI-generated artwork. Every image in the Mirrored Realms is made by a person.
+I also do not use AI-generated artwork for the world. The banner and the two diagrams in this README are simple graphics drawn as code with Claude, not illustrations of the setting, and the screenshots show the vault itself. Every illustration of Kagameru, its people, creatures and places is made by a person.
 
 ## Contributing
 
@@ -364,13 +387,16 @@ To propose artwork or get in touch about a commission, open an [artwork proposal
 
 **The Mirrored Realms** — world, story, and adventures — is created by **Okami**.
 
+**Mirrored Pages** — the vault's theme, which also styles Atlas VTT and Hearth — is part of this project and published separately at [ShadowOkami4/mirrored-pages](https://github.com/ShadowOkami4/mirrored-pages) under the MIT License.
+
 **Atlas VTT** — the virtual tabletop plugin this vault is set up for — is created by **Fabian Urbanek** ([ByteMirror](https://github.com/ByteMirror)). It began as part of his bachelor's thesis, with the goal of giving the tabletop community a virtual tabletop that is open source, hackable, and free to use. Many thanks for making it. If you enjoy playing the Mirrored Realms with Atlas VTT, consider starring or supporting the [Atlas VTT project](https://github.com/ByteMirror/atlas-vtt).
 
 ## License and Attribution
 
 | Material | License |
 | --- | --- |
-| Original Mirrored Realms material (text, rules, maps, contributed artwork) | [CC BY 4.0](LICENSE) |
+| Original Mirrored Realms material (text, rules, maps, contributed artwork, README graphics and screenshots) | [CC BY 4.0](LICENSE) |
+| The Mirrored Pages theme in `.obsidian/themes/` | MIT, see the [theme repository](https://github.com/ShadowOkami4/mirrored-pages) |
 | Material from the System Reference Document 5.2.1 | CC BY 4.0, by Wizards of the Coast LLC |
 | Obsidian plugins and themes in `.obsidian/` | their own licenses; Atlas VTT is licensed under the GNU AGPL |
 | Recommended music | not included; all rights remain with the rights holders |

@@ -20,6 +20,16 @@ The Mirrored Realms is designed to be **compatible with fifth edition** using th
 
 The project recommends music from other works for use at the table. No music is distributed with this project. Every recommended track remains the property of its composer and rights holders, and is credited by franchise and copyright. Recommended music comes from *Celeste* (© Maddy Makes Games, music by Lena Raine), *The Legend of Zelda* and *Super Mario* (© Nintendo), and *Professor Layton* (© Level-5). Planned remixes of copyrighted music are not covered by the project license and will only be published where permitted.
 
+## README Graphics and Screenshots
+
+The banner (`.github/readme/banner.svg`) and the two diagrams (`vault-layout.svg`, `page-anatomy.svg`) were drawn as code for this project with the help of Claude, an AI assistant by Anthropic. They are graphics, not artwork of the setting. They are original project material under CC BY 4.0.
+
+The screenshots in `.github/readme/` show this vault in Obsidian with the Mirrored Pages theme. They are original project material under CC BY 4.0. Interface elements visible in them belong to their own projects: Obsidian (© Dynalist Inc.) and the Atlas VTT plugin (GNU AGPL).
+
+## Mirrored Pages Theme
+
+The theme in `.obsidian/themes/Mirrored Pages/` is part of this project and is published separately at https://github.com/ShadowOkami4/mirrored-pages under the MIT License. Its copy here keeps that license.
+
 ## Third-Party Software
 
 Files supplied by Obsidian plugins, themes, or other third-party tools are not authored by The Mirrored Realms contributors and are not relicensed under the project license. Their original licenses and copyright notices continue to apply.
