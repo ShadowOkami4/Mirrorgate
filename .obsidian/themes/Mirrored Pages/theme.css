@@ -475,6 +475,15 @@ body:not(.mp-no-reflection) .markdown-source-view.mod-cm6 .cm-line.HyperMD-heade
 .callout[data-callout="location"] { --mp-c: #4a90e2; --callout-icon: lucide-map-pin; }
 .callout[data-callout="quest"] { --mp-c: #e8a33d; --callout-icon: lucide-flag; }
 .callout[data-callout="secret"] { --mp-c: #c0506a; --callout-icon: lucide-lock; }
+.callout:is([data-callout="shattered"], [data-callout="mirror"]) { --mp-c: #a9c4e6; --callout-icon: lucide-zap; }
+.callout[data-callout="prophecy"] { --mp-c: #9db4ff; --callout-icon: lucide-telescope; }
+.callout[data-callout="curse"] { --mp-c: #9b6ad6; --callout-icon: lucide-skull; }
+.callout:is([data-callout="vision"], [data-callout="dream"]) { --mp-c: #8fd6e0; --callout-icon: lucide-eye; }
+.callout[data-callout="combat"] { --mp-c: #e05a4a; --callout-icon: lucide-swords; }
+.callout[data-callout="clue"] { --mp-c: #e8c547; --callout-icon: lucide-search; }
+.callout:is([data-callout="divine"], [data-callout="holy"]) { --mp-c: #f0cf6a; --callout-icon: lucide-sun; }
+.callout:is([data-callout="arcane"], [data-callout="magic"]) { --mp-c: #7c8cf0; --callout-icon: lucide-wand-sparkles; }
+.callout[data-callout="weather"] { --mp-c: #7fa8c8; --callout-icon: lucide-cloud-rain; }
 
 .callout {
   --callout-padding: 0;
@@ -976,6 +985,155 @@ body:not(.mp-callout-minimal) .callout[data-callout="secret"]::after {
   border-radius: 50%;
   background: radial-gradient(circle at 35% 30%, #e07a8a, #9a2a3c 60%, #5a1020);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5), inset 0 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+/* shattered / mirror: cracked glass spreading from the top-right corner */
+body:not(.mp-callout-minimal) .callout:is([data-callout="shattered"], [data-callout="mirror"]) {
+  background:
+    url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 260 170%22%3E%3Cg fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M236 22L221 37L207 51L193 78L173 99 M236 22L222 35L209 45L197 53L180 70L176 86L159 92 M236 22L216 37L198 51L186 57L165 71L146 92L124 99L100 115L77 115L56 134%22 stroke=%22rgba(200,225,255,0.10)%22 stroke-width=%224%22/%3E%3Cpath d=%22M224 71L230 81 M213 124L221 141 M236 22L235 36L230 48L224 71L216 81L211 107L213 124L195 136 M232 107L248 133 M251 152L246 169 M236 22L234 40L230 52L227 79L232 107L242 126L251 152L268 178L272 190 M236 22L221 37L207 51L193 78L173 99 M195 84L192 101 M236 22L216 44L210 56L201 64L195 84L190 107 M176 86L153 94 M236 22L222 35L209 45L197 53L180 70L176 86L159 92 M186 62L178 79 M179 79L175 91 M236 22L220 41L203 55L186 62L179 79L168 96 M202 46L194 69 M184 50L157 44 M236 22L217 34L202 46L184 50L160 58L136 74L106 76L77 72L56 85L43 112 M186 57L180 70 M146 92L124 97 M100 115L87 114 M236 22L216 37L198 51L186 57L165 71L146 92L124 99L100 115L77 115L56 134 M193 38L179 52 M236 22L217 31L193 38L164 42L143 44 M196 27L172 16 M171 30L151 52 M136 47L121 60 M106 83L78 78 M80 74L59 93 M236 22L218 25L196 27L184 32L171 30L158 39L136 47L125 64L106 83L80 74 M236 22L216 21L197 20L172 11L147 13 M236 41L234 42L232 41 M223 38L222 39L222 37 M224 36L223 36L223 35 M224 34L223 35L224 34 M222 36L220 36L220 34 M224 32L223 32L223 31 M221 33L220 33L220 31 M221 31L218 29L219 26 M235 58L232 61L229 58 M229 59L219 59L212 51 M207 57L204 59L206 56 M204 53L200 54L201 50 M201 50L198 51L200 48 M202 46L199 47L200 44 M204 41L200 37L200 30 M235 91L228 96L223 90 M221 98L201 97L187 81 M184 85L179 88L182 83 M190 74L185 76L186 71 M177 79L173 83L177 78 M187 69L182 70L183 64 M170 75L164 76L167 71 M174 66L168 66L171 61 M164 39L157 31L162 21%22 stroke=%22rgba(225,236,255,0.8)%22 stroke-width=%221%22/%3E%3Ccircle cx=%22236%22 cy=%2222%22 r=%223%22 fill=%22rgba(255,255,255,0.8)%22/%3E%3C/g%3E%3C/svg%3E") right top / 260px 170px no-repeat,
+    radial-gradient(circle at 100% 0%, rgba(220, 235, 255, 0.18), transparent 40%),
+    linear-gradient(115deg, transparent 0 55%, rgba(255, 255, 255, 0.06) 60%, transparent 66%),
+    color-mix(in srgb, var(--mp-c) 6%, var(--mp-glass));
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="shattered"], [data-callout="mirror"]) .callout-title { background: none; }
+
+/* prophecy: a night sky */
+body:not(.mp-callout-minimal) .callout[data-callout="prophecy"] {
+  background:
+    radial-gradient(1.2px 1.2px at 20px 30px, #fff, transparent),
+    radial-gradient(1px 1px at 75px 12px, rgba(255,255,255,0.85), transparent),
+    radial-gradient(1.6px 1.6px at 130px 55px, #fff, transparent),
+    radial-gradient(1px 1px at 48px 78px, rgba(220,230,255,0.9), transparent),
+    radial-gradient(1px 1px at 160px 20px, rgba(220,230,255,0.8), transparent),
+    radial-gradient(1.3px 1.3px at 105px 88px, #fff, transparent),
+    radial-gradient(ellipse at 50% 0%, rgba(120, 140, 255, 0.28), transparent 70%),
+    linear-gradient(180deg, #0a0f24, #141a3a);
+  background-size: 180px 100px, 180px 100px, 180px 100px, 180px 100px, 180px 100px, 180px 100px, auto, auto;
+}
+body:not(.mp-callout-minimal) .callout[data-callout="prophecy"] .callout-title { background: none; border-bottom-color: rgba(157, 180, 255, 0.25); }
+body:not(.mp-callout-minimal) .callout[data-callout="prophecy"] .callout-content {
+  font-family: var(--mp-serif);
+  font-style: italic;
+  font-size: 1.08em;
+  text-align: center;
+  color: #e6ebff;
+  text-shadow: 0 0 12px rgba(157, 180, 255, 0.6);
+}
+
+/* curse: dark smoke closing in */
+body:not(.mp-callout-minimal) .callout[data-callout="curse"] {
+  background:
+    radial-gradient(ellipse at 15% 100%, rgba(120, 60, 180, 0.35), transparent 55%),
+    radial-gradient(ellipse at 85% 0%, rgba(60, 20, 90, 0.5), transparent 60%),
+    #120c18;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.85), 0 0 18px rgba(155, 106, 214, 0.25);
+}
+body:not(.mp-callout-minimal) .callout[data-callout="curse"] .callout-title { background: none; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.9em; }
+body:not(.mp-callout-minimal) .callout[data-callout="curse"] .callout-content { color: #d9c8ee; text-shadow: 0 0 8px rgba(155, 106, 214, 0.5); }
+
+/* vision / dream: soft, iridescent edges */
+body:not(.mp-callout-minimal) .callout:is([data-callout="vision"], [data-callout="dream"]) {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(var(--background-primary), var(--background-primary)) padding-box,
+    linear-gradient(120deg, #8fd6e0, #b39af0, #f0a6c8, #f0d78f, #8fd6e0) border-box;
+  box-shadow: 0 0 24px rgba(179, 154, 240, 0.25), inset 0 0 30px rgba(143, 214, 224, 0.12);
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="vision"], [data-callout="dream"]) .callout-title { background: none; border-bottom: none; font-style: italic; }
+body:not(.mp-callout-minimal) .callout:is([data-callout="vision"], [data-callout="dream"]) .callout-content {
+  font-style: italic;
+  color: color-mix(in srgb, var(--mp-c) 25%, var(--text-normal));
+  -webkit-mask: linear-gradient(180deg, #000 70%, rgba(0,0,0,0.55));
+  mask: linear-gradient(180deg, #000 70%, rgba(0,0,0,0.55));
+}
+
+/* combat: crossed swords and a red slash */
+body:not(.mp-callout-minimal) .callout[data-callout="combat"] {
+  background:
+    linear-gradient(90deg, var(--mp-c) 0 4px, transparent 4px),
+    color-mix(in srgb, var(--mp-c) 8%, var(--mp-glass));
+}
+body:not(.mp-callout-minimal) .callout[data-callout="combat"]::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  bottom: 8px;
+  width: 74px;
+  height: 74px;
+  background: var(--mp-c);
+  opacity: 0.22;
+  -webkit-mask: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.6%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpolyline points=%2214.5 17.5 3 6 3 3 6 3 17.5 14.5%22/%3E%3Cline x1=%2213%22 y1=%2219%22 x2=%2219%22 y2=%2213%22/%3E%3Cline x1=%2216%22 y1=%2216%22 x2=%2220%22 y2=%2220%22/%3E%3Cline x1=%2219%22 y1=%2221%22 x2=%2221%22 y2=%2219%22/%3E%3Cpolyline points=%2214.5 6.5 18 3 21 3 21 6 17.5 9.5%22/%3E%3Cline x1=%225%22 y1=%2214%22 x2=%229%22 y2=%2218%22/%3E%3Cline x1=%227%22 y1=%2217%22 x2=%224%22 y2=%2220%22/%3E%3Cline x1=%223%22 y1=%2219%22 x2=%225%22 y2=%2221%22/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.6%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpolyline points=%2214.5 17.5 3 6 3 3 6 3 17.5 14.5%22/%3E%3Cline x1=%2213%22 y1=%2219%22 x2=%2219%22 y2=%2213%22/%3E%3Cline x1=%2216%22 y1=%2216%22 x2=%2220%22 y2=%2220%22/%3E%3Cline x1=%2219%22 y1=%2221%22 x2=%2221%22 y2=%2219%22/%3E%3Cpolyline points=%2214.5 6.5 18 3 21 3 21 6 17.5 9.5%22/%3E%3Cline x1=%225%22 y1=%2214%22 x2=%229%22 y2=%2218%22/%3E%3Cline x1=%227%22 y1=%2217%22 x2=%224%22 y2=%2220%22/%3E%3Cline x1=%223%22 y1=%2219%22 x2=%225%22 y2=%2221%22/%3E%3C/svg%3E") center / contain no-repeat;
+  pointer-events: none;
+}
+body:not(.mp-callout-minimal) .callout[data-callout="combat"] .callout-title { text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.9em; }
+
+/* clue: a pinned sticky note */
+body:not(.mp-callout-minimal) .callout[data-callout="clue"] {
+  overflow: visible;
+  transform: rotate(0.8deg);
+  border: none;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #f6e48a, #ecd56a);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45);
+}
+body:not(.mp-callout-minimal) .callout[data-callout="clue"]::before { display: none; }
+body:not(.mp-callout-minimal) .callout[data-callout="clue"]::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  margin-left: -8px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ff8a8a, #c0282e 60%, #7a1015);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.45);
+}
+body:not(.mp-callout-minimal) .callout[data-callout="clue"] .callout-title { color: #5a4410; background: none; border-bottom: 1px solid rgba(90, 68, 16, 0.25); }
+body:not(.mp-callout-minimal) .callout[data-callout="clue"] .callout-icon { color: #5a4410; background: rgba(255, 255, 255, 0.35); border-color: rgba(90, 68, 16, 0.3); box-shadow: none; }
+body:not(.mp-callout-minimal) .callout[data-callout="clue"] .callout-icon .svg-icon { color: #5a4410; }
+body:not(.mp-callout-minimal) .callout[data-callout="clue"] .callout-content { color: #3d2f0a; }
+body:not(.mp-callout-minimal) .callout[data-callout="clue"] .callout-content :is(a, strong, em) { color: #3d2f0a; }
+
+/* divine / holy: golden rays from above */
+body:not(.mp-callout-minimal) .callout:is([data-callout="divine"], [data-callout="holy"]) {
+  background:
+    repeating-conic-gradient(from 180deg at 50% -40%, rgba(240, 207, 106, 0.08) 0deg 2deg, transparent 2deg 9deg),
+    radial-gradient(ellipse 70% 80% at 50% -10%, rgba(255, 236, 170, 0.35), transparent 70%),
+    color-mix(in srgb, var(--mp-c) 6%, var(--mp-glass));
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="divine"], [data-callout="holy"]) .callout-title { background: none; justify-content: center; }
+body:not(.mp-callout-minimal) .callout:is([data-callout="divine"], [data-callout="holy"]) .callout-content { text-align: center; font-family: var(--mp-serif); }
+
+/* arcane / magic: a rune circle */
+body:not(.mp-callout-minimal) .callout:is([data-callout="arcane"], [data-callout="magic"])::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translateY(-50%) rotate(12deg);
+  background: var(--mp-c);
+  opacity: 0.16;
+  -webkit-mask: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.2%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22/%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2238%22/%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2212%22/%3E%3Cpath d=%22M88.0 50.0L98.0 50.0 M88.6 60.4L94.4 61.9 M82.9 69.0L91.6 74.0 M78.3 78.3L82.5 82.5 M69.0 82.9L74.0 91.6 M60.4 88.6L61.9 94.4 M50.0 88.0L50.0 98.0 M39.6 88.6L38.1 94.4 M31.0 82.9L26.0 91.6 M21.7 78.3L17.5 82.5 M17.1 69.0L8.4 74.0 M11.4 60.4L5.6 61.9 M12.0 50.0L2.0 50.0 M11.4 39.6L5.6 38.1 M17.1 31.0L8.4 26.0 M21.7 21.7L17.5 17.5 M31.0 17.1L26.0 8.4 M39.6 11.4L38.1 5.6 M50.0 12.0L50.0 2.0 M60.4 11.4L61.9 5.6 M69.0 17.1L74.0 8.4 M78.3 21.7L82.5 17.5 M82.9 31.0L91.6 26.0 M88.6 39.6L94.4 38.1%22/%3E%3Cpolygon points=%2250.0,20.0 76.0,65.0 24.0,65.0%22/%3E%3Cpolygon points=%2250.0,80.0 76.0,35.0 24.0,35.0%22/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.2%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22/%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2238%22/%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2212%22/%3E%3Cpath d=%22M88.0 50.0L98.0 50.0 M88.6 60.4L94.4 61.9 M82.9 69.0L91.6 74.0 M78.3 78.3L82.5 82.5 M69.0 82.9L74.0 91.6 M60.4 88.6L61.9 94.4 M50.0 88.0L50.0 98.0 M39.6 88.6L38.1 94.4 M31.0 82.9L26.0 91.6 M21.7 78.3L17.5 82.5 M17.1 69.0L8.4 74.0 M11.4 60.4L5.6 61.9 M12.0 50.0L2.0 50.0 M11.4 39.6L5.6 38.1 M17.1 31.0L8.4 26.0 M21.7 21.7L17.5 17.5 M31.0 17.1L26.0 8.4 M39.6 11.4L38.1 5.6 M50.0 12.0L50.0 2.0 M60.4 11.4L61.9 5.6 M69.0 17.1L74.0 8.4 M78.3 21.7L82.5 17.5 M82.9 31.0L91.6 26.0 M88.6 39.6L94.4 38.1%22/%3E%3Cpolygon points=%2250.0,20.0 76.0,65.0 24.0,65.0%22/%3E%3Cpolygon points=%2250.0,80.0 76.0,35.0 24.0,35.0%22/%3E%3C/svg%3E") center / contain no-repeat;
+  pointer-events: none;
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="arcane"], [data-callout="magic"]) {
+  background:
+    radial-gradient(circle at 90% 50%, color-mix(in srgb, var(--mp-c) 22%, transparent), transparent 45%),
+    color-mix(in srgb, var(--mp-c) 6%, var(--mp-glass));
+}
+body:not(.mp-callout-minimal) .callout:is([data-callout="arcane"], [data-callout="magic"]) .callout-content { padding-right: 110px; }
+
+/* weather: slanted rain */
+body:not(.mp-callout-minimal) .callout[data-callout="weather"] {
+  background:
+    repeating-linear-gradient(105deg, transparent 0 14px, rgba(160, 200, 230, 0.12) 14px 15px),
+    linear-gradient(180deg, rgba(90, 120, 150, 0.2), transparent),
+    color-mix(in srgb, var(--mp-c) 6%, var(--mp-glass));
 }
 
 /* ---------- Effect strength: callouts ------------------------------------ */
