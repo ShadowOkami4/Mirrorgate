@@ -1,6 +1,8 @@
 ---
 cssclasses:
   - mr-characters
+  - bestiary
+  - boss
 type: character
 up: "[[Characters]]"
 region: Sanctum of the Flower in the Mirror
