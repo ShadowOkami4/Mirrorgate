@@ -1234,6 +1234,7 @@ body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-call
   display: flex;
   flex-direction: column;
   margin: 1.8em 0;
+  overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--mp-c) 35%, transparent);
   border-radius: 4px 14px 4px 4px;
   background:
@@ -1299,6 +1300,7 @@ body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-call
 /* the quote */
 body:not(.mp-callout-minimal) .callout:is([data-callout="professor"], [data-callout="phineas"]) .callout-content {
   order: 1;
+  overflow: visible; /* the big quote mark hangs past the text; never scroll */
   position: relative;
   padding: 20px 30px 4px 80px;
   font-family: var(--mp-serif);
