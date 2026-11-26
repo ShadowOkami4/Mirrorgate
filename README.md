@@ -16,7 +16,7 @@
 
 <br><br>
 
-<a href="https://github.com/ByteMirror/atlas-vtt"><img src=".github/readme/compatible-with-atlas-vtt-dark.svg" alt="Compatible with Atlas VTT" height="44"></a>
+<a href="https://atlas-vtt.dev"><img src=".github/readme/compatible-with-atlas-vtt-dark.svg" alt="Compatible with Atlas VTT" height="44"></a>
 
 </div>
 
