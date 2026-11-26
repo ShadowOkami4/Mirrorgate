@@ -58,9 +58,63 @@ creature_type: Aberration
 > [!professor] Professor Phineas Phantomhive II
 > *"Every reflection has, at some point, considered whether it would make a better job of things than the original. Most of them have the decency not to act on it."*
 
+> [!info] At a glance
+> - **Kind** Medium Aberration (Shapechanger) · CR 3 (700 XP)
+> - **Found** In mirrors: noble houses, dressing rooms, halls where one person looked at themselves too long
+> - **Often with** The person it is copying, for now
+> - **Weak to** People who know the original well
+> - **Tell** It is reversed: rings on the wrong hand, a scar on the wrong cheek, hair parted on the wrong side
+
+## Lore
+
 A **counterfeit** is a reflection that stepped out of its mirror and decided to stay. In its true form it is a featureless figure of polished silver, but it rarely keeps that form for long. It prefers to wear the face of whoever it was last reflecting—and it would very much like that person to stop existing, so that it can take their place.
 
 A counterfeit copies its original almost perfectly: voice, gestures, habits, even memories skimmed from the surface of their mind. Almost. It is a mirror image, and mirror images are reversed. Rings sit on the wrong hand, a scar crosses the wrong cheek, and hair is parted on the wrong side. Those who love the original tend to notice first.
 
+## Signs it is near
+
+- Someone is seen in two places at once.
+- A trusted friend has forgotten a private joke, or remembers it backwards.
+- A mirror that shows a room without the person standing in front of it.
+
+## What characters know
+
+> [!rule] Lore checks
+> A character who sees the counterfeit can make a check; a higher result also reveals everything below it.
+> - **Intelligence (Arcana) DC 10:** It is a reflection that stepped out of its mirror and wants to replace its original.
+> - **Intelligence (Arcana) DC 15:** It is a mirror image: everything about it is reversed, and those who know the original can spot it.
+> - **Intelligence (Arcana) DC 20:** Destroy the mirror it came from while it is near, and it has Disadvantage on attack rolls until it finds another.
+
+## In combat
+
 > [!combat] Running the counterfeit
-> A counterfeit works best before anyone knows it is there. Let it replace a trusted NPC—or step out of a mirror wearing a player character's face while that character is in another room. In combat it goes after its original, trading places whenever the party lands on the right target. A player whose character is copied can be given the chance to prove who is real.
+> - Strikes before anyone knows it is there: it replaces a trusted NPC, or steps out of a mirror wearing a character's face while that character is elsewhere.
+> - In combat it goes after its original and swaps places with Which Is Which? whenever the party lands on the right target.
+> - If the fight turns, it flees towards the nearest mirror.
+>
+> **GM tip.** A player whose character is copied can be given the chance to prove who is real.
+
+## Encounters
+
+| Group | XP | Difficulty (2024 rules) |
+| --- | ---: | --- |
+| 1 counterfeit | 700 | Moderate for four 2nd-level characters |
+| 1 counterfeit and 2 glints | 900 | Moderate for four 3rd-level characters |
+| 2 counterfeits and 1 remnant | 1,850 | High for four 3rd-level characters |
+
+## Variants
+
+- **Court counterfeit.** Has replaced a noble for months: add Charisma (Persuasion) +7 and a household of loyal servants who don't know.
+- **Party counterfeit.** Copies a player character. Give that character's player a secret note: they may choose to play the counterfeit for one round.
+
+> [!loot] What it leaves behind
+> When destroyed it falls apart into a heap of silvered glass. Among the pieces is always one perfect hand mirror, which shows the face it last wore. It is worth 50 gp, and unsettling to own.
+
+## Hooks
+
+- A minor noble has started ruling more kindly; the real one is locked in his own cellar.
+- The party meets one of its members in the market. That member is in the inn, asleep.
+- A mirror merchant sells only 'perfect' mirrors. Each one is missing its reflection.
+
+> [!rumor] What people say
+> Old wives say never to leave a mirror uncovered in a sickroom, or the sick person's reflection might get up and walk out in their place.
