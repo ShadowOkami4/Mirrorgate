@@ -24,7 +24,7 @@ Creatures of the Mirrored Realms, with SRD 5.2.1 statblocks in Atlas VTT. Every 
 3. [[Glass Husk]]
 4. [[Afterimage]]
 5. [[Remnant]]
-6. [[Counterfeit]]
+6. [[Counterfeit]], [[Counterfeit Duelist]], [[Counterfeit Sovereign]]
 7. [[Kaleidoscope]]
 
 ## Named foes
@@ -40,6 +40,8 @@ Creatures of the Mirrored Realms, with SRD 5.2.1 statblocks in Atlas VTT. Every 
 | 1 | [[Afterimage]] |
 | 2 | [[Remnant]] |
 | 3 | [[Counterfeit]] |
+| 5 | [[Counterfeit Duelist]] |
 | 6 | [[Kaleidoscope]] |
 | 7 | [[Maria Rose, Corrupted]] |
+| 9 | [[Counterfeit Sovereign]] |
 | 21 | [[Sandra Mistic]] |

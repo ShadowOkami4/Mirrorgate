@@ -39,6 +39,8 @@ pb: '+2'
 traits:
 - name: Reversed
   desc: While it wears another creature's form, the counterfeit is a perfect mirror image of that creature. A creature that knows the original well can take an action to study the counterfeit and make a Wisdom (Insight) check (DC 14), noticing the reversal on a success.
+- name: Mirrored Statistics
+  desc: While it wears the form of a creature it has seen within the last 24 hours, the counterfeit uses that creature's AC and Speeds if they are higher than its own, gains its skill and tool proficiencies, and can make that creature's weapon attacks in place of Mirrored Blade, using its own attack bonus and damage modifier. It doesn't gain the creature's Hit Points, spellcasting or other traits.
 actions:
 - name: Multiattack
   desc: The counterfeit makes two Mirrored Blade attacks.
@@ -102,6 +104,23 @@ A counterfeit copies its original almost perfectly: voice, gestures, habits, eve
 | 1 counterfeit | 700 | Moderate for four 2nd-level characters |
 | 1 counterfeit and 2 glints | 900 | Moderate for four 3rd-level characters |
 | 2 counterfeits and 1 remnant | 1,850 | High for four 3rd-level characters |
+
+## Variable statblock
+
+> [!rule] Mirrored Statistics
+> A counterfeit is only as dangerous as the face it wears. While it copies someone, it takes their **AC and Speed** (if higher), their **skill and tool proficiencies**, and their **weapon attacks**, made with its own attack bonus and damage. It never gains their Hit Points, spells or other traits.
+>
+> - Copying a **commoner** in plate armour? AC 18, but it still hits like a counterfeit.
+> - Copying the party's **rogue**? Stealth and Thieves' Tools, and a rapier instead of Mirrored Blade.
+> - Copying the party's **fighter** with a greataxe? It swings the greataxe with its own +5.
+
+## Stronger counterfeits
+
+| Counterfeit | CR | For | Copies |
+| --- | ---: | --- | --- |
+| [[Counterfeit]] | 3 | 2nd–4th level | A stranger, a guard, a friend |
+| [[Counterfeit Duelist]] | 5 | 4th–6th level | An adventurer, sword and all |
+| [[Counterfeit Sovereign]] | 9 | 7th–10th level | A ruler, for years (boss) |
 
 ## Variants
 

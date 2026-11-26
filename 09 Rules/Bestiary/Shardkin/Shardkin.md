@@ -21,7 +21,7 @@ tags:
 **Shardkin** are creatures made from broken reflections. Some were once people who met the wrong mirror. Others were never people at all: images, moments or echoes that learned to move without an owner.
 
 > [!info] At a glance
-> - **What** Creatures made from broken reflections; six known kinds, CR 1/2 to 6
+> - **What** Creatures made from broken reflections; eight known kinds, CR 1/2 to 9
 > - **Where** Wherever reflection, time or distance has been damaged: cracked mirrors, ruins where the hours run wrong, crossings into [[The Mirrorgate]]
 > - **How rare** Very, outside the Mirrorgate. Finding them in the material world means something has gone badly wrong
 > - **Not natives** The Mirrorgate has its own plants and animals, and they avoid shardkin as carefully as travellers do (see [[Life in the Mirrorgate]])
@@ -41,6 +41,8 @@ A person shattered by a mirror rarely becomes *one* monster. They break apart: t
 - [[Counterfeit]] <small>A reflection that wants to replace you · CR 3</small>
 - [[Kaleidoscope]] <small>A storm of every reflection lost in a place · CR 6</small>
 
+Counterfeits come in three strengths: the [[Counterfeit]] (CR 3), the [[Counterfeit Duelist]] (CR 5) and the [[Counterfeit Sovereign]] (CR 9 boss). All of them change with the face they wear (*Mirrored Statistics*).
+
 Other shardkin never belonged to anyone. They are what reflections become when the glass breaks and nothing tells them to stop.
 
 ## Threat ladder
@@ -52,7 +54,9 @@ Other shardkin never belonged to anyone. They are what reflections become when t
 | 1 | [[Afterimage]] | 200 | Skirmisher | Blows that land twice; a moving puzzle |
 | 2 | [[Remnant]] | 450 | Leader | The voice of the broken person, turning heroes on themselves |
 | 3 | [[Counterfeit]] | 700 | Infiltrator | The friend who isn't; best before anyone knows it's there |
+| 5 | [[Counterfeit Duelist]] | 1,800 | Duellist | The counterfeit that copies adventurers, sword and all |
 | 6 | [[Kaleidoscope]] | 2,300 | Solo | The boss of a room full of broken mirrors |
+| 9 | [[Counterfeit Sovereign]] | 5,000 | Boss | A ruler's reflection that has ruled for years |
 
 ## Building an encounter
 
@@ -65,9 +69,11 @@ Other shardkin never belonged to anyone. They are what reflections become when t
 | 3rd level | 2 counterfeits and 1 remnant | 1,850 | High |
 | 4th level | 1 kaleidoscope | 2,300 | Moderate |
 | 5th level | 1 kaleidoscope and 4 afterimages | 3,100 | Moderate |
+| 5th level | 2 counterfeit duelists | 3,600 | Moderate |
+| 7th level | 1 counterfeit sovereign | 5,000 | Low, close to Moderate |
 
 > [!rule] Difficulty
-> Difficulties use the 2024 XP budget per character (Low / Moderate / High): 1st 50/75/100, 2nd 100/150/200, 3rd 150/225/400, 4th 250/500/750, 5th 500/750/1,100. Rooms full of mirrors are worth one step harder.
+> Difficulties use the 2024 XP budget per character (Low / Moderate / High): 1st 50/75/100, 2nd 100/150/200, 3rd 150/225/400, 4th 250/500/750, 5th 500/750/1,100, 7th 750/1,300/1,700. Rooms full of mirrors are worth one step harder.
 
 ## When shardkin are near
 
