@@ -2285,12 +2285,59 @@ body:not(.mp-no-cracks).theme-light .hearth-view { --mp-hearth-cracks: var(--mp-
   font-size: clamp(2rem, 4vw, 2.8rem);
   position: relative;
   padding-bottom: 0.3em;
+  gap: 0.35em;
+  text-shadow: none;
+}
+.hearth-view .hearth-title-text {
   background: linear-gradient(180deg, var(--mp-silver-hi) 0%, var(--mp-silver-hi) 45%, var(--mp-silver-lo) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: none;
 }
+/* Hearth's own mark (crystal, gem or any title icon) becomes the Mirrored
+   emblem: the cracked shard with its reflection, in silver and the accent */
+.hearth-view .hearth-logo {
+  position: relative;
+  display: inline-block;
+  width: 0.95em;
+  height: 1.2em;
+  flex: 0 0 auto;
+}
+.hearth-view .hearth-logo > * { visibility: hidden; }
+.hearth-view .hearth-logo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, var(--mp-silver-hi) 10%, var(--mp-accent) 65%, var(--mp-accent-2));
+  -webkit-mask: var(--mp-emblem) center / contain no-repeat;
+  mask: var(--mp-emblem) center / contain no-repeat;
+  filter: drop-shadow(0 0 10px color-mix(in srgb, var(--mp-accent) 70%, transparent));
+  animation: mp-emblem-breathe 6s ease-in-out infinite;
+}
+@keyframes mp-emblem-breathe {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .hearth-view .hearth-logo::before { animation: none; } }
+/* the same emblem on the Hearth tab and its ribbon button */
+.workspace-tab-header[data-type="hearth-home-view"] .workspace-tab-header-inner-icon,
+.side-dock-ribbon-action[aria-label*="Hearth"] { position: relative; }
+.workspace-tab-header[data-type="hearth-home-view"] .workspace-tab-header-inner-icon > svg,
+.side-dock-ribbon-action[aria-label*="Hearth"] > svg { visibility: hidden; }
+.workspace-tab-header[data-type="hearth-home-view"] .workspace-tab-header-inner-icon::after,
+.side-dock-ribbon-action[aria-label*="Hearth"]::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 14px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(160deg, var(--mp-silver-hi), var(--mp-accent) 70%);
+  -webkit-mask: var(--mp-emblem) center / contain no-repeat;
+  mask: var(--mp-emblem) center / contain no-repeat;
+}
+.side-dock-ribbon-action[aria-label*="Hearth"]:hover::after { filter: drop-shadow(0 0 5px var(--mp-accent)); }
 .hearth-view .hearth-title::after {
   content: "";
   position: absolute;
@@ -3222,15 +3269,18 @@ body:not(.mp-framed-panes) .workspace-split.mod-sidedock .nav-header {
 /* a soft shade at the inner edge of each sidebar instead of a hard border */
 body:not(.mp-framed-panes) .workspace-split.mod-left-split {
   border-right: none;
-  box-shadow: inset -1px 0 0 var(--divider-color);
-  background-image: linear-gradient(270deg, color-mix(in srgb, var(--mp-accent) 3%, transparent), transparent 40%);
+  border-inline-end: none;
+  background-image: linear-gradient(270deg, color-mix(in srgb, var(--mp-accent) 4%, transparent), transparent 40%);
 }
 body:not(.mp-framed-panes) .workspace-split.mod-right-split {
   border-left: none;
-  box-shadow: inset 1px 0 0 var(--divider-color);
-  background-image: linear-gradient(90deg, color-mix(in srgb, var(--mp-accent) 3%, transparent), transparent 40%);
+  border-inline-start: none;
+  background-image: linear-gradient(90deg, color-mix(in srgb, var(--mp-accent) 4%, transparent), transparent 40%);
 }
-body:not(.mp-framed-panes) .workspace-ribbon.mod-left { border-right: none; }
+/* Obsidian 1.15 draws the ribbon edge with border-inline-end */
+body:not(.mp-framed-panes) .workspace-ribbon,
+body:not(.mp-framed-panes) .workspace-ribbon.mod-left,
+body:not(.mp-framed-panes) .workspace-ribbon.mod-primary.is-collapsed { border-right: none; border-inline-end: none; }
 body:not(.mp-framed-panes) .workspace .mod-root .workspace-tab-header-container { border-bottom: 1px solid var(--divider-color); }
 body:not(.mp-framed-panes) .workspace-leaf-resize-handle { border-color: transparent; }
 body:not(.mp-framed-panes) .workspace-leaf-resize-handle:hover { border-color: var(--divider-color-hover); }
@@ -3397,6 +3447,156 @@ body:not(.mp-framed-panes) .status-bar { border-top: none; box-shadow: inset 0 1
   margin-top: 6px;
   color: var(--text-faint);
 }
+
+/* ---------- Immersion: the rest of the app ------------------------------
+   The small parts of Obsidian that otherwise break the spell: the empty tab,
+   the command palette, notices, tooltips, settings, scrollbars, the caret
+   and the loading bar. */
+
+/* the empty tab: the emblem above a serif line, actions as glass pills */
+.empty-state { background: radial-gradient(ellipse 50% 40% at 50% 45%, color-mix(in srgb, var(--mp-accent) 7%, transparent), transparent 70%); }
+.empty-state-container::before {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 80px;
+  margin: 0 auto 6px;
+  background: linear-gradient(160deg, var(--mp-silver-hi) 10%, var(--mp-accent) 65%, var(--mp-accent-2));
+  -webkit-mask: var(--mp-emblem) center / contain no-repeat;
+  mask: var(--mp-emblem) center / contain no-repeat;
+  filter: drop-shadow(0 0 14px color-mix(in srgb, var(--mp-accent) 55%, transparent));
+  opacity: 0.85;
+}
+.empty-state-title {
+  font-family: var(--mp-serif);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--mp-silver-lo);
+}
+.empty-state-title::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 1px;
+  margin: 12px auto 0;
+  background: linear-gradient(90deg, transparent, var(--mp-accent), transparent);
+}
+.empty-state-action-list > .text-icon-button.mod-pill {
+  border: 1px solid var(--mp-glass-edge);
+  background: var(--mp-glass);
+  transition: border-color 150ms ease, box-shadow 150ms ease, color 150ms ease;
+}
+.empty-state-action-list > .text-icon-button.mod-pill:hover {
+  color: var(--mp-accent);
+  border-color: color-mix(in srgb, var(--mp-accent) 50%, transparent);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--mp-accent) 22%, transparent);
+}
+
+/* command palette and quick switcher: a serif prompt, a glowing selection */
+.prompt { border-radius: 14px; overflow: hidden; }
+.prompt::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--mp-accent), var(--mp-accent-2), transparent);
+}
+.prompt-input-container input.prompt-input,
+.prompt .prompt-input {
+  font-family: var(--mp-serif);
+  font-size: 1.15em;
+  caret-color: var(--mp-accent);
+}
+.suggestion-item { border-radius: 8px; transition: background-color 100ms ease; }
+.suggestion-item.is-selected {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--mp-accent) 20%, transparent), color-mix(in srgb, var(--mp-accent) 3%, transparent) 85%);
+  box-shadow: inset 2px 0 0 var(--mp-accent);
+}
+.combobox:not(.has-input-focus) .suggestion-item.is-selected { background: transparent; box-shadow: none; }
+.suggestion-highlight { color: var(--mp-accent); }
+.prompt-instructions { border-top: 1px solid var(--mp-glass-edge); }
+.prompt-instruction-command { color: var(--mp-accent); }
+
+/* notices: a glass slip with an accent edge and a small diamond */
+.notice {
+  position: relative;
+  border: 1px solid var(--mp-glass-edge);
+  background: var(--mp-glass);
+  box-shadow: var(--shadow-l), inset 2px 0 0 var(--mp-accent), inset 0 1px 0 var(--mp-glass-shine);
+  padding-left: 30px;
+}
+.notice::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  transform: translateY(-50%) rotate(45deg);
+  background: var(--mp-accent);
+  box-shadow: 0 0 8px var(--mp-accent);
+}
+
+/* tooltips: small glass labels */
+.tooltip {
+  background: var(--mp-glass);
+  color: var(--text-normal);
+  border: 1px solid var(--mp-glass-edge);
+  box-shadow: var(--shadow-s), inset 0 1px 0 var(--mp-glass-shine);
+}
+.tooltip .tooltip-arrow { display: none; }
+
+/* modals and settings: serif titles, the active settings tab like a file */
+.modal-title { font-family: var(--mp-serif); letter-spacing: 0.01em; }
+.modal-title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 8px;
+  background: linear-gradient(90deg, var(--mp-accent), transparent 60%);
+}
+.vertical-tab-nav-item.is-active {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--mp-accent) 22%, transparent), color-mix(in srgb, var(--mp-accent) 3%, transparent) 85%);
+  box-shadow: inset 2px 0 0 var(--mp-accent);
+  color: var(--text-normal);
+}
+.vertical-tab-header-group-title { font-family: var(--mp-serif); letter-spacing: 0.08em; color: var(--mp-accent); }
+
+/* scrollbars: a thin silver sliver that warms to the accent */
+body:not(.native-scrollbars) ::-webkit-scrollbar { width: 9px; height: 9px; }
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  border-radius: 9px;
+  background-color: color-mix(in srgb, var(--mp-silver-lo) 28%, transparent);
+}
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover,
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active { background-color: color-mix(in srgb, var(--mp-accent) 60%, transparent); }
+body:not(.native-scrollbars) ::-webkit-scrollbar-track,
+body:not(.native-scrollbars) ::-webkit-scrollbar-corner { background: transparent; }
+
+/* the writing caret takes the accent */
+.markdown-source-view, .cm-editor, input, textarea { caret-color: var(--mp-accent); }
+
+/* the loading bar is a moving accent shard */
+.progress-bar-indicator { background: color-mix(in srgb, var(--mp-silver-lo) 14%, transparent); }
+.progress-bar-line, .progress-bar-subline { background: linear-gradient(90deg, var(--mp-accent), var(--mp-accent-2)); }
+
+/* status bar: small diamonds between the items */
+.status-bar { font-variant-numeric: tabular-nums; }
+.status-bar-item + .status-bar-item:not(:empty)::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  margin-right: 8px;
+  transform: rotate(45deg);
+  background: color-mix(in srgb, var(--mp-accent) 55%, transparent);
+  flex: 0 0 auto;
+}
+
+/* the note's title bar: breadcrumb in muted serif, the title itself silver */
+.view-header-title-container { font-family: var(--mp-serif); }
+.view-header-breadcrumb { color: var(--text-faint); }
+.view-header-breadcrumb-separator { color: color-mix(in srgb, var(--mp-accent) 60%, transparent); }
 
 /* ---------- Print / export ---------------------------------------------- */
 @media print {
