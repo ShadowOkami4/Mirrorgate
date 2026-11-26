@@ -1889,10 +1889,137 @@ body {
   color: color-mix(in srgb, var(--mp-accent) 65%, var(--text-muted));
 }
 .nav-folder.is-collapsed > .nav-folder-title .iconize-icon { opacity: 0.8; }
+/* Vault corner: a small silver plaque. A hairline with a diamond on top, the
+   vault name in serif small caps under a tiny label, a mirror gem in place of
+   the switcher chevron, and round buttons for help and settings. */
 .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-  border-top: 1px solid color-mix(in srgb, var(--mp-silver-lo) 18%, transparent);
-  background: linear-gradient(0deg, color-mix(in srgb, var(--mp-accent) 6%, transparent), transparent);
+  position: relative;
+  padding: 12px 10px 10px;
+  gap: 6px;
+  border-top: none;
+  background:
+    radial-gradient(ellipse 70% 120% at 20% 100%, color-mix(in srgb, var(--mp-accent) 10%, transparent), transparent 70%),
+    linear-gradient(0deg, color-mix(in srgb, var(--mp-accent) 5%, transparent), transparent);
 }
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--mp-silver-lo) 45%, transparent) 30%, color-mix(in srgb, var(--mp-accent) 70%, var(--mp-silver-hi)) 50%, color-mix(in srgb, var(--mp-silver-lo) 45%, transparent) 70%, transparent);
+}
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -3px;
+  width: 6px;
+  height: 6px;
+  transform: translateX(-50%) rotate(45deg);
+  background: var(--background-secondary);
+  border: 1px solid color-mix(in srgb, var(--mp-accent) 70%, var(--mp-silver-hi));
+  box-shadow: 0 0 6px color-mix(in srgb, var(--mp-accent) 50%, transparent);
+}
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher {
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: 10px;
+  padding: 6px 10px 6px 8px;
+  border: 1px solid color-mix(in srgb, var(--mp-silver-lo) 16%, transparent);
+  border-radius: 10px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--mp-silver-hi) 5%, transparent), transparent 60%);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--mp-silver-hi) 6%, transparent);
+  transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher:hover {
+  border-color: color-mix(in srgb, var(--mp-accent) 45%, transparent);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--mp-accent) 14%, transparent), transparent 70%);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--mp-silver-hi) 8%, transparent), 0 0 14px color-mix(in srgb, var(--mp-accent) 18%, transparent);
+}
+/* the gem: a faceted mirror shard; the chevron shows again on hover */
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher-icon {
+  position: relative;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  color: var(--mp-accent);
+}
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher-icon::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  background:
+    linear-gradient(135deg, var(--mp-silver-hi) 0 18%, transparent 19%),
+    linear-gradient(135deg, color-mix(in srgb, var(--mp-accent) 85%, white), var(--mp-accent) 45%, color-mix(in srgb, var(--mp-accent) 45%, black));
+  box-shadow: 0 0 8px color-mix(in srgb, var(--mp-accent) 55%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--mp-silver-hi) 35%, transparent);
+  transition: transform 200ms ease, opacity 160ms ease;
+}
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher-icon .svg-icon {
+  opacity: 0;
+  width: 14px;
+  height: 14px;
+  transition: opacity 160ms ease;
+}
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher:hover .workspace-drawer-vault-switcher-icon::before { transform: rotate(135deg) scale(0.6); opacity: 0; }
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher:hover .workspace-drawer-vault-switcher-icon .svg-icon { opacity: 1; }
+/* the name, with a small label above it */
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-name {
+  display: block;
+  min-width: 0;
+  font-family: var(--mp-serif);
+  font-variant: small-caps;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+  background: linear-gradient(180deg, var(--mp-silver-hi), color-mix(in srgb, var(--mp-silver-lo) 80%, var(--mp-accent)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-name::before {
+  content: "Vault";
+  display: block;
+  font-family: var(--font-interface);
+  font-variant: normal;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  -webkit-text-fill-color: color-mix(in srgb, var(--mp-accent) 75%, var(--text-muted));
+  margin-bottom: 1px;
+}
+/* help and settings as round buttons */
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions { gap: 4px; }
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--mp-silver-lo) 16%, transparent);
+  color: var(--text-muted);
+  transition: color 150ms ease, border-color 150ms ease, box-shadow 150ms ease, transform 200ms ease;
+}
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon:hover {
+  color: var(--mp-accent);
+  background: color-mix(in srgb, var(--mp-accent) 12%, transparent);
+  border-color: color-mix(in srgb, var(--mp-accent) 45%, transparent);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--mp-accent) 25%, transparent);
+}
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon:last-child:hover { transform: rotate(45deg); }
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .svg-icon { width: 15px; height: 15px; }
 
 /* ---------- Tabs ------------------------------------------------------- */
 body {
@@ -3107,7 +3234,6 @@ body:not(.mp-framed-panes) .workspace-ribbon.mod-left { border-right: none; }
 body:not(.mp-framed-panes) .workspace .mod-root .workspace-tab-header-container { border-bottom: 1px solid var(--divider-color); }
 body:not(.mp-framed-panes) .workspace-leaf-resize-handle { border-color: transparent; }
 body:not(.mp-framed-panes) .workspace-leaf-resize-handle:hover { border-color: var(--divider-color-hover); }
-body:not(.mp-framed-panes) .workspace-split.mod-left-split .workspace-sidedock-vault-profile { border-top-color: var(--divider-color); }
 /* tabs: no boxes; the active one gets a glowing accent line along its top */
 body:not(.mp-framed-panes) .workspace-tab-header,
 body:not(.mp-framed-panes) .workspace-tab-header.is-active { background: transparent; box-shadow: none; }
