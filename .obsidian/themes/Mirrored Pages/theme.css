@@ -229,7 +229,7 @@ settings:
   -
     id: mp-no-statblock-breaks
     title: Turn off broken statblock edges
-    description: Keep statblock corners and edges whole instead of chipped and cracked apart
+    description: Keep statblocks whole instead of missing a shard at a corner and an edge
     type: class-toggle
     default: false
 */
@@ -2942,15 +2942,15 @@ body:not(.mp-no-statblock-texture) .atlas-statblock .atlas-statblock-body {
 }
 body.theme-light:not(.mp-no-statblock-texture) .atlas-statblock .atlas-statblock-body { background-image: var(--mp-contours-light); }
 
-/* Broken edges: the top-left and bottom-right corners are chipped off, with
-   a sliver of the frame floating in each break, and the top and bottom
-   edges have a cracked-out segment just beside where it belongs.
-   Style Settings > Turn off broken statblock edges keeps them whole. */
+/* Broken edges: clean shards are missing from the block, one from the
+   top-right corner and one from the bottom edge, with a crisp glassy line
+   along each break. Style Settings > Turn off broken statblock edges keeps
+   the block whole. */
 body:not(.mp-no-statblock-breaks) .atlas-statblock {
-  --mp-break-line: color-mix(in srgb, var(--mp-accent) 60%, var(--background-modifier-border));
-  --mp-break-shard: color-mix(in srgb, var(--mp-accent) 16%, var(--background-primary));
-  /* the outline itself is broken: chipped corners and notches through the frame */
-  clip-path: polygon(34px 0, 34% 0, 34% 3px, calc(34% + 44px) 3px, calc(34% + 44px) 0, calc(100% - 8px) 0, 100% 8px, 100% 58%, calc(100% - 3px) 58%, calc(100% - 3px) calc(58% + 36px), 100% calc(58% + 36px), 100% calc(100% - 34px), calc(100% - 34px) 100%, 72% 100%, 72% calc(100% - 3px), calc(72% - 48px) calc(100% - 3px), calc(72% - 48px) 100%, 8px 100%, 0 calc(100% - 8px), 0 34px);
+  --mp-break-line: color-mix(in srgb, var(--mp-accent) 65%, var(--mp-silver-hi));
+  /* two shards are missing: a jagged piece from the top-right corner and a
+     small triangle from the bottom edge */
+  clip-path: polygon(0 0, calc(100% - 74px) 0, calc(100% - 46px) 30px, calc(100% - 24px) 21px, 100% 48px, 100% 100%, calc(100% - 136px) 100%, calc(100% - 162px) calc(100% - 17px), calc(100% - 188px) 100%, 0 100%);
 }
 body:not(.mp-no-statblock-breaks) .atlas-statblock .atlas-statblock-body::before {
   content: "";
@@ -2958,14 +2958,9 @@ body:not(.mp-no-statblock-breaks) .atlas-statblock .atlas-statblock-body::before
   inset: 0;
   z-index: 5;
   pointer-events: none;
-  background:
-    linear-gradient(135deg, transparent 0 27px, var(--mp-break-line) 27px 28px, var(--mp-break-shard) 28px 31px, var(--mp-break-line) 31px 32px, transparent 32px) left top / 60px 60px no-repeat,
-    linear-gradient(135deg, transparent 0 23px, var(--mp-break-line) 23px 24.5px, transparent 24.5px) left top / 60px 60px no-repeat,
-    linear-gradient(315deg, transparent 0 27px, var(--mp-break-line) 27px 28px, var(--mp-break-shard) 28px 31px, var(--mp-break-line) 31px 32px, transparent 32px) right bottom / 60px 60px no-repeat,
-    linear-gradient(315deg, transparent 0 23px, var(--mp-break-line) 23px 24.5px, transparent 24.5px) right bottom / 60px 60px no-repeat,
-    linear-gradient(var(--mp-break-line), var(--mp-break-line)) left calc(34% + 6px) top 9px / 32px 1px no-repeat,
-    linear-gradient(var(--mp-break-line), var(--mp-break-line)) right 9px top calc(58% + 6px) / 1px 24px no-repeat,
-    linear-gradient(var(--mp-break-line), var(--mp-break-line)) right calc(28% + 6px) bottom 9px / 36px 1px no-repeat;
+  background: var(--mp-break-line);
+  -webkit-mask: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 74 48%22 width=%2274%22 height=%2248%22 fill=%22none%22 stroke=%22black%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M0 0.5L28 30L50 21L73.5 48%22 stroke-width=%224%22 stroke-opacity=%220.25%22/%3E%3Cpath d=%22M0 0.5L28 30L50 21L73.5 48%22 stroke-width=%221.2%22/%3E%3C/svg%3E") right top / 74px 48px no-repeat, url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 52 17%22 width=%2252%22 height=%2217%22 fill=%22none%22 stroke=%22black%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M0.5 17L26 0.6L51.5 17%22 stroke-width=%224%22 stroke-opacity=%220.25%22/%3E%3Cpath d=%22M0.5 17L26 0.6L51.5 17%22 stroke-width=%221.2%22/%3E%3C/svg%3E") right 136px bottom / 52px 17px no-repeat;
+  mask: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 74 48%22 width=%2274%22 height=%2248%22 fill=%22none%22 stroke=%22black%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M0 0.5L28 30L50 21L73.5 48%22 stroke-width=%224%22 stroke-opacity=%220.25%22/%3E%3Cpath d=%22M0 0.5L28 30L50 21L73.5 48%22 stroke-width=%221.2%22/%3E%3C/svg%3E") right top / 74px 48px no-repeat, url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 52 17%22 width=%2252%22 height=%2217%22 fill=%22none%22 stroke=%22black%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M0.5 17L26 0.6L51.5 17%22 stroke-width=%224%22 stroke-opacity=%220.25%22/%3E%3Cpath d=%22M0.5 17L26 0.6L51.5 17%22 stroke-width=%221.2%22/%3E%3C/svg%3E") right 136px bottom / 52px 17px no-repeat;
 }
 
 /* Map toolbar and panels: dark glass with an accent edge */
