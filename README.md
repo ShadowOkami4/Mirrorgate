@@ -351,11 +351,11 @@ I will not hide or lie about it: I use AI. [Claude](https://claude.ai), an AI as
 - minor help with balancing the game mechanics of subclasses, monsters, and items;
 - organizing the vault and rewording existing entries from my own notes and ideas;
 - the self-made simulation that helps prepare the world map previews;
-- the vault's own theme and plugin setup, and the pictures in this README: the header, section bars, cards and pills are rendered from my stream kit's branding page, and the two diagrams are drawn as code, both with Claude's help.
+- code: the vault's own theme, its plugin setup, and the code that draws the README graphics.
 
 What I will not use AI for is the story itself. The plot, the characters, the direction of the adventures, and the vision of the world come from me. This world has taken years and many scrapped versions to grow into what it is, and I don't want that vision replaced by AI. Where AI has helped with wording, the story decisions behind it are still mine, and anything that does not match my vision gets rewritten.
 
-I also do not use AI-generated artwork for the world. The README's header, section bars, cards, pills and diagrams are graphics made as code with Claude, in my own Okami brand style, not illustrations of the setting, and the screenshots show the vault itself. Every illustration of Kagameru, its people, creatures and places is made by a person.
+I also do not use AI-generated images. The README's header, section bars, cards and pills are rendered from my own stream kit's branding page in my Okami brand style, the two diagrams are drawn as code, and the screenshots are real captures of the vault. Every illustration of Kagameru, its people, creatures and places is made by a person.
 
 <a id="contributing"></a>
 <img src=".github/readme/parts/head-contribute.png" alt="Contributing" width="100%">
