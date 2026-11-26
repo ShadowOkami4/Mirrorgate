@@ -2319,7 +2319,9 @@ body:not(.mp-no-cracks).theme-light .hearth-view { --mp-hearth-cracks: var(--mp-
   50% { opacity: 1; }
 }
 @media (prefers-reduced-motion: reduce) { .hearth-view .hearth-logo::before { animation: none; } }
-/* the same emblem on the Hearth tab and its ribbon button */
+/* a bolder solid shard on the Hearth tab and its ribbon button: two-tone
+   facets with a crack cut through, so it reads at 16px */
+body { --mp-shard-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Cdefs%3E%3Cmask id=%22m%22%3E%3Crect width=%2224%22 height=%2224%22 fill=%22white%22/%3E%3Cg fill=%22none%22 stroke=%22black%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M13.4 2.6 11 7.2l2.3 2.6-2.7 4.4 1.6 3%22 stroke-width=%221.6%22/%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Cg mask=%22url(%23m)%22%3E%3Cpath d=%22M12 1 20 10 12 23 4 10z%22/%3E%3C/g%3E%3C/svg%3E"); }
 .workspace-tab-header[data-type="hearth-home-view"] .workspace-tab-header-inner-icon,
 .side-dock-ribbon-action[aria-label*="Hearth"] { position: relative; }
 .workspace-tab-header[data-type="hearth-home-view"] .workspace-tab-header-inner-icon > svg,
@@ -2330,12 +2332,12 @@ body:not(.mp-no-cracks).theme-light .hearth-view { --mp-hearth-cracks: var(--mp-
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 14px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   transform: translate(-50%, -50%);
-  background: linear-gradient(160deg, var(--mp-silver-hi), var(--mp-accent) 70%);
-  -webkit-mask: var(--mp-emblem) center / contain no-repeat;
-  mask: var(--mp-emblem) center / contain no-repeat;
+  background: linear-gradient(135deg, var(--mp-silver-hi) 0 42%, color-mix(in srgb, var(--mp-accent) 80%, white) 42% 58%, var(--mp-accent) 58% 100%);
+  -webkit-mask: var(--mp-shard-icon) center / contain no-repeat;
+  mask: var(--mp-shard-icon) center / contain no-repeat;
 }
 .side-dock-ribbon-action[aria-label*="Hearth"]:hover::after { filter: drop-shadow(0 0 5px var(--mp-accent)); }
 .hearth-view .hearth-title::after {
