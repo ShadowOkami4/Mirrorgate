@@ -14,6 +14,10 @@
 <a href="https://github.com/ByteMirror/atlas-vtt"><img src=".github/readme/parts/pill-atlas.png" alt="Atlas VTT: virtual tabletop" height="38"></a>
 <a href="https://ko-fi.com/W7W31TOGEY"><img src=".github/readme/parts/pill-kofi.png" alt="Support me on Ko-fi" height="38"></a>
 
+<br><br>
+
+<a href="https://github.com/ByteMirror/atlas-vtt"><img src=".github/readme/compatible-with-atlas-vtt-dark.svg" alt="Compatible with Atlas VTT" height="44"></a>
+
 </div>
 
 <br>
