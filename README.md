@@ -1,46 +1,29 @@
+<!--
+  README in the Okami 2026 look with a Mirrored skin. The pictures in .github/readme/parts/ are rendered
+  from the stream kit: branding/github/mirrorgate.html → node tools/export/github-mirrorgate.mjs
+-->
 <div align="center">
-  <img src=".github/readme/banner.svg" alt="The Mirrored Realms: a 5.5e campaign setting of living reflections, broken time and divine scars" width="100%">
-  <p><strong>An evolving campaign setting of living reflections, broken time, folded space, and divine scars.</strong></p>
-  <p>
-    <code>5.5e compatible</code> ·
-    <code>SRD 5.2.1</code> ·
-    <code>CC BY 4.0</code> ·
-    <code>Obsidian vault</code> ·
-    <code>Atlas VTT ready</code> ·
-    <code>active development</code>
-  </p>
-  <p>
-    <a href="https://shadowokami.com/MirrorGate">Project website</a> ·
-    <a href="Home.md">Open the vault</a> ·
-    <a href="#a-look-inside">A look inside</a> ·
-    <a href="#getting-started">Getting started</a> ·
-    <a href="#release-roadmap">Roadmap</a> ·
-    <a href="#contributing">Contributing</a> ·
-    <a href="#license-and-attribution">License</a>
-  </p>
+
+<img src=".github/readme/parts/header.png" alt="The Mirrored Realms: a D&amp;D 5.5e setting as an Obsidian vault. Broken time, folded roads and dangerous reflections, written for Game Masters and ready for Atlas VTT." width="100%">
+
+<br>
+
+<a href="https://shadowokami.com/MirrorGate"><img src=".github/readme/parts/pill-website.png" alt="Website: shadowokami.com" height="38"></a>
+<a href="Home.md"><img src=".github/readme/parts/pill-vault.png" alt="Open the vault: start at Home.md" height="38"></a>
+<a href="https://github.com/ShadowOkami4/mirrored-pages"><img src=".github/readme/parts/pill-theme.png" alt="Mirrored Pages: the theme" height="38"></a>
+<a href="https://github.com/ByteMirror/atlas-vtt"><img src=".github/readme/parts/pill-atlas.png" alt="Atlas VTT: virtual tabletop" height="38"></a>
+<a href="https://ko-fi.com/W7W31TOGEY"><img src=".github/readme/parts/pill-kofi.png" alt="Support me on Ko-fi" height="38"></a>
+
 </div>
 
----
+<br>
 
 > [!IMPORTANT]
 > **The Mirrored Realms is in early development.** The setting is growing, but it is not yet a complete, ready-to-run campaign. Lore, mechanics, names, maps, and planned releases may change during writing and playtesting.
 
-## Contents
 
-- [About the Setting](#about-the-setting)
-- [A Look Inside](#a-look-inside)
-- [Getting Started](#getting-started)
-- [Repository Layout](#repository-layout)
-- [Reading the Vault](#reading-the-vault)
-- [Rules and Game Material](#rules-and-game-material)
-- [Playing at the Table](#playing-at-the-table)
-- [Release Roadmap](#release-roadmap)
-- [How This World Is Made](#how-this-world-is-made)
-- [Contributing](#contributing)
-- [Credits](#credits)
-- [License and Attribution](#license-and-attribution)
-
-## About the Setting
+<a id="about-the-setting"></a>
+<img src=".github/readme/parts/head-setting.png" alt="The setting" width="100%">
 
 **The Mirrored Realms** is both the name of this project and of its fifth-edition campaign setting. Its central world, **Kagameru**, still bears the wounds of an ancient divine war. Roads can arrive in the wrong century, ruins remember histories that never happened, and mirrors sometimes open toward places no map can contain.
 
@@ -57,7 +40,8 @@ The project combines setting lore, characters, factions, creatures, homebrew rul
 | **Virtual tabletop** | Atlas VTT (optional), with statblock templates for every rank |
 | **License** | CC BY 4.0 for original project material |
 
-## A Look Inside
+<a id="a-look-inside"></a>
+<img src=".github/readme/parts/head-look.png" alt="A look inside" width="100%">
 
 Screenshots from the vault in Obsidian, with its own theme, [Mirrored Pages](https://github.com/ShadowOkami4/mirrored-pages), and [Atlas VTT](https://github.com/ByteMirror/atlas-vtt) statblocks.
 
@@ -95,7 +79,8 @@ Screenshots from the vault in Obsidian, with its own theme, [Mirrored Pages](htt
 > [!NOTE]
 > **About the world map.** The previous map previews have been withdrawn while the world is rewritten; a new version will follow once the lore has settled. The old images stay in `90 Assets/Maps/` for reference and are no longer canon.
 
-## Getting Started
+<a id="getting-started"></a>
+<img src=".github/readme/parts/head-start.png" alt="Getting started" width="100%">
 
 ### Requirements
 
@@ -137,7 +122,8 @@ The shared vault settings in `.obsidian/` enable the following community plugins
 
 The tables inside hub notes use Obsidian's core **Bases** plugin. The vault uses its own theme, **[Mirrored Pages](https://github.com/ShadowOkami4/mirrored-pages)** (silver-mirror look, dark and light, also styles Atlas VTT), which also styles the Player info box (`> [!player]`) and GM callouts (`> [!gm]-`). The CSS snippet `mirrored-realms` gives each section card on the hub notes its own icon and colour, matching the graph view.
 
-## Repository Layout
+<a id="repository-layout"></a>
+<img src=".github/readme/parts/head-vault.png" alt="Reading the vault" width="100%">
 
 > [!NOTE]
 > **The vault was rebuilt in November 2026** on the `rework/v2` branch. The old notes are being rewritten into this layout batch by batch, updated for SRD 5.2.1. Back so far: the world and its continents, Specula and Lustro, the Mirrorgate, history, faiths, all nine peoples, the royal houses and factions, the Shardkin, the subclasses, *The Pact in the Twilight* and the books. Still to come: the other adventures. The previous version is in the git history.
@@ -170,7 +156,8 @@ These paths are excluded from the repository by `.gitignore`:
 | `.obsidian/workspace.json` | personal window layout |
 | `.claude/`, `.claudian/` | local AI assistant data |
 
-## Reading the Vault
+<a id="reading-the-vault"></a>
+### Reading the Vault
 
 <p align="center">
   <img src=".github/readme/vault-layout.svg" alt="Diagram: Home in the centre, with ten section hubs from 01 Atlas to 10 Books around it" width="100%">
@@ -206,7 +193,8 @@ Every note carries YAML front matter, hidden in the reading view. Templates in `
 | `player` | `true` once the page has a finished Player info box |
 | `region` | where it is, for places, characters and factions |
 
-## Rules and Game Material
+<a id="rules-and-game-material"></a>
+<img src=".github/readme/parts/head-rules.png" alt="Rules and game material" width="100%">
 
 All rules material targets fifth edition and uses the terminology and stat block format of the **System Reference Document 5.2.1**.
 
@@ -217,7 +205,8 @@ All rules material targets fifth edition and uses the terminology and stat block
 > [!NOTE]
 > Subclasses, creatures, and rules modules are **playtest drafts**. Numbers may change.
 
-## Playing at the Table
+<a id="playing-at-the-table"></a>
+<img src=".github/readme/parts/head-table.png" alt="Playing at the table" width="100%">
 
 ### Atlas VTT
 
@@ -242,7 +231,17 @@ Every important place and character has a music recommendation. Some are generic
 >
 > **Self-made remixes are planned for every track.** Remixes of copyrighted music will only be published where that is permitted, and they are not covered by the project's CC BY 4.0 license.
 
-## Release Roadmap
+<a id="release-roadmap"></a>
+<img src=".github/readme/parts/head-roadmap.png" alt="Release roadmap" width="100%">
+
+<p align="center">
+  <img src=".github/readme/parts/card-sa01.png" alt="SA-01 The Pact in the Twilight: active draft, 30 percent. Levels 4 to 5, SRD 5.2.1." width="49%">
+  <img src=".github/readme/parts/card-cf01.png" alt="CF-01 Shattered Hope: the main campaign, foundation, 1 percent." width="49%">
+</p>
+<p align="center">
+  <img src=".github/readme/parts/card-sa02.png" alt="SA-02 Confronting Yourself: announced." width="49%">
+  <img src=".github/readme/parts/card-os01.png" alt="OS-01 The Dark Alley: announced." width="49%">
+</p>
 
 The planned collection contains **18 journeys**: ten one-shots, five short adventures or multishots, and three campaign frameworks. A title being announced does not mean active development has begun.
 
@@ -332,7 +331,8 @@ The planned collection contains **18 journeys**: ten one-shots, five short adven
 - **Open by design:** tables may reuse, alter, publish, and build upon original project material under CC BY 4.0.
 - **Revision is expected:** early concepts may change when stronger ideas emerge through writing, feedback, and playtesting.
 
-## How This World Is Made
+<a id="how-this-world-is-made"></a>
+<img src=".github/readme/parts/head-made.png" alt="How this world is made" width="100%">
 
 The Mirrored Realms is created by **Okami**. The world has been in the making for about two years, and many earlier versions were written, played with, and scrapped before this one.
 
@@ -347,13 +347,14 @@ I will not hide or lie about it: I use AI. [Claude](https://claude.ai), an AI as
 - minor help with balancing the game mechanics of subclasses, monsters, and items;
 - organizing the vault and rewording existing entries from my own notes and ideas;
 - the self-made simulation that helps prepare the world map previews;
-- the vault's own theme and plugin setup, and the banner and diagrams at the top of this README, which are drawn as code with Claude's help.
+- the vault's own theme and plugin setup, and the pictures in this README: the header, section bars, cards and pills are rendered from my stream kit's branding page, and the two diagrams are drawn as code, both with Claude's help.
 
 What I will not use AI for is the story itself. The plot, the characters, the direction of the adventures, and the vision of the world come from me. This world has taken years and many scrapped versions to grow into what it is, and I don't want that vision replaced by AI. Where AI has helped with wording, the story decisions behind it are still mine, and anything that does not match my vision gets rewritten.
 
-I also do not use AI-generated artwork for the world. The banner and the two diagrams in this README are simple graphics drawn as code with Claude, not illustrations of the setting, and the screenshots show the vault itself. Every illustration of Kagameru, its people, creatures and places is made by a person.
+I also do not use AI-generated artwork for the world. The README's header, section bars, cards, pills and diagrams are graphics made as code with Claude, in my own Okami brand style, not illustrations of the setting, and the screenshots show the vault itself. Every illustration of Kagameru, its people, creatures and places is made by a person.
 
-## Contributing
+<a id="contributing"></a>
+<img src=".github/readme/parts/head-contribute.png" alt="Contributing" width="100%">
 
 Corrections, playtest reports, writing, mechanics, and original artwork are welcome through [GitHub Issues](https://github.com/ShadowOkami4/Mirrorgate/issues) and pull requests.
 
@@ -383,7 +384,8 @@ To propose artwork or get in touch about a commission, open an [artwork proposal
 - whether you are offering voluntary work or a commission; and
 - any schedule, format, or accessibility considerations.
 
-## Credits
+<a id="credits"></a>
+### Credits
 
 **The Mirrored Realms** — world, story, and adventures — is created by **Okami**.
 
@@ -391,7 +393,8 @@ To propose artwork or get in touch about a commission, open an [artwork proposal
 
 **Atlas VTT** — the virtual tabletop plugin this vault is set up for — is created by **Fabian Urbanek** ([ByteMirror](https://github.com/ByteMirror)). It began as part of his bachelor's thesis, with the goal of giving the tabletop community a virtual tabletop that is open source, hackable, and free to use. Many thanks for making it. If you enjoy playing the Mirrored Realms with Atlas VTT, consider starring or supporting the [Atlas VTT project](https://github.com/ByteMirror/atlas-vtt).
 
-## License and Attribution
+<a id="license-and-attribution"></a>
+<img src=".github/readme/parts/head-license.png" alt="Credits and license" width="100%">
 
 | Material | License |
 | --- | --- |
@@ -405,8 +408,8 @@ Except where stated otherwise, original material created for **The Mirrored Real
 
 See [NOTICE.md](NOTICE.md) for a ready-to-use attribution statement, the required SRD 5.2.1 notice, and third-party exclusions.
 
----
+<br>
 
-<div align="center">
-  <p><em>The realm is unfinished. Its possibilities are not.</em></p>
-</div>
+<img src=".github/readme/parts/footer.png" alt="Broken glass. Open worlds. shadowokami.com/mirrorgate" width="100%">
+
+<p align="center"><em>The realm is unfinished. Its possibilities are not.</em></p>

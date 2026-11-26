@@ -22,7 +22,7 @@ The project recommends music from other works for use at the table. No music is 
 
 ## README Graphics and Screenshots
 
-The banner (`.github/readme/banner.svg`) and the two diagrams (`vault-layout.svg`, `page-anatomy.svg`) were drawn as code for this project with the help of Claude, an AI assistant by Anthropic. They are graphics, not artwork of the setting. They are original project material under CC BY 4.0.
+The README parts in `.github/readme/parts/` (header, section bars, cards, pills, footer) are rendered from Okami's stream kit branding page, and the two diagrams (`vault-layout.svg`, `page-anatomy.svg`) were drawn as code; both were made with the help of Claude, an AI assistant by Anthropic. They are graphics, not artwork of the setting, and are original project material under CC BY 4.0. They use the Roboto Flex typeface (SIL Open Font License 1.1).
 
 The screenshots in `.github/readme/` show this vault in Obsidian with the Mirrored Pages theme. They are original project material under CC BY 4.0. Interface elements visible in them belong to their own projects: Obsidian (© Dynalist Inc.) and the Atlas VTT plugin (GNU AGPL).
 
