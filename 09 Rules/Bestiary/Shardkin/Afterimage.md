@@ -1,6 +1,7 @@
 ---
 cssclasses:
 - mr-rules
+- bestiary
 type: creature
 up: '[[Shardkin]]'
 family: Shardkin

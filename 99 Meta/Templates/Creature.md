@@ -7,6 +7,7 @@ const sec = "mr-" + ((tp.file.folder(true).split("/").filter(Boolean)[0] || "hom
 ---
 cssclasses:
   - <% sec %>
+  - bestiary
 type: creature
 up: "[[<% up %>]]"
 cr: ""

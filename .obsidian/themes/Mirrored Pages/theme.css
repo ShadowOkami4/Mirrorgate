@@ -2227,6 +2227,89 @@ body:not(.mp-no-emblem) .workspace-leaf-content[data-type="markdown"] .view-cont
   filter: drop-shadow(0 0 8px color-mix(in srgb, var(--mp-accent) 60%, transparent));
 }
 
+
+/* ---------- Bestiary titles --------------------------------------------
+   Add `bestiary` to a creature note's cssclasses. The name is set centred
+   in letter-spaced silver capitals, and a diagonal slice of it is knocked
+   out of place like a broken pane (reading view; Obsidian puts the title
+   on the h1 as data-heading). A small label sits above and a diamond below. */
+.bestiary .el-h1 { position: relative; padding-top: 1.6em; text-align: center; }
+.bestiary .el-h1::before {
+  content: "◆  Mirrorgate Bestiary  ◆";
+  position: absolute;
+  top: 0.2em;
+  left: 0;
+  right: 0;
+  font-family: var(--font-interface);
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--mp-accent) 75%, var(--text-muted));
+}
+.bestiary .el-h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 9px;
+  height: 9px;
+  margin-left: -4.5px;
+  transform: rotate(45deg);
+  background: var(--mp-accent);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--mp-accent) 70%, transparent);
+}
+.bestiary .markdown-rendered h1,
+.bestiary.markdown-rendered h1 {
+  position: relative;
+  margin: 0.1em 0 0.4em;
+  padding: 0.1em 0 0.5em;
+  font-size: 2.7em;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: none;
+}
+.bestiary .markdown-rendered h1::after,
+.bestiary.markdown-rendered h1::after {
+  background:
+    linear-gradient(90deg, transparent, var(--mp-accent) 25%, var(--mp-accent-2) 50%, var(--mp-accent) 75%, transparent) top / 100% 1px no-repeat,
+    linear-gradient(90deg, transparent 20%, color-mix(in srgb, var(--mp-accent) 30%, transparent) 50%, transparent 80%) 0 4px / 100% 1px no-repeat;
+}
+/* the knocked-out slice: covers its part of the name and redraws it,
+   a few pixels up and to the right, in the accent colour */
+.bestiary .markdown-rendered h1[data-heading]::before,
+.bestiary.markdown-rendered h1[data-heading]::before {
+  content: attr(data-heading);
+  position: absolute;
+  top: -2px;
+  left: 4px;
+  right: -4px;
+  padding: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: pre-wrap;
+  color: color-mix(in srgb, var(--mp-accent) 55%, var(--mp-silver-hi));
+  -webkit-text-fill-color: color-mix(in srgb, var(--mp-accent) 55%, var(--mp-silver-hi));
+  background: var(--background-primary);
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  clip-path: polygon(49% 0, 55.5% 0, 52.5% 100%, 46% 100%);
+  text-shadow: 0 0 14px color-mix(in srgb, var(--mp-accent) 60%, transparent);
+  pointer-events: none;
+}
+/* Live Preview: the same capitals, without the slice */
+.bestiary .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 {
+  font-size: 2.4em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /* ---------- Atlas VTT --------------------------------------------------- */
 /* Atlas VTT reads Obsidian's colour variables, so most of it follows the
    theme on its own. These rules tune its accents, statblocks and toolbar. */
